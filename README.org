@@ -170,12 +170,105 @@
     |----------------------------+------------+-----------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
+*** Classification
+
+    Based on the RevLib algorithm classification
+    
+**** Quantum gates
+
+     - Miller Gate
+    
+**** Worst Cases
+
+     - 3_17
+     - 4_49
+     - Hidden Weighted Bit     
+    
+**** Encoding Functions
+
+     - Decod24
+     - Decod24 with enable
+     - Graycode
+     - Hamming Code
+    
+**** Arithmetic Functions
+
+     - ALUs
+     - 0410184
+     - 1-bit Adder / rd32
+     - 4 greater than 10
+     - 4 greater than 11
+     - 4 greater than 12
+     - 4 greater than 13
+     - 4 greater than 4
+     - 4 greater than 5
+     - 4 modulo 7
+     - Check 4 modulo 5
+     - dist
+     - majority
+     - max46
+     - mlp4
+     - mod5adder
+     - mod5d1
+     - mod5d2
+     - mod5mils
+     - Modulo 8/10 Counter
+     - One-Two-Three Counter
+     - plus127mod8192
+     - plus63mod4096
+     - plus63mod8192
+     - radd
+     - rd32
+     - rd53
+     - rd73
+     - rd84
+     - root
+     - sqn
+     - sqrt8
+     - squar5
+     - xor5
+     - z4     
+    
+**** Miscellaneous
+
+     - 9symml
+     - adr4
+     - aj-e11
+     - C17
+     - clip
+     - cm152a
+     - cm42a
+     - cm82a
+     - cm85a
+     - co14
+     - con1
+     - cycle10_2
+     - dc1
+     - dc2
+     - ex-1
+     - ex1
+     - ex2
+     - ex3
+     - f2
+     - inc
+     - life
+     - misex1
+     - pm1
+     - sao2
+     - Unstructured Reversible Functions. The urf benchmarks include six functions with various sizes that have no regular structure in their specifications. These functions are introduced to evaluate the behavior of a synthesis algorithm in synthesizing completely unstructured functions. The urf functions were originally proposed by M. Saeedi.
+    
+**** Symmetric Functions
+
+     - sym10
+     - sym6
+     - sym9
+
 *** Statistics    
 
     - Highest amount of gates: ~urf~ has a maximum of 512064 gates followed by the ~hwb9_119~ with 207775 gates
     - Number of different algorithms: 83
     - More details in [[file:benchmarks_profile/README.org][Benchmarks Profile]]
-    
+
 ** OPENQASM to OpenQL translation
 
    TODO...
