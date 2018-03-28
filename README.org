@@ -173,6 +173,32 @@
 *** Classification
 
     Based on the RevLib algorithm classification
+
+            #+BEGIN_EXPORT latex
+\begin{center}    
+\begin{tikzpicture}[sibling distance=3pt]
+  \tikzset{grow'=right,level distance=130pt}
+  \tikzset{execute at begin node=\strut}
+  \tikzset{every tree node/.style={align=center,anchor=base west}}
+  %% \tikzset{edge from parent/.style={draw,
+  %%     edge from parent path={(\tikzparentnode.east)
+  %%       -- +(0,-8pt)
+  %%       |- (\tikzchildnode)}}}
+  \tikzset{level 2/.style={level distance=120pt}}
+  %% \tikzset{level 3/.style={level distance=120pt}}
+  %% \tikzset{level 4/.style={level distance=100pt}}
+  %% \tikzset{frontier/.style={distance from root=500pt}}
+  \Tree [.{Benchmarks Classes}
+    {Quantum Gates}
+    {Worst Cases}
+    {Encoding Functions}
+    {Arithmetic Functions}
+    {Miscellaneous}
+    {Symmetric Functions}
+    ]
+    \end{tikzpicture}
+\end{center}
+    #+END_EXPORT
     
 **** Quantum gates
 
