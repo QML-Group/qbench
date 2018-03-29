@@ -298,3 +298,7 @@
 ** OPENQASM to OpenQL translation
 
    TODO...
+
+** OpenQL compilation
+
+   The configuration file used to compile the OpenQL algorithms is [[file:hardware_config_cc_light.json]]
