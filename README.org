@@ -190,11 +190,9 @@
   %% \tikzset{frontier/.style={distance from root=500pt}}
   \Tree [.{Benchmarks Classes}
     {Quantum Gates}
-    {Worst Cases}
     {Encoding Functions}
     {Arithmetic Functions}
     {Miscellaneous}
-    {Symmetric Functions}
     ]
     \end{tikzpicture}
 \end{center}
@@ -203,12 +201,6 @@
 **** Quantum gates
 
      - Miller Gate
-    
-**** Worst Cases
-
-     - 3_17
-     - 4_49
-     - Hidden Weighted Bit     
     
 **** Encoding Functions
 
@@ -282,12 +274,13 @@
      - pm1
      - sao2
      - Unstructured Reversible Functions. The urf benchmarks include six functions with various sizes that have no regular structure in their specifications. These functions are introduced to evaluate the behavior of a synthesis algorithm in synthesizing completely unstructured functions. The urf functions were originally proposed by M. Saeedi.
-    
-**** Symmetric Functions
-
+     - 3_17
+     - 4_49
+     - Hidden Weighted Bit
      - sym10
      - sym6
      - sym9
+
 
 *** Statistics    
 
