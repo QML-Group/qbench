@@ -2,7 +2,7 @@ from qiskit import QuantumProgram
 import os
 import argparse
 
-curdir = os.path.dirname(__file__)
+curdir = os.path.abspath(os.path.dirname(__file__))
 
 
 def simulate_openqasm_src(circuit_dir=curdir):
@@ -17,7 +17,7 @@ def simulate_openqasm_src(circuit_dir=curdir):
         if ".qasm" in circuit_path:
             circuit_name = qp.load_qasm_file(circuit_path)
             print(circuit_name)
-            execution_list.add(circuit_name)
+            execution_list.append(circuit_name)
 
     qobj = qp.compile(execution_list, backend=backend)
     qp.get_execution_list(qobj, verbose=True)
