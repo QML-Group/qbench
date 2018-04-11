@@ -1,6 +1,7 @@
 from qiskit import QuantumProgram
 import os
 import argparse
+import pickle
 
 curdir = os.path.abspath(os.path.dirname(__file__))
 
@@ -9,6 +10,7 @@ def simulate_openqasm_src(circuit_dir=curdir):
 
     backend = "local_qasm_simulator"
     # execution_list = []
+    results = []
 
     qp = QuantumProgram()
 
@@ -21,8 +23,12 @@ def simulate_openqasm_src(circuit_dir=curdir):
             # execution_list.append(circuit_name)
             result = qp.execute(circuit_name, backend)
             print(result)
-            result.get_counts(circuit_name)
+            results.append(result)
+            print(result.get_counts(circuit_name))
             print("\n")
+
+    with open("results_data.pkl", "wb") as output:
+        pickle.dump(results, output, pickle.HIGHEST_PROTOCOL)
 
     # qobj = qp.compile(execution_list, backend=backend)
     # # qp.get_execution_list(qobj)
