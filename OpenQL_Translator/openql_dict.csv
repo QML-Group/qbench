@@ -10,4 +10,4 @@ CNOT,cnot
 Toffoli,toffoli
 H,h
 X,x
-Prep0,prepx
+Prep0,prepz

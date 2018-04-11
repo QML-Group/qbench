@@ -1,5 +1,6 @@
 import argparse
 import os
+import sys
 import csv
 import re
 # import numpy as np
@@ -15,17 +16,18 @@ def load_dictionary(path):
     dictionary = {}
     with open(path, mode='r') as infile:
         reader = csv.reader(infile)
-        dictionary = {rows[0]:rows[1] for rows in reader}
+        dictionary = {rows[0]: rows[1] for rows in reader}
     return dictionary
 
-def qlib2openql(stranger_file, dictionary, gates_buffer,lines):
+
+def qlib2openql(stranger_file, dictionary, gates_buffer, lines):
 
     num_qubits = 0
     qubits_dict = []
 
     for line in lines:
 
-        match = re.findall(r'^(\.?\w+)(?: (\w+))(( \S+)*)',line)
+        match = re.findall(r'^(\.?\w+)(?: (\w+))(( \S+)*)', line)
         if match:
             # print(line)
             # print(match)
@@ -37,58 +39,60 @@ def qlib2openql(stranger_file, dictionary, gates_buffer,lines):
             # if match[0][0] is "CP":
 
             #     angle = mult_qubits[-1]
-            
+
             if match[0][0] in dictionary:
 
                 try:
-                    
-                    gates_buffer.append("k.gate('"+dictionary[match[0][0]]+"',"+str(qubits_dict.index(match[0][1]))+",".join(mult_qubits)+")\n")
+
+                    gates_buffer.append("k.gate('"+dictionary[match[0][0]]+"',"+str(
+                        qubits_dict.index(match[0][1]))+",".join(mult_qubits)+")\n")
                 except IOError as err:
                     print("I/O error: {0}".format(err))
                 except ValueError:
-                    print("\nQLib ERROR in \n"+line+" The algorithm asks for an undeclared qubit in file: "+stranger_file+"\n")
+                    print("\nQLib ERROR in \n"+line +
+                          " The algorithm asks for an undeclared qubit in file: "+stranger_file+"\n")
 
                     print("Qubits declared")
-                    print(qubits_dict+"\n")
-                    
+                    print(qubits_dict)
+                    print("\n")
+
                     return
                 except:
                     print("Unexpected error:", sys.exc_info()[0])
                     raise
-                    
-
 
             elif ".qubit" in match[0][0]:
 
                 num_qubits = int(match[0][1])
-                
 
             elif "qubit" in match[0][0]:
 
                 qubits_dict.append(match[0][1])
                 # print(match[0][1])
-        
 
             else:
-                
+
                 print("NEW GATE: "+match[0][0]+". In "+stranger_file)
                 return
 
     # print(gates_buffer)
     return num_qubits
 
-def openqasm2openql(stranger_file,dictionary,gates_buffer,lines):
+
+def openqasm2openql(stranger_file, dictionary, gates_buffer, lines):
 
     num_qubits = 0
-    
+
     for line in lines:
 
-        match = re.findall(r'^(\w+)(.+)?\sq\[(\d+)\]((,)q\[(\d+)\])*;$',line)
+        match = re.findall(r'^(\w+)(.+)?\sq\[(\d+)\]((,)q\[(\d+)\])*;$', line)
         if match:
             # print(line)
             # print(match)
             if match[0][0] in dictionary:
-                gates_buffer.append("k.gate('"+dictionary[match[0][0]]+match[0][1]+"',"+match[0][2]+match[0][4]+match[0][5]+")\n")
+                gates_buffer.append(
+                    "k.gate('"+dictionary[match[0][0]]+match[0][1]+"'," +
+                    match[0][2]+match[0][4]+match[0][5]+")\n")
 
                 n1 = int(match[0][2])
                 n2 = int(match[0][5]) if match[0][5] is not '' else 0
@@ -101,7 +105,6 @@ def openqasm2openql(stranger_file,dictionary,gates_buffer,lines):
 
                     # print(num_qubits)
 
-
             else:
                 if "qreg" not in match[0][0] and "creg" not in match[0][0]:
                     print("NEW GATE: "+match[0][0]+". In "+stranger_file)
@@ -109,7 +112,20 @@ def openqasm2openql(stranger_file,dictionary,gates_buffer,lines):
 
     return num_qubits
 
-def translate(stranger_file, openql_file, dictionary_file=curdir+os.path.join(curdir,'openql_dict.csv')):
+
+def writeBenchmarksDB(algorithm_name, num_qubits, num_gates, source, file_path):
+
+    row = {"Algorithm": algorithm_name,
+           "No. qubits": num_qubits, "No. gates": num_gates, "Source": source
+           }
+    with open(file_path+"/benchmarks_database.csv", "a") as benchmarks_db:
+        writer = csv.DictWriter(
+            benchmarks_db, fieldnames=["Algorithm", "No. qubits", "No. gates", "Source"])
+        writer.writerow(row)
+
+
+def translate(stranger_file, openql_file, dictionary_file=curdir +
+              os.path.join(curdir, 'openql_dict.csv')):
 
     with open(stranger_file, 'r') as stranger:
 
@@ -141,33 +157,53 @@ def translate(stranger_file, openql_file, dictionary_file=curdir+os.path.join(cu
             if "OPENQASM" in lines[0]:
 
                 # print("OPENQASM File")
+                source = ""
 
-                num_qubits = openqasm2openql(stranger_file, dictionary, gates_buffer, lines)
-            
+                num_qubits = openqasm2openql(
+                    stranger_file, dictionary, gates_buffer, lines)
+
             elif "# Circuit generated by QLib" in lines[0]:
 
                 # print(first_line)
-
-                num_qubits = qlib2openql(stranger_file, dictionary, gates_buffer, lines)
+                source = "QLib"
+                num_qubits = qlib2openql(
+                    stranger_file, dictionary, gates_buffer, lines)
 
             else:
 
                 print("ERROR. File "+stranger_file+" not recognized")
                 return
 
-            if not num_qubits:
+            if not num_qubits or num_qubits == 0:
+                os.remove(openql_file)
                 return
 
-            print("| "+os.path.basename(stranger_file).replace(".qasm", "") +" | "+str(num_qubits+1)+" | "+str(len(gates_buffer)))
-            init_buffer.append("num_qubits = "+str(num_qubits+1)+"\n")
-            init_buffer.append("p = ql.Program('"+os.path.basename(stranger_file).replace(".qasm", "")+"', num_qubits, platform)\n")
-            init_buffer.append("p.set_sweep_points(sweep_points, num_circuits)\n")
+            # writeBenchmarksDB(os.path.basename(stranger_file).replace(
+            #     ".qasm", ""), num_qubits+1, len(gates_buffer), source,
+            #     os.path.abspath(os.path.dirname(stranger_file)))
 
-            init_buffer.append("k = ql.Kernel('"+os.path.basename(stranger_file).replace(".qasm", "")+"', platform)\n")
+            print("| "+os.path.basename(stranger_file).replace(".qasm",
+                                                               "") + " | " +
+                  str(num_qubits+1)+" | "+str(len(gates_buffer)))
+
+            init_buffer.append("num_qubits = "+str(num_qubits+1)+"\n")
+
+            init_buffer.append("p = ql.Program('"+os.path.basename(
+                stranger_file).replace(".qasm", "") +
+                "', num_qubits, platform)\n")
+
+            init_buffer.append(
+                "p.set_sweep_points(sweep_points, num_circuits)\n")
+
+            init_buffer.append(
+                "k = ql.Kernel('" +
+                os.path.basename(stranger_file).replace(".qasm", "") +
+                "', platform)\n")
 
             openql.writelines(init_buffer)
             openql.writelines(gates_buffer)
             openql.writelines(compile_buff)
+
 
 def all_dir_trans(dir_path):
 
@@ -176,18 +212,23 @@ def all_dir_trans(dir_path):
 
             openql_file = filename.replace(".qasm", ".py")
 
-            translate(os.path.join(dir_path,filename), os.path.join(dir_path,openql_file))
-    
-    
+            translate(os.path.join(dir_path, filename),
+                      os.path.join(dir_path, openql_file))
+
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(description='OPENQASM translator to OpenQL') 
+    parser = argparse.ArgumentParser(
+        description='OPENQASM translator to OpenQL')
 
-    parser.add_argument('-d', action="store_true", help='required parameter for input a directory path')   
-    parser.add_argument('stranger', help='the path to the input OPENQASM or QLib QASM file (or directory if the -d option is set)')
-    parser.add_argument('--openql_file', help='the path to the output OpenQL file')
-    parser.add_argument('--dictionary_file', help='the path of a dictionary file in case of no using the default one')
+    parser.add_argument('-d', action="store_true",
+                        help='required parameter for input a directory path')
+    parser.add_argument(
+        'stranger', help='the path to the input OPENQASM or QLib QASM file (or directory if the -d option is set)')
+    parser.add_argument(
+        '--openql_file', help='the path to the output OpenQL file')
+    parser.add_argument(
+        '--dictionary_file', help='the path of a dictionary file in case of no using the default one')
 
     args = parser.parse_args()
 
@@ -198,8 +239,8 @@ if __name__ == "__main__":
     elif args.d:
 
         all_dir_trans(args.stranger)
-        
-    elif args.openql_file: 
+
+    elif args.openql_file:
 
         translate(args.stranger, args.openql_file)
 
