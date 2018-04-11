@@ -8,7 +8,7 @@ curdir = os.path.abspath(os.path.dirname(__file__))
 def simulate_openqasm_src(circuit_dir=curdir):
 
     backend = "local_qasm_simulator"
-    execution_list = []
+    # execution_list = []
 
     qp = QuantumProgram()
 
@@ -17,7 +17,10 @@ def simulate_openqasm_src(circuit_dir=curdir):
         if ".qasm" in circuit_path:
             circuit_name = qp.load_qasm_file(circuit_path)
             print(circuit_name)
-            execution_list.append(circuit_name)
+            # execution_list.append(circuit_name)
+            result = qp.execute(circuit_name, backend)
+            print(result)
+            result.get_counts(circuit_name)
 
     # qobj = qp.compile(execution_list, backend=backend)
     # # qp.get_execution_list(qobj)
@@ -25,8 +28,8 @@ def simulate_openqasm_src(circuit_dir=curdir):
     # print(result)
     # # result.get_counts(circuit_name)
 
-    result = qp.execute(execution_list, backend=backend)
-    print(result)
+    # result = qp.execute(execution_list, backend=backend)
+    # print(result)
 
 
 if __name__ == "__main__":
@@ -46,3 +49,19 @@ if __name__ == "__main__":
     else:
 
         simulate_openqasm_src()
+
+
+#################### PLAN B #############################
+
+# from qiskit import QuantumProgram
+# import os
+
+# qp = QuantumProgram()
+# for circuit_path in os.listdir("."):
+#     if ".qasm" in circuit_path:
+#         circuit_name = qp.load_qasm_file(circuit_path)
+#         print(circuit_name)
+#         result = qp.execute(circuit_name)
+#         print(result)
+
+#########################################################
