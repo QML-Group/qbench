@@ -17,10 +17,12 @@ def simulate_openqasm_src(circuit_dir=curdir):
         if ".qasm" in circuit_path:
             circuit_name = qp.load_qasm_file(circuit_path)
             print(circuit_name)
+            print("-")
             # execution_list.append(circuit_name)
             result = qp.execute(circuit_name, backend)
             print(result)
             result.get_counts(circuit_name)
+            print("\n")
 
     # qobj = qp.compile(execution_list, backend=backend)
     # # qp.get_execution_list(qobj)
