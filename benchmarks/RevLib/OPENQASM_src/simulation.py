@@ -19,11 +19,14 @@ def simulate_openqasm_src(circuit_dir=curdir):
             print(circuit_name)
             execution_list.append(circuit_name)
 
-    qobj = qp.compile(execution_list, backend=backend)
-    # qp.get_execution_list(qobj)
-    result = qp.run(qobj, wait=2, timeout=240)
+    # qobj = qp.compile(execution_list, backend=backend)
+    # # qp.get_execution_list(qobj)
+    # result = qp.run(qobj, wait=2, timeout=240)
+    # print(result)
+    # # result.get_counts(circuit_name)
+
+    result = qp.execute(execution_list, backend=backend)
     print(result)
-    # result.get_counts(circuit_name)
 
 
 if __name__ == "__main__":
