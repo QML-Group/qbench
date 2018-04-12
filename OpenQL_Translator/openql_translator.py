@@ -45,7 +45,7 @@ def qlib2openql(stranger_file, dictionary, gates_buffer, lines):
                 try:
 
                     mult_qubits_trans = []
-                    if mult_qubits:
+                    if qubits_dict:
                         for qubit in mult_qubits:
                             mult_qubits_trans.append(
                                 qubits_dict(qubit))
