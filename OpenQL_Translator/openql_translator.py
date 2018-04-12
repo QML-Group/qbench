@@ -34,8 +34,9 @@ def qlib2openql(stranger_file, dictionary, gates_buffer, lines):
 
             # Prepare n-qubits gates
             mult_qubits = match[0][2].split()
-            for i in range(len(mult_qubits)):
-                mult_qubits[i] = qubits_dict(mult_qubits[i])
+            if mult_qubits:
+                for i in range(len(mult_qubits)):
+                    mult_qubits[i] = qubits_dict(mult_qubits[i])
 
             # # For the CP gates, we have to catch and arrange the angle in the proper place
             # if match[0][0] is "CP":
