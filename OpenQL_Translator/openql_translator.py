@@ -53,14 +53,15 @@ def qlib2openql(stranger_file, dictionary, gates_buffer, lines):
                         gates_buffer.append("k.gate('" +
                                             dictionary[match[0][0]] + "'," +
                                             str(qubits_dict.index(match[0][1]))
-                                            + "," +
+                                            + "," if mult_qubits_trans else "" +
                                             ",".join(mult_qubits_trans)+")\n")
 
                         print("k.gate('" +
                               dictionary[match[0][0]] + "'," +
                               str(qubits_dict.index(match[0][1]))
-                              +
+                              + "," if mult_qubits_trans else "" +
                               ",".join(mult_qubits_trans)+")\n")
+
                 except IOError as err:
                     print("I/O error: {0}".format(err))
                 except ValueError:
