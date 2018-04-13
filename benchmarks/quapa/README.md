@@ -1,4 +1,4 @@
-## QUAPA benchmarks
+# QUAPA benchmarks
 
 ## Description
 
@@ -20,6 +20,10 @@ Scripts in this folder originate from the QUAPA project and descriptions can be 
 ## OpenQL random generator
 
 The OpenQL random generator script can generate random circuits based on a distribution (CSV), qubit count, and gate count. Random generated circuits are directly forwarded to OpenQL and compiled. The QBT library is required to run this script.
+
+## OpenQL randomized benchmarking
+
+The OpenQL randomized benchmarking script generates single qubit randomized benchmarking circuits for one or more qubits in parallel. The QBT library is required to run this script.
 
 ## QASM to OpenQL
 
