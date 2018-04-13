@@ -1,6 +1,7 @@
 import argparse
 import csv
 import os
+import itertools
 
 import openql.openql as ql
 
@@ -18,6 +19,26 @@ def main():
         key_args = 'args'
         key_weight = 'weight'
 
+        # Dict to invert gates
+        inverse = {
+            'i': 'i',
+            'x': 'x',
+            'y': 'y',
+            'z': 'z',
+            'h': 'h',
+            'x90': 'mx90',
+            'mx90': 'x90',
+            'y90': 'my90',
+            'my90': 'y90',
+            's': 'sdag',
+            'sdag': 's',
+            't': 'tdag',
+            'tdag': 't',
+            'cz': 'cz',
+            'cnot': 'cnot',
+            'swap': 'swap',
+        }
+
         # Parse arguments
         parser = argparse.ArgumentParser()
         parser.add_argument('config', type=str, help='OpenQL config file')
@@ -26,6 +47,7 @@ def main():
         parser.add_argument('qubits', type=int, help='number of qubits')
         parser.add_argument('size', type=int, help='size of circuit in gate count')
         parser.add_argument('-o', '--output', type=str, default='openql_output', help='output directory')
+        parser.add_argument('--reversed', action='store_true', help='reverse random circuit to identity')
         parser.add_argument('--no-prepare', action='store_true', help='do not prepare all qubits (PrepZ)')
         parser.add_argument('--no-measure', action='store_true', help='do not measure all qubits (MeasZ)')
         parser.add_argument('--scheduler', type=str, default='ALAP', help='OpenQL scheduling strategy')
@@ -36,6 +58,8 @@ def main():
             raise ValueError('Qubits argument should be larger then 0')
         if args.size < 0:
             raise ValueError('Size should be 0 or larger')
+        if args.reversed and args.size % 2:
+            raise ValueError('Size should be a multiple of 2')
 
         # Define variables required for the random circuit generator
         distribution = dict()
@@ -46,11 +70,13 @@ def main():
         try:
             for line in csv.DictReader(args.gate_list):
                 # Get the gate as a string
-                gate = line[key_gate]
+                gate = str(line[key_gate]).lower()
                 if not gate:
                     raise ValueError('Gate name can not be empty')
+                if args.reversed and gate not in inverse:
+                    raise ValueError('No inverse available for gate %s' % gate)
                 if gate in distribution:
-                    printer.write(printer.WARNING + 'Gate name appeared twice, adding weights')
+                    printer.warn('Gate %s appeared twice, adding weights' % gate)
 
                 # Store the weight
                 w = line[key_weight]
@@ -86,8 +112,9 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        program = ql.Program('random_%i_%i' % (args.qubits, args.size), args.qubits, platform)
-        kernel = ql.Kernel('random_kernel', platform)
+        name = 'random_reversed' if args.reversed else 'random'
+        program = ql.Program('%s_%i_%i' % (name, args.qubits, args.size), args.qubits, platform)
+        kernel = ql.Kernel('%s_kernel' % name, platform)
 
         if not args.no_prepare:
             # Prepare
@@ -96,7 +123,14 @@ def main():
 
         # Random circuit
         random_generator = RandomGateGenerator(distribution, arguments, qubits)
-        for instr, instr_args in random_generator.iterator(args.size):
+        if args.reversed:
+            gates = list(random_generator.iterator(args.size // 2))
+            gates_inverted = ((inverse[instr], instr_args) for instr, instr_args in reversed(gates))
+            gate_iterator = itertools.chain(gates, gates_inverted)
+        else:
+            gate_iterator = random_generator.iterator(args.size)
+
+        for instr, instr_args in gate_iterator:
             kernel.gate(instr, instr_args)
 
         if not args.no_measure:

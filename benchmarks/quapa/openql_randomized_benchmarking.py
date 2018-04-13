@@ -20,7 +20,7 @@ def main():
         def randomized_benchmarking_sequence(size):
             assert isinstance(size, int)
             cl = [random.randrange(len(clifford_inverse)) for _ in range(size // 2)]
-            return itertools.chain(cl, reversed(cl))
+            return itertools.chain(cl, (clifford_inverse[g] for g in reversed(cl)))
 
         # Parse arguments
         parser = argparse.ArgumentParser()
