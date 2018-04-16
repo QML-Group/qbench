@@ -1,13 +1,10 @@
 import argparse
 import os
-import random
-import itertools
 import math
 
 import openql.openql as ql
 
 from qbt.util import Printer
-from qbt.helpers import NoneType
 
 
 def toffoli(kernel, c0, c1, t):

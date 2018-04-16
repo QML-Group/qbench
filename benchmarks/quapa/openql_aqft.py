@@ -1,7 +1,5 @@
 import argparse
 import os
-import random
-import itertools
 
 import openql.openql as ql
 
