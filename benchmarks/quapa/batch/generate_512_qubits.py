@@ -29,7 +29,7 @@ def main():
     gen.append(['../openql_random_generator.py', args.gate_list, q, 256, '--reverse', '--normalize'] for q in qubits)
 
     # RB
-    # gen.append(['../openql_randomized_benchmarking.py', q, 1024] for q in qubits)
+    gen.append(['../openql_randomized_benchmarking.py', q, 128] for q in qubits)
 
     # Sqrt
     # gen.append(['../openql_scaffcc_sqrt.py', q // 3] for q in qubits)
