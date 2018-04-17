@@ -1,11 +1,10 @@
-import argparse
-import os.path
+import os
 
 from openql import openql as ql
 
 import qbt.qasm as qasm
 from qbt.qasm.tools import *
-from qbt.util import Printer
+from qbt.util import Printer, QlArgumentParser
 
 
 class QasmKernels(list):
@@ -55,7 +54,7 @@ class QasmKernels(list):
                         raise qasm.QasmException('TypeError at line %i: %s' % (line.line_number, e))
 
     def _append_new_kernel(self):
-        self.append(ql.Kernel('%s%i' % (self._name, len(self)), self._platform))
+        self.append(ql.Kernel('%s_%i' % (self._name, len(self)), self._platform))
         self._last_kernel_gate_count = 0
 
     def get_file_name(self):
@@ -74,40 +73,32 @@ def main():
 
     try:
         # Parse arguments
-        parser = argparse.ArgumentParser()
-        parser.add_argument('config', type=str, help='OpenQL config file')
+        parser = QlArgumentParser()
         parser.add_argument('file', type=str, help='input QASM file')
-        parser.add_argument('-o', '--output', type=str, default='openql_output', help='output directory')
         parser.add_argument('-p', '--partition', type=int, default=0, help='partition kernels to size PARTITION')
-        parser.add_argument('--optimize', action='store_true', help='enable OpenQL compilation optimization')
-        parser.add_argument('--scheduler', type=str, default='ALAP', help='OpenQL scheduling strategy')
         args = parser.parse_args()
 
-        # Ensure output directory and set as OpenQL output directory
-        args.output = os.path.expanduser(args.output)
-        os.makedirs(args.output, mode=0o755, exist_ok=True)
-        ql.set_output_dir(args.output)
-
-        # Create OpenQL platform
+        # Set output directory and create OpenQL platform
+        ql.set_output_dir(parser.get_output_dir(args))
         printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
-        platform = ql.Platform('platform', os.path.expanduser(args.config))
+        platform = ql.Platform('platform', parser.get_config(args))
 
         # Parse input file to QasmKernel object
         printer.write('Parsing QASM file %s to OpenQL kernel(s)...' % args.file)
-        kernels = QasmKernels('kernel', args.file, platform, partition=args.partition)
+        name = os.path.splitext(os.path.basename(args.file))[0]
+        kernels = QasmKernels('%s_kernel' % name, args.file, platform, partition=args.partition)
         if kernels.get_classic_instruction_count():
             printer.warn('Ignored %i classic instruction(s) while parsing' % kernels.get_classic_instruction_count())
 
         # Set up OpenQL program
         printer.write('Initializing OpenQL program with %i kernel(s)...' % len(kernels))
-        program_name = os.path.splitext(os.path.basename(args.file))[0]
-        program = ql.Program(program_name, kernels.get_num_qubits(), platform)
+        program = ql.Program(name, kernels.get_num_qubits(), platform)
         for k in kernels:
             program.add_kernel(k)
 
         # Compile
         printer.write('Compiling using OpenQL...')
-        program.compile(args.optimize, args.scheduler)
+        program.compile(**parser.get_compile_kwargs(args))
 
     except (FileNotFoundError, SystemError, qasm.QasmException) as e:
         # Catch and print some exceptions
