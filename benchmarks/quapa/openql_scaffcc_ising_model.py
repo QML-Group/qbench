@@ -5,34 +5,28 @@ import openql.openql as ql
 from qbt.util import Printer, QlArgumentParser
 
 
-def cz(kernel, q0, q1, phi):
-    assert isinstance(kernel, ql.Kernel)
-    assert isinstance(q0, int)
-    assert isinstance(q1, int)
-    assert isinstance(phi, float)
-
-    kernel.rz(q1, phi / 2)
-    kernel.cnot(q0, q1)
-    kernel.rz(q1, phi / -2)
-    kernel.cnot(q0, q1)
-
-
-def zcrossz(kernel, q1, q2, phi, fixed_cz):
+def cz(kernel, q1, q2, phi):
     assert isinstance(kernel, ql.Kernel)
     assert isinstance(q1, int)
     assert isinstance(q2, int)
     assert isinstance(phi, float)
-    assert isinstance(fixed_cz, bool)
+
+    # performing Controlled -2phi Z rotation
+    kernel.rz(q2, -2.0 * phi)
+    kernel.cnot(q1, q2)
+    kernel.rz(q2, phi)
+    kernel.cnot(q1, q2)
+
+
+def zcrossz(kernel, q1, q2, phi):
+    assert isinstance(kernel, ql.Kernel)
+    assert isinstance(q1, int)
+    assert isinstance(q2, int)
+    assert isinstance(phi, float)
 
     kernel.rz(q1, phi)
     kernel.rz(q2, -phi)
-    if fixed_cz:
-        # Performed a fixed CZ operation
-        kernel.cz(q1, q2)
-    else:
-        # Perform the actual controlled rotation
-        # kernel.cz(q1, q2, -2.0 * phi)
-        raise ValueError('Arbitrary CZ rotations are not supported')
+    cz(kernel, q1, q2, -2.0 * phi)
 
 
 def initialize(kernel, qubits):
@@ -44,7 +38,7 @@ def initialize(kernel, qubits):
         kernel.hadamard(q)
 
 
-def red_hamiltonian(kernel, qubits, m, trotter, fixed_cz):
+def red_hamiltonian(kernel, qubits, m, trotter):
     assert isinstance(kernel, ql.Kernel)
     assert isinstance(qubits, list)
     assert isinstance(m, int)
@@ -52,10 +46,10 @@ def red_hamiltonian(kernel, qubits, m, trotter, fixed_cz):
 
     for n in range(0, len(qubits) - 1, 2):
         phi = random.uniform(-2.0, 2.0) * (2.0 * m - 1) / trotter
-        zcrossz(kernel, qubits[n], qubits[n + 1], phi, fixed_cz)
+        zcrossz(kernel, qubits[n], qubits[n + 1], phi)
 
 
-def black_hamiltonian(kernel, qubits, m, trotter, fixed_cz):
+def black_hamiltonian(kernel, qubits, m, trotter):
     assert isinstance(kernel, ql.Kernel)
     assert isinstance(qubits, list)
     assert isinstance(m, int)
@@ -63,7 +57,7 @@ def black_hamiltonian(kernel, qubits, m, trotter, fixed_cz):
 
     for n in range(1, len(qubits) - 1, 2):
         phi = random.uniform(-2.0, 2.0) * (2.0 * m - 1) / trotter
-        zcrossz(kernel, qubits[n], qubits[n + 1], phi, fixed_cz)
+        zcrossz(kernel, qubits[n], qubits[n + 1], phi)
 
 
 def bz_hamiltonian(kernel, qubits, m, trotter, bx, duration):
@@ -102,7 +96,6 @@ def main():
         parser.add_argument('--duration', type=float, default=3.0, help='total duration of adiabatic evolution')
         parser.add_argument('--trotter', type=int, default=5, help='number of trotter steps')
         parser.add_argument('--bx', type=float, default=2.0, help='setting with unknown meaning')
-        parser.add_argument('--fixed-cz', action='store_true', help='no arbitrary but only fixed CZ rotations')
         parser.add_argument('--seed', type=int, help='seed for the random number generation')
         args = parser.parse_args()
 
@@ -131,8 +124,8 @@ def main():
         initialize(kernel, qubits)
 
         for m in range(1, args.trotter + 1):
-            red_hamiltonian(kernel, qubits, m, args.trotter, args.fixed_cz)
-            black_hamiltonian(kernel, qubits, m, args.trotter, args.fixed_cz)
+            red_hamiltonian(kernel, qubits, m, args.trotter)
+            black_hamiltonian(kernel, qubits, m, args.trotter)
             bz_hamiltonian(kernel, qubits, m, args.trotter, args.bx, args.duration)
 
         measure(kernel, qubits)
