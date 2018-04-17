@@ -1,10 +1,8 @@
-import argparse
-import os
 import random
 
 import openql.openql as ql
 
-from qbt.util import Printer
+from qbt.util import Printer, QlArgumentParser
 
 
 def cz(kernel, q1, q2, phi):
@@ -99,29 +97,22 @@ def main():
 
     try:
         # Parse arguments
-        parser = argparse.ArgumentParser()
-        parser.add_argument('config', type=str, help='OpenQL config file')
+        parser = QlArgumentParser()
         parser.add_argument('N', type=int, help='number of qubits')
         parser.add_argument('--duration', type=float, default=3.0, help='total duration of adiabatic evolution')
         parser.add_argument('--trotter', type=int, default=5, help='number of trotter steps')
-        parser.add_argument('--bx', type=float, default=2.0)
-        parser.add_argument('--fixed-cz', action='store_true', help='no arbitrary but only fixed CZ operations')
-        parser.add_argument('-o', '--output', type=str, default='openql_output', help='output directory')
-        parser.add_argument('--scheduler', type=str, default='ALAP', help='OpenQL scheduling strategy')
+        parser.add_argument('--bx', type=float, default=2.0, help='setting with unknown meaning')
+        parser.add_argument('--fixed-cz', action='store_true', help='no arbitrary but only fixed CZ rotations')
         args = parser.parse_args()
 
         # Check arguments
         if args.N < 1:
             raise ValueError('N should be 1 or larger')
 
-        # Ensure output directory and set as OpenQL output directory
-        args.output = os.path.expanduser(args.output)
-        os.makedirs(args.output, mode=0o755, exist_ok=True)
-        ql.set_output_dir(args.output)
-
-        # Create OpenQL platform
+        # Set output directory and create OpenQL platform
+        ql.set_output_dir(parser.get_output_dir(args))
         printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
-        platform = ql.Platform('platform', os.path.expanduser(args.config))
+        platform = ql.Platform('platform', parser.get_config(args))
 
         # Define array of qubit indices which can be reused
         qubits = list(range(args.N))
@@ -143,10 +134,9 @@ def main():
 
         # Add kernel to program
         program.add_kernel(kernel)
-
         # Compile
         printer.write('Compiling using OpenQL...')
-        program.compile(scheduler=args.scheduler)
+        program.compile(**parser.get_compile_kwargs(args))
 
     except (ValueError, TypeError, FileNotFoundError) as e:
         # Catch and print some exceptions

@@ -1,12 +1,11 @@
 import argparse
 import csv
-import os
 import itertools
 
 import openql.openql as ql
 
 from qbt.qasm.tools import RandomGateGenerator
-from qbt.util import Printer
+from qbt.util import Printer, QlArgumentParser
 
 
 def main():
@@ -40,25 +39,23 @@ def main():
         }
 
         # Parse arguments
-        parser = argparse.ArgumentParser()
-        parser.add_argument('config', type=str, help='OpenQL config file')
+        parser = QlArgumentParser()
         parser.add_argument('gate_list', type=argparse.FileType('r'),
                             help='CSV file with %s, %s, and %s' % (key_gate, key_args, key_weight))
         parser.add_argument('qubits', type=int, help='number of qubits')
-        parser.add_argument('size', type=int, help='size of circuit in gate count')
-        parser.add_argument('-o', '--output', type=str, default='openql_output', help='output directory')
-        parser.add_argument('--reversed', action='store_true', help='reverse random circuit to identity')
+        parser.add_argument('gates', type=int, help='number of random gates in the circuit or per qubit (normalize)')
+        parser.add_argument('--reverse', action='store_true', help='reverse random circuit to identity')
+        parser.add_argument('--normalize', action='store_true', help='total gates = gates * qubits')
         parser.add_argument('--no-prepare', action='store_true', help='do not prepare all qubits (PrepZ)')
         parser.add_argument('--no-measure', action='store_true', help='do not measure all qubits (MeasZ)')
-        parser.add_argument('--scheduler', type=str, default='ALAP', help='OpenQL scheduling strategy')
         args = parser.parse_args()
 
         # Check arguments
         if args.qubits <= 0:
             raise ValueError('Qubits argument should be larger then 0')
-        if args.size < 0:
+        if args.gates < 0:
             raise ValueError('Size should be 0 or larger')
-        if args.reversed and args.size % 2:
+        if args.reverse and args.gates % 2:
             raise ValueError('Size should be a multiple of 2')
 
         # Define variables required for the random circuit generator
@@ -73,7 +70,7 @@ def main():
                 gate = str(line[key_gate]).lower()
                 if not gate:
                     raise ValueError('Gate name can not be empty')
-                if args.reversed and gate not in inverse:
+                if args.reverse and gate not in inverse:
                     raise ValueError('No inverse available for gate %s' % gate)
                 if gate in distribution:
                     printer.warn('Gate %s appeared twice, adding weights' % gate)
@@ -101,19 +98,15 @@ def main():
         except KeyError:
             raise ValueError('CSV file should contain columns %s, %s, and %s' % (key_gate, key_args, key_weight))
 
-        # Ensure output directory and set as OpenQL output directory
-        args.output = os.path.expanduser(args.output)
-        os.makedirs(args.output, mode=0o755, exist_ok=True)
-        ql.set_output_dir(args.output)
-
-        # Create OpenQL platform
+        # Set output directory and create OpenQL platform
+        ql.set_output_dir(parser.get_output_dir(args))
         printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
-        platform = ql.Platform('platform', os.path.expanduser(args.config))
+        platform = ql.Platform('platform', parser.get_config(args))
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        name = 'random_reversed' if args.reversed else 'random'
-        program = ql.Program('%s_%i_%i' % (name, args.qubits, args.size), args.qubits, platform)
+        name = 'rand%s%s' % ('_rev' if args.reverse else '', '_norm' if args.normalize else '')
+        program = ql.Program('%s_%i' % (name, args.qubits), args.qubits, platform)
         kernel = ql.Kernel('%s_kernel' % name, platform)
 
         if not args.no_prepare:
@@ -123,12 +116,15 @@ def main():
 
         # Random circuit
         random_generator = RandomGateGenerator(distribution, arguments, qubits)
-        if args.reversed:
-            gates = list(random_generator.iterator(args.size // 2))
+        total_gates = args.gates
+        if args.normalize:
+            total_gates *= args.qubits
+        if args.reverse:
+            gates = list(random_generator.iterator(total_gates // 2))
             gates_inverted = ((inverse[instr], instr_args) for instr, instr_args in reversed(gates))
             gate_iterator = itertools.chain(gates, gates_inverted)
         else:
-            gate_iterator = random_generator.iterator(args.size)
+            gate_iterator = random_generator.iterator(total_gates)
 
         for instr, instr_args in gate_iterator:
             kernel.gate(instr, instr_args)
@@ -143,7 +139,7 @@ def main():
 
         # Compile
         printer.write('Compiling using OpenQL...')
-        program.compile(scheduler=args.scheduler)
+        program.compile(**parser.get_compile_kwargs(args))
 
     except (ValueError, TypeError, FileNotFoundError) as e:
         # Catch and print some exceptions
