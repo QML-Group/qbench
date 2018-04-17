@@ -1,16 +1,33 @@
+import math
+
 import openql.openql as ql
 
 from qbt.util import Printer, QlArgumentParser
 
 
-def controlled_phase(kernel, c, t, k):
+def cz(kernel, q1, q2, phi):
     assert isinstance(kernel, ql.Kernel)
-    assert isinstance(k, int) and k >= 1
+    assert isinstance(q1, int)
+    assert isinstance(q2, int)
+    assert isinstance(phi, float)
 
-    if k == 1:
-        kernel.cphase(c, t)
+    kernel.rz(q2, -2.0 * phi)
+    kernel.cnot(q1, q2)
+    kernel.rz(q2, phi)
+    kernel.cnot(q1, q2)
+
+
+def controlled_r(kernel, q0, q1, k):
+    assert isinstance(kernel, ql.Kernel)
+    assert isinstance(k, int)
+
+    if k == 0:
+        # (Controlled) 2pi rotation equals I
+        pass
+    elif abs(k) == 1:
+        kernel.cz(q0, q1)
     else:
-        raise ValueError('Accurate AQFT implementation not supported at this moment')
+        cz(kernel, q0, q1, 2 * math.pi / 2 ** k)
 
 
 def main():
@@ -21,7 +38,7 @@ def main():
         # Parse arguments
         parser = QlArgumentParser()
         parser.add_argument('qubits', type=int, help='number of qubits')
-        parser.add_argument('a', type=int, help='approximation threshold, 1 or larger for better approximation')
+        parser.add_argument('a', type=int, help='threshold for k, larger value means better approximation')
         parser.add_argument('--swap', action='store_true', help='swap registers after applying AQFT')
         parser.add_argument('--no-skip', action='store_true', help='do not skip gates, but insert simpler variants')
         parser.add_argument('--no-prepare', action='store_true', help='do not prepare all qubits (PrepZ)')
@@ -31,8 +48,8 @@ def main():
         # Check arguments
         if args.qubits <= 0:
             raise ValueError('Qubits argument should be larger then 0')
-        if args.a <= 0:
-            raise ValueError('Approximation threshold should be larger than 0')
+        if args.a < 0:
+            raise ValueError('Approximation threshold should be larger or equal than 0')
 
         # Set output directory and create OpenQL platform
         ql.set_output_dir(parser.get_output_dir(args))
@@ -56,12 +73,12 @@ def main():
         for i in range(len(qubits)):
             kernel.hadamard(qubits[i])
             for j in range(i + 1, len(qubits)):
-                k = j - i
+                k = j - i + 1
                 if args.no_skip:
                     # Cap the value of k to prevent skipping of gates
                     k = min(k, args.a)
                 if k <= args.a:
-                    controlled_phase(kernel, qubits[j], qubits[i], k)
+                    controlled_r(kernel, qubits[j], qubits[i], k)
 
         if args.swap:
             # SWAP qubits
