@@ -5,16 +5,16 @@ import openql.openql as ql
 from qbt.util import Printer, QlArgumentParser
 
 
-def cz(kernel, q1, q2, phi):
+def cz(kernel, q0, q1, phi):
     assert isinstance(kernel, ql.Kernel)
+    assert isinstance(q0, int)
     assert isinstance(q1, int)
-    assert isinstance(q2, int)
     assert isinstance(phi, float)
 
-    kernel.rz(q2, -2.0 * phi)
-    kernel.cnot(q1, q2)
-    kernel.rz(q2, phi)
-    kernel.cnot(q1, q2)
+    kernel.rz(q1, phi / 2)
+    kernel.cnot(q0, q1)
+    kernel.rz(q1, phi / -2)
+    kernel.cnot(q0, q1)
 
 
 def zcrossz(kernel, q1, q2, phi, fixed_cz):
