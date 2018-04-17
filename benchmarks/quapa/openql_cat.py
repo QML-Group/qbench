@@ -1,5 +1,3 @@
-import math
-
 import openql.openql as ql
 
 from qbt.util import Printer, QlArgumentParser
@@ -32,15 +30,12 @@ def controlled_r(kernel, q0, q1, k):
 
 def main():
     # Create printer
-    printer = Printer('openql_aqft')
+    printer = Printer('openql_cat')
 
     try:
         # Parse arguments
         parser = QlArgumentParser()
         parser.add_argument('qubits', type=int, help='number of qubits')
-        parser.add_argument('a', type=int, help='threshold for k, larger value means better approximation')
-        parser.add_argument('--swap', action='store_true', help='swap registers after applying AQFT')
-        parser.add_argument('--no-skip', action='store_true', help='do not skip gates, but insert simpler variants')
         parser.add_argument('--no-prepare', action='store_true', help='do not prepare all qubits (PrepZ)')
         parser.add_argument('--no-measure', action='store_true', help='do not measure all qubits (MeasZ)')
         args = parser.parse_args()
@@ -48,8 +43,6 @@ def main():
         # Check arguments
         if args.qubits <= 0:
             raise ValueError('Qubits argument should be larger then 0')
-        if args.a < 0:
-            raise ValueError('Approximation threshold should be larger or equal than 0')
 
         # Set output directory and create OpenQL platform
         ql.set_output_dir(parser.get_output_dir(args))
@@ -58,8 +51,8 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        program = ql.Program('aqft_%i' % args.qubits, args.qubits, platform)
-        kernel = ql.Kernel('aqft_kernel', platform)
+        program = ql.Program('cat_%i' % args.qubits, args.qubits, platform)
+        kernel = ql.Kernel('cat_kernel', platform)
 
         # Define array of qubit indices
         qubits = list(range(args.qubits))
@@ -69,25 +62,10 @@ def main():
             for q in qubits:
                 kernel.gate('prepz', [q])
 
-        # AQFT circuit
-        for i in range(len(qubits)):
-            kernel.hadamard(qubits[i])
-            for j in range(i + 1, len(qubits)):
-                k = j - i + 1
-                if args.no_skip:
-                    # Cap the value of k to prevent skipping of gates
-                    k = min(k, args.a)
-                if k <= args.a:
-                    controlled_r(kernel, qubits[j], qubits[i], k)
-
-        if args.swap:
-            # SWAP qubits
-            for i in range(len(qubits) // 2):
-                q0 = qubits[i]
-                q1 = qubits[-i - 1]
-                kernel.cnot(q0, q1)
-                kernel.cnot(q1, q0)
-                kernel.cnot(q0, q1)
+        # Cat circuit
+        kernel.hadamard(qubits[0])
+        for q in qubits[1:]:
+            kernel.cnot(qubits[0], q)
 
         if not args.no_measure:
             # Measure

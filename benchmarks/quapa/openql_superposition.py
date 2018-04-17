@@ -1,0 +1,67 @@
+import openql.openql as ql
+
+from qbt.util import Printer, QlArgumentParser
+
+
+def main():
+    # Create printer
+    printer = Printer('openql_superpos')
+
+    try:
+        # Parse arguments
+        parser = QlArgumentParser()
+        parser.add_argument('qubits', type=int, help='number of qubits')
+        parser.add_argument('--no-prepare', action='store_true', help='do not prepare all qubits (PrepZ)')
+        parser.add_argument('--no-measure', action='store_true', help='do not measure all qubits (MeasZ)')
+        args = parser.parse_args()
+
+        # Check arguments
+        if args.qubits <= 0:
+            raise ValueError('Qubits argument should be larger then 0')
+
+        # Set output directory and create OpenQL platform
+        ql.set_output_dir(parser.get_output_dir(args))
+        printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
+        platform = ql.Platform('platform', parser.get_config(args))
+
+        # Set up OpenQL program and kernel
+        printer.write('Initializing OpenQL program...')
+        program = ql.Program('superpos_%i' % args.qubits, args.qubits, platform)
+        kernel = ql.Kernel('superpos_kernel', platform)
+
+        # Define array of qubit indices
+        qubits = list(range(args.qubits))
+
+        if not args.no_prepare:
+            # Prepare
+            for q in qubits:
+                kernel.gate('prepz', [q])
+
+        # Superposition circuit
+        for q in qubits:
+            kernel.hadamard(q)
+
+        if not args.no_measure:
+            # Measure
+            for q in qubits:
+                kernel.gate('measz', [q])
+
+        # Add kernel to program
+        program.add_kernel(kernel)
+
+        # Compile
+        printer.write('Compiling using OpenQL...')
+        program.compile(**parser.get_compile_kwargs(args))
+
+    except (ValueError, TypeError, FileNotFoundError) as e:
+        # Catch and print some exceptions
+        printer.write(e)
+        exit(1)
+    else:
+        # Print final message
+        printer.write('Done!')
+        exit(0)
+
+
+if __name__ == '__main__':
+    main()
