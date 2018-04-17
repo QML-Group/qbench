@@ -103,6 +103,7 @@ def main():
         parser.add_argument('--trotter', type=int, default=5, help='number of trotter steps')
         parser.add_argument('--bx', type=float, default=2.0, help='setting with unknown meaning')
         parser.add_argument('--fixed-cz', action='store_true', help='no arbitrary but only fixed CZ rotations')
+        parser.add_argument('--seed', type=int, help='seed for the random number generation')
         args = parser.parse_args()
 
         # Check arguments
@@ -121,6 +122,10 @@ def main():
         printer.write('Initializing OpenQL program...')
         program = ql.Program('ising_model_n%i' % args.N, len(qubits), platform)
         kernel = ql.Kernel('scaffcc_ising_model_kernel', platform)
+
+        if args.seed:
+            # Set the seed
+            random.seed(args.seed)
 
         # Ising model circuit
         initialize(kernel, qubits)
