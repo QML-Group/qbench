@@ -1,4 +1,5 @@
 import argparse
+import os
 import csv
 import itertools
 
@@ -105,7 +106,8 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        name = 'rand%s%s' % ('_rev' if args.reverse else '', '_norm' if args.normalize else '')
+        name = 'rand%s%s_%s' % ('_rev' if args.reverse else '', '_norm' if args.normalize else '',
+                                os.path.splitext(os.path.basename(args.gate_list.name))[0])
         program = ql.Program('%s_%i' % (name, args.qubits), args.qubits, platform)
         kernel = ql.Kernel('%s_kernel' % name, platform)
 
