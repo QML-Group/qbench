@@ -1,5 +1,6 @@
 from argparse import ArgumentParser
 from qbt.batch import *
+from qbt.util import QlArgumentParser
 
 # Python command
 PYTHON = 'python3.5'
@@ -7,10 +8,8 @@ PYTHON = 'python3.5'
 
 def main():
     # Parse arguments
-    parser = ArgumentParser()
-    parser.add_argument('config', type=str, help='OpenQL config file')
+    parser = QlArgumentParser()
     parser.add_argument('-g', '--gate-list', type=str, action='append', help='CSV file with gate distributions')
-    parser.add_argument('--output-dir', type=str, default='openql_output', help='output directory')
     args = parser.parse_args()
 
     # Batch processor
@@ -39,9 +38,12 @@ def main():
     # Put all tasks
     for g in gen:
         for a in g:
+            # Insert OpenQL config
             a.insert(0, PYTHON)
             a.insert(2, args.config)
-            a.extend(['--output-dir', args.output_dir])
+            # Append OpenQL optional args
+            a.extend(parser.get_optional_args_list(args))
+            # Put the task
             bp.put(BatchTask(a, str_convert=True))
 
     # Process all tasks

@@ -37,8 +37,9 @@ def main():
         if args.gates % 2:
             raise ValueError('Size should be a multiple of 2')
 
-        # Set output directory and create OpenQL platform
-        ql.set_output_dir(parser.get_output_dir(args))
+        # Set up OpenQL and create platform
+        for k, v in parser.get_options(args).items():
+            ql.set_option(k, v)
         printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
         platform = ql.Platform('platform', parser.get_config(args))
 
@@ -76,7 +77,7 @@ def main():
 
         # Compile
         printer.write('Compiling using OpenQL...')
-        program.compile(**parser.get_compile_kwargs(args))
+        program.compile()
 
     except (ValueError, TypeError, FileNotFoundError) as e:
         # Catch and print some exceptions

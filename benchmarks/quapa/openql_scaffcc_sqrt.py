@@ -5,28 +5,34 @@ import openql.openql as ql
 from qbt.util import Printer, QlArgumentParser
 
 
-def toffoli(kernel, c0, c1, t):
+def toffoli(kernel, c0, c1, t, custom_decompose=False):
     assert isinstance(kernel, ql.Kernel)
     assert isinstance(c0, int)
     assert isinstance(c1, int)
     assert isinstance(t, int)
+    assert isinstance(custom_decompose, bool)
 
-    kernel.hadamard(t)
-    kernel.cnot(c1, t)
-    kernel.tdag(t)
-    kernel.cnot(c0, t)
-    kernel.t(t)
-    kernel.cnot(c1, t)
-    kernel.tdag(t)
-    kernel.cnot(c0, t)
-    kernel.tdag(c1)
-    kernel.t(t)
-    kernel.cnot(c0, c1)
-    kernel.hadamard(t)
-    kernel.tdag(c1)
-    kernel.cnot(c0, c1)
-    kernel.t(c0)
-    kernel.s(c1)
+    if custom_decompose:
+        # Custom decompose Toffoli gate here
+        kernel.hadamard(t)
+        kernel.cnot(c1, t)
+        kernel.tdag(t)
+        kernel.cnot(c0, t)
+        kernel.t(t)
+        kernel.cnot(c1, t)
+        kernel.tdag(t)
+        kernel.cnot(c0, t)
+        kernel.tdag(c1)
+        kernel.t(t)
+        kernel.cnot(c0, c1)
+        kernel.hadamard(t)
+        kernel.tdag(c1)
+        kernel.cnot(c0, c1)
+        kernel.t(c0)
+        kernel.s(c1)
+    else:
+        # Directly use Toffoli gate, OpenQL can still decompose it
+        kernel.toffoli(c0, c1, t)
 
 
 def diffuse(kernel, qubits, scratch):
@@ -121,8 +127,9 @@ def main():
         if args.n <= 1:
             raise ValueError('n should be 2 or larger')
 
-        # Set output directory and create OpenQL platform
-        ql.set_output_dir(parser.get_output_dir(args))
+        # Set up OpenQL and create platform
+        for k, v in parser.get_options(args).items():
+            ql.set_option(k, v)
         printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
         platform = ql.Platform('platform', parser.get_config(args))
 
@@ -131,6 +138,7 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
+        ql.set_option('decompose_toffoli', 'yes')
         program = ql.Program('sqrt_n%i' % args.n, len(qubits), platform)
         kernel = ql.Kernel('scaffcc_sqrt_kernel', platform)
 
@@ -163,7 +171,7 @@ def main():
 
         # Compile
         printer.write('Compiling using OpenQL...')
-        program.compile(**parser.get_compile_kwargs(args))
+        program.compile()
 
     except (ValueError, TypeError, FileNotFoundError) as e:
         # Catch and print some exceptions
