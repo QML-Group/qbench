@@ -103,8 +103,9 @@ def main():
         if args.N < 1:
             raise ValueError('N should be 1 or larger')
 
-        # Set output directory and create OpenQL platform
-        ql.set_output_dir(parser.get_output_dir(args))
+        # Set up OpenQL and create platform
+        for k, v in parser.get_options(args).items():
+            ql.set_option(k, v)
         printer.write('Initializing OpenQL platform with configuration %s ...' % args.config)
         platform = ql.Platform('platform', parser.get_config(args))
 
@@ -132,9 +133,10 @@ def main():
 
         # Add kernel to program
         program.add_kernel(kernel)
+
         # Compile
         printer.write('Compiling using OpenQL...')
-        program.compile(**parser.get_compile_kwargs(args))
+        program.compile()
 
     except (ValueError, TypeError, FileNotFoundError) as e:
         # Catch and print some exceptions
