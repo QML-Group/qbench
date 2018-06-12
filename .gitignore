@@ -102,3 +102,5 @@ ENV/
 
 # temporary files
 *~
+*.tramp_history
+*.dir-locals.el.old
