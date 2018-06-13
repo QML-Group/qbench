@@ -1,6 +1,6 @@
 qubits 5
 
-.alu-v3_34
+.alu_v3_34
     { t q2  | t q4  }
     qwait 1
     { cnot q2,q4  | h q1  }

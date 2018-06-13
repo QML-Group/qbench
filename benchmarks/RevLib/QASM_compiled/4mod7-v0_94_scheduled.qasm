@@ -1,6 +1,6 @@
 qubits 5
 
-.4mod7-v0_94
+.4mod7_v0_94
     { t q4  | t q1  }
     qwait 1
     { cnot q4,q1  | h q0  }

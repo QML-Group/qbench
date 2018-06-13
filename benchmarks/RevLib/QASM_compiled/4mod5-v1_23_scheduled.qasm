@@ -1,6 +1,6 @@
 qubits 5
 
-.4mod5-v1_23
+.4mod5_v1_23
     { t q3  | t q0  | x q4  }
     qwait 1
     { cnot q3,q0  | h q4  }

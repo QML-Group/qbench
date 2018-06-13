@@ -1,6 +1,6 @@
 qubits 7
 
-.4mod5-bdd_287
+.4mod5_bdd_287
     x q4 
     qwait 1
     cnot q3,q4 
