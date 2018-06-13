@@ -8,7 +8,8 @@ def compile_all_openql(directory_path, config_file_path, scheduler="ASAP"):
         print(filename)
         if ".py" in filename:
 
-            openql_comp = __import__(directory_path+"."+filename)
+            openql_comp = __import__(
+                os.path.dirname(directory_path)+"."+filename)
             openql_comp.circuit(config_file_path)
 
 
