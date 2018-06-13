@@ -1,6 +1,6 @@
 qubits 5
 
-.mini-alu_167
+.mini_alu_167
     { t q3  | t q0  }
     qwait 1
     { cnot q3,q0  | h q1  }

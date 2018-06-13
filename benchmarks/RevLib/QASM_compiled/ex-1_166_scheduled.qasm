@@ -1,6 +1,6 @@
 qubits 3
 
-.ex-1_166
+.ex_1_166
     cnot q0,q1 
     qwait 3
     { t q2  | t q1  }

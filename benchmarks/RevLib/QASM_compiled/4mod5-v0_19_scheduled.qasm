@@ -1,6 +1,6 @@
 qubits 5
 
-.4mod5-v0_19
+.4mod5_v0_19
     x q3 
     qwait 1
     cnot q1,q3 
