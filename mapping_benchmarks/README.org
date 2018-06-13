@@ -3,10 +3,61 @@
 ** Restrictions
 
 - # qubits < 17
-- # gates as spread as possible (/no limits, for now/)
-- QX simulation problems with the names containing the '-' character (/avoided, for now/)
+- # gates as spread as possible and in the case of repeated benchmark the minimum number of gates
 - The less number of the same algorithm versions as possible
+- The benchmarks that are repeated and have an interesting combination of No. qubits/No. gates are preferred
+- The benchmarks with a known functionality are preferred
 
+
+** Selected (/for now/)
+
+41 benchmarks with qubits numbers from 3 to 17 qubits
+
+| No. qubits | No. gates | Algorithm                        |
+|------------+-----------+----------------------------------|
+|          5 |        27 | 4gt11_82                         |
+|          6 |       228 | 4gt12-v1_89                      |
+|          6 |       258 | 4gt4-v0_72                       |
+|          7 |        70 | 4mod5-bdd_287                    |
+|          5 |        20 | 4mod5-v0_20                      |
+|          7 |        84 | alu-bdd_288                      |
+|          5 |        36 | alu-v0_27                        |
+|         17 |        35 | benstein_vazirani_15b_secret_128 |
+|         16 |       175 | cnt3-5_179                       |
+|          5 |         7 | cuccaroAdder_1b                  |
+|          7 |        11 | cuccaroMultiplier_1b             |
+|          6 |        73 | decod24-bdd_294                  |
+|          6 |       338 | decod24-enable_126               |
+|          6 |         5 | graycode6_47                     |
+|         13 |    360618 | ground_state_estimation_10       |
+|          3 |        20 | ham3_102                         |
+|          5 |       233 | hwb4_49                          |
+|         10 |       200 | ising_model_10                   |
+|         11 |     22445 | life_238                         |
+|          3 |        50 | miller_11                        |
+|          5 |       288 | mini-alu_167                     |
+|         10 |       173 | mini_alu_305                     |
+|          5 |       178 | mod10_176                        |
+|          6 |       555 | mod5adder_127                    |
+|          5 |        22 | mod5d1_63                        |
+|          6 |       440 | mod8-10_177                      |
+|          5 |       132 | one-two-three-v1_99              |
+|          5 |        70 | one-two-three-v3_101             |
+|         13 |    128744 | plus63mod4096_163                |
+|         10 |       110 | qft_10                           |
+|          4 |        34 | rd32-v0_66                       |
+|          6 |       781 | sf_274                           |
+|          6 |       778 | sf_276                           |
+|         12 |      3009 | sqrt8_260                        |
+|         13 |      1993 | squar5_261                       |
+|         15 |      7630 | square_root_7                    |
+|          7 |      3888 | sym6_145                         |
+|         14 |       270 | sym6_316                         |
+|          8 |     80480 | urf2_152                         |
+|          8 |     20112 | urf2_277                         |
+|          8 |        12 | vbeAdder_2b                      |
+|          6 |         7 | xor5_254                         |
+  
 ** Analysis
 
 *** Initial entries
@@ -191,8 +242,4 @@ No. qubits No. gates Algorithm
 
 #+END_EXAMPLE
 
-
-** Results (/for now/)
-
-125 benchmarks with qubits numbers from 3 to 17 qubits and from 4 to 512064 gates (157 different gates value)
 
