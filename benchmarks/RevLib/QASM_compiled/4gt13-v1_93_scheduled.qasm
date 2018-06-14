@@ -1,6 +1,6 @@
 qubits 5
 
-.4gt13-v1_93
+.4gt13_v1_93
     x q0 
     qwait 1
     cnot q4,q0 

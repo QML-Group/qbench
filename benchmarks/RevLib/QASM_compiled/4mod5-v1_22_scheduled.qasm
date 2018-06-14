@@ -1,6 +1,6 @@
 qubits 5
 
-.4mod5-v1_22
+.4mod5_v1_22
     { cnot q1,q3  | cnot q0,q2  }
     qwait 3
     { t q3  | t q2  | x q4  }
