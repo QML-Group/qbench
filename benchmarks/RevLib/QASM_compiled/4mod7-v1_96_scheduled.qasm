@@ -1,6 +1,6 @@
 qubits 5
 
-.4mod7_v1_96
+.4mod7-v1_96
     x q0 
     qwait 1
     { t q1  | t q4  | x q0  }

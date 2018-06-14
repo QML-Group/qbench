@@ -1,6 +1,6 @@
 qubits 5
 
-.one_two_three_v2_100
+.one-two-three-v2_100
     { cnot q4,q1  | x q0  }
     qwait 1
     cnot q2,q0 

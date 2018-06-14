@@ -1,6 +1,6 @@
 qubits 5
 
-.decod24_v3_45
+.decod24-v3_45
     x q1 
     qwait 1
     { t q4  | t q1  | x q0  }

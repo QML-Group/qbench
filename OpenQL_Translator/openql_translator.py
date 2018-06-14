@@ -51,10 +51,16 @@ def qlib2openql(stranger_file, dictionary, gates_buffer, lines):
                                 qubits_dict.index(qubit)))
 
                         gates_buffer.append("k.gate('" +
-                                            dictionary[match[0][0]] + "',[" +
+                                            dictionary[match[0][0]] + "'," +
                                             str(qubits_dict.index(match[0][1]))
                                             + ("," if mult_qubits_trans else "") +
-                                            ",".join(mult_qubits_trans)+"])\n")
+                                            ",".join(mult_qubits_trans)+")\n")
+
+                        print("k.gate('" +
+                              dictionary[match[0][0]] + "'," +
+                              str(qubits_dict.index(match[0][1]))
+                              + ("," if mult_qubits_trans else "") +
+                              ",".join(mult_qubits_trans)+")\n")
 
                 except IOError as err:
                     print("I/O error: {0}".format(err))
@@ -148,23 +154,19 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             init_buffer = ["from openql import openql as ql\n",
                            "import os\n",
-                           "import numpy as np\n\n",
-                           "def circuit(config_file, scheduler='ASAP'):",
-                           "    curdir = os.path.dirname(__file__)\n",
-                           "    output_dir = os.path.join(curdir, 'test_output')\n",
-                           "    ql.set_option('output_dir', output_dir)\n",
-                           "    ql.set_option('optimize', 'no')\n",
-                           "    ql.set_option('scheduler', 'scheduler')\n",
-                           "    ql.set_option('log_level', 'LOG_WARNING')\n",
-                           "    \nconfig_fn = os.path.join(curdir, config_file)\n\n",
-                           "    platform  = ql.Platform('platform_none', config_fn)\n",
-                           "    sweep_points = [1,2]\n",
-                           "    num_circuits = 1\n"]
+                           "import numpy as np\n",
+                           "curdir = os.path.dirname(__file__)\n",
+                           "output_dir = os.path.join(curdir, 'test_output')\n",
+                           "ql.set_output_dir(output_dir)\n",
+                           "config_fn = os.path.join(curdir, '/home/daniel/Master/Quantum_Computing_and_Quantum_Information/OpenQL/tests/hardware_config_cc_light.json')\n",
+                           "platform  = ql.Platform('platform_none', config_fn)\n",
+                           "sweep_points = [1,2]\n",
+                           "num_circuits = 1\n"]
 
             gates_buffer = []
 
-            compile_buff = ["    \np.add_kernel(k)\n",
-                            "    p.compile()\n\n"]
+            compile_buff = ["p.add_kernel(k)\n",
+                            "p.compile(optimize=False)\n"]
 
             lines = stranger.readlines()
 
@@ -202,11 +204,8 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             init_buffer.append("num_qubits = "+str(num_qubits+1)+"\n")
 
-            stranger_file_no_hyphen = re.sub(
-                r"-", "_", stranger_file, 0, re.MULTILINE)
-
             init_buffer.append("p = ql.Program('"+os.path.basename(
-                stranger_file_no_hyphen).replace(".qasm", "") +
+                stranger_file).replace(".qasm", "") +
                 "', num_qubits, platform)\n")
 
             init_buffer.append(
@@ -214,7 +213,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             init_buffer.append(
                 "k = ql.Kernel('" +
-                os.path.basename(stranger_file_no_hyphen).replace(".qasm", "") +
+                os.path.basename(stranger_file).replace(".qasm", "") +
                 "', platform)\n")
 
             openql.writelines(init_buffer)

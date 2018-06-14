@@ -1,6 +1,6 @@
 qubits 5
 
-.aj_e11_165
+.aj-e11_165
     cnot q1,q2 
     qwait 3
     cnot q2,q3 

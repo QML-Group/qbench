@@ -1,6 +1,6 @@
 qubits 6
 
-.decod24_bdd_294
+.decod24-bdd_294
     { t q1  | t q0  }
     qwait 1
     { cnot q1,q0  | h q2  }

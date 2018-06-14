@@ -1,6 +1,6 @@
 qubits 10
 
-.sys6_v0_111
+.sys6-v0_111
     { t q1  | t q0  }
     qwait 1
     { cnot q1,q0  | h q6  }

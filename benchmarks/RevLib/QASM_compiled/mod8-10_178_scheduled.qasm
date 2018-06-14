@@ -1,6 +1,6 @@
 qubits 6
 
-.mod8_10_178
+.mod8-10_178
     { t q3  | t q4  }
     qwait 1
     { cnot q3,q4  | h q2  }

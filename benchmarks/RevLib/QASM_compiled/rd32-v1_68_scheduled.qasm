@@ -1,6 +1,6 @@
 qubits 4
 
-.rd32_v1_68
+.rd32-v1_68
     { t q0  | t q1  | x q3  }
     qwait 1
     { cnot q0,q1  | h q3  }

@@ -1,6 +1,6 @@
 qubits 5
 
-.alu_v2_32
+.alu-v2_32
     { t q4  | t q0  }
     qwait 1
     { cnot q4,q0  | h q1  }
