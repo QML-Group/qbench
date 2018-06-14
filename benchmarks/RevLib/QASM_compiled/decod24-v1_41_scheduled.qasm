@@ -1,6 +1,6 @@
 qubits 5
 
-.decod24-v1_41
+.decod24_v1_41
     x q1 
     qwait 1
     { t q4  | t q1  }

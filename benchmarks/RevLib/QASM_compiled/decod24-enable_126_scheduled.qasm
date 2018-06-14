@@ -1,6 +1,6 @@
 qubits 6
 
-.decod24-enable_126
+.decod24_enable_126
     { t q4  | t q1  }
     qwait 1
     { cnot q4,q1  | h q2  }
