@@ -1,5 +1,5 @@
 
-* Benchmark Decision
+* Benchmarks Selection
 ** Restrictions
 
 - # qubits < 17
