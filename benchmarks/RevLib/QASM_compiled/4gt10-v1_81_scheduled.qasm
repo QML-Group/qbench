@@ -1,6 +1,6 @@
 qubits 5
 
-.4gt10_v1_81
+.4gt10-v1_81
     { t q3  | t q2  }
     qwait 1
     { cnot q3,q2  | h q1  }
