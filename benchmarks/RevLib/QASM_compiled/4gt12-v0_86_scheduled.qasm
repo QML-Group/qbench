@@ -1,6 +1,6 @@
 qubits 6
 
-.4gt12_v0_86
+.4gt12-v0_86
     cnot q2,q1 
     qwait 3
     cnot q1,q2 
