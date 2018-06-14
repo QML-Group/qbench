@@ -1,6 +1,6 @@
 qubits 16
 
-.cnt3_5_179
+.cnt3-5_179
     cnot q12,q15 
     qwait 1
     { t q13  | t q14  }

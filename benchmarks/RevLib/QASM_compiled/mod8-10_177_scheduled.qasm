@@ -1,6 +1,6 @@
 qubits 6
 
-.mod8_10_177
+.mod8-10_177
     cnot q1,q3 
     qwait 3
     cnot q1,q2 

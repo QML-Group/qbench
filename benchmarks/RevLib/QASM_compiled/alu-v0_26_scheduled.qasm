@@ -1,6 +1,6 @@
 qubits 5
 
-.alu_v0_26
+.alu-v0_26
     cnot q2,q1 
     qwait 3
     cnot q2,q0 

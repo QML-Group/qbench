@@ -1,6 +1,6 @@
 qubits 4
 
-.decod24_v2_43
+.decod24-v2_43
     { t q2  | t q3  | x q0  }
     qwait 1
     { cnot q2,q3  | h q0  }
