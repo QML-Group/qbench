@@ -1,6 +1,6 @@
 qubits 7
 
-.alu-bdd_288
+.alu_bdd_288
     cnot q0,q5 
     qwait 1
     { t q3  | t q1  }

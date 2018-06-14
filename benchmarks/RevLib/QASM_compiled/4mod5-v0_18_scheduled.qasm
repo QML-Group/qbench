@@ -1,6 +1,6 @@
 qubits 5
 
-.4mod5-v0_18
+.4mod5_v0_18
     x q0 
     qwait 1
     { t q3  | t q0  }

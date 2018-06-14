@@ -1,6 +1,6 @@
 qubits 6
 
-.4gt4-v1_74
+.4gt4_v1_74
     x q0 
     qwait 1
     { t q4  | t q0  }

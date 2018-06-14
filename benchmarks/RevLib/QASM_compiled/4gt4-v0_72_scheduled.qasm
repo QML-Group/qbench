@@ -1,6 +1,6 @@
 qubits 6
 
-.4gt4-v0_72
+.4gt4_v0_72
     cnot q4,q1 
     qwait 3
     { t q2  | t q4  }
