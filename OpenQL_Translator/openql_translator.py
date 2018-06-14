@@ -100,9 +100,10 @@ def openqasm2openql(stranger_file, dictionary, gates_buffer, lines):
             # print(line)
             # print(match)
             if match[0][0] in dictionary:
+                # print(match[0])
                 gates_buffer.append(
-                    "    k.gate('"+dictionary[match[0][0]]+match[0][1]+"'," +
-                    match[0][2]+match[0][4]+match[0][5]+")\n")
+                    "    k.gate('"+dictionary[match[0][0]]+match[0][1]+"',[" +
+                    match[0][2]+match[0][4]+match[0][5]+"])\n")
 
                 n1 = int(match[0][2])
                 n2 = int(match[0][5]) if match[0][5] is not '' else 0
