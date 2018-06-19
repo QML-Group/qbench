@@ -1,13 +1,17 @@
 cx,cnot
+cnot,cnot
 tdg,tdag
+tdag,tdag
 x,x
 t,t
 h,h
 s,s
 z,z
+rz,z
 CZ,cz
 CNOT,cnot
 Toffoli,toffoli
 H,h
 X,x
 Prep0,prepz
+prepz,prepz
