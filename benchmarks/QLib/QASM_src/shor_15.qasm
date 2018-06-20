@@ -14,7 +14,6 @@ qubit q7
 qubit q8
 qubit q9
 qubit q10
-qubit q11
 
 prepz q3 
 prepz q4 
