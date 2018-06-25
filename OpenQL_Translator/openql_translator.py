@@ -155,7 +155,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                            "    output_dir = os.path.join(curdir, output_dir_name)\n",
                            "    ql.set_option('output_dir', output_dir)\n",
                            "    ql.set_option('optimize', 'no')\n",
-                           "    ql.set_option('scheduler', 'scheduler')\n",
+                           "    ql.set_option('scheduler', scheduler)\n",
                            "    ql.set_option('log_level', 'LOG_WARNING')\n",
                            "\n    config_fn = os.path.join(curdir, config_file)\n\n",
                            "    platform  = ql.Platform('platform_none', config_fn)\n",
@@ -182,7 +182,8 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "        else:\n",
                             "            circuit(args.config_file)\n",
                             "    except TypeError:\n",
-                            "        print('\\nCompiled, but some gate is not defined in the configuration file. \\nThe gate will be invoked like it is.')"]
+                            "        print('\\nCompiled, but some gate is not defined in the configuration file. \\nThe gate will be invoked like it is.')",
+                            "        raise"]
 
             lines = stranger.readlines()
 
