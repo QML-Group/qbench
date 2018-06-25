@@ -7,7 +7,7 @@ def circuit(config_file, scheduler='ASAP', output_dir_name='test_output'):
     output_dir = os.path.join(curdir, output_dir_name)
     ql.set_option('output_dir', output_dir)
     ql.set_option('optimize', 'no')
-    ql.set_option('scheduler', 'scheduler')
+    ql.set_option('scheduler', scheduler)
     ql.set_option('log_level', 'LOG_WARNING')
 
     config_fn = os.path.join(curdir, config_file)
@@ -7669,4 +7669,4 @@ if __name__ == '__main__':
         else:
             circuit(args.config_file)
     except TypeError:
-        print('\nCompiled, but some gate is not defined in the configuration file. \nThe gate will be invoked like it is.')
+        print('\nCompiled, but some gate is not defined in the configuration file. \nThe gate will be invoked like it is.')        raise
