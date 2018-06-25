@@ -182,7 +182,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "        else:\n",
                             "            circuit(args.config_file)\n",
                             "    except TypeError:\n",
-                            "        print('\\nCompiled, but some gate is not defined in the configuration file. \\nThe gate will be invoked like it is.')",
+                            "        print('\\nCompiled, but some gate is not defined in the configuration file. \\nThe gate will be invoked like it is.')\n",
                             "        raise"]
 
             lines = stranger.readlines()
