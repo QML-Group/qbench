@@ -817,4 +817,5 @@ if __name__ == '__main__':
         else:
             circuit(args.config_file)
     except TypeError:
-        print('\nCompiled, but some gate is not defined in the configuration file. \nThe gate will be invoked like it is.')        raise
+        print('\nCompiled, but some gate is not defined in the configuration file. \nThe gate will be invoked like it is.')
+        raise
