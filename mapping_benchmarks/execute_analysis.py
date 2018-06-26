@@ -49,6 +49,8 @@ def compile_and_analize(directory_path, config_file_path, scheduler, output_dir_
                 except AttributeError:
                     print("\nERROR. "+filename+" has no circuit to compile")
 
+        h5f.close()
+
 
 if __name__ == "__main__":
 
