@@ -65,4 +65,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     compile_and_analize(args.openql_benchmark_directory,
-                        args.config_file_path, args.scheduler, args.out_dir. args.err_rate)
+                        args.config_file_path, args.scheduler, args.out_dir, float(args.err_rate))
