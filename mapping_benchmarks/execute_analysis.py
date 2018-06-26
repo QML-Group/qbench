@@ -30,6 +30,8 @@ def compile_and_analize(directory_path, config_file_path, scheduler, output_dir_
                     openql_comp.circuit(
                         config_file_path, scheduler, output_dir_name)
 
+                    filename = filename.replace("-", "_")
+
                     benchmarks.append(quantum_benchmark.Benchmark(
                         filename.replace(".py", ".qasm")))
 
