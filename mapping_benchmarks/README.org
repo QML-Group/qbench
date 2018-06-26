@@ -11,7 +11,7 @@
 
 ** Selected (/for now/)
 
-41 benchmarks (with qubits numbers from 3 to 17 qubits) selected after applying the previous Restrictions to the analysis of the benchmarks described in the next section.
+43 benchmarks (with qubits numbers from 3 to 17 qubits) selected after applying the previous Restrictions to the analysis of the benchmarks described in the next section.
 
 | No. qubits | No. gates | Algorithm                        |
 |------------+-----------+----------------------------------|
