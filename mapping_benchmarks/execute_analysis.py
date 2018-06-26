@@ -3,6 +3,8 @@ import os
 import importlib.util
 import quantum_benchmark
 import csv
+import numpy as np
+import h5py
 
 
 def compile_and_analize(directory_path, config_file_path, scheduler, output_dir_name, error):
@@ -10,8 +12,9 @@ def compile_and_analize(directory_path, config_file_path, scheduler, output_dir_
     benchmarks = []
 
     with open("benchmark_analysis.csv", "w", newline="") as csvfile:
+        h5f = h5py.File("benchmark_tomographies.h5", "w")
         fieldnames = ["Algorithm", "qubits",
-                      "experiments", "bar_histogram", "heatmap"]
+                      "experiments", "prob_success", "mean_fidelity", "bar_histogram", "heatmap"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
 
@@ -33,7 +36,10 @@ def compile_and_analize(directory_path, config_file_path, scheduler, output_dir_
                     benchmarks[-1].error_analysis(0, error)
 
                     writer.writerow({"Algorithm": benchmarks[-1].qasm_f_path, "qubits": benchmarks[-1].N_qubits,
-                                     "experiments": benchmarks[-1].N_exp, "bar_histogram": benchmarks[-1].qasm_f_path.replace(".qasm", "")+"_tomography_graph.png", "heatmap": benchmarks[-1].qasm_f_path.replace(".qasm", "")+"_heatmap.png"})
+                                     "experiments": benchmarks[-1].N_exp, "prob_success": benchmarks[-1].mean_success(), "mean_fidelity": benchmarks[-1].mean_fidelity(), "bar_histogram": benchmarks[-1].qasm_f_path.replace(".qasm", "")+"_tomography_graph.png", "heatmap": benchmarks[-1].qasm_f_path.replace(".qasm", "")+"_heatmap.png"})
+
+                    h5f.create_dataset(
+                        benchmarks[-1].qasm_f_path.replace(".qasm", ""), data=benchmarks[-1].tomography_matrix)
 
                 except TypeError:
                     print("\nERROR. Configuration file has not all the required definitions." +
