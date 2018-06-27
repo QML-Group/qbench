@@ -19,7 +19,7 @@ def compile_and_analize(filename, writer, h5f, config_file_path, scheduler, outp
 
         filename = filename.replace("-", "_")
         benchmark = quantum_benchmark.Benchmark(
-            filename.replace(".py", ".qasm"), 100)
+            filename.replace(".py", "_scheduled.qasm"), 100)
 
         benchmark.error_analysis(init_type, error)
 
@@ -71,8 +71,12 @@ with open("long_benchmarks_analysis.csv", "w", newline="") as csvfile:
                                 scheduler, out_dir, 0, error)
             compile_and_analize("benstein_vazirani_15b_secret_128.py",
                                 writer, h5f, config_file, scheduler, out_dir, 0, error)
-            compile_and_analize("cnt3-5_179.py", writer, h5f, config_file,
-                                scheduler, out_dir, 0, error)
+
+            # THIS ONE IS GIVING A SEMENTATION FAULT!!
+
+            # compile_and_analize("cnt3-5_179.py", writer, h5f, config_file,
+            #                     scheduler, out_dir, 0, error)
+
             compile_and_analize("cuccaroAdder_1b.py", writer, h5f, config_file,
                                 scheduler, out_dir, 0, error)
             compile_and_analize("cuccaroMultiplier_1b.py", writer, h5f, config_file,
