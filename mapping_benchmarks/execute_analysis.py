@@ -11,7 +11,7 @@ def compile_and_analize(directory_path, config_file_path, scheduler, output_dir_
 
     benchmarks = []
 
-    with open("benchmark_analysis.csv", "w", newline="") as csvfile:
+    with open("benchmarks_analysis.csv", "w", newline="") as csvfile:
         h5f = h5py.File("benchmark_tomographies.h5", "w")
         fieldnames = ["Algorithm", "qubits",
                       "experiments", "prob_success", "mean_fidelity", "bar_histogram", "heatmap"]
