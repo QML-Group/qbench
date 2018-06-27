@@ -19,7 +19,7 @@ def compile_and_analize(filename, writer, h5f, config_file_path, scheduler, outp
 
         filename = filename.replace("-", "_")
         benchmark = quantum_benchmark.Benchmark(
-            filename.replace(".py", ".qasm"))
+            filename.replace(".py", ".qasm"), 100)
 
         benchmark.error_analysis(init_type, error)
 
@@ -55,8 +55,10 @@ with open("long_benchmarks_analysis.csv", "w", newline="") as csvfile:
 
             compile_and_analize("4gt11_82.py", writer, h5f, config_file,
                                 scheduler, out_dir, 1, error)
+            csvfile.flush()
             compile_and_analize("4gt12-v1_89.py", writer, h5f, config_file,
                                 scheduler, out_dir, 1, error)
+            csvfile.flush()
             compile_and_analize("4gt4-v0_72.py", writer, h5f, config_file,
                                 scheduler, out_dir, 1, error)
             compile_and_analize("4mod5-bdd_287.py", writer, h5f, config_file,
