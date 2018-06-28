@@ -67,7 +67,7 @@ with open("benchmarks_analysis.csv", "w", newline="") as csvfile:
     compile_and_analize("benstein_vazirani_15b_secret_128.py",
                         writer, h5f, config_file, scheduler, out_dir, 0, error)
 
-    # THIS IS GIIVING A SEGMENTATION FAULT
+    # THIS IS GIVING A SEGMENTATION FAULT
 
     # compile_and_analize("cnt3-5_179.py", writer, h5f, config_file,
     #                     scheduler, out_dir, 0, error)
@@ -82,12 +82,10 @@ with open("benchmarks_analysis.csv", "w", newline="") as csvfile:
                         scheduler, out_dir, 0, error)
     compile_and_analize("graycode6_47.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
-    # compile_and_analize("ground_state_estimation_10.py", writer, h5f, config_file, scheduler, out_dir, 1, error)
     compile_and_analize("ham3_102.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
     compile_and_analize("hwb4_49.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
-    # compile_and_analize("ising_model_10.py", writer, h5f, config_file, scheduler, out_dir, 0, error)
     compile_and_analize("life_238.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
     compile_and_analize("miller_11.py", writer, h5f, config_file,
@@ -108,9 +106,12 @@ with open("benchmarks_analysis.csv", "w", newline="") as csvfile:
                         scheduler, out_dir, 0, error)
     compile_and_analize("one-two-three-v3_101.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
-    compile_and_analize("plus63mod4096_163.py", writer, h5f, config_file,
-                        scheduler, out_dir, 0, error)
-    # compile_and_analize("qft_10.py", writer, h5f, config_file, scheduler, out_dir, 0, error)
+
+    # THIS IS GIVING A SEGMENTATION FAULT
+
+    # compile_and_analize("plus63mod4096_163.py", writer, h5f, config_file,
+    #                     scheduler, out_dir, 0, error)
+
     compile_and_analize("rd32-v0_66.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
     compile_and_analize("sf_274.py", writer, h5f, config_file,
@@ -121,8 +122,12 @@ with open("benchmarks_analysis.csv", "w", newline="") as csvfile:
                         scheduler, out_dir, 0, error)
     compile_and_analize("sqrt8_260.py", writer, h5f, config_file,
                         scheduler, out_dir, 1, error)
-    compile_and_analize("squar5_261.py", writer, h5f, config_file,
-                        scheduler, out_dir, 1, error)
+
+    # THIS IS GIVING A SEGMENTATION FAULT
+
+    # compile_and_analize("squar5_261.py", writer, h5f, config_file,
+    #                     scheduler, out_dir, 1, error)
+
     compile_and_analize("square_root_7.py", writer, h5f, config_file,
                         scheduler, out_dir, 1, error)
     compile_and_analize("sym6_145.py", writer, h5f, config_file,
@@ -137,5 +142,10 @@ with open("benchmarks_analysis.csv", "w", newline="") as csvfile:
                         scheduler, out_dir, 0, error)
     compile_and_analize("xor5_254.py", writer, h5f, config_file,
                         scheduler, out_dir, 0, error)
+
+    # THIS BENCHMARKS ARE NOT READY YET
+    # compile_and_analize("ground_state_estimation_10.py", writer, h5f, config_file, scheduler, out_dir, 1, error)
+    # compile_and_analize("ising_model_10.py", writer, h5f, config_file, scheduler, out_dir, 0, error)
+    # compile_and_analize("qft_10.py", writer, h5f, config_file, scheduler, out_dir, 0, error)
 
 h5f.close()
