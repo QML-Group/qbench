@@ -19,8 +19,8 @@ def save_in_db(cursor, algorithm, N_sim, init_type, scheduler, error_rate, conf_
 
     format_str = "INSERT INTO Benchmarks (algorithm, N_sim, init_type, scheduler, error_rate, conf_file, prob_succs, mean_f, exper_id) VALUES ({algorithm}, {N_sim}, {init_type}, {scheduler}, {error_rate}, {conf_file}, {prob_succs}, {mean_f}, {exper_id})"
 
-    cursor.execute(format_str.format(algorithm, N_sim, init_type,
-                                     scheduler, error_rate, conf_file, prob_succs, mean_f, exper_id))
+    cursor.execute(format_str.format(algorithm=algorithm, N_sim=N_sim, init_type=init_type,
+                                     scheduler=scheduler, error_rate=error_rate, conf_file=conf_file, prob_succs=prob_succs, mean_f=mean_f, exper_id=exper_id))
 
 
 def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, output_dir_name, init_type, error, experiment_id):
