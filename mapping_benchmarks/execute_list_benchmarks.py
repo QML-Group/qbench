@@ -40,7 +40,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
 
         benchmark.error_analysis(init_type, error)
 
-        algorithm = benchmark.qasm_f_path.replace(".qasm", "")
+        algorithm = benchmark.qasm_file_path.replace(".qasm", "")
 
         h5f.create_dataset(algorithm, data=benchmark.tomography_matrix)
 
@@ -67,6 +67,7 @@ h5_path = "benchmark_tomographies.h5"
 with h5py.File(h5_path, "w") as h5f:
 
     cursor = connection.cursor()
+
     new_experiment_query = "INSERT INTO Experiments (date, tom_mtrx_path) VALUES (datetime('now'),'"+h5_path+"');"
     cursor.execute(new_experiment_query)
     connection.commit()
