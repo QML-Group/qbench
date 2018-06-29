@@ -73,8 +73,8 @@ with h5py.File(h5_path, "w") as h5f:
     connection.commit()
 
     cursor.execute("SELECT last_insert_rowid() FROM Experiments;")
-    experiment_id = cursor.fetchone()
-    print(experiment_id)
+    experiment_id = cursor.fetchone()[0]
+    # print(experiment_id)
 
     try:
         compile_and_analize("4gt11_82.py", cursor, h5f, config_file,
