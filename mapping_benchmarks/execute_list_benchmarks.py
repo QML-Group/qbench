@@ -1,8 +1,11 @@
+print("\n\n---------------------EXECUTE BENCHMARKS---------------------\n")
+
 import os
 import importlib.util
 import quantum_benchmark
 import numpy as np
 import h5py
+from datetime import datetime
 import sqlite3
 connection = sqlite3.connect("error_analysis.db")
 
@@ -62,13 +65,16 @@ config_file = "../hardware_config_cc_light.json"
 scheduler = "ASAP"
 out_dir = "."
 error = 0.01
-h5_path = "benchmark_tomographies.h5"
+h5_path = "/home/dmorenomanzano/qubench/mapping_benchmarks/" + \
+    str(datetime.now())+"benchmark_tomographies.h5"
+log_path = "/home/dmorenomanzano/qubench/mapping_benchmarks/log"
 
 with h5py.File(h5_path, "w") as h5f:
 
     cursor = connection.cursor()
 
-    new_experiment_query = "INSERT INTO Experiments (date, tom_mtrx_path) VALUES (datetime('now'),'"+h5_path+"');"
+    new_experiment_query = "INSERT INTO Experiments (date, tom_mtrx_path, log_path) VALUES (datetime('now'),'" + \
+        h5_path+"', '"+log_path+"');"
     cursor.execute(new_experiment_query)
     connection.commit()
 
