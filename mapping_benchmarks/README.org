@@ -23,41 +23,44 @@
 |          7 |        84 | alu-bdd_288                      |
 |          5 |        36 | alu-v0_27                        |
 |         17 |        35 | benstein_vazirani_15b_secret_128 |
-|         16 |       175 | cnt3-5_179                       |
+|         16 |       175 | +cnt3-5_179+                       |
 |          5 |         7 | cuccaroAdder_1b                  |
 |          7 |        11 | cuccaroMultiplier_1b             |
 |          6 |        73 | decod24-bdd_294                  |
 |          6 |       338 | decod24-enable_126               |
 |          6 |         5 | graycode6_47                     |
-|         13 |    360618 | ground_state_estimation_10       |
+|         13 |    360618 | +ground_state_estimation_10+       |
 |          3 |        20 | ham3_102                         |
 |          5 |       233 | hwb4_49                          |
-|         10 |       200 | ising_model_10                   |
-|         11 |     22445 | life_238                         |
+|         10 |       200 | +ising_model_10+                   |
+|         11 |     22445 | +life_238+                         |
 |          3 |        50 | miller_11                        |
 |          5 |       288 | mini-alu_167                     |
-|         10 |       173 | mini_alu_305                     |
+|         10 |       173 | +mini_alu_305+                     |
 |          5 |       178 | mod10_176                        |
 |          6 |       555 | mod5adder_127                    |
 |          5 |        22 | mod5d1_63                        |
 |          6 |       440 | mod8-10_177                      |
 |          5 |       132 | one-two-three-v1_99              |
 |          5 |        70 | one-two-three-v3_101             |
-|         13 |    128744 | plus63mod4096_163                |
-|         10 |       110 | qft_10                           |
+|         13 |    128744 | +plus63mod4096_163+                |
+|         10 |       110 | +qft_10+                           |
 |          4 |        34 | rd32-v0_66                       |
 |          6 |       781 | sf_274                           |
 |          6 |       778 | sf_276                           |
 |         12 |      4792 | shor_15                          |
 |         12 |      3009 | sqrt8_260                        |
-|         13 |      1993 | squar5_261                       |
-|         15 |      7630 | square_root_7                    |
+|         13 |      1993 | +squar5_261+                       |
+|         15 |      7630 | +square_root_7+                    |
 |          7 |      3888 | sym6_145                         |
-|         14 |       270 | sym6_316                         |
-|          8 |     80480 | urf2_152                         |
-|          8 |     20112 | urf2_277                         |
+|         14 |       270 | +sym6_316+                         |
+|          8 |     80480 | +urf2_152+                         |
+|          8 |     20112 | +urf2_277+                         |
 |          8 |        12 | vbeAdder_2b                      |
 |          6 |         7 | xor5_254                         |
+
+
+*After simulating the algorithms, some of them either return errors (segmentation fault) or are computationally exhausting to simulate them as they should be simulated.
   
 ** Analysis before selection
 
