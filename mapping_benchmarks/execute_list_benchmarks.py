@@ -65,9 +65,9 @@ config_file = "../hardware_config_cc_light.json"
 scheduler = "ASAP"
 out_dir = "."
 error = 0.01
-h5_path = "/home/dmorenomanzano/qubench/mapping_benchmarks/" + \
-    str(datetime.now())+"benchmark_tomographies.h5"
-log_path = "/home/dmorenomanzano/qubench/mapping_benchmarks/log"
+h5_path = "/home/dmorenomanzano/qbench/mapping_benchmarks/" + \
+    str(datetime.now()).replace(" ", "_")+"_benchmark_tomographies.h5"
+log_path = "/home/dmorenomanzano/qbench/mapping_benchmarks/log"
 
 with h5py.File(h5_path, "w") as h5f:
 
@@ -179,7 +179,7 @@ with h5py.File(h5_path, "w") as h5f:
         # compile_and_analize("ising_model_10.py", cursor, h5f, config_file, scheduler, out_dir, 0, error, experiment_id)
         # compile_and_analize("qft_10.py", cursor, h5f, config_file, scheduler, out_dir, 0, error, experiment_id)
 
-    finally:
+    except:
 
         connection.commit()
         connection.close()
