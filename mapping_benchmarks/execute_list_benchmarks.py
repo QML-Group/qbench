@@ -56,7 +56,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
 
         filename = filename.replace("-", "_")
 
-        cleaning_qwaits(filename).replace(".py", ".qasm")
+        cleaning_qwaits(filename.replace(".py", ".qasm"))
 
         benchmark = quantum_benchmark.Benchmark(
             filename.replace(".py", ".qasm"), 200)
