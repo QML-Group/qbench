@@ -45,7 +45,9 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
 
         algorithm = benchmark.qasm_file_path.replace(".qasm", "")
 
-        h5f.create_dataset(algorithm, data=benchmark.tomography_matrix)
+        if init_type == 0:
+
+            h5f.create_dataset(algorithm, data=benchmark.tomography_matrix)
 
         save_in_db(cursor, algorithm, benchmark.N_exp, init_type, scheduler, error,
                    config_file, benchmark.mean_success(), benchmark.mean_fidelity(), experiment_id)
