@@ -3,6 +3,7 @@ print("\n\n---------------------EXECUTE BENCHMARKS---------------------\n")
 import os
 import importlib.util
 import quantum_benchmark
+import re
 import numpy as np
 import h5py
 from datetime import datetime
@@ -26,6 +27,22 @@ def save_in_db(cursor, algorithm, N_sim, init_type, scheduler, error_rate, conf_
                                      scheduler=scheduler, error_rate=error_rate, conf_file=conf_file, prob_succs=prob_succs, mean_f=mean_f, exper_id=exper_id))
 
 
+def cleaning_qwaits(filename):
+
+    wrt = []
+    with open(filename, "w") as f:
+        for line in f:
+
+            match = re.findall(r"qwait \d+", line)
+            print(match)
+
+            if not match:
+                wrt.append(line)
+
+    with open(filename, "w") as f:
+        f.writelines(wrt)
+
+
 def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, output_dir_name, init_type, error, experiment_id):
 
     openql = importlib.util.spec_from_file_location(filename.replace(
@@ -38,6 +55,9 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
             config_file_path, scheduler, output_dir_name)
 
         filename = filename.replace("-", "_")
+
+        cleaning_qwaits(filename)
+
         benchmark = quantum_benchmark.Benchmark(
             filename.replace(".py", ".qasm"), 200)
 
