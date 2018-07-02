@@ -35,428 +35,428 @@ x q9
 x q10 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q3 
 tdag q7 
-cnot q0,q3 
+cnot q0 q3 
 h q7 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q3 
 tdag q8 
-cnot q0,q3 
+cnot q0 q3 
 h q8 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 x q11 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -465,986 +465,986 @@ x q11
 x q9 
 x q10 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q3 
 tdag q7 
-cnot q0,q3 
+cnot q0 q3 
 h q7 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q9 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q3 
 tdag q8 
-cnot q0,q3 
+cnot q0 q3 
 h q8 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q11 
 x q10 
 x q11 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q4 
 tdag q7 
-cnot q0,q4 
+cnot q0 q4 
 h q7 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q4 
 tdag q8 
-cnot q0,q4 
+cnot q0 q4 
 h q8 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q10 
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q4 
 tdag q13 
-cnot q0,q4 
+cnot q0 q4 
 h q13 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -1452,924 +1452,924 @@ x q10
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q4 
 tdag q8 
-cnot q0,q4 
+cnot q0 q4 
 h q8 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
-t q10 
-s q8 
- 
-x q10 
-h q12 
-cnot q0,q12 
-tdag q12 
-cnot q10,q12 
-t q12 
-cnot q0,q12 
-tdag q12 
-cnot q10,q12 
-t q0 
-tdag q12 
-cnot q10,q0 
-h q12 
-tdag q0 
-cnot q10,q0 
-t q10 
-s q0 
- 
-h q8 
-cnot q12,q8 
-tdag q8 
-cnot q4,q8 
-t q8 
-cnot q12,q8 
-tdag q8 
-cnot q4,q8 
-t q12 
-tdag q8 
-cnot q4,q12 
-h q8 
-tdag q12 
-cnot q4,q12 
-t q4 
-s q12 
- 
-h q12 
-cnot q0,q12 
-tdag q12 
-cnot q10,q12 
-t q12 
-cnot q0,q12 
-tdag q12 
-cnot q10,q12 
-t q0 
-tdag q12 
-cnot q10,q0 
-h q12 
-tdag q0 
-cnot q10,q0 
-t q10 
-s q0 
- 
-h q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q7 
-tdag q10 
-cnot q9,q7 
-h q10 
-tdag q7 
-cnot q9,q7 
-t q9 
-s q7 
- 
-h q12 
-cnot q0,q12 
-tdag q12 
-cnot q9,q12 
-t q12 
-cnot q0,q12 
-tdag q12 
-cnot q9,q12 
-t q0 
-tdag q12 
-cnot q9,q0 
-h q12 
-tdag q0 
-cnot q9,q0 
-t q9 
-s q0 
- 
-h q7 
-cnot q12,q7 
-tdag q7 
-cnot q4,q7 
-t q7 
-cnot q12,q7 
-tdag q7 
-cnot q4,q7 
-t q12 
-tdag q7 
-cnot q4,q12 
-h q7 
-tdag q12 
-cnot q4,q12 
-t q4 
-s q12 
- 
-h q12 
-cnot q0,q12 
-tdag q12 
-cnot q9,q12 
-t q12 
-cnot q0,q12 
-tdag q12 
-cnot q9,q12 
-t q0 
-tdag q12 
-cnot q9,q0 
-h q12 
-tdag q0 
-cnot q9,q0 
-t q9 
-s q0 
- 
-x q11 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q0,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q0,q13 
-t q4 
-tdag q13 
-cnot q0,q4 
-h q13 
-tdag q4 
-cnot q0,q4 
-t q0 
-s q4 
- 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q0,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q0,q13 
-t q4 
-tdag q13 
-cnot q0,q4 
-h q13 
-tdag q4 
-cnot q0,q4 
-t q0 
-s q4 
- 
-cnot q13,q14 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q0,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q0,q13 
-t q4 
-tdag q13 
-cnot q0,q4 
-h q13 
-tdag q4 
-cnot q0,q4 
-t q0 
-s q4 
- 
-x q11 
-h q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q7 
-tdag q10 
-cnot q9,q7 
-h q10 
-tdag q7 
-cnot q9,q7 
-t q9 
-s q7 
- 
-h q8 
-cnot q4,q8 
-tdag q8 
-cnot q0,q8 
-t q8 
-cnot q4,q8 
-tdag q8 
-cnot q0,q8 
-t q4 
-tdag q8 
-cnot q0,q4 
-h q8 
-tdag q4 
-cnot q0,q4 
-t q0 
-s q4 
- 
-x q10 
-h q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q8 
-tdag q11 
-cnot q10,q8 
-h q11 
-tdag q8 
-cnot q10,q8 
-t q10 
-s q8 
- 
-h q12 
-cnot q4,q12 
-tdag q12 
-cnot q0,q12 
-t q12 
-cnot q4,q12 
-tdag q12 
-cnot q0,q12 
-t q4 
-tdag q12 
-cnot q0,q4 
-h q12 
-tdag q4 
-cnot q0,q4 
-t q0 
-s q4 
- 
-h q13 
-cnot q12,q13 
-tdag q13 
-cnot q11,q13 
-t q13 
-cnot q12,q13 
-tdag q13 
-cnot q11,q13 
-t q12 
-tdag q13 
-cnot q11,q12 
-h q13 
-tdag q12 
-cnot q11,q12 
-t q11 
-s q12 
- 
-h q12 
-cnot q4,q12 
-tdag q12 
-cnot q0,q12 
-t q12 
-cnot q4,q12 
-tdag q12 
-cnot q0,q12 
-t q4 
-tdag q12 
-cnot q0,q4 
-h q12 
-tdag q4 
-cnot q0,q4 
-t q0 
-s q4 
- 
-h q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q8 
-tdag q11 
-cnot q10,q8 
-h q11 
-tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
+t q9 
+s q0 
+ 
+x q11 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q0 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q0 q13 
+t q4 
+tdag q13 
+cnot q0 q4 
+h q13 
+tdag q4 
+cnot q0 q4 
+t q0 
+s q4 
+ 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q0 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q0 q13 
+t q4 
+tdag q13 
+cnot q0 q4 
+h q13 
+tdag q4 
+cnot q0 q4 
+t q0 
+s q4 
+ 
+cnot q13 q14 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q0 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q0 q13 
+t q4 
+tdag q13 
+cnot q0 q4 
+h q13 
+tdag q4 
+cnot q0 q4 
+t q0 
+s q4 
+ 
+x q11 
+h q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q7 
+tdag q10 
+cnot q9 q7 
+h q10 
+tdag q7 
+cnot q9 q7 
+t q9 
+s q7 
+ 
+h q8 
+cnot q4 q8 
+tdag q8 
+cnot q0 q8 
+t q8 
+cnot q4 q8 
+tdag q8 
+cnot q0 q8 
+t q4 
+tdag q8 
+cnot q0 q4 
+h q8 
+tdag q4 
+cnot q0 q4 
+t q0 
+s q4 
+ 
+x q10 
+h q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q8 
+tdag q11 
+cnot q10 q8 
+h q11 
+tdag q8 
+cnot q10 q8 
+t q10 
+s q8 
+ 
+h q12 
+cnot q4 q12 
+tdag q12 
+cnot q0 q12 
+t q12 
+cnot q4 q12 
+tdag q12 
+cnot q0 q12 
+t q4 
+tdag q12 
+cnot q0 q4 
+h q12 
+tdag q4 
+cnot q0 q4 
+t q0 
+s q4 
+ 
+h q13 
+cnot q12 q13 
+tdag q13 
+cnot q11 q13 
+t q13 
+cnot q12 q13 
+tdag q13 
+cnot q11 q13 
+t q12 
+tdag q13 
+cnot q11 q12 
+h q13 
+tdag q12 
+cnot q11 q12 
+t q11 
+s q12 
+ 
+h q12 
+cnot q4 q12 
+tdag q12 
+cnot q0 q12 
+t q12 
+cnot q4 q12 
+tdag q12 
+cnot q0 q12 
+t q4 
+tdag q12 
+cnot q0 q4 
+h q12 
+tdag q4 
+cnot q0 q4 
+t q0 
+s q4 
+ 
+h q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q8 
+tdag q11 
+cnot q10 q8 
+h q11 
+tdag q8 
+cnot q10 q8 
+t q10 
+s q8 
+ 
+x q10 
+h q12 
+cnot q0 q12 
+tdag q12 
+cnot q10 q12 
+t q12 
+cnot q0 q12 
+tdag q12 
+cnot q10 q12 
+t q0 
+tdag q12 
+cnot q10 q0 
+h q12 
+tdag q0 
+cnot q10 q0 
+t q10 
+s q0 
+ 
+h q8 
+cnot q12 q8 
+tdag q8 
+cnot q4 q8 
+t q8 
+cnot q12 q8 
+tdag q8 
+cnot q4 q8 
+t q12 
+tdag q8 
+cnot q4 q12 
+h q8 
+tdag q12 
+cnot q4 q12 
+t q4 
+s q12 
+ 
+h q12 
+cnot q0 q12 
+tdag q12 
+cnot q10 q12 
+t q12 
+cnot q0 q12 
+tdag q12 
+cnot q10 q12 
+t q0 
+tdag q12 
+cnot q10 q0 
+h q12 
+tdag q0 
+cnot q10 q0 
+t q10 
+s q0 
+ 
+h q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q7 
+tdag q10 
+cnot q9 q7 
+h q10 
+tdag q7 
+cnot q9 q7 
+t q9 
+s q7 
+ 
+h q12 
+cnot q0 q12 
+tdag q12 
+cnot q9 q12 
+t q12 
+cnot q0 q12 
+tdag q12 
+cnot q9 q12 
+t q0 
+tdag q12 
+cnot q9 q0 
+h q12 
+tdag q0 
+cnot q9 q0 
+t q9 
+s q0 
+ 
+h q7 
+cnot q12 q7 
+tdag q7 
+cnot q4 q7 
+t q7 
+cnot q12 q7 
+tdag q7 
+cnot q4 q7 
+t q12 
+tdag q7 
+cnot q4 q12 
+h q7 
+tdag q12 
+cnot q4 q12 
+t q4 
+s q12 
+ 
+h q12 
+cnot q0 q12 
+tdag q12 
+cnot q9 q12 
+t q12 
+cnot q0 q12 
+tdag q12 
+cnot q9 q12 
+t q0 
+tdag q12 
+cnot q9 q0 
+h q12 
+tdag q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q5 
 tdag q8 
-cnot q0,q5 
+cnot q0 q5 
 h q8 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -2378,1022 +2378,1022 @@ x q11
 x q10 
 x q11 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q5 
 tdag q7 
-cnot q0,q5 
+cnot q0 q5 
 h q7 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q5 
 tdag q8 
-cnot q0,q5 
+cnot q0 q5 
 h q8 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q10 
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q10 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q5 
 tdag q7 
-cnot q0,q5 
+cnot q0 q5 
 h q7 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q10 
-cnot q6,q3 
+cnot q6 q3 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q3 
-cnot q7,q4 
+cnot q6 q3 
+cnot q7 q4 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q4 
 tdag q7 
-cnot q0,q4 
+cnot q0 q4 
 h q7 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
-cnot q7,q4 
-cnot q8,q5 
+cnot q7 q4 
+cnot q8 q5 
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q5 
 tdag q8 
-cnot q0,q5 
+cnot q0 q5 
 h q8 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
-cnot q8,q5 
+cnot q8 q5 
 x q9 
 x q10 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q3 
 tdag q7 
-cnot q0,q3 
+cnot q0 q3 
 h q7 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -3403,964 +3403,964 @@ x q9
 x q10 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q3 
 tdag q7 
-cnot q0,q3 
+cnot q0 q3 
 h q7 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q3 
 tdag q8 
-cnot q0,q3 
+cnot q0 q3 
 h q8 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 x q11 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q3 
 tdag q13 
-cnot q0,q3 
+cnot q0 q3 
 h q13 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 x q9 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q0,q6 
+cnot q0 q6 
 t q3 
 tdag q6 
-cnot q0,q3 
+cnot q0 q3 
 h q6 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q3 
 tdag q12 
-cnot q0,q3 
+cnot q0 q3 
 h q12 
 tdag q3 
-cnot q0,q3 
+cnot q0 q3 
 t q0 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q4 
 tdag q8 
-cnot q0,q4 
+cnot q0 q4 
 h q8 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q4 
 tdag q13 
-cnot q0,q4 
+cnot q0 q4 
 h q13 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -4369,556 +4369,556 @@ x q11
 x q10 
 x q11 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q4 
 tdag q7 
-cnot q0,q4 
+cnot q0 q4 
 h q7 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q4 
 tdag q8 
-cnot q0,q4 
+cnot q0 q4 
 h q8 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q10 
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q4 
 tdag q13 
-cnot q0,q4 
+cnot q0 q4 
 h q13 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q4 
 tdag q13 
-cnot q0,q4 
+cnot q0 q4 
 h q13 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q4 
 tdag q13 
-cnot q0,q4 
+cnot q0 q4 
 h q13 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q10 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q4 
 tdag q7 
-cnot q0,q4 
+cnot q0 q4 
 h q7 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q4 
 tdag q12 
-cnot q0,q4 
+cnot q0 q4 
 h q12 
 tdag q4 
-cnot q0,q4 
+cnot q0 q4 
 t q0 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
@@ -4926,408 +4926,408 @@ x q10
 x q10 
 x q11 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q0,q7 
+cnot q0 q7 
 t q5 
 tdag q7 
-cnot q0,q5 
+cnot q0 q5 
 h q7 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q5 
 tdag q8 
-cnot q0,q5 
+cnot q0 q5 
 h q8 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q10 
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -5335,536 +5335,536 @@ x q10
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q5 
 tdag q8 
-cnot q0,q5 
+cnot q0 q5 
 h q8 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q0,q13 
+cnot q0 q13 
 t q5 
 tdag q13 
-cnot q0,q5 
+cnot q0 q5 
 h q13 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q0,q8 
+cnot q0 q8 
 t q5 
 tdag q8 
-cnot q0,q5 
+cnot q0 q5 
 h q8 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q0,q12 
+cnot q0 q12 
 t q5 
 tdag q12 
-cnot q0,q5 
+cnot q0 q5 
 h q12 
 tdag q5 
-cnot q0,q5 
+cnot q0 q5 
 t q0 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q0 
 tdag q12 
-cnot q10,q0 
+cnot q10 q0 
 h q12 
 tdag q0 
-cnot q10,q0 
+cnot q10 q0 
 t q10 
 s q0 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q0,q12 
+cnot q0 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q0 
 tdag q12 
-cnot q9,q0 
+cnot q9 q0 
 h q12 
 tdag q0 
-cnot q9,q0 
+cnot q9 q0 
 t q9 
 s q0 
  
@@ -5872,408 +5872,408 @@ x q11
 x q9 
 x q10 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q3 
 tdag q7 
-cnot q1,q3 
+cnot q1 q3 
 h q7 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -6283,964 +6283,964 @@ x q9
 x q10 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q3 
 tdag q7 
-cnot q1,q3 
+cnot q1 q3 
 h q7 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q3 
 tdag q8 
-cnot q1,q3 
+cnot q1 q3 
 h q8 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 x q11 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q9 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q4 
 tdag q8 
-cnot q1,q4 
+cnot q1 q4 
 h q8 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q4 
 tdag q13 
-cnot q1,q4 
+cnot q1 q4 
 h q13 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -7249,556 +7249,556 @@ x q11
 x q10 
 x q11 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q4 
 tdag q7 
-cnot q1,q4 
+cnot q1 q4 
 h q7 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q4 
 tdag q8 
-cnot q1,q4 
+cnot q1 q4 
 h q8 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q10 
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q4 
 tdag q13 
-cnot q1,q4 
+cnot q1 q4 
 h q13 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q4 
 tdag q13 
-cnot q1,q4 
+cnot q1 q4 
 h q13 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q4 
 tdag q13 
-cnot q1,q4 
+cnot q1 q4 
 h q13 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q10 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q4 
 tdag q7 
-cnot q1,q4 
+cnot q1 q4 
 h q7 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
@@ -7806,408 +7806,408 @@ x q10
 x q10 
 x q11 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q5 
 tdag q7 
-cnot q1,q5 
+cnot q1 q5 
 h q7 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q5 
 tdag q8 
-cnot q1,q5 
+cnot q1 q5 
 h q8 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q10 
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -8215,1023 +8215,1023 @@ x q10
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q5 
 tdag q8 
-cnot q1,q5 
+cnot q1 q5 
 h q8 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q5 
 tdag q8 
-cnot q1,q5 
+cnot q1 q5 
 h q8 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q11 
-cnot q6,q3 
+cnot q6 q3 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q3 
-cnot q7,q4 
+cnot q6 q3 
+cnot q7 q4 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q4 
 tdag q7 
-cnot q1,q4 
+cnot q1 q4 
 h q7 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
-cnot q7,q4 
-cnot q8,q5 
+cnot q7 q4 
+cnot q8 q5 
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q5 
 tdag q8 
-cnot q1,q5 
+cnot q1 q5 
 h q8 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
-cnot q8,q5 
+cnot q8 q5 
 x q9 
 x q10 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q3 
 tdag q7 
-cnot q1,q3 
+cnot q1 q3 
 h q7 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q3 
 tdag q8 
-cnot q1,q3 
+cnot q1 q3 
 h q8 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 x q11 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -9240,986 +9240,986 @@ x q11
 x q9 
 x q10 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q3 
 tdag q7 
-cnot q1,q3 
+cnot q1 q3 
 h q7 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q3 
 tdag q13 
-cnot q1,q3 
+cnot q1 q3 
 h q13 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q9 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q1,q6 
+cnot q1 q6 
 t q3 
 tdag q6 
-cnot q1,q3 
+cnot q1 q3 
 h q6 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q3 
 tdag q8 
-cnot q1,q3 
+cnot q1 q3 
 h q8 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q3 
 tdag q12 
-cnot q1,q3 
+cnot q1 q3 
 h q12 
 tdag q3 
-cnot q1,q3 
+cnot q1 q3 
 t q1 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q11 
 x q10 
 x q11 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q4 
 tdag q7 
-cnot q1,q4 
+cnot q1 q4 
 h q7 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q4 
 tdag q8 
-cnot q1,q4 
+cnot q1 q4 
 h q8 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q10 
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q4 
 tdag q13 
-cnot q1,q4 
+cnot q1 q4 
 h q13 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -10227,924 +10227,924 @@ x q10
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q4 
 tdag q8 
-cnot q1,q4 
+cnot q1 q4 
 h q8 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q4 
 tdag q12 
-cnot q1,q4 
+cnot q1 q4 
 h q12 
 tdag q4 
-cnot q1,q4 
+cnot q1 q4 
 t q1 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
-t q10 
-s q8 
- 
-x q10 
-h q12 
-cnot q1,q12 
-tdag q12 
-cnot q10,q12 
-t q12 
-cnot q1,q12 
-tdag q12 
-cnot q10,q12 
-t q1 
-tdag q12 
-cnot q10,q1 
-h q12 
-tdag q1 
-cnot q10,q1 
-t q10 
-s q1 
- 
-h q8 
-cnot q12,q8 
-tdag q8 
-cnot q4,q8 
-t q8 
-cnot q12,q8 
-tdag q8 
-cnot q4,q8 
-t q12 
-tdag q8 
-cnot q4,q12 
-h q8 
-tdag q12 
-cnot q4,q12 
-t q4 
-s q12 
- 
-h q12 
-cnot q1,q12 
-tdag q12 
-cnot q10,q12 
-t q12 
-cnot q1,q12 
-tdag q12 
-cnot q10,q12 
-t q1 
-tdag q12 
-cnot q10,q1 
-h q12 
-tdag q1 
-cnot q10,q1 
-t q10 
-s q1 
- 
-h q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q7 
-tdag q10 
-cnot q9,q7 
-h q10 
-tdag q7 
-cnot q9,q7 
-t q9 
-s q7 
- 
-h q12 
-cnot q1,q12 
-tdag q12 
-cnot q9,q12 
-t q12 
-cnot q1,q12 
-tdag q12 
-cnot q9,q12 
-t q1 
-tdag q12 
-cnot q9,q1 
-h q12 
-tdag q1 
-cnot q9,q1 
-t q9 
-s q1 
- 
-h q7 
-cnot q12,q7 
-tdag q7 
-cnot q4,q7 
-t q7 
-cnot q12,q7 
-tdag q7 
-cnot q4,q7 
-t q12 
-tdag q7 
-cnot q4,q12 
-h q7 
-tdag q12 
-cnot q4,q12 
-t q4 
-s q12 
- 
-h q12 
-cnot q1,q12 
-tdag q12 
-cnot q9,q12 
-t q12 
-cnot q1,q12 
-tdag q12 
-cnot q9,q12 
-t q1 
-tdag q12 
-cnot q9,q1 
-h q12 
-tdag q1 
-cnot q9,q1 
-t q9 
-s q1 
- 
-x q11 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q1,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q1,q13 
-t q4 
-tdag q13 
-cnot q1,q4 
-h q13 
-tdag q4 
-cnot q1,q4 
-t q1 
-s q4 
- 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q1,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q1,q13 
-t q4 
-tdag q13 
-cnot q1,q4 
-h q13 
-tdag q4 
-cnot q1,q4 
-t q1 
-s q4 
- 
-cnot q13,q14 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q1,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q1,q13 
-t q4 
-tdag q13 
-cnot q1,q4 
-h q13 
-tdag q4 
-cnot q1,q4 
-t q1 
-s q4 
- 
-x q11 
-h q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q7 
-tdag q10 
-cnot q9,q7 
-h q10 
-tdag q7 
-cnot q9,q7 
-t q9 
-s q7 
- 
-h q8 
-cnot q4,q8 
-tdag q8 
-cnot q1,q8 
-t q8 
-cnot q4,q8 
-tdag q8 
-cnot q1,q8 
-t q4 
-tdag q8 
-cnot q1,q4 
-h q8 
-tdag q4 
-cnot q1,q4 
-t q1 
-s q4 
- 
-x q10 
-h q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q8 
-tdag q11 
-cnot q10,q8 
-h q11 
-tdag q8 
-cnot q10,q8 
-t q10 
-s q8 
- 
-h q12 
-cnot q4,q12 
-tdag q12 
-cnot q1,q12 
-t q12 
-cnot q4,q12 
-tdag q12 
-cnot q1,q12 
-t q4 
-tdag q12 
-cnot q1,q4 
-h q12 
-tdag q4 
-cnot q1,q4 
-t q1 
-s q4 
- 
-h q13 
-cnot q12,q13 
-tdag q13 
-cnot q11,q13 
-t q13 
-cnot q12,q13 
-tdag q13 
-cnot q11,q13 
-t q12 
-tdag q13 
-cnot q11,q12 
-h q13 
-tdag q12 
-cnot q11,q12 
-t q11 
-s q12 
- 
-h q12 
-cnot q4,q12 
-tdag q12 
-cnot q1,q12 
-t q12 
-cnot q4,q12 
-tdag q12 
-cnot q1,q12 
-t q4 
-tdag q12 
-cnot q1,q4 
-h q12 
-tdag q4 
-cnot q1,q4 
-t q1 
-s q4 
- 
-h q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q8 
-tdag q11 
-cnot q10,q8 
-h q11 
-tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
+t q9 
+s q1 
+ 
+x q11 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q1 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q1 q13 
+t q4 
+tdag q13 
+cnot q1 q4 
+h q13 
+tdag q4 
+cnot q1 q4 
+t q1 
+s q4 
+ 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q1 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q1 q13 
+t q4 
+tdag q13 
+cnot q1 q4 
+h q13 
+tdag q4 
+cnot q1 q4 
+t q1 
+s q4 
+ 
+cnot q13 q14 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q1 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q1 q13 
+t q4 
+tdag q13 
+cnot q1 q4 
+h q13 
+tdag q4 
+cnot q1 q4 
+t q1 
+s q4 
+ 
+x q11 
+h q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q7 
+tdag q10 
+cnot q9 q7 
+h q10 
+tdag q7 
+cnot q9 q7 
+t q9 
+s q7 
+ 
+h q8 
+cnot q4 q8 
+tdag q8 
+cnot q1 q8 
+t q8 
+cnot q4 q8 
+tdag q8 
+cnot q1 q8 
+t q4 
+tdag q8 
+cnot q1 q4 
+h q8 
+tdag q4 
+cnot q1 q4 
+t q1 
+s q4 
+ 
+x q10 
+h q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q8 
+tdag q11 
+cnot q10 q8 
+h q11 
+tdag q8 
+cnot q10 q8 
+t q10 
+s q8 
+ 
+h q12 
+cnot q4 q12 
+tdag q12 
+cnot q1 q12 
+t q12 
+cnot q4 q12 
+tdag q12 
+cnot q1 q12 
+t q4 
+tdag q12 
+cnot q1 q4 
+h q12 
+tdag q4 
+cnot q1 q4 
+t q1 
+s q4 
+ 
+h q13 
+cnot q12 q13 
+tdag q13 
+cnot q11 q13 
+t q13 
+cnot q12 q13 
+tdag q13 
+cnot q11 q13 
+t q12 
+tdag q13 
+cnot q11 q12 
+h q13 
+tdag q12 
+cnot q11 q12 
+t q11 
+s q12 
+ 
+h q12 
+cnot q4 q12 
+tdag q12 
+cnot q1 q12 
+t q12 
+cnot q4 q12 
+tdag q12 
+cnot q1 q12 
+t q4 
+tdag q12 
+cnot q1 q4 
+h q12 
+tdag q4 
+cnot q1 q4 
+t q1 
+s q4 
+ 
+h q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q8 
+tdag q11 
+cnot q10 q8 
+h q11 
+tdag q8 
+cnot q10 q8 
+t q10 
+s q8 
+ 
+x q10 
+h q12 
+cnot q1 q12 
+tdag q12 
+cnot q10 q12 
+t q12 
+cnot q1 q12 
+tdag q12 
+cnot q10 q12 
+t q1 
+tdag q12 
+cnot q10 q1 
+h q12 
+tdag q1 
+cnot q10 q1 
+t q10 
+s q1 
+ 
+h q8 
+cnot q12 q8 
+tdag q8 
+cnot q4 q8 
+t q8 
+cnot q12 q8 
+tdag q8 
+cnot q4 q8 
+t q12 
+tdag q8 
+cnot q4 q12 
+h q8 
+tdag q12 
+cnot q4 q12 
+t q4 
+s q12 
+ 
+h q12 
+cnot q1 q12 
+tdag q12 
+cnot q10 q12 
+t q12 
+cnot q1 q12 
+tdag q12 
+cnot q10 q12 
+t q1 
+tdag q12 
+cnot q10 q1 
+h q12 
+tdag q1 
+cnot q10 q1 
+t q10 
+s q1 
+ 
+h q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q7 
+tdag q10 
+cnot q9 q7 
+h q10 
+tdag q7 
+cnot q9 q7 
+t q9 
+s q7 
+ 
+h q12 
+cnot q1 q12 
+tdag q12 
+cnot q9 q12 
+t q12 
+cnot q1 q12 
+tdag q12 
+cnot q9 q12 
+t q1 
+tdag q12 
+cnot q9 q1 
+h q12 
+tdag q1 
+cnot q9 q1 
+t q9 
+s q1 
+ 
+h q7 
+cnot q12 q7 
+tdag q7 
+cnot q4 q7 
+t q7 
+cnot q12 q7 
+tdag q7 
+cnot q4 q7 
+t q12 
+tdag q7 
+cnot q4 q12 
+h q7 
+tdag q12 
+cnot q4 q12 
+t q4 
+s q12 
+ 
+h q12 
+cnot q1 q12 
+tdag q12 
+cnot q9 q12 
+t q12 
+cnot q1 q12 
+tdag q12 
+cnot q9 q12 
+t q1 
+tdag q12 
+cnot q9 q1 
+h q12 
+tdag q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q5 
 tdag q8 
-cnot q1,q5 
+cnot q1 q5 
 h q8 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -11153,556 +11153,556 @@ x q11
 x q10 
 x q11 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q5 
 tdag q7 
-cnot q1,q5 
+cnot q1 q5 
 h q7 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q1,q8 
+cnot q1 q8 
 t q5 
 tdag q8 
-cnot q1,q5 
+cnot q1 q5 
 h q8 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 x q10 
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q1,q13 
+cnot q1 q13 
 t q5 
 tdag q13 
-cnot q1,q5 
+cnot q1 q5 
 h q13 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q10 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q1,q7 
+cnot q1 q7 
 t q5 
 tdag q7 
-cnot q1,q5 
+cnot q1 q5 
 h q7 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q1,q12 
+cnot q1 q12 
 t q5 
 tdag q12 
-cnot q1,q5 
+cnot q1 q5 
 h q12 
 tdag q5 
-cnot q1,q5 
+cnot q1 q5 
 t q1 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q1 
 tdag q12 
-cnot q10,q1 
+cnot q10 q1 
 h q12 
 tdag q1 
-cnot q10,q1 
+cnot q10 q1 
 t q10 
 s q1 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q1,q12 
+cnot q1 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q1 
 tdag q12 
-cnot q9,q1 
+cnot q9 q1 
 h q12 
 tdag q1 
-cnot q9,q1 
+cnot q9 q1 
 t q9 
 s q1 
  
@@ -11710,408 +11710,408 @@ x q10
 x q9 
 x q10 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q3 
 tdag q7 
-cnot q2,q3 
+cnot q2 q3 
 h q7 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -12121,964 +12121,964 @@ x q9
 x q10 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q3 
 tdag q7 
-cnot q2,q3 
+cnot q2 q3 
 h q7 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q3 
 tdag q8 
-cnot q2,q3 
+cnot q2 q3 
 h q8 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 x q11 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q9 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q4 
 tdag q8 
-cnot q2,q4 
+cnot q2 q4 
 h q8 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q4 
 tdag q13 
-cnot q2,q4 
+cnot q2 q4 
 h q13 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -13087,556 +13087,556 @@ x q11
 x q10 
 x q11 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q4 
 tdag q7 
-cnot q2,q4 
+cnot q2 q4 
 h q7 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q4 
 tdag q8 
-cnot q2,q4 
+cnot q2 q4 
 h q8 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q10 
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q4 
 tdag q13 
-cnot q2,q4 
+cnot q2 q4 
 h q13 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q4 
 tdag q13 
-cnot q2,q4 
+cnot q2 q4 
 h q13 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q4 
 tdag q13 
-cnot q2,q4 
+cnot q2 q4 
 h q13 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q10 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q4 
 tdag q7 
-cnot q2,q4 
+cnot q2 q4 
 h q7 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
@@ -13644,408 +13644,408 @@ x q10
 x q10 
 x q11 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q5 
 tdag q7 
-cnot q2,q5 
+cnot q2 q5 
 h q7 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q5 
 tdag q8 
-cnot q2,q5 
+cnot q2 q5 
 h q8 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q10 
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -14053,1023 +14053,1023 @@ x q10
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q5 
 tdag q8 
-cnot q2,q5 
+cnot q2 q5 
 h q8 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q5 
 tdag q8 
-cnot q2,q5 
+cnot q2 q5 
 h q8 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q11 
-cnot q6,q3 
+cnot q6 q3 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q3 
-cnot q7,q4 
+cnot q6 q3 
+cnot q7 q4 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q4 
 tdag q7 
-cnot q2,q4 
+cnot q2 q4 
 h q7 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
-cnot q7,q4 
-cnot q8,q5 
+cnot q7 q4 
+cnot q8 q5 
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q5 
 tdag q8 
-cnot q2,q5 
+cnot q2 q5 
 h q8 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
-cnot q8,q5 
+cnot q8 q5 
 x q9 
 x q10 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q3 
 tdag q7 
-cnot q2,q3 
+cnot q2 q3 
 h q7 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q3 
 tdag q8 
-cnot q2,q3 
+cnot q2 q3 
 h q8 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 x q11 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -15078,986 +15078,986 @@ x q11
 x q9 
 x q10 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q3,q7 
+cnot q3 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q3 
 tdag q7 
-cnot q2,q3 
+cnot q2 q3 
 h q7 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q10 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q3,q13 
+cnot q3 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q3 
 tdag q13 
-cnot q2,q3 
+cnot q2 q3 
 h q13 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q9 
 x q11 
 h q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q6 
-cnot q3,q6 
+cnot q3 q6 
 tdag q6 
-cnot q2,q6 
+cnot q2 q6 
 t q3 
 tdag q6 
-cnot q2,q3 
+cnot q2 q3 
 h q6 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
-cnot q6,q9 
+cnot q6 q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q3,q8 
+cnot q3 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q3 
 tdag q8 
-cnot q2,q3 
+cnot q2 q3 
 h q8 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q3,q12 
+cnot q3 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q3 
 tdag q12 
-cnot q2,q3 
+cnot q2 q3 
 h q12 
 tdag q3 
-cnot q2,q3 
+cnot q2 q3 
 t q2 
 s q3 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q3,q8 
+cnot q3 q8 
 t q12 
 tdag q8 
-cnot q3,q12 
+cnot q3 q12 
 h q8 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q3,q7 
+cnot q3 q7 
 t q12 
 tdag q7 
-cnot q3,q12 
+cnot q3 q12 
 h q7 
 tdag q12 
-cnot q3,q12 
+cnot q3 q12 
 t q3 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
-cnot q6,q9 
+cnot q6 q9 
 x q9 
 x q11 
 x q10 
 x q11 
 h q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q4,q7 
+cnot q4 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q4 
 tdag q7 
-cnot q2,q4 
+cnot q2 q4 
 h q7 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q4 
 tdag q8 
-cnot q2,q4 
+cnot q2 q4 
 h q8 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q10 
 x q11 
 h q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q4,q13 
+cnot q4 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q4 
 tdag q13 
-cnot q2,q4 
+cnot q2 q4 
 h q13 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -16065,924 +16065,924 @@ x q10
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q4,q8 
+cnot q4 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q4 
 tdag q8 
-cnot q2,q4 
+cnot q2 q4 
 h q8 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q4,q12 
+cnot q4 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q4 
 tdag q12 
-cnot q2,q4 
+cnot q2 q4 
 h q12 
 tdag q4 
-cnot q2,q4 
+cnot q2 q4 
 t q2 
 s q4 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
-t q10 
-s q8 
- 
-x q10 
-h q12 
-cnot q2,q12 
-tdag q12 
-cnot q10,q12 
-t q12 
-cnot q2,q12 
-tdag q12 
-cnot q10,q12 
-t q2 
-tdag q12 
-cnot q10,q2 
-h q12 
-tdag q2 
-cnot q10,q2 
-t q10 
-s q2 
- 
-h q8 
-cnot q12,q8 
-tdag q8 
-cnot q4,q8 
-t q8 
-cnot q12,q8 
-tdag q8 
-cnot q4,q8 
-t q12 
-tdag q8 
-cnot q4,q12 
-h q8 
-tdag q12 
-cnot q4,q12 
-t q4 
-s q12 
- 
-h q12 
-cnot q2,q12 
-tdag q12 
-cnot q10,q12 
-t q12 
-cnot q2,q12 
-tdag q12 
-cnot q10,q12 
-t q2 
-tdag q12 
-cnot q10,q2 
-h q12 
-tdag q2 
-cnot q10,q2 
-t q10 
-s q2 
- 
-h q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q7 
-tdag q10 
-cnot q9,q7 
-h q10 
-tdag q7 
-cnot q9,q7 
-t q9 
-s q7 
- 
-h q12 
-cnot q2,q12 
-tdag q12 
-cnot q9,q12 
-t q12 
-cnot q2,q12 
-tdag q12 
-cnot q9,q12 
-t q2 
-tdag q12 
-cnot q9,q2 
-h q12 
-tdag q2 
-cnot q9,q2 
-t q9 
-s q2 
- 
-h q7 
-cnot q12,q7 
-tdag q7 
-cnot q4,q7 
-t q7 
-cnot q12,q7 
-tdag q7 
-cnot q4,q7 
-t q12 
-tdag q7 
-cnot q4,q12 
-h q7 
-tdag q12 
-cnot q4,q12 
-t q4 
-s q12 
- 
-h q12 
-cnot q2,q12 
-tdag q12 
-cnot q9,q12 
-t q12 
-cnot q2,q12 
-tdag q12 
-cnot q9,q12 
-t q2 
-tdag q12 
-cnot q9,q2 
-h q12 
-tdag q2 
-cnot q9,q2 
-t q9 
-s q2 
- 
-x q11 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q2,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q2,q13 
-t q4 
-tdag q13 
-cnot q2,q4 
-h q13 
-tdag q4 
-cnot q2,q4 
-t q2 
-s q4 
- 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q2,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q2,q13 
-t q4 
-tdag q13 
-cnot q2,q4 
-h q13 
-tdag q4 
-cnot q2,q4 
-t q2 
-s q4 
- 
-cnot q13,q14 
-h q13 
-cnot q4,q13 
-tdag q13 
-cnot q2,q13 
-t q13 
-cnot q4,q13 
-tdag q13 
-cnot q2,q13 
-t q4 
-tdag q13 
-cnot q2,q4 
-h q13 
-tdag q4 
-cnot q2,q4 
-t q2 
-s q4 
- 
-x q11 
-h q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q10 
-cnot q7,q10 
-tdag q10 
-cnot q9,q10 
-t q7 
-tdag q10 
-cnot q9,q7 
-h q10 
-tdag q7 
-cnot q9,q7 
-t q9 
-s q7 
- 
-h q8 
-cnot q4,q8 
-tdag q8 
-cnot q2,q8 
-t q8 
-cnot q4,q8 
-tdag q8 
-cnot q2,q8 
-t q4 
-tdag q8 
-cnot q2,q4 
-h q8 
-tdag q4 
-cnot q2,q4 
-t q2 
-s q4 
- 
-x q10 
-h q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q8 
-tdag q11 
-cnot q10,q8 
-h q11 
-tdag q8 
-cnot q10,q8 
-t q10 
-s q8 
- 
-h q12 
-cnot q4,q12 
-tdag q12 
-cnot q2,q12 
-t q12 
-cnot q4,q12 
-tdag q12 
-cnot q2,q12 
-t q4 
-tdag q12 
-cnot q2,q4 
-h q12 
-tdag q4 
-cnot q2,q4 
-t q2 
-s q4 
- 
-h q13 
-cnot q12,q13 
-tdag q13 
-cnot q11,q13 
-t q13 
-cnot q12,q13 
-tdag q13 
-cnot q11,q13 
-t q12 
-tdag q13 
-cnot q11,q12 
-h q13 
-tdag q12 
-cnot q11,q12 
-t q11 
-s q12 
- 
-h q12 
-cnot q4,q12 
-tdag q12 
-cnot q2,q12 
-t q12 
-cnot q4,q12 
-tdag q12 
-cnot q2,q12 
-t q4 
-tdag q12 
-cnot q2,q4 
-h q12 
-tdag q4 
-cnot q2,q4 
-t q2 
-s q4 
- 
-h q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q11 
-cnot q8,q11 
-tdag q11 
-cnot q10,q11 
-t q8 
-tdag q11 
-cnot q10,q8 
-h q11 
-tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q4,q8 
+cnot q4 q8 
 t q12 
 tdag q8 
-cnot q4,q12 
+cnot q4 q12 
 h q8 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q4,q7 
+cnot q4 q7 
 t q12 
 tdag q7 
-cnot q4,q12 
+cnot q4 q12 
 h q7 
 tdag q12 
-cnot q4,q12 
+cnot q4 q12 
 t q4 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
+t q9 
+s q2 
+ 
+x q11 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q2 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q2 q13 
+t q4 
+tdag q13 
+cnot q2 q4 
+h q13 
+tdag q4 
+cnot q2 q4 
+t q2 
+s q4 
+ 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q2 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q2 q13 
+t q4 
+tdag q13 
+cnot q2 q4 
+h q13 
+tdag q4 
+cnot q2 q4 
+t q2 
+s q4 
+ 
+cnot q13 q14 
+h q13 
+cnot q4 q13 
+tdag q13 
+cnot q2 q13 
+t q13 
+cnot q4 q13 
+tdag q13 
+cnot q2 q13 
+t q4 
+tdag q13 
+cnot q2 q4 
+h q13 
+tdag q4 
+cnot q2 q4 
+t q2 
+s q4 
+ 
+x q11 
+h q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q7 
+tdag q10 
+cnot q9 q7 
+h q10 
+tdag q7 
+cnot q9 q7 
+t q9 
+s q7 
+ 
+h q8 
+cnot q4 q8 
+tdag q8 
+cnot q2 q8 
+t q8 
+cnot q4 q8 
+tdag q8 
+cnot q2 q8 
+t q4 
+tdag q8 
+cnot q2 q4 
+h q8 
+tdag q4 
+cnot q2 q4 
+t q2 
+s q4 
+ 
+x q10 
+h q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q8 
+tdag q11 
+cnot q10 q8 
+h q11 
+tdag q8 
+cnot q10 q8 
+t q10 
+s q8 
+ 
+h q12 
+cnot q4 q12 
+tdag q12 
+cnot q2 q12 
+t q12 
+cnot q4 q12 
+tdag q12 
+cnot q2 q12 
+t q4 
+tdag q12 
+cnot q2 q4 
+h q12 
+tdag q4 
+cnot q2 q4 
+t q2 
+s q4 
+ 
+h q13 
+cnot q12 q13 
+tdag q13 
+cnot q11 q13 
+t q13 
+cnot q12 q13 
+tdag q13 
+cnot q11 q13 
+t q12 
+tdag q13 
+cnot q11 q12 
+h q13 
+tdag q12 
+cnot q11 q12 
+t q11 
+s q12 
+ 
+h q12 
+cnot q4 q12 
+tdag q12 
+cnot q2 q12 
+t q12 
+cnot q4 q12 
+tdag q12 
+cnot q2 q12 
+t q4 
+tdag q12 
+cnot q2 q4 
+h q12 
+tdag q4 
+cnot q2 q4 
+t q2 
+s q4 
+ 
+h q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q11 
+cnot q8 q11 
+tdag q11 
+cnot q10 q11 
+t q8 
+tdag q11 
+cnot q10 q8 
+h q11 
+tdag q8 
+cnot q10 q8 
+t q10 
+s q8 
+ 
+x q10 
+h q12 
+cnot q2 q12 
+tdag q12 
+cnot q10 q12 
+t q12 
+cnot q2 q12 
+tdag q12 
+cnot q10 q12 
+t q2 
+tdag q12 
+cnot q10 q2 
+h q12 
+tdag q2 
+cnot q10 q2 
+t q10 
+s q2 
+ 
+h q8 
+cnot q12 q8 
+tdag q8 
+cnot q4 q8 
+t q8 
+cnot q12 q8 
+tdag q8 
+cnot q4 q8 
+t q12 
+tdag q8 
+cnot q4 q12 
+h q8 
+tdag q12 
+cnot q4 q12 
+t q4 
+s q12 
+ 
+h q12 
+cnot q2 q12 
+tdag q12 
+cnot q10 q12 
+t q12 
+cnot q2 q12 
+tdag q12 
+cnot q10 q12 
+t q2 
+tdag q12 
+cnot q10 q2 
+h q12 
+tdag q2 
+cnot q10 q2 
+t q10 
+s q2 
+ 
+h q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q10 
+cnot q7 q10 
+tdag q10 
+cnot q9 q10 
+t q7 
+tdag q10 
+cnot q9 q7 
+h q10 
+tdag q7 
+cnot q9 q7 
+t q9 
+s q7 
+ 
+h q12 
+cnot q2 q12 
+tdag q12 
+cnot q9 q12 
+t q12 
+cnot q2 q12 
+tdag q12 
+cnot q9 q12 
+t q2 
+tdag q12 
+cnot q9 q2 
+h q12 
+tdag q2 
+cnot q9 q2 
+t q9 
+s q2 
+ 
+h q7 
+cnot q12 q7 
+tdag q7 
+cnot q4 q7 
+t q7 
+cnot q12 q7 
+tdag q7 
+cnot q4 q7 
+t q12 
+tdag q7 
+cnot q4 q12 
+h q7 
+tdag q12 
+cnot q4 q12 
+t q4 
+s q12 
+ 
+h q12 
+cnot q2 q12 
+tdag q12 
+cnot q9 q12 
+t q12 
+cnot q2 q12 
+tdag q12 
+cnot q9 q12 
+t q2 
+tdag q12 
+cnot q9 q2 
+h q12 
+tdag q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q11 
 x q11 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q5 
 tdag q8 
-cnot q2,q5 
+cnot q2 q5 
 h q8 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 x q10 
 x q11 
-cnot q14,q7 
+cnot q14 q7 
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
-cnot q14,q8 
+cnot q14 q8 
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q13 
-cnot q11,q13 
+cnot q11 q13 
 tdag q13 
-cnot q14,q13 
+cnot q14 q13 
 t q11 
 tdag q13 
-cnot q14,q11 
+cnot q14 q11 
 h q13 
 tdag q11 
-cnot q14,q11 
+cnot q14 q11 
 t q14 
 s q11 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q8 
-cnot q14,q8 
+cnot q14 q8 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q14 
 tdag q8 
-cnot q10,q14 
+cnot q10 q14 
 h q8 
 tdag q14 
-cnot q10,q14 
+cnot q10 q14 
 t q10 
 s q14 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q7 
-cnot q14,q7 
+cnot q14 q7 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q14 
 tdag q7 
-cnot q9,q14 
+cnot q9 q14 
 h q7 
 tdag q14 
-cnot q9,q14 
+cnot q9 q14 
 t q9 
 s q14 
  
@@ -16991,556 +16991,556 @@ x q11
 x q10 
 x q11 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q5 
 tdag q7 
-cnot q2,q5 
+cnot q2 q5 
 h q7 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q8 
-cnot q5,q8 
+cnot q5 q8 
 tdag q8 
-cnot q2,q8 
+cnot q2 q8 
 t q5 
 tdag q8 
-cnot q2,q5 
+cnot q2 q5 
 h q8 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q10 
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 x q10 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 x q10 
 x q11 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
-cnot q13,q14 
+cnot q13 q14 
 h q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q13 
-cnot q5,q13 
+cnot q5 q13 
 tdag q13 
-cnot q2,q13 
+cnot q2 q13 
 t q5 
 tdag q13 
-cnot q2,q5 
+cnot q2 q5 
 h q13 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q10 
 h q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q7 
-cnot q5,q7 
+cnot q5 q7 
 tdag q7 
-cnot q2,q7 
+cnot q2 q7 
 t q5 
 tdag q7 
-cnot q2,q5 
+cnot q2 q5 
 h q7 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 x q9 
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q13 
-cnot q12,q13 
+cnot q12 q13 
 tdag q13 
-cnot q11,q13 
+cnot q11 q13 
 t q12 
 tdag q13 
-cnot q11,q12 
+cnot q11 q12 
 h q13 
 tdag q12 
-cnot q11,q12 
+cnot q11 q12 
 t q11 
 s q12 
  
 h q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q12 
-cnot q5,q12 
+cnot q5 q12 
 tdag q12 
-cnot q2,q12 
+cnot q2 q12 
 t q5 
 tdag q12 
-cnot q2,q5 
+cnot q2 q5 
 h q12 
 tdag q5 
-cnot q2,q5 
+cnot q2 q5 
 t q2 
 s q5 
  
 h q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q11 
-cnot q8,q11 
+cnot q8 q11 
 tdag q11 
-cnot q10,q11 
+cnot q10 q11 
 t q8 
 tdag q11 
-cnot q10,q8 
+cnot q10 q8 
 h q11 
 tdag q8 
-cnot q10,q8 
+cnot q10 q8 
 t q10 
 s q8 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q8 
-cnot q12,q8 
+cnot q12 q8 
 tdag q8 
-cnot q5,q8 
+cnot q5 q8 
 t q12 
 tdag q8 
-cnot q5,q12 
+cnot q5 q12 
 h q8 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q10,q12 
+cnot q10 q12 
 t q2 
 tdag q12 
-cnot q10,q2 
+cnot q10 q2 
 h q12 
 tdag q2 
-cnot q10,q2 
+cnot q10 q2 
 t q10 
 s q2 
  
 h q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q10 
-cnot q7,q10 
+cnot q7 q10 
 tdag q10 
-cnot q9,q10 
+cnot q9 q10 
 t q7 
 tdag q10 
-cnot q9,q7 
+cnot q9 q7 
 h q10 
 tdag q7 
-cnot q9,q7 
+cnot q9 q7 
 t q9 
 s q7 
  
 x q9 
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
 h q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q7 
-cnot q12,q7 
+cnot q12 q7 
 tdag q7 
-cnot q5,q7 
+cnot q5 q7 
 t q12 
 tdag q7 
-cnot q5,q12 
+cnot q5 q12 
 h q7 
 tdag q12 
-cnot q5,q12 
+cnot q5 q12 
 t q5 
 s q12 
  
 h q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q12 
-cnot q2,q12 
+cnot q2 q12 
 tdag q12 
-cnot q9,q12 
+cnot q9 q12 
 t q2 
 tdag q12 
-cnot q9,q2 
+cnot q9 q2 
 h q12 
 tdag q2 
-cnot q9,q2 
+cnot q9 q2 
 t q9 
 s q2 
  
