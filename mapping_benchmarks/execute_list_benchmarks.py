@@ -30,11 +30,11 @@ def save_in_db(cursor, algorithm, N_sim, init_type, scheduler, error_rate, conf_
 def cleaning_qwaits(filename):
 
     wrt = []
-    with open(filename, "w") as f:
+    with open(filename, "r") as f:
         for line in f:
 
             match = re.findall(r"qwait \d+", line)
-            print(match)
+            # print(match)
 
             if not match:
                 wrt.append(line)
