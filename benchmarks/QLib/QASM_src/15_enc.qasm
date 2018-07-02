@@ -38,38 +38,38 @@ h q0
 h q1
 h q3
 h q7
-cnot q0,q5
-cnot q0,q6
-cnot q0,q9
-cnot q0,q10
-cnot q0,q11
-cnot q0,q12
-cnot q0,q14
-cnot q1,q4
-cnot q1,q6
-cnot q1,q8
-cnot q1,q10
-cnot q1,q11
-cnot q1,q13
-cnot q1,q14
-cnot q3,q2
-cnot q3,q5
-cnot q3,q8
-cnot q3,q9
-cnot q3,q12
-cnot q3,q13
-cnot q3,q14
-cnot q7,q2
-cnot q7,q4
-cnot q7,q5
-cnot q7,q10
-cnot q7,q12
-cnot q7,q13
-cnot q7,q14
-cnot q14,q2
-cnot q14,q4
-cnot q14,q5
-cnot q14,q8
-cnot q14,q9
-cnot q14,q11
+cnot q0 q5
+cnot q0 q6
+cnot q0 q9
+cnot q0 q10
+cnot q0 q11
+cnot q0 q12
+cnot q0 q14
+cnot q1 q4
+cnot q1 q6
+cnot q1 q8
+cnot q1 q10
+cnot q1 q11
+cnot q1 q13
+cnot q1 q14
+cnot q3 q2
+cnot q3 q5
+cnot q3 q8
+cnot q3 q9
+cnot q3 q12
+cnot q3 q13
+cnot q3 q14
+cnot q7 q2
+cnot q7 q4
+cnot q7 q5
+cnot q7 q10
+cnot q7 q12
+cnot q7 q13
+cnot q7 q14
+cnot q14 q2
+cnot q14 q4
+cnot q14 q5
+cnot q14 q8
+cnot q14 q9
+cnot q14 q11
 # 34 cnot
