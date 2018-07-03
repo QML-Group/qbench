@@ -56,14 +56,15 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
 
         filename = filename.replace("-", "_")
 
-        cleaning_qwaits(filename.replace(".py", ".qasm"))
+        # cleaning_qwaits(filename.replace(".py", ".qasm"))
 
         benchmark = quantum_benchmark.Benchmark(
             filename.replace(".py", ".qasm"), 200)
 
         benchmark.error_analysis(init_type, error)
 
-        algorithm = benchmark.qasm_file_path.replace(".qasm", "")
+        algorithm = benchmark.qasm_file_path.replace(
+            ".qasm", "").replace("_scheduled", "")
 
         if init_type == 0:
 
@@ -123,8 +124,6 @@ with h5py.File(h5_path, "w") as h5f:
                             scheduler, out_dir, 0, error, experiment_id)
         compile_and_analize("alu-v0_27.py", cursor, h5f, config_file,
                             scheduler, out_dir, 0, error, experiment_id)
-        compile_and_analize("benstein_vazirani_15b_secret_128.py",
-                            cursor, h5f, config_file, scheduler, out_dir, 1, error, experiment_id)
         compile_and_analize("cuccaroAdder_1b.py", cursor, h5f, config_file,
                             scheduler, out_dir, 0, error, experiment_id)
         compile_and_analize("cuccaroMultiplier_1b.py", cursor, h5f, config_file,
@@ -170,6 +169,8 @@ with h5py.File(h5_path, "w") as h5f:
 
         # THIS IS GIVING A SEGMENTATION FAULT
 
+        # compile_and_analize("benstein_vazirani_15b_secret_128.py",
+        #                     cursor, h5f, config_file, scheduler, out_dir, 1, error, experiment_id)
         # compile_and_analize("cnt3-5_179.py", cursor, h5f, config_file,
         #                     scheduler, out_dir, 0, error, experiment_id)
         # compile_and_analize("plus63mod4096_163.py", cursor, h5f, config_file,
