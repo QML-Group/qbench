@@ -59,7 +59,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
         cleaning_qwaits(filename.replace(".py", ".qasm"))
 
         benchmark = quantum_benchmark.Benchmark(
-            filename.replace(".py", ".qasm"), 1000)
+            filename.replace(".py", "_scheduled.qasm"), 1000)
 
         benchmark.error_analysis(init_type, error)
 
@@ -89,7 +89,7 @@ out_dir = "."
 errors = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
 h5_path = "/home/dmorenomanzano/qbench/mapping_benchmarks/" + \
     str(datetime.now()).replace(" ", "_")+"_benchmark_tomographies.h5"
-log_path = "/home/dmorenomanzano/qbench/mapping_benchmarks/log"
+log_path = "/home/dmorenomanzano/qbench/mapping_benchmarks/long.log"
 
 
 with h5py.File(h5_path, "w") as h5f:

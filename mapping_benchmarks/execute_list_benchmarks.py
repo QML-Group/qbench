@@ -69,7 +69,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, outp
 
             h5f.create_dataset(algorithm, data=benchmark.tomography_matrix)
 
-        save_in_db(cursor, algorithm, benchmark.N_exp, init_type, scheduler, error,
+        save_in_db(cursor, algorithm, benchmark.N_exp, init_type, "NONE", error,
                    config_file, benchmark.mean_success(), benchmark.mean_fidelity(), experiment_id)
 
         # del(benchmark)
