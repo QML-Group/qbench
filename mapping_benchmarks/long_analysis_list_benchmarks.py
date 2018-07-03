@@ -207,6 +207,8 @@ with h5py.File(h5_path, "w") as h5f:
                 # compile_and_analize("ising_model_10.py", cursor, h5f, config_file, scheduler, out_dir, 0, error, experiment_id)
                 # compile_and_analize("qft_10.py", cursor, h5f, config_file, scheduler, out_dir, 0, error, experiment_id)
 
+                connection.commit()
+
     except:
 
         connection.commit()
