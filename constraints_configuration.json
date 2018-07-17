@@ -1,8 +1,8 @@
 {
-   "eqasm_compiler" : "cc_light_compiler",
+   "eqasm_compiler" : "none",
 
    "hardware_settings": {
-	 "qubit_number": 7,
+	 "qubit_number": 17,
 	 "cycle_time" : 20,  
 	 "mw_mw_buffer": 0,
 	 "mw_flux_buffer": 0,
@@ -2226,7 +2226,10 @@
 
 
    "gate_decomposition": {
-      "rx180 %0" : ["x %0"],
-      "cnot %0,%1" : ["ry90 %0","cz %0,%1","ry90 %1"]
+      "rx180 %0" : ["x %0"],     
+       "z %0" : ["x %0","y %0"],
+       "h %0" : ["ry270 %0", "x %0"],
+       "cnot %0,%1" : ["ry270 %1", "x %1","cz %0,%1","ry270 %1", "x %1"],
+       "t %0" : ["ry270 %0", "x %0", "rx90 %0", "ry270 %0", "x %0"]
    }
 }
