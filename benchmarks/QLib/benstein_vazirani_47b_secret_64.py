@@ -2,13 +2,13 @@ from openql import openql as ql
 import os
 import argparse
 
-def circuit(config_file, scheduler='ASAP', output_dir_name='test_output'):
+def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):
     curdir = os.path.dirname(__file__)
     output_dir = os.path.join(curdir, output_dir_name)
     ql.set_option('output_dir', output_dir)
-    ql.set_option('optimize', 'no')
+    ql.set_option('optimize', optimize)
     ql.set_option('scheduler', scheduler)
-    ql.set_option('log_level', 'LOG_WARNING')
+    ql.set_option('log_level', log_level)
 
     config_fn = os.path.join(curdir, config_file)
 
