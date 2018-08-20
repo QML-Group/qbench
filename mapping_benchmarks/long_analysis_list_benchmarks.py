@@ -125,52 +125,52 @@ with h5py.File(h5_path, "w") as h5f:
                                     scheduler, out_dir, 1, error, experiment_id)
                 compile_and_analize("sqrt8_260.py", cursor, h5f, config_file,
                                     scheduler, out_dir, 1, error, experiment_id)
-                compile_and_analize("alu-bdd_288.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("alu-v0_27.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("cuccaroAdder_1b.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("cuccaroMultiplier_1b.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("decod24-bdd_294.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("decod24-enable_126.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("graycode6_47.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("ham3_102.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("hwb4_49.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("miller_11.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("mini-alu_167.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("mod10_176.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("mod5adder_127.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("mod5d1_63.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("mod8-10_177.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("one-two-three-v1_99.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("one-two-three-v3_101.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("rd32-v0_66.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("sf_274.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("sf_276.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("sym6_145.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("vbeAdder_2b.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
-                compile_and_analize("xor5_254.py", cursor, h5f, config_file,
-                                    scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("alu-bdd_288.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("alu-v0_27.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("cuccaroAdder_1b.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("cuccaroMultiplier_1b.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("decod24-bdd_294.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("decod24-enable_126.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("graycode6_47.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("ham3_102.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("hwb4_49.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("miller_11.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("mini-alu_167.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("mod10_176.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("mod5adder_127.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("mod5d1_63.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("mod8-10_177.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("one-two-three-v1_99.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("one-two-three-v3_101.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("rd32-v0_66.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("sf_274.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("sf_276.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("sym6_145.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("vbeAdder_2b.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
+                # compile_and_analize("xor5_254.py", cursor, h5f, config_file,
+                #                     scheduler, out_dir, 0, error, experiment_id)
 
                 # THIS IS GIVING A SEGMENTATION FAULT
 
