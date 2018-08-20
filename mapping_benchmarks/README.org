@@ -61,8 +61,46 @@
 
 
 *After simulating the algorithms, some of them either return errors (segmentation fault) or are computationally exhausting to simulate them as they should be simulated.
+
+** Post-selection analysis
+
+| Algorithm                        | Gate proportion |
+|----------------------------------+-----------------|
+| 4gt11_82                         | [[file:post_analysis/4gt11_82/output_instruction_types.png][histogram]]       |
+| 4gt12-v1_89                      | [[file:post_analysis/4gt12_v1_89/output_instruction_types.png][histogram]]       |
+| 4gt4-v0_72                       | [[file:post_analysis/4gt4_v0_72/output_instruction_types.png][histogram]]       |
+| 4mod5-bdd_287                    | [[file:post_analysis/4mod5_bdd_287/output_instruction_types.png][histogram]]       |
+| 4mod5-v0_20                      | [[file:post_analysis/4mod5_v0_20/output_instruction_types.png][histogram]]       |
+| alu-bdd_288                      | [[file:post_analysis/alu_bdd_288/output_instruction_types.png][histogram]]       |
+| alu-v0_27                        | [[file:post_analysis/alu_v0_27/output_instruction_types.png][histogram]]       |
+| benstein_vazirani_15b_secret_128 | [[file:post_analysis/benstein_vazirani_15b_secret_128/output_instruction_types.png][histogram]]       |
+| cuccaroAdder_1b                  | [[file:post_analysis/cuccaroAdder_1b/output_instruction_types.png][histogram]]       |
+| cuccaroMultiplier_1b             | [[file:post_analysis/cuccaroMultiplier_1b/output_instruction_types.png][histogram]]       |
+| decod24-bdd_294                  | [[file:post_analysis/decod24_bdd_294/output_instruction_types.png][histogram]]       |
+| decod24-enable_126               | [[file:post_analysis/decod24_enable_126/output_instruction_types.png][histogram]]       |
+| graycode6_47                     | [[file:post_analysis/graycode6_47/output_instruction_types.png][histogram]]       |
+| ham3_102                         | [[file:post_analysis/ham3_102/output_instruction_types.png][histogram]]       |
+| hwb4_49                          | [[file:post_analysis/hwb4_49/output_instruction_types.png][histogram]]       |
+| miller_11                        | [[file:post_analysis/miller_11/output_instruction_types.png][histogram]]       |
+| mini-alu_167                     | [[file:post_analysis/mini_alu_167/output_instruction_types.png][histogram]]       |
+| mod10_176                        | [[file:post_analysis/mod10_176/output_instruction_types.png][histogram]]       |
+| mod5adder_127                    | [[file:post_analysis/mod5adder_127/output_instruction_types.png][histogram]]       |
+| mod5d1_63                        | [[file:post_analysis/mod5d1_63/output_instruction_types.png][histogram]]       |
+| mod8-10_177                      | [[file:post_analysis/mod8_10_177/output_instruction_types.png][histogram]]       |
+| one-two-three-v1_99              | [[file:post_analysis/one_two_three_v1_99/output_instruction_types.png][histogram]]       |
+| one-two-three-v3_101             | [[file:post_analysis/one_two_three_v3_101/output_instruction_types.png][histogram]]       |
+| rd32-v0_66                       | [[file:post_analysis/rd32_v0_66/output_instruction_types.png][histogram]]       |
+| sf_274                           | [[file:post_analysis/sf_274/output_instruction_types.png][histogram]]       |
+| sf_276                           | [[file:post_analysis/sf_276/output_instruction_types.png][histogram]]       |
+| shor_15                          | [[file:post_analysis/shor_15/output_instruction_types.png][histogram]]       |
+| sqrt8_260                        | [[file:post_analysis/sqrt8_260/output_instruction_types.png][histogram]]       |
+| sym6_145                         | [[file:post_analysis/sym6_145/output_instruction_types.png][histogram]]       |
+| vbeAdder_2b                      | [[file:post_analysis/vbeAdder_2b/output_instruction_types.png][histogram]]       |
+| xor5_254                         | [[file:post_analysis/xor5_254/output_instruction_types.png][histogram]]       |
+
+
   
-** Analysis before selection
+** Preselection analysis
 
 *** Initial entries
 
@@ -245,5 +283,4 @@ No. qubits No. gates Algorithm
            43        cuccaroAdder_7b                 
 
 #+END_EXAMPLE
-
 
