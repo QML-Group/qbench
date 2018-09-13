@@ -2,6 +2,7 @@ from openql import openql as ql
 import os
 import argparse
 
+
 def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):
     curdir = os.path.dirname(__file__)
     output_dir = os.path.join(curdir, output_dir_name)
@@ -12,29 +13,34 @@ def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimi
 
     config_fn = os.path.join(curdir, config_file)
 
-    platform  = ql.Platform('platform_none', config_fn)
-    sweep_points = [1,2]
+    platform = ql.Platform('platform_none', config_fn)
+    sweep_points = [1, 2]
     num_circuits = 1
     num_qubits = 6
-    p = ql.Program('xor5_254', num_qubits, platform)
+    p = ql.Program('xor5_254', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('xor5_254', platform)
-    k.gate('cnot',[3,0])
-    k.gate('cnot',[1,0])
-    k.gate('cnot',[5,0])
-    k.gate('x',[2])
-    k.gate('cnot',[2,0])
-    k.gate('x',[4])
-    k.gate('cnot',[4,0])
+    k = ql.Kernel('xor5_254', platform, num_qubits)
+    k.gate('cnot', [3, 0])
+    k.gate('cnot', [1, 0])
+    k.gate('cnot', [5, 0])
+    k.gate('x', [2])
+    k.gate('cnot', [2, 0])
+    k.gate('x', [4])
+    k.gate('cnot', [4, 0])
 
     p.add_kernel(k)
     p.compile()
 
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')
-    parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')
-    parser.add_argument('--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')
-    parser.add_argument('--out_dir', help='Folder name to store the compilation')
+    parser = argparse.ArgumentParser(
+        description='OpenQL compilation of a Quantum Algorithm')
+    parser.add_argument(
+        'config_file', help='Path to the OpenQL configuration file to compile this algorithm')
+    parser.add_argument(
+        '--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')
+    parser.add_argument(
+        '--out_dir', help='Folder name to store the compilation')
     args = parser.parse_args()
     try:
         if args.out_dir and args.scheduler:

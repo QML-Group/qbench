@@ -2,6 +2,7 @@ from openql import openql as ql
 import os
 import argparse
 
+
 def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):
     curdir = os.path.dirname(__file__)
     output_dir = os.path.join(curdir, output_dir_name)
@@ -12,34 +13,39 @@ def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimi
 
     config_fn = os.path.join(curdir, config_file)
 
-    platform  = ql.Platform('platform_none', config_fn)
-    sweep_points = [1,2]
+    platform = ql.Platform('platform_none', config_fn)
+    sweep_points = [1, 2]
     num_circuits = 1
     num_qubits = 8
-    p = ql.Program('vbeAdder_2b', num_qubits, platform)
+    p = ql.Program('vbeAdder_2b', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('vbeAdder_2b', platform)
-    k.gate('toffoli',[1,2,3])
-    k.gate('cnot',[1,2])
-    k.gate('toffoli',[0,2,3])
-    k.gate('toffoli',[4,5,6])
-    k.gate('cnot',[4,5])
-    k.gate('toffoli',[3,5,6])
-    k.gate('cnot',[4,5])
-    k.gate('toffoli',[0,2,3])
-    k.gate('cnot',[1,2])
-    k.gate('toffoli',[1,2,3])
-    k.gate('cnot',[1,2])
-    k.gate('cnot',[0,2])
+    k = ql.Kernel('vbeAdder_2b', platform, num_qubits)
+    k.gate('toffoli', [1, 2, 3])
+    k.gate('cnot', [1, 2])
+    k.gate('toffoli', [0, 2, 3])
+    k.gate('toffoli', [4, 5, 6])
+    k.gate('cnot', [4, 5])
+    k.gate('toffoli', [3, 5, 6])
+    k.gate('cnot', [4, 5])
+    k.gate('toffoli', [0, 2, 3])
+    k.gate('cnot', [1, 2])
+    k.gate('toffoli', [1, 2, 3])
+    k.gate('cnot', [1, 2])
+    k.gate('cnot', [0, 2])
 
     p.add_kernel(k)
     p.compile()
 
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')
-    parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')
-    parser.add_argument('--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')
-    parser.add_argument('--out_dir', help='Folder name to store the compilation')
+    parser = argparse.ArgumentParser(
+        description='OpenQL compilation of a Quantum Algorithm')
+    parser.add_argument(
+        'config_file', help='Path to the OpenQL configuration file to compile this algorithm')
+    parser.add_argument(
+        '--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')
+    parser.add_argument(
+        '--out_dir', help='Folder name to store the compilation')
     args = parser.parse_args()
     try:
         if args.out_dir and args.scheduler:

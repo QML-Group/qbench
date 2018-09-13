@@ -2,6 +2,7 @@ from openql import openql as ql
 import os
 import argparse
 
+
 def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):
     curdir = os.path.dirname(__file__)
     output_dir = os.path.join(curdir, output_dir_name)
@@ -12,58 +13,63 @@ def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimi
 
     config_fn = os.path.join(curdir, config_file)
 
-    platform  = ql.Platform('platform_none', config_fn)
-    sweep_points = [1,2]
+    platform = ql.Platform('platform_none', config_fn)
+    sweep_points = [1, 2]
     num_circuits = 1
     num_qubits = 5
-    p = ql.Program('alu_v0_27', num_qubits, platform)
+    p = ql.Program('alu_v0_27', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('alu_v0_27', platform)
-    k.gate('cnot',[3,4])
-    k.gate('cnot',[2,1])
-    k.gate('h',[2])
-    k.gate('t',[3])
-    k.gate('t',[1])
-    k.gate('t',[2])
-    k.gate('cnot',[1,3])
-    k.gate('cnot',[2,1])
-    k.gate('cnot',[3,2])
-    k.gate('tdag',[1])
-    k.gate('cnot',[3,1])
-    k.gate('tdag',[3])
-    k.gate('tdag',[1])
-    k.gate('t',[2])
-    k.gate('cnot',[2,1])
-    k.gate('cnot',[3,2])
-    k.gate('cnot',[1,3])
-    k.gate('h',[2])
-    k.gate('cnot',[2,0])
-    k.gate('x',[2])
-    k.gate('h',[2])
-    k.gate('t',[4])
-    k.gate('t',[0])
-    k.gate('t',[2])
-    k.gate('cnot',[0,4])
-    k.gate('cnot',[2,0])
-    k.gate('cnot',[4,2])
-    k.gate('tdag',[0])
-    k.gate('cnot',[4,0])
-    k.gate('tdag',[4])
-    k.gate('tdag',[0])
-    k.gate('t',[2])
-    k.gate('cnot',[2,0])
-    k.gate('cnot',[4,2])
-    k.gate('cnot',[0,4])
-    k.gate('h',[2])
+    k = ql.Kernel('alu_v0_27', platform, num_qubits)
+    k.gate('cnot', [3, 4])
+    k.gate('cnot', [2, 1])
+    k.gate('h', [2])
+    k.gate('t', [3])
+    k.gate('t', [1])
+    k.gate('t', [2])
+    k.gate('cnot', [1, 3])
+    k.gate('cnot', [2, 1])
+    k.gate('cnot', [3, 2])
+    k.gate('tdag', [1])
+    k.gate('cnot', [3, 1])
+    k.gate('tdag', [3])
+    k.gate('tdag', [1])
+    k.gate('t', [2])
+    k.gate('cnot', [2, 1])
+    k.gate('cnot', [3, 2])
+    k.gate('cnot', [1, 3])
+    k.gate('h', [2])
+    k.gate('cnot', [2, 0])
+    k.gate('x', [2])
+    k.gate('h', [2])
+    k.gate('t', [4])
+    k.gate('t', [0])
+    k.gate('t', [2])
+    k.gate('cnot', [0, 4])
+    k.gate('cnot', [2, 0])
+    k.gate('cnot', [4, 2])
+    k.gate('tdag', [0])
+    k.gate('cnot', [4, 0])
+    k.gate('tdag', [4])
+    k.gate('tdag', [0])
+    k.gate('t', [2])
+    k.gate('cnot', [2, 0])
+    k.gate('cnot', [4, 2])
+    k.gate('cnot', [0, 4])
+    k.gate('h', [2])
 
     p.add_kernel(k)
     p.compile()
 
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')
-    parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')
-    parser.add_argument('--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')
-    parser.add_argument('--out_dir', help='Folder name to store the compilation')
+    parser = argparse.ArgumentParser(
+        description='OpenQL compilation of a Quantum Algorithm')
+    parser.add_argument(
+        'config_file', help='Path to the OpenQL configuration file to compile this algorithm')
+    parser.add_argument(
+        '--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')
+    parser.add_argument(
+        '--out_dir', help='Folder name to store the compilation')
     args = parser.parse_args()
     try:
         if args.out_dir and args.scheduler:
