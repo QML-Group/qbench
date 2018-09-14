@@ -150,37 +150,34 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
             init_buffer = ["from openql import openql as ql\n",
                            "import os\n",
                            "import argparse\n\n",
-                           "def circuit(config_file, scheduler='ASAP', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):\n",
+                           "def circuit(config_file, scheduler='ASAP', mapper = 'base', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):\n",
                            "    curdir = os.path.dirname(__file__)\n",
                            "    output_dir = os.path.join(curdir, output_dir_name)\n",
                            "    ql.set_option('output_dir', output_dir)\n",
                            "    ql.set_option('optimize', optimize)\n",
                            "    ql.set_option('scheduler', scheduler)\n",
+                           "    ql.set_option('mapper', mapper)\n",
                            "    ql.set_option('log_level', log_level)\n",
                            "\n    config_fn = os.path.join(curdir, config_file)\n\n",
-                           "    platform  = ql.Platform('platform_none', config_fn)\n",
+                           "    # platform  = ql.Platform('platform_none', config_fn)\n",
+                           "    platform  = ql.Platform('starmon', config_fn)\n",
                            "    sweep_points = [1,2]\n",
                            "    num_circuits = 1\n"]
 
             gates_buffer = []
 
             compile_buff = ["\n    p.add_kernel(k)\n",
-                            "    p.compile()\n\n",
+                            "    p.compile()",
+                            "    ql.set_option('mapper', 'no')\n\n",
                             "if __name__ == '__main__':\n",
                             "    parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')\n",
                             "    parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')\n",
-                            "    parser.add_argument('--scheduler', help='Scheduler specification (ASAP (default), ALAP, ...)')\n",
-                            "    parser.add_argument('--out_dir', help='Folder name to store the compilation')\n",
+                            "    parser.add_argument('--scheduler', nargs='?', default='ASAP', help='Scheduler specification (ASAP (default), ALAP, ...)')\n",
+                            "    parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')\n",
+                            "    parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')\n",
                             "    args = parser.parse_args()\n",
                             "    try:\n",
-                            "        if args.out_dir and args.scheduler:\n",
-                            "            circuit(args.config_file, args.scheduler, args.out_dir)\n",
-                            "        elif args.scheduler:\n",
-                            "            circuit(args.config_file, args.scheduler)\n",
-                            "        elif args.out_dir:\n",
-                            "            circuit(args.config_file, out_dir_name=args.out_dir)\n",
-                            "        else:\n",
-                            "            circuit(args.config_file)\n",
+                            "        circuit(args.config_file, args.scheduler, args.mapper, args.out_dir)\n",
                             "    except TypeError:\n",
                             "        print('\\nCompiled, but some gate is not defined in the configuration file. \\nThe gate will be invoked like it is.')\n",
                             "        raise"]
@@ -226,7 +223,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             init_buffer.append("    p = ql.Program('"+os.path.basename(
                 stranger_file_no_hyphen).replace(".qasm", "") +
-                "', num_qubits, platform)\n")
+                "', platform, num_qubits)\n")
 
             init_buffer.append(
                 "    p.set_sweep_points(sweep_points, num_circuits)\n")
@@ -234,7 +231,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
             init_buffer.append(
                 "    k = ql.Kernel('" +
                 os.path.basename(stranger_file_no_hyphen).replace(".qasm", "") +
-                "', platform)\n")
+                "', platform, num_qubits)\n")
 
             openql.writelines(init_buffer)
             openql.writelines(gates_buffer)
