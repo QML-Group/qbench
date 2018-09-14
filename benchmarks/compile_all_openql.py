@@ -3,7 +3,7 @@ import os
 import importlib.util
 
 
-def compile_all_openql(directory_path, config_file_path, scheduler, output_dir_name):
+def compile_all_openql(directory_path, config_file_path, scheduler, mapper, output_dir_name):
 
     for filename in os.listdir(directory_path):
         print(filename)
@@ -37,10 +37,13 @@ if __name__ == "__main__":
     parser.add_argument('scheduler', nargs='?', default='ASAP',
                         help='Scheduler kind (ASAP, ALAP, ...)')
 
+    parser.add_argument('mapper', nargs='?', default='no',
+                        help='Mapper kind (base, minextend, minextendrc)')
+
     parser.add_argument('out_dir', nargs='?', default='test_output',
                         help='Folder to save the results')
 
     args = parser.parse_args()
 
     compile_all_openql(args.openql_benchmark_directory,
-                       args.config_file_path, args.scheduler, args.out_dir)
+                       args.config_file_path, args.scheduler, args.mapper, args.out_dir)
