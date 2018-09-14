@@ -198,7 +198,8 @@ def circuit(config_file, scheduler='ASAP', mapper = 'base', output_dir_name='tes
     k.gate('cnot',[3,2])
 
     p.add_kernel(k)
-    p.compile()    ql.set_option('mapper', 'no')
+    p.compile()
+    ql.set_option('mapper', 'no')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')

@@ -167,7 +167,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
             gates_buffer = []
 
             compile_buff = ["\n    p.add_kernel(k)\n",
-                            "    p.compile()",
+                            "    p.compile()\n",
                             "    ql.set_option('mapper', 'no')\n\n",
                             "if __name__ == '__main__':\n",
                             "    parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')\n",
