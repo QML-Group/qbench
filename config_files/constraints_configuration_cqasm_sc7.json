@@ -409,7 +409,7 @@
         "cnot_dcnot %0 %1": ["cnot_prim %0 %1"],
         "swap_dcnot %0 %1": ["cnot_prim %0 %1", "cnot_prim %1 %0", "cnot_prim %0 %1"], 
         "cnot_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1"],
-	"swap_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1", "ym90 %0","cz %1 %0","ry90 %0", "ym90 %1","cz %0 %1","ry90 %1"]
+	"swap_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1", "ym90 %0","cz %1 %0","ry90 %0", "ym90 %1","cz %0 %1","ry90 %1"],
 	"rx180 %0" : ["x %0"],
 	"z %0" : ["x %0","y %0"],
 	"h %0" : ["ym90 %0", "x %0"],
