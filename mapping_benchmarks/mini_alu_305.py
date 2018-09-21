@@ -18,9 +18,9 @@ def circuit(config_file, scheduler='ASAP', mapper = 'base', output_dir_name='tes
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 10
-    p = ql.Program('mini_alu_305', platform, num_qubits)
+    p = ql.Program('mini_alu_305', num_qubits, platform)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('mini_alu_305', platform, num_qubits)
+    k = ql.Kernel('mini_alu_305', platform)
     k.gate('x',[6])
     k.gate('x',[7])
     k.gate('x',[8])

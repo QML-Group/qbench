@@ -403,18 +403,23 @@
     },
 
     "gate_decomposition": {
-        "swap %0 %1": ["swap_prim %0 %1"],
-        "cnot %0 %1": ["cnot_prim %0 %1"],
-        "swap_dswap %0 %1": ["swap_prim %0 %1"],
-        "cnot_dcnot %0 %1": ["cnot_prim %0 %1"],
-        "swap_dcnot %0 %1": ["cnot_prim %0 %1", "cnot_prim %1 %0", "cnot_prim %0 %1"], 
-        "cnot_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1"],
-	"swap_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1", "ym90 %0","cz %1 %0","ry90 %0", "ym90 %1","cz %0 %1","ry90 %1"],
+	"cnot_real %0 %1": ["ym90 %1","cz %0 %1","ry90 %1"],
+	"swap_real %0 %1": ["ym90 %1","cz %0 %1","ry90 %1", "ym90 %0","cz %1 %0","ry90 %0", "ym90 %1","cz %0 %1","ry90 %1"],
+
+	"swap_dswap %0 %1": ["swap_prim %0 %1"],
+
+	"cnot_dcnot %0 %1": ["cnot_prim %0 %1"],
+	"swap_dcnot %0 %1": ["cnot_prim %0 %1", "cnot_prim %1 %0", "cnot_prim %0 %1"], 
+
+	"cnot_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1"],
+	"swap_dprim %0 %1": ["ym90 %1","cz %0 %1","ry90 %1", "ym90 %0","cz %1 %0","ry90 %0", "ym90 %1","cz %0 %1","ry90 %1"]
+
 	"rx180 %0" : ["x %0"],
 	"z %0" : ["x %0","y %0"],
-	"h %0" : ["ym90 %0", "x %0"],
-	"my_swap %0,%1" : ["cnot %0,%1", "cnot %1,%0", "cnot %0,%1"],
-	"my_cnot %0,%1" : ["ry90 %1","cz %0,%1","ym90 %1"],
-	"t %0" : ["ym90 %0", "x %0", "rx45 %0", "ym90 %0", "x %0"]
+	"h %0" : ["x %0", "ym90 %0"],
+	"t %0" : ["ry90 %0", "rx45 %0", "ym90 %0"],
+	"tdag %0" : ["ry90 %0", "xm45 %0", "ym90 %0"],
+	"s %0" : ["ry90 %0", "rx90 %0", "ym90 %0"],
+	"sdag %0" : ["ry90 %0", "xm90 %0", "ym90 %0"]
     }
 }
