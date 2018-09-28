@@ -1,0 +1,120 @@
+qubits 8
+
+.vbeAdder_2b
+    { ry90 q1 | ry90 q2 | x q3 | ry90 q0 | ry90 q4 | ry90 q5 | x q6 }
+    { xm45 q1 | xm45 q2 | ym90 q3 | xm45 q0 | xm45 q4 | xm45 q5 | ym90 q6 }
+    { y q1 | ym90 q2 | y q0 | y q4 | ym90 q5 }
+    { cz q3,q1 | cz q6,q4 }
+    qwait 1
+    { y q1 | ym90 q3 | y q4 | ym90 q6 }
+    { rx45 q1 | cz q2,q3 | rx45 q4 | cz q5,q6 }
+    { y q1 | y q4 }
+    { y q3 | cz q2,q1 | y q6 | cz q5,q4 }
+    { rx45 q3 | rx45 q6 }
+    { y q1 | y q3 | y q4 | y q6 }
+    { xm45 q1 | cz q2,q3 | xm45 q4 | cz q5,q6 }
+    { y q1 | y q4 }
+    { ry90 q3 | ry90 q6 }
+    { cz q3,q1 | cz q6,q4 }
+    qwait 1
+    { y q1 | ry90 q3 | y q4 | ry90 q6 }
+    { rx45 q1 | xm45 q3 | rx45 q4 | xm45 q6 }
+    { y q1 | ym90 q3 | y q4 | ym90 q6 }
+    { cz q2,q1 | x q3 | cz q5,q4 | x q6 }
+    { ym90 q3 | ym90 q6 }
+    { ry90 q1 | ym90 q2 | x q3 | ry90 q4 | ym90 q5 | x q6 }
+    { cz q1,q2 | ym90 q3 | cz q4,q5 | ym90 q6 }
+    cz q3,q0
+    { ry90 q2 | ry90 q5 }
+    { ry90 q2 | y q0 | ym90 q3 | ry90 q5 }
+    { xm45 q2 | rx45 q0 | xm45 q5 }
+    { ym90 q2 | y q0 | ym90 q5 }
+    cz q2,q3
+    qwait 1
+    { y q3 | cz q2,q0 }
+    rx45 q3
+    { y q0 | y q3 }
+    { xm45 q0 | cz q2,q3 }
+    y q0
+    ry90 q3
+    cz q3,q0
+    qwait 1
+    { y q0 | ry90 q3 }
+    { rx45 q0 | xm45 q3 }
+    { y q0 | ym90 q3 }
+    { cz q2,q0 | x q3 }
+    ym90 q3
+    { ry90 q0 | ry90 q3 | ry90 q2 }
+    { xm45 q3 | ry90 q0 | xm45 q2 }
+    { y q3 | xm45 q0 | ym90 q2 }
+    { cz q6,q3 | y q0 }
+    qwait 1
+    { y q3 | ym90 q6 }
+    { rx45 q3 | cz q5,q6 }
+    y q3
+    { y q6 | cz q5,q3 }
+    rx45 q6
+    { y q3 | y q6 }
+    { xm45 q3 | cz q5,q6 }
+    y q3
+    ry90 q6
+    cz q6,q3
+    qwait 1
+    { y q3 | ry90 q6 }
+    { rx45 q3 | xm45 q6 }
+    { y q3 | ym90 q6 }
+    { cz q5,q3 | x q6 }
+    ym90 q6
+    { ry90 q3 | ym90 q5 }
+    { cz q4,q5 | x q3 }
+    ym90 q3
+    { ry90 q5 | cz q3,q0 }
+    qwait 1
+    { y q0 | ym90 q3 }
+    { rx45 q0 | cz q2,q3 }
+    y q0
+    { y q3 | cz q2,q0 }
+    rx45 q3
+    { y q0 | y q3 }
+    { xm45 q0 | cz q2,q3 }
+    y q0
+    ry90 q3
+    cz q3,q0
+    qwait 1
+    { y q0 | ry90 q3 }
+    { rx45 q0 | xm45 q3 }
+    { y q0 | ym90 q3 }
+    { cz q2,q0 | x q3 }
+    ym90 q3
+    { ry90 q0 | ym90 q2 | x q3 }
+    { cz q1,q2 | ym90 q3 }
+    qwait 1
+    { ry90 q2 | ry90 q1 }
+    { xm45 q1 | ry90 q2 }
+    { y q1 | xm45 q2 }
+    { ym90 q2 | cz q3,q1 }
+    qwait 1
+    { y q1 | ym90 q3 }
+    { rx45 q1 | cz q2,q3 }
+    y q1
+    { y q3 | cz q2,q1 }
+    rx45 q3
+    { y q1 | y q3 }
+    { xm45 q1 | cz q2,q3 }
+    y q1
+    ry90 q3
+    cz q3,q1
+    qwait 1
+    { y q1 | ry90 q3 }
+    { rx45 q1 | xm45 q3 }
+    { y q1 | ym90 q3 }
+    { cz q2,q1 | x q3 }
+    ym90 q3
+    { ry90 q1 | ym90 q2 }
+    cz q1,q2
+    qwait 1
+    ry90 q2
+    ym90 q2
+    cz q0,q2
+    qwait 1
+    ry90 q2
