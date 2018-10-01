@@ -157,7 +157,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                            "    ql.set_option('optimize', optimize)\n",
                            "    ql.set_option('scheduler', scheduler)\n",
                            "    ql.set_option('mapper', mapper)\n",
-                           "    ql.set_option('mapinitialplace', initial_placement)\n",
+                           "    ql.set_option('initialplace', initial_placement)\n",
                            "    ql.set_option('log_level', log_level)\n",
                            "\n    config_fn = os.path.join(curdir, config_file)\n\n",
                            "    # platform  = ql.Platform('platform_none', config_fn)\n",
