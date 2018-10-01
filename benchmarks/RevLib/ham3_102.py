@@ -19,9 +19,9 @@ def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no'
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 3
-    p = ql.Program('ham3_102', num_qubits, platform)
+    p = ql.Program('ham3_102', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('ham3_102', platform)
+    k = ql.Kernel('ham3_102', platform, num_qubits)
     k.gate('h',[0])
     k.gate('t',[1])
     k.gate('t',[2])

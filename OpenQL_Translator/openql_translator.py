@@ -224,29 +224,29 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                 r"-", "_", stranger_file, 0, re.MULTILINE)
 
             # OpenQL v0.3
-            init_buffer.append("    p = ql.Program('"+os.path.basename(
-                stranger_file_no_hyphen).replace(".qasm", "") +
-                "', num_qubits, platform)\n")
-
-            # OpenQL v0.5
             # init_buffer.append("    p = ql.Program('"+os.path.basename(
             #     stranger_file_no_hyphen).replace(".qasm", "") +
-            #     "', platform, num_qubits)\n")
+            #     "', num_qubits, platform)\n")
+
+            # OpenQL v0.5
+            init_buffer.append("    p = ql.Program('"+os.path.basename(
+                stranger_file_no_hyphen).replace(".qasm", "") +
+                "', platform, num_qubits)\n")
 
             init_buffer.append(
                 "    p.set_sweep_points(sweep_points, num_circuits)\n")
 
             # OpenQL v0.3
-            init_buffer.append(
-                "    k = ql.Kernel('" +
-                os.path.basename(stranger_file_no_hyphen).replace(".qasm", "") +
-                "', platform)\n")
-
-            # OpenQL v0.5
             # init_buffer.append(
             #     "    k = ql.Kernel('" +
             #     os.path.basename(stranger_file_no_hyphen).replace(".qasm", "") +
-            #     "', platform, num_qubits)\n")
+            #     "', platform)\n")
+
+            # OpenQL v0.5
+            init_buffer.append(
+                "    k = ql.Kernel('" +
+                os.path.basename(stranger_file_no_hyphen).replace(".qasm", "") +
+                "', platform, num_qubits)\n")
 
             openql.writelines(init_buffer)
             openql.writelines(gates_buffer)
