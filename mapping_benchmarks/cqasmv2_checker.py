@@ -28,7 +28,7 @@ def num_qubitsChecker(line, num_qubits):
 
 def bigQubitNum(line, biggest_number):
 
-    match = re.findall(r"q\[?\d+\]?", line)
+    match = re.findall(r"q\[?(\d+)\]?", line)
 
     print(match)
 
