@@ -19,9 +19,9 @@ def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no'
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 9
-    p = ql.Program('hwb8_113', num_qubits, platform)
+    p = ql.Program('hwb8_113', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('hwb8_113', platform)
+    k = ql.Kernel('hwb8_113', platform, num_qubits)
     k.gate('h',[1])
     k.gate('t',[5])
     k.gate('t',[8])
