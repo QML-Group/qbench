@@ -68,6 +68,8 @@ def rotationGatesChecker(line):
 
         c = re.sub(b, after[i], correction)
 
+        print(c)
+
         if c:
             correction = c
 
