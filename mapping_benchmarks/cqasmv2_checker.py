@@ -82,6 +82,7 @@ def check_cQasm(filename):
 
         return
 
+    backup = ""
     corrected = []
     biggest_number = 0
 
@@ -90,6 +91,7 @@ def check_cQasm(filename):
     with open(filename, 'r') as f:
 
         lines = f.readlines()
+        backup = lines
 
         for line in lines:
 
@@ -105,13 +107,20 @@ def check_cQasm(filename):
 
     with open(filename, 'w') as f:
 
-        for i, line in enumerate(corrected):
-            isLine = num_qubitsChecker(line, biggest_number+1)
-            if isLine:
-                corrected[i] = isLine
-                break
+        try:
 
-        f.writelines(corrected)
+            for i, line in enumerate(corrected):
+                isLine = num_qubitsChecker(line, biggest_number+1)
+                if isLine:
+                    corrected[i] = isLine
+                    break
+
+            f.writelines(corrected)
+
+        except:
+
+            f.writelines(backup)
+            raise
 
     return
 
