@@ -101,6 +101,8 @@ def check_cQasm(filename):
 
             corrected.append(line)
 
+    print(corrected)
+
     with open(filename, 'w') as f:
 
         for i, line in enumerate(corrected):
