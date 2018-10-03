@@ -175,7 +175,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "    parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')\n",
                             "    parser.add_argument('--scheduler', nargs='?', default='ASAP', help='Scheduler specification (ASAP (default), ALAP, ...)')\n",
                             "    parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')\n",
-                            "    parser.add_argument('--initial_placement', nargs='?', default='base', help='Initial placement specification (yes or no)')\n",
+                            "    parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')\n",
                             "    parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')\n",
                             "    args = parser.parse_args()\n",
                             "    try:\n",
