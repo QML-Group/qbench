@@ -165,7 +165,7 @@ def check_dir(path):
     if os.path.isdir(path):
 
         for filename in os.listdir(path):
-            check_cQasm(os.pathjoin(path, filename))
+            check_cQasm(os.path.join(path, filename))
 
     else:
 
