@@ -117,4 +117,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    check_cQasm(parser.filename)
+    check_cQasm(args.filename)
