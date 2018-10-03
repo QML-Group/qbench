@@ -97,7 +97,7 @@ def check_cQasm(filename):
 
         for line in lines:
 
-            line = parenthesisChecker(line)
+            # line = parenthesisChecker(line)
 
             line = rotationGatesChecker(line)
 
