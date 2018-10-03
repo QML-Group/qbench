@@ -68,8 +68,6 @@ def rotationGatesChecker(line):
 
         c = re.sub(b, after[i], correction)
 
-        print(c)
-
         if c:
             correction = c
 
@@ -104,8 +102,6 @@ def check_cQasm(filename):
             biggest_number = bigQubitNum(line, biggest_number)
 
             corrected.append(line)
-
-    print(corrected)
 
     with open(filename, 'w') as f:
 
