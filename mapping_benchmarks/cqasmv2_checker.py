@@ -30,6 +30,8 @@ def bigQubitNum(line, biggest_number):
 
     match = re.findall(r"q\[?\d+\]?", line)
 
+    print(match)
+
     if match:
         '''The biggest qubit number between the biggest of all the qubit numbers in a line and the previous biggest number'''
         biggest_number = max(max(list(map(int, match[1:]))), biggest_number)
