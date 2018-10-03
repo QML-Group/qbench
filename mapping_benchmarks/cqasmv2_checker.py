@@ -57,7 +57,7 @@ def rotationGatesChecker(line):
     before = [r"r([xy])90 (q\[?\d+\]?)", r"([xy])m90 (q\[?\d+\]?)"]
     after = ["r\1 \2, 90", "r\1 \2, -90"]
 
-    for b, i in before:
+    for i, b in enumerate(before):
 
         c = re.sub(b, after[i], correction)
 
