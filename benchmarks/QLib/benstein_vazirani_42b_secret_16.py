@@ -19,9 +19,9 @@ def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no'
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 44
-    p = ql.Program('benstein_vazirani_42b_secret_16', platform, num_qubits)
+    p = ql.Program('benstein_vazirani_42b_secret_16', num_qubits, platform)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('benstein_vazirani_42b_secret_16', platform, num_qubits)
+    k = ql.Kernel('benstein_vazirani_42b_secret_16', platform)
     k.gate('prepz',[42])
     k.gate('x',[42])
     k.gate('h',[0])
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')
     parser.add_argument('--scheduler', nargs='?', default='ASAP', help='Scheduler specification (ASAP (default), ALAP, ...)')
     parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')
-    parser.add_argument('--initial_placement', nargs='?', default='base', help='Initial placement specification (yes or no)')
+    parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')
     parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')
     args = parser.parse_args()
     try:
