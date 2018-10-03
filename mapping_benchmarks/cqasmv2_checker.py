@@ -18,7 +18,7 @@ def num_qubitsChecker(line, num_qubits):
     correction = line
 
     if "qubits" in line:
-        correction = "qubits {num_qubits}".format(num_qubits)
+        correction = "qubits {num_qubits}".format(str(num_qubits))
 
         return correction
     else:
