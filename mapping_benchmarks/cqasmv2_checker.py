@@ -30,8 +30,9 @@ def bigQubitNum(line, biggest_number):
 
     match = re.findall(r"q\[?\d+\]?", line)
 
-    '''The biggest qubit number between the biggest of all the qubit numbers in a line and the previous biggest number'''
-    biggest_number = max(max(list(map(int, match[1:]))), biggest_number)
+    if match:
+        '''The biggest qubit number between the biggest of all the qubit numbers in a line and the previous biggest number'''
+        biggest_number = max(max(list(map(int, match[1:]))), biggest_number)
 
     return biggest_number
 
@@ -71,14 +72,14 @@ def check_cQasm(filename):
 
     if not isQasm(filename):
 
-        print("ERROR. The file is not a QASM file. Please, use a cQASM file as input")
+        print("\nERROR. The file is not a QASM file. Please, use a cQASM file as input\n")
 
         return
 
     corrected = []
     biggest_number = 0
 
-    print("\n\ncheck_cQasm {filename}".format(filename=filename))
+    print("\n\ncheck_cQasm {filename}\n".format(filename=filename))
 
     with open(filename, 'r') as f:
 
@@ -110,7 +111,7 @@ def check_cQasm(filename):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
-        description='Checker cQASMv2 syntax.\n\t - 90 degrees rotation gates as a rotation of 90 degrees \n\t - Square brakets [] rounding qubit values')
+        description='\nChecker cQASMv2 syntax.\n\t - 90 degrees rotation gates as a rotation of 90 degrees \n\t - Square brakets "[]" rounding qubit values')
 
     parser.add_argument('filename',
                         help='Path of the cQASM file you want to check.')
