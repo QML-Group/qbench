@@ -30,11 +30,11 @@ def bigQubitNum(line, biggest_number):
 
     match = re.findall(r"q\[?(\d+)\]?", line)
 
-    print("\nmatch:")
-    print(match)
+    # print("\nmatch:")
+    # print(match)
 
-    print("\nmatch2int:")
-    print(list(map(int, match)))
+    # print("\nmatch2int:")
+    # print(list(map(int, match)))
 
     if match:
         '''The biggest qubit number between the biggest of all the qubit numbers in a line and the previous biggest number'''
@@ -103,7 +103,7 @@ def check_cQasm(filename):
 
     with open(filename, 'w') as f:
 
-        for line, i in corrected:
+        for i, line in enumerate(corrected):
             isLine = num_qubitsChecker(line, biggest_number+1)
             if isLine:
                 corrected[i] = isLine
