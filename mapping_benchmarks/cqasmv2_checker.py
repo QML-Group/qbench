@@ -43,6 +43,20 @@ def bigQubitNum(line, biggest_number):
     return biggest_number
 
 
+def algNameChecker(line):
+
+    correction = line
+    before = r"(\..+)\..+$"
+    after = r"\1"
+
+    c = re.sub(before, after, correction)
+
+    if c:
+        correction = c
+
+    return correction
+
+
 def parenthesisChecker(line):
 
     correction = line
@@ -94,6 +108,8 @@ def check_cQasm(filename):
         backup = lines
 
         for line in lines:
+
+            line = algNameChecker(line)
 
             # line = parenthesisChecker(line)
 
