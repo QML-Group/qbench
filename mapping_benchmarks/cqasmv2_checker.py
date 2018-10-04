@@ -97,7 +97,7 @@ def check_cQasm(filename):
         return
 
     backup = ""
-    corrected = []
+    corrected = ["version 2.0"]
     biggest_number = 0
 
     print("\n\ncheck_cQasm {filename}\n".format(filename=filename))
