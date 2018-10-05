@@ -66,14 +66,14 @@ def versionChecker(corrected):
         if "version" in corrected[c]:
             # isVersion = True
             # break
-            return
+            return corrected
 
     # if not isVersion:
     #     corrected.insert(0, "version 2.0")
 
     corrected.insert(0, "version 2.0")
 
-    return
+    return corrected
 
 
 def parenthesisChecker(line):
@@ -138,6 +138,8 @@ def check_cQasm(filename):
 
             corrected.append(line)
 
+        corrected = versionChecker(corrected)
+
     with open(filename, 'w') as f:
 
         try:
@@ -158,14 +160,28 @@ def check_cQasm(filename):
     return
 
 
+def check_dir(path):
+
+    if os.path.isdir(path):
+
+        for filename in os.listdir(path):
+            check_cQasm(filename)
+
+    else:
+
+        check_cQasm(filename)
+
+    return
+
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
         description='\nChecker cQASMv2 syntax.\n\t - 90 degrees rotation gates as a rotation of 90 degrees \n\t - Square brakets "[]" rounding qubit values')
 
-    parser.add_argument('filename',
+    parser.add_argument('path',
                         help='Path of the cQASM file you want to check.')
 
     args = parser.parse_args()
 
-    check_cQasm(args.filename)
+    check_dir(args.path)
