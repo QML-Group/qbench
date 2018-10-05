@@ -57,6 +57,25 @@ def algNameChecker(line):
     return correction
 
 
+def versionChecker(corrected):
+
+    # isVersion = False
+
+    for c in range(5):          # Look in the first 5 lines for the version line
+
+        if "version" in corrected[c]:
+            # isVersion = True
+            # break
+            return
+
+    # if not isVersion:
+    #     corrected.insert(0, "version 2.0")
+
+    corrected.insert(0, "version 2.0")
+
+    return
+
+
 def parenthesisChecker(line):
 
     correction = line
