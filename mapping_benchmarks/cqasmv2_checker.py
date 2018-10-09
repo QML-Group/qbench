@@ -71,7 +71,9 @@ def versionChecker(corrected):
     # if not isVersion:
     #     corrected.insert(0, "version 2.0")
 
-    corrected.insert(0, "version 2.0")
+    print(corrected[0])
+
+    corrected.insert(0, "version 2.0\n")
 
     return corrected
 
