@@ -1,491 +1,493 @@
+version 2.0
+
 qubits 10
 
-.mini_alu_305.mini_alu_305
-   x q6
-   x q7
-   x q8
-   x q4
-   ym90 q4
-   ry90 q1
-   rx45 q1
-   ym90 q1
-   ry90 q2
-   rx45 q2
-   ym90 q2
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ym90 q1
-   cz q2,q1
-   ry90 q1
-   ym90 q2
-   cz q4,q2
-   ry90 q2
-   ym90 q4
-   cz q1,q4
-   ry90 q4
-   ry90 q2
-   xm45 q2
-   ym90 q2
-   ym90 q2
-   cz q1,q2
-   ry90 q2
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   ry90 q2
-   xm45 q2
-   ym90 q2
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ym90 q2
-   cz q4,q2
-   ry90 q2
-   ym90 q4
-   cz q1,q4
-   ry90 q4
-   ym90 q1
-   cz q2,q1
-   ry90 q1
-   x q4
-   ym90 q4
-   x q5
-   ym90 q5
-   ry90 q3
-   rx45 q3
-   ym90 q3
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ry90 q5
-   rx45 q5
-   ym90 q5
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   ym90 q4
-   cz q5,q4
-   ry90 q4
-   ym90 q5
-   cz q3,q5
-   ry90 q5
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ym90 q4
-   cz q3,q4
-   ry90 q4
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ry90 q5
-   rx45 q5
-   ym90 q5
-   ym90 q4
-   cz q5,q4
-   ry90 q4
-   ym90 q5
-   cz q3,q5
-   ry90 q5
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   x q5
-   ym90 q5
-   x q6
-   ym90 q6
-   ry90 q1
-   rx45 q1
-   ym90 q1
-   ry90 q2
-   rx45 q2
-   ym90 q2
-   ry90 q6
-   rx45 q6
-   ym90 q6
-   ym90 q1
-   cz q2,q1
-   ry90 q1
-   ym90 q2
-   cz q6,q2
-   ry90 q2
-   ym90 q6
-   cz q1,q6
-   ry90 q6
-   ry90 q2
-   xm45 q2
-   ym90 q2
-   ym90 q2
-   cz q1,q2
-   ry90 q2
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   ry90 q2
-   xm45 q2
-   ym90 q2
-   ry90 q6
-   rx45 q6
-   ym90 q6
-   ym90 q2
-   cz q6,q2
-   ry90 q2
-   ym90 q6
-   cz q1,q6
-   ry90 q6
-   ym90 q1
-   cz q2,q1
-   ry90 q1
-   x q6
-   ym90 q6
-   ym90 q6
-   cz q2,q6
-   ry90 q6
-   x q6
-   x q5
-   ym90 q5
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ry90 q6
-   rx45 q6
-   ym90 q6
-   ry90 q5
-   rx45 q5
-   ym90 q5
-   ym90 q0
-   cz q6,q0
-   ry90 q0
-   ym90 q6
-   cz q5,q6
-   ry90 q6
-   ym90 q5
-   cz q0,q5
-   ry90 q5
-   ry90 q6
-   xm45 q6
-   ym90 q6
-   ym90 q6
-   cz q0,q6
-   ry90 q6
-   ry90 q0
-   xm45 q0
-   ym90 q0
-   ry90 q6
-   xm45 q6
-   ym90 q6
-   ry90 q5
-   rx45 q5
-   ym90 q5
-   ym90 q6
-   cz q5,q6
-   ry90 q6
-   ym90 q5
-   cz q0,q5
-   ry90 q5
-   ym90 q0
-   cz q6,q0
-   ry90 q0
-   x q5
-   ym90 q5
-   x q6
-   ym90 q6
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ry90 q5
-   rx45 q5
-   ym90 q5
-   ry90 q6
-   rx45 q6
-   ym90 q6
-   ym90 q0
-   cz q5,q0
-   ry90 q0
-   ym90 q5
-   cz q6,q5
-   ry90 q5
-   ym90 q6
-   cz q0,q6
-   ry90 q6
-   ry90 q5
-   xm45 q5
-   ym90 q5
-   ym90 q5
-   cz q0,q5
-   ry90 q5
-   ry90 q0
-   xm45 q0
-   ym90 q0
-   ry90 q5
-   xm45 q5
-   ym90 q5
-   ry90 q6
-   rx45 q6
-   ym90 q6
-   ym90 q5
-   cz q6,q5
-   ry90 q5
-   ym90 q6
-   cz q0,q6
-   ry90 q6
-   ym90 q0
-   cz q5,q0
-   ry90 q0
-   x q6
-   ym90 q6
-   ym90 q7
-   cz q1,q7
-   ry90 q7
-   ym90 q7
-   cz q2,q7
-   ry90 q7
-   ym90 q8
-   cz q3,q8
-   ry90 q8
-   ym90 q8
-   cz q4,q8
-   ry90 q8
-   x q8
-   ym90 q8
-   ry90 q3
-   rx45 q3
-   ym90 q3
-   ry90 q7
-   rx45 q7
-   ym90 q7
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ym90 q3
-   cz q7,q3
-   ry90 q3
-   ym90 q7
-   cz q8,q7
-   ry90 q7
-   ym90 q8
-   cz q3,q8
-   ry90 q8
-   ry90 q7
-   xm45 q7
-   ym90 q7
-   ym90 q7
-   cz q3,q7
-   ry90 q7
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   ry90 q7
-   xm45 q7
-   ym90 q7
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ym90 q7
-   cz q8,q7
-   ry90 q7
-   ym90 q8
-   cz q3,q8
-   ry90 q8
-   ym90 q3
-   cz q7,q3
-   ry90 q3
-   x q8
-   ym90 q8
-   x q8
-   ym90 q8
-   ry90 q3
-   rx45 q3
-   ym90 q3
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   ym90 q4
-   cz q8,q4
-   ry90 q4
-   ym90 q8
-   cz q3,q8
-   ry90 q8
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ym90 q4
-   cz q3,q4
-   ry90 q4
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ym90 q4
-   cz q8,q4
-   ry90 q4
-   ym90 q8
-   cz q3,q8
-   ry90 q8
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   x q8
-   ym90 q8
-   ym90 q9
-   cz q3,q9
-   ry90 q9
-   x q9
-   ym90 q9
-   ry90 q3
-   rx45 q3
-   ym90 q3
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ry90 q9
-   rx45 q9
-   ym90 q9
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   ym90 q4
-   cz q9,q4
-   ry90 q4
-   ym90 q9
-   cz q3,q9
-   ry90 q9
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ym90 q4
-   cz q3,q4
-   ry90 q4
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ry90 q9
-   rx45 q9
-   ym90 q9
-   ym90 q4
-   cz q9,q4
-   ry90 q4
-   ym90 q9
-   cz q3,q9
-   ry90 q9
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   x q9
-   ym90 q9
-   ym90 q9
-   cz q4,q9
-   ry90 q9
-   x q9
-   x q8
-   ym90 q8
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ry90 q9
-   rx45 q9
-   ym90 q9
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ym90 q0
-   cz q9,q0
-   ry90 q0
-   ym90 q9
-   cz q8,q9
-   ry90 q9
-   ym90 q8
-   cz q0,q8
-   ry90 q8
-   ry90 q9
-   xm45 q9
-   ym90 q9
-   ym90 q9
-   cz q0,q9
-   ry90 q9
-   ry90 q0
-   xm45 q0
-   ym90 q0
-   ry90 q9
-   xm45 q9
-   ym90 q9
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ym90 q9
-   cz q8,q9
-   ry90 q9
-   ym90 q8
-   cz q0,q8
-   ry90 q8
-   ym90 q0
-   cz q9,q0
-   ry90 q0
-   x q8
-   ym90 q8
-   x q9
-   ym90 q9
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ry90 q8
-   rx45 q8
-   ym90 q8
-   ry90 q9
-   rx45 q9
-   ym90 q9
-   ym90 q0
-   cz q8,q0
-   ry90 q0
-   ym90 q8
-   cz q9,q8
-   ry90 q8
-   ym90 q9
-   cz q0,q9
-   ry90 q9
-   ry90 q8
-   xm45 q8
-   ym90 q8
-   ym90 q8
-   cz q0,q8
-   ry90 q8
-   ry90 q0
-   xm45 q0
-   ym90 q0
-   ry90 q8
-   xm45 q8
-   ym90 q8
-   ry90 q9
-   rx45 q9
-   ym90 q9
-   ym90 q8
-   cz q9,q8
-   ry90 q8
-   ym90 q9
-   cz q0,q9
-   ry90 q9
-   ym90 q0
-   cz q8,q0
-   ry90 q0
-   x q9
-   ym90 q9
-   x q9
+.mini_alu_305
+   x q[6]
+   x q[7]
+   x q[8]
+   x q[4]
+   ry q[4], -90
+   ry q[1], 90
+   rx q[1], 45
+   ry q[1], -90
+   ry q[2], 90
+   rx q[2], 45
+   ry q[2], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[1], -90
+   cz q[2],q[1]
+   ry q[1], 90
+   ry q[2], -90
+   cz q[4],q[2]
+   ry q[2], 90
+   ry q[4], -90
+   cz q[1],q[4]
+   ry q[4], 90
+   ry q[2], 90
+   rx q[2], -45
+   ry q[2], -90
+   ry q[2], -90
+   cz q[1],q[2]
+   ry q[2], 90
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   ry q[2], 90
+   rx q[2], -45
+   ry q[2], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[2], -90
+   cz q[4],q[2]
+   ry q[2], 90
+   ry q[4], -90
+   cz q[1],q[4]
+   ry q[4], 90
+   ry q[1], -90
+   cz q[2],q[1]
+   ry q[1], 90
+   x q[4]
+   ry q[4], -90
+   x q[5]
+   ry q[5], -90
+   ry q[3], 90
+   rx q[3], 45
+   ry q[3], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[5], 90
+   rx q[5], 45
+   ry q[5], -90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   ry q[4], -90
+   cz q[5],q[4]
+   ry q[4], 90
+   ry q[5], -90
+   cz q[3],q[5]
+   ry q[5], 90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[4], -90
+   cz q[3],q[4]
+   ry q[4], 90
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[5], 90
+   rx q[5], 45
+   ry q[5], -90
+   ry q[4], -90
+   cz q[5],q[4]
+   ry q[4], 90
+   ry q[5], -90
+   cz q[3],q[5]
+   ry q[5], 90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   x q[5]
+   ry q[5], -90
+   x q[6]
+   ry q[6], -90
+   ry q[1], 90
+   rx q[1], 45
+   ry q[1], -90
+   ry q[2], 90
+   rx q[2], 45
+   ry q[2], -90
+   ry q[6], 90
+   rx q[6], 45
+   ry q[6], -90
+   ry q[1], -90
+   cz q[2],q[1]
+   ry q[1], 90
+   ry q[2], -90
+   cz q[6],q[2]
+   ry q[2], 90
+   ry q[6], -90
+   cz q[1],q[6]
+   ry q[6], 90
+   ry q[2], 90
+   rx q[2], -45
+   ry q[2], -90
+   ry q[2], -90
+   cz q[1],q[2]
+   ry q[2], 90
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   ry q[2], 90
+   rx q[2], -45
+   ry q[2], -90
+   ry q[6], 90
+   rx q[6], 45
+   ry q[6], -90
+   ry q[2], -90
+   cz q[6],q[2]
+   ry q[2], 90
+   ry q[6], -90
+   cz q[1],q[6]
+   ry q[6], 90
+   ry q[1], -90
+   cz q[2],q[1]
+   ry q[1], 90
+   x q[6]
+   ry q[6], -90
+   ry q[6], -90
+   cz q[2],q[6]
+   ry q[6], 90
+   x q[6]
+   x q[5]
+   ry q[5], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[6], 90
+   rx q[6], 45
+   ry q[6], -90
+   ry q[5], 90
+   rx q[5], 45
+   ry q[5], -90
+   ry q[0], -90
+   cz q[6],q[0]
+   ry q[0], 90
+   ry q[6], -90
+   cz q[5],q[6]
+   ry q[6], 90
+   ry q[5], -90
+   cz q[0],q[5]
+   ry q[5], 90
+   ry q[6], 90
+   rx q[6], -45
+   ry q[6], -90
+   ry q[6], -90
+   cz q[0],q[6]
+   ry q[6], 90
+   ry q[0], 90
+   rx q[0], -45
+   ry q[0], -90
+   ry q[6], 90
+   rx q[6], -45
+   ry q[6], -90
+   ry q[5], 90
+   rx q[5], 45
+   ry q[5], -90
+   ry q[6], -90
+   cz q[5],q[6]
+   ry q[6], 90
+   ry q[5], -90
+   cz q[0],q[5]
+   ry q[5], 90
+   ry q[0], -90
+   cz q[6],q[0]
+   ry q[0], 90
+   x q[5]
+   ry q[5], -90
+   x q[6]
+   ry q[6], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[5], 90
+   rx q[5], 45
+   ry q[5], -90
+   ry q[6], 90
+   rx q[6], 45
+   ry q[6], -90
+   ry q[0], -90
+   cz q[5],q[0]
+   ry q[0], 90
+   ry q[5], -90
+   cz q[6],q[5]
+   ry q[5], 90
+   ry q[6], -90
+   cz q[0],q[6]
+   ry q[6], 90
+   ry q[5], 90
+   rx q[5], -45
+   ry q[5], -90
+   ry q[5], -90
+   cz q[0],q[5]
+   ry q[5], 90
+   ry q[0], 90
+   rx q[0], -45
+   ry q[0], -90
+   ry q[5], 90
+   rx q[5], -45
+   ry q[5], -90
+   ry q[6], 90
+   rx q[6], 45
+   ry q[6], -90
+   ry q[5], -90
+   cz q[6],q[5]
+   ry q[5], 90
+   ry q[6], -90
+   cz q[0],q[6]
+   ry q[6], 90
+   ry q[0], -90
+   cz q[5],q[0]
+   ry q[0], 90
+   x q[6]
+   ry q[6], -90
+   ry q[7], -90
+   cz q[1],q[7]
+   ry q[7], 90
+   ry q[7], -90
+   cz q[2],q[7]
+   ry q[7], 90
+   ry q[8], -90
+   cz q[3],q[8]
+   ry q[8], 90
+   ry q[8], -90
+   cz q[4],q[8]
+   ry q[8], 90
+   x q[8]
+   ry q[8], -90
+   ry q[3], 90
+   rx q[3], 45
+   ry q[3], -90
+   ry q[7], 90
+   rx q[7], 45
+   ry q[7], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[3], -90
+   cz q[7],q[3]
+   ry q[3], 90
+   ry q[7], -90
+   cz q[8],q[7]
+   ry q[7], 90
+   ry q[8], -90
+   cz q[3],q[8]
+   ry q[8], 90
+   ry q[7], 90
+   rx q[7], -45
+   ry q[7], -90
+   ry q[7], -90
+   cz q[3],q[7]
+   ry q[7], 90
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   ry q[7], 90
+   rx q[7], -45
+   ry q[7], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[7], -90
+   cz q[8],q[7]
+   ry q[7], 90
+   ry q[8], -90
+   cz q[3],q[8]
+   ry q[8], 90
+   ry q[3], -90
+   cz q[7],q[3]
+   ry q[3], 90
+   x q[8]
+   ry q[8], -90
+   x q[8]
+   ry q[8], -90
+   ry q[3], 90
+   rx q[3], 45
+   ry q[3], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   ry q[4], -90
+   cz q[8],q[4]
+   ry q[4], 90
+   ry q[8], -90
+   cz q[3],q[8]
+   ry q[8], 90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[4], -90
+   cz q[3],q[4]
+   ry q[4], 90
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[4], -90
+   cz q[8],q[4]
+   ry q[4], 90
+   ry q[8], -90
+   cz q[3],q[8]
+   ry q[8], 90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   x q[8]
+   ry q[8], -90
+   ry q[9], -90
+   cz q[3],q[9]
+   ry q[9], 90
+   x q[9]
+   ry q[9], -90
+   ry q[3], 90
+   rx q[3], 45
+   ry q[3], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[9], 90
+   rx q[9], 45
+   ry q[9], -90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   ry q[4], -90
+   cz q[9],q[4]
+   ry q[4], 90
+   ry q[9], -90
+   cz q[3],q[9]
+   ry q[9], 90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[4], -90
+   cz q[3],q[4]
+   ry q[4], 90
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[9], 90
+   rx q[9], 45
+   ry q[9], -90
+   ry q[4], -90
+   cz q[9],q[4]
+   ry q[4], 90
+   ry q[9], -90
+   cz q[3],q[9]
+   ry q[9], 90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   x q[9]
+   ry q[9], -90
+   ry q[9], -90
+   cz q[4],q[9]
+   ry q[9], 90
+   x q[9]
+   x q[8]
+   ry q[8], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[9], 90
+   rx q[9], 45
+   ry q[9], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[0], -90
+   cz q[9],q[0]
+   ry q[0], 90
+   ry q[9], -90
+   cz q[8],q[9]
+   ry q[9], 90
+   ry q[8], -90
+   cz q[0],q[8]
+   ry q[8], 90
+   ry q[9], 90
+   rx q[9], -45
+   ry q[9], -90
+   ry q[9], -90
+   cz q[0],q[9]
+   ry q[9], 90
+   ry q[0], 90
+   rx q[0], -45
+   ry q[0], -90
+   ry q[9], 90
+   rx q[9], -45
+   ry q[9], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[9], -90
+   cz q[8],q[9]
+   ry q[9], 90
+   ry q[8], -90
+   cz q[0],q[8]
+   ry q[8], 90
+   ry q[0], -90
+   cz q[9],q[0]
+   ry q[0], 90
+   x q[8]
+   ry q[8], -90
+   x q[9]
+   ry q[9], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[8], 90
+   rx q[8], 45
+   ry q[8], -90
+   ry q[9], 90
+   rx q[9], 45
+   ry q[9], -90
+   ry q[0], -90
+   cz q[8],q[0]
+   ry q[0], 90
+   ry q[8], -90
+   cz q[9],q[8]
+   ry q[8], 90
+   ry q[9], -90
+   cz q[0],q[9]
+   ry q[9], 90
+   ry q[8], 90
+   rx q[8], -45
+   ry q[8], -90
+   ry q[8], -90
+   cz q[0],q[8]
+   ry q[8], 90
+   ry q[0], 90
+   rx q[0], -45
+   ry q[0], -90
+   ry q[8], 90
+   rx q[8], -45
+   ry q[8], -90
+   ry q[9], 90
+   rx q[9], 45
+   ry q[9], -90
+   ry q[8], -90
+   cz q[9],q[8]
+   ry q[8], 90
+   ry q[9], -90
+   cz q[0],q[9]
+   ry q[9], 90
+   ry q[0], -90
+   cz q[8],q[0]
+   ry q[0], 90
+   x q[9]
+   ry q[9], -90
+   x q[9]
 

@@ -1,184 +1,186 @@
-qubits 7
+version 2.0
 
-.cuccaroMultiplier_1b.cuccaroMultiplier_1b
-   prepz q2
-   prepz q3
-   prepz q4
-   prepz q5
-   ry90 q0
-   xm45 q0
-   y q0
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   x q3
-   ym90 q3
-   cz q3,q0
-   y q0
-   rx45 q0
-   y q0
-   ym90 q3
-   cz q1,q3
-   y q3
-   cz q1,q0
-   y q0
-   rx45 q3
-   y q3
-   xm45 q0
-   y q0
-   cz q1,q3
-   ry90 q3
-   cz q3,q0
-   y q0
-   rx45 q0
-   y q0
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   cz q1,q0
-   ry90 q0
-   x q3
-   ym90 q3
-   ym90 q5
-   cz q1,q5
-   ry90 q5
-   ry90 q5
-   xm45 q5
-   y q5
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   x q1
-   ym90 q1
-   cz q1,q5
-   y q5
-   rx45 q5
-   y q5
-   ym90 q1
-   cz q3,q1
-   y q1
-   cz q3,q5
-   y q5
-   rx45 q1
-   y q1
-   xm45 q5
-   y q5
-   cz q3,q1
-   ry90 q1
-   cz q1,q5
-   y q5
-   rx45 q5
-   y q5
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   cz q3,q5
-   ry90 q5
-   x q1
-   ym90 q1
-   ry90 q0
-   xm45 q0
-   y q0
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   x q4
-   ym90 q4
-   cz q4,q0
-   y q0
-   rx45 q0
-   y q0
-   ym90 q4
-   cz q1,q4
-   y q4
-   cz q1,q0
-   y q0
-   rx45 q4
-   y q4
-   xm45 q0
-   y q0
-   cz q1,q4
-   ry90 q4
-   cz q4,q0
-   y q0
-   rx45 q0
-   y q0
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   cz q1,q0
-   ry90 q0
-   x q4
-   ym90 q4
-   ry90 q5
-   xm45 q5
-   y q5
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   x q1
-   ym90 q1
-   cz q1,q5
-   y q5
-   rx45 q5
-   y q5
-   ym90 q1
-   cz q3,q1
-   y q1
-   cz q3,q5
-   y q5
-   rx45 q1
-   y q1
-   xm45 q5
-   y q5
-   cz q3,q1
-   ry90 q1
-   cz q1,q5
-   y q5
-   rx45 q5
-   y q5
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   cz q3,q5
-   ry90 q5
-   x q1
-   ym90 q1
-   ym90 q5
-   cz q1,q5
-   ry90 q5
-   ry90 q0
-   xm45 q0
-   y q0
-   ry90 q5
-   xm45 q5
-   ym90 q5
-   x q3
-   ym90 q3
-   cz q3,q0
-   y q0
-   rx45 q0
-   y q0
-   ym90 q3
-   cz q5,q3
-   y q3
-   cz q5,q0
-   y q0
-   rx45 q3
-   y q3
-   xm45 q0
-   y q0
-   cz q5,q3
-   ry90 q3
-   cz q3,q0
-   y q0
-   rx45 q0
-   y q0
-   ry90 q3
-   xm45 q3
-   ym90 q3
-   cz q5,q0
-   ry90 q0
-   x q3
-   ym90 q3
+qubits 6
+
+.cuccaroMultiplier_1b
+   prepz q[2]
+   prepz q[3]
+   prepz q[4]
+   prepz q[5]
+   ry q[0], 90
+   rx q[0], -45
+   y q[0]
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   x q[3]
+   ry q[3], -90
+   cz q[3],q[0]
+   y q[0]
+   rx q[0], 45
+   y q[0]
+   ry q[3], -90
+   cz q[1],q[3]
+   y q[3]
+   cz q[1],q[0]
+   y q[0]
+   rx q[3], 45
+   y q[3]
+   rx q[0], -45
+   y q[0]
+   cz q[1],q[3]
+   ry q[3], 90
+   cz q[3],q[0]
+   y q[0]
+   rx q[0], 45
+   y q[0]
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   cz q[1],q[0]
+   ry q[0], 90
+   x q[3]
+   ry q[3], -90
+   ry q[5], -90
+   cz q[1],q[5]
+   ry q[5], 90
+   ry q[5], 90
+   rx q[5], -45
+   y q[5]
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   x q[1]
+   ry q[1], -90
+   cz q[1],q[5]
+   y q[5]
+   rx q[5], 45
+   y q[5]
+   ry q[1], -90
+   cz q[3],q[1]
+   y q[1]
+   cz q[3],q[5]
+   y q[5]
+   rx q[1], 45
+   y q[1]
+   rx q[5], -45
+   y q[5]
+   cz q[3],q[1]
+   ry q[1], 90
+   cz q[1],q[5]
+   y q[5]
+   rx q[5], 45
+   y q[5]
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   cz q[3],q[5]
+   ry q[5], 90
+   x q[1]
+   ry q[1], -90
+   ry q[0], 90
+   rx q[0], -45
+   y q[0]
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   x q[4]
+   ry q[4], -90
+   cz q[4],q[0]
+   y q[0]
+   rx q[0], 45
+   y q[0]
+   ry q[4], -90
+   cz q[1],q[4]
+   y q[4]
+   cz q[1],q[0]
+   y q[0]
+   rx q[4], 45
+   y q[4]
+   rx q[0], -45
+   y q[0]
+   cz q[1],q[4]
+   ry q[4], 90
+   cz q[4],q[0]
+   y q[0]
+   rx q[0], 45
+   y q[0]
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   cz q[1],q[0]
+   ry q[0], 90
+   x q[4]
+   ry q[4], -90
+   ry q[5], 90
+   rx q[5], -45
+   y q[5]
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   x q[1]
+   ry q[1], -90
+   cz q[1],q[5]
+   y q[5]
+   rx q[5], 45
+   y q[5]
+   ry q[1], -90
+   cz q[3],q[1]
+   y q[1]
+   cz q[3],q[5]
+   y q[5]
+   rx q[1], 45
+   y q[1]
+   rx q[5], -45
+   y q[5]
+   cz q[3],q[1]
+   ry q[1], 90
+   cz q[1],q[5]
+   y q[5]
+   rx q[5], 45
+   y q[5]
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   cz q[3],q[5]
+   ry q[5], 90
+   x q[1]
+   ry q[1], -90
+   ry q[5], -90
+   cz q[1],q[5]
+   ry q[5], 90
+   ry q[0], 90
+   rx q[0], -45
+   y q[0]
+   ry q[5], 90
+   rx q[5], -45
+   ry q[5], -90
+   x q[3]
+   ry q[3], -90
+   cz q[3],q[0]
+   y q[0]
+   rx q[0], 45
+   y q[0]
+   ry q[3], -90
+   cz q[5],q[3]
+   y q[3]
+   cz q[5],q[0]
+   y q[0]
+   rx q[3], 45
+   y q[3]
+   rx q[0], -45
+   y q[0]
+   cz q[5],q[3]
+   ry q[3], 90
+   cz q[3],q[0]
+   y q[0]
+   rx q[0], 45
+   y q[0]
+   ry q[3], 90
+   rx q[3], -45
+   ry q[3], -90
+   cz q[5],q[0]
+   ry q[0], 90
+   x q[3]
+   ry q[3], -90
 

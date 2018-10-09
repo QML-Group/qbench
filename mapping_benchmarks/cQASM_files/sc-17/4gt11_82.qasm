@@ -1,83 +1,85 @@
+version 2.0
+
 qubits 5
 
-.4gt11_82.4gt11_82
-   ym90 q1
-   cz q2,q1
-   ry90 q1
-   ym90 q2
-   cz q1,q2
-   ry90 q2
-   ym90 q2
-   cz q3,q2
-   ry90 q2
-   ym90 q3
-   cz q2,q3
-   ry90 q3
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   ym90 q4
-   cz q3,q4
-   ry90 q4
-   x q0
-   ym90 q0
-   ry90 q1
-   rx45 q1
-   ym90 q1
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ym90 q1
-   cz q4,q1
-   ry90 q1
-   ym90 q4
-   cz q0,q4
-   ry90 q4
-   ym90 q0
-   cz q1,q0
-   ry90 q0
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ym90 q4
-   cz q1,q4
-   ry90 q4
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   ry90 q4
-   xm45 q4
-   ym90 q4
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ym90 q4
-   cz q0,q4
-   ry90 q4
-   ym90 q0
-   cz q1,q0
-   ry90 q0
-   ym90 q1
-   cz q4,q1
-   ry90 q1
-   x q0
-   ym90 q0
-   ym90 q3
-   cz q4,q3
-   ry90 q3
-   ym90 q2
-   cz q4,q2
-   ry90 q2
-   ym90 q1
-   cz q4,q1
-   ry90 q1
-   ym90 q4
-   cz q0,q4
-   ry90 q4
-   ym90 q0
-   cz q4,q0
-   ry90 q0
+.4gt11_82
+   ry q[1], -90
+   cz q[2],q[1]
+   ry q[1], 90
+   ry q[2], -90
+   cz q[1],q[2]
+   ry q[2], 90
+   ry q[2], -90
+   cz q[3],q[2]
+   ry q[2], 90
+   ry q[3], -90
+   cz q[2],q[3]
+   ry q[3], 90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   ry q[4], -90
+   cz q[3],q[4]
+   ry q[4], 90
+   x q[0]
+   ry q[0], -90
+   ry q[1], 90
+   rx q[1], 45
+   ry q[1], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[1], -90
+   cz q[4],q[1]
+   ry q[1], 90
+   ry q[4], -90
+   cz q[0],q[4]
+   ry q[4], 90
+   ry q[0], -90
+   cz q[1],q[0]
+   ry q[0], 90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[4], -90
+   cz q[1],q[4]
+   ry q[4], 90
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   ry q[4], 90
+   rx q[4], -45
+   ry q[4], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[4], -90
+   cz q[0],q[4]
+   ry q[4], 90
+   ry q[0], -90
+   cz q[1],q[0]
+   ry q[0], 90
+   ry q[1], -90
+   cz q[4],q[1]
+   ry q[1], 90
+   x q[0]
+   ry q[0], -90
+   ry q[3], -90
+   cz q[4],q[3]
+   ry q[3], 90
+   ry q[2], -90
+   cz q[4],q[2]
+   ry q[2], 90
+   ry q[1], -90
+   cz q[4],q[1]
+   ry q[1], 90
+   ry q[4], -90
+   cz q[0],q[4]
+   ry q[4], 90
+   ry q[0], -90
+   cz q[4],q[0]
+   ry q[0], 90
 

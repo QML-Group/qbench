@@ -1,68 +1,70 @@
+version 2.0
+
 qubits 5
 
-.mod5d1_63.mod5d1_63
-   ym90 q1
-   cz q3,q1
-   ry90 q1
-   ym90 q0
-   cz q2,q0
-   ry90 q0
-   ym90 q4
-   cz q1,q4
-   ry90 q4
-   ym90 q4
-   cz q0,q4
-   ry90 q4
-   x q4
-   ym90 q4
-   ry90 q1
-   rx45 q1
-   ym90 q1
-   ry90 q0
-   rx45 q0
-   ym90 q0
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ym90 q1
-   cz q0,q1
-   ry90 q1
-   ym90 q0
-   cz q4,q0
-   ry90 q0
-   ym90 q4
-   cz q1,q4
-   ry90 q4
-   ry90 q0
-   xm45 q0
-   ym90 q0
-   ym90 q0
-   cz q1,q0
-   ry90 q0
-   ry90 q1
-   xm45 q1
-   ym90 q1
-   ry90 q0
-   xm45 q0
-   ym90 q0
-   ry90 q4
-   rx45 q4
-   ym90 q4
-   ym90 q0
-   cz q4,q0
-   ry90 q0
-   ym90 q4
-   cz q1,q4
-   ry90 q4
-   ym90 q1
-   cz q0,q1
-   ry90 q1
-   x q4
-   ym90 q4
-   ym90 q1
-   cz q3,q1
-   ry90 q1
-   ym90 q0
-   cz q2,q0
-   ry90 q0
+.mod5d1_63
+   ry q[1], -90
+   cz q[3],q[1]
+   ry q[1], 90
+   ry q[0], -90
+   cz q[2],q[0]
+   ry q[0], 90
+   ry q[4], -90
+   cz q[1],q[4]
+   ry q[4], 90
+   ry q[4], -90
+   cz q[0],q[4]
+   ry q[4], 90
+   x q[4]
+   ry q[4], -90
+   ry q[1], 90
+   rx q[1], 45
+   ry q[1], -90
+   ry q[0], 90
+   rx q[0], 45
+   ry q[0], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[1], -90
+   cz q[0],q[1]
+   ry q[1], 90
+   ry q[0], -90
+   cz q[4],q[0]
+   ry q[0], 90
+   ry q[4], -90
+   cz q[1],q[4]
+   ry q[4], 90
+   ry q[0], 90
+   rx q[0], -45
+   ry q[0], -90
+   ry q[0], -90
+   cz q[1],q[0]
+   ry q[0], 90
+   ry q[1], 90
+   rx q[1], -45
+   ry q[1], -90
+   ry q[0], 90
+   rx q[0], -45
+   ry q[0], -90
+   ry q[4], 90
+   rx q[4], 45
+   ry q[4], -90
+   ry q[0], -90
+   cz q[4],q[0]
+   ry q[0], 90
+   ry q[4], -90
+   cz q[1],q[4]
+   ry q[4], 90
+   ry q[1], -90
+   cz q[0],q[1]
+   ry q[1], 90
+   x q[4]
+   ry q[4], -90
+   ry q[1], -90
+   cz q[3],q[1]
+   ry q[1], 90
+   ry q[0], -90
+   cz q[2],q[0]
+   ry q[0], 90
 

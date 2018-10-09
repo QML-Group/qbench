@@ -1,73 +1,75 @@
-qubits 17
+version 2.0
 
-.benstein_vazirani_15b_secret_128.benstein_vazirani_15b_secret_128
-   prepz q15
-   x q15
-   x q0
-   ym90 q0
-   x q1
-   ym90 q1
-   x q2
-   ym90 q2
-   x q3
-   ym90 q3
-   x q4
-   ym90 q4
-   x q5
-   ym90 q5
-   x q6
-   ym90 q6
-   x q7
-   ym90 q7
-   x q8
-   ym90 q8
-   x q9
-   ym90 q9
-   x q10
-   ym90 q10
-   x q11
-   ym90 q11
-   x q12
-   ym90 q12
-   x q13
-   ym90 q13
-   x q14
-   ym90 q14
-   x q15
-   ym90 q15
-   ym90 q15
-   cz q7,q15
-   ry90 q15
-   x q0
-   ym90 q0
-   x q1
-   ym90 q1
-   x q2
-   ym90 q2
-   x q3
-   ym90 q3
-   x q4
-   ym90 q4
-   x q5
-   ym90 q5
-   x q6
-   ym90 q6
-   x q7
-   ym90 q7
-   x q8
-   ym90 q8
-   x q9
-   ym90 q9
-   x q10
-   ym90 q10
-   x q11
-   ym90 q11
-   x q12
-   ym90 q12
-   x q13
-   ym90 q13
-   x q14
-   ym90 q14
-   x q15
-   ym90 q15
+qubits 16
+
+.benstein_vazirani_15b_secret_128
+   prepz q[15]
+   x q[15]
+   x q[0]
+   ry q[0], -90
+   x q[1]
+   ry q[1], -90
+   x q[2]
+   ry q[2], -90
+   x q[3]
+   ry q[3], -90
+   x q[4]
+   ry q[4], -90
+   x q[5]
+   ry q[5], -90
+   x q[6]
+   ry q[6], -90
+   x q[7]
+   ry q[7], -90
+   x q[8]
+   ry q[8], -90
+   x q[9]
+   ry q[9], -90
+   x q[10]
+   ry q[10], -90
+   x q[11]
+   ry q[11], -90
+   x q[12]
+   ry q[12], -90
+   x q[13]
+   ry q[13], -90
+   x q[14]
+   ry q[14], -90
+   x q[15]
+   ry q[15], -90
+   ry q[15], -90
+   cz q[7],q[15]
+   ry q[15], 90
+   x q[0]
+   ry q[0], -90
+   x q[1]
+   ry q[1], -90
+   x q[2]
+   ry q[2], -90
+   x q[3]
+   ry q[3], -90
+   x q[4]
+   ry q[4], -90
+   x q[5]
+   ry q[5], -90
+   x q[6]
+   ry q[6], -90
+   x q[7]
+   ry q[7], -90
+   x q[8]
+   ry q[8], -90
+   x q[9]
+   ry q[9], -90
+   x q[10]
+   ry q[10], -90
+   x q[11]
+   ry q[11], -90
+   x q[12]
+   ry q[12], -90
+   x q[13]
+   ry q[13], -90
+   x q[14]
+   ry q[14], -90
+   x q[15]
+   ry q[15], -90
 

@@ -1,7834 +1,7836 @@
-qubits 12
+version 2.0
+
+qubits 11
 
 .shor_15
-    { prepz q3 | prepz q4 | prepz q5 | prepz q6 | prepz q7 | prepz q8 | prepz q9 | prepz q10 }
+    { prepz q[3] | prepz q[4] | prepz q[5] | prepz q[6] | prepz q[7] | prepz q[8] | prepz q[9] | prepz q[10] }
     qwait 17
-    { x q6 | x q7 | x q4 | x q5 | x q8 | x q9 | ym90 q10 }
-    { ym90 q4 | ym90 q6 | ym90 q5 | x q7 | ym90 q8 | ym90 q9 }
-    { ym90 q4 | ym90 q5 | ym90 q7 | ym90 q8 | ym90 q9 }
-    { cz q2,q4 | ym90 q7 }
-    qwait 1
-    ry90 q4
-    ry90 q4
-    xm45 q4
-    ym90 q4
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    { ry90 q4 | cz q0,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q0,q2
-    ry90 q6
-    { ry90 q2 | ry90 q0 | x q6 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | ry90 q2 }
-    { ry90 q5 | rx45 q2 }
-    { xm45 q5 | ym90 q2 }
-    { ym90 q5 | ym90 q2 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q2 }
-    ry90 q5
-    { xm45 q5 | ry90 q2 }
-    { ym90 q5 | ry90 q2 }
-    { x q5 | xm45 q2 }
-    { ym90 q5 | ym90 q2 }
-    { ym90 q2 | cz q5,q7 }
-    cz q0,q2
-    ry90 q7
-    { ry90 q2 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q2 | xm45 q7 }
-    { ym90 q0 | rx90 q2 | ym90 q7 }
-    { ym90 q2 | ym90 q7 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | rx45 q2 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q2 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q2 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q2 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q2 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q2 }
-    { ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q0,q2
-    ry90 q9
-    { ry90 q2 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q2 | xm45 q9 }
-    { ym90 q0 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q2 | ym90 q5 | x q6 }
-    { ym90 q2 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q2 | ry90 q7 }
-    { rx45 q2 | ry90 q8 | xm45 q7 }
-    { ym90 q2 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q2,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | ym90 q6 }
-    { cz q4,q6 | cz q0,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | cz q6,q7 | ym90 q4 }
-    ym90 q9
-    { ym90 q9 | ry90 q7 }
-    { cz q2,q9 | ry90 q7 }
-    rx45 q7
-    { ry90 q9 | ry90 q2 | ym90 q7 }
-    { ry90 q9 | rx45 q2 | ym90 q7 }
-    { xm45 q9 | ym90 q2 | cz q5,q7 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q9 | ry90 q7 | ry90 q5 }
-    { cz q0,q9 | ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ry90 q9 | cz q0,q2 | ym90 q7 | ym90 q5 }
-    { ry90 q9 | ym90 q7 }
-    { xm45 q9 | ry90 q2 | cz q6,q7 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 | ry90 q7 | cz q6,q5 }
-    { ym90 q9 | ym90 q2 | ry90 q7 }
-    { ym90 q2 | cz q9,q10 | xm45 q7 | ry90 q5 }
-    { cz q0,q2 | ym90 q7 | ry90 q5 }
-    { ry90 q10 | x q7 | xm45 q5 | x q9 }
-    { ry90 q2 | ry90 q0 | ym90 q7 | ym90 q5 | ym90 q9 }
-    { rx45 q0 | ry90 q2 | ym90 q5 | ym90 q9 }
-    { ym90 q0 | rx90 q2 | cz q6,q5 | cz q7,q9 }
-    ym90 q2
-    { ry90 q5 | ry90 q6 | ry90 q9 | cz q2,q4 }
-    { rx45 q6 | ry90 q5 | ry90 q9 }
-    { ym90 q6 | rx90 q5 | xm45 q9 | ry90 q4 }
-    { ym90 q5 | ym90 q9 | ry90 q4 }
-    { ym90 q9 | xm45 q4 }
-    { cz q10,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | cz q0,q4 }
-    ry90 q9
-    { rx45 q9 | ry90 q4 }
-    { ym90 q9 | ry90 q4 }
-    { ym90 q9 | rx45 q4 }
-    { cz q7,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | ry90 q7 | cz q2,q4 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 | ry90 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ry90 q4 | rx45 q2 }
-    { ym90 q9 | xm45 q4 | ym90 q2 }
-    { cz q10,q9 | ym90 q4 | ym90 q2 }
-    ym90 q4
-    { ry90 q9 | cz q10,q7 | cz q0,q4 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 | ry90 q4 | cz q0,q2 }
-    { ym90 q9 | ry90 q7 | ry90 q4 }
-    { x q9 | xm45 q7 | xm45 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ym90 q4 | ry90 q2 }
-    { ym90 q7 | x q4 | xm45 q2 | x q9 }
-    { cz q10,q7 | ym90 q4 | ym90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    { ry90 q7 | ry90 q10 | cz q0,q2 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 | ry90 q2 | ry90 q0 }
-    { ym90 q7 | rx45 q0 | ry90 q2 }
-    { x q7 | ym90 q0 | rx90 q2 }
-    { ym90 q7 | ym90 q2 }
-    { ym90 q7 | cz q2,q8 }
-    cz q5,q7
-    ry90 q8
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | xm45 q8 }
-    { xm45 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | cz q0,q8 }
-    cz q6,q7
-    ry90 q8
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | rx45 q8 }
-    { rx45 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | cz q2,q8 }
-    cz q5,q7
-    { ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q5 | ry90 q8 | rx45 q2 }
-    { ry90 q7 | rx45 q5 | xm45 q8 | ym90 q2 }
-    { xm45 q7 | ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | cz q0,q8 }
-    cz q6,q7
-    { ry90 q8 | cz q0,q2 }
-    { ry90 q7 | cz q6,q5 | ry90 q8 }
-    { ry90 q7 | xm45 q8 | ry90 q2 }
-    { xm45 q7 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q7 | ry90 q5 | x q8 | xm45 q2 }
-    { x q7 | xm45 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q2 | cz q8,q9 }
-    { ym90 q5 | x q7 | cz q0,q2 }
-    { cz q6,q5 | ym90 q7 | ry90 q9 }
-    { ym90 q7 | ry90 q2 | ry90 q0 | ry90 q9 }
-    { ry90 q5 | ry90 q6 | rx45 q0 | ry90 q2 | xm45 q9 }
-    { rx45 q6 | ry90 q5 | ym90 q0 | rx90 q2 | ym90 q9 }
-    { ym90 q6 | rx90 q5 | ym90 q2 | ym90 q9 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | cz q5,q7 }
-    cz q6,q10
-    ry90 q7
-    { ry90 q10 | ry90 q6 | ry90 q7 }
-    { rx45 q6 | ry90 q10 | xm45 q7 }
-    { ym90 q6 | rx90 q10 | ym90 q7 }
-    { ym90 q10 | x q6 | ym90 q7 }
-    { ym90 q6 | ym90 q10 }
-    cz q4,q6
-    qwait 1
-    ry90 q6
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | cz q7,q9 }
-    cz q6,q5
-    ry90 q9
-    { ry90 q5 | ry90 q6 | ry90 q9 }
-    { rx45 q6 | ry90 q5 | rx45 q9 }
-    { ym90 q6 | rx90 q5 | ym90 q9 }
-    { ym90 q5 | ym90 q9 }
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q2 | ym90 q5 }
-    { ym90 q2 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q2,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q2 }
-    { rx45 q2 | ry90 q8 }
-    { ym90 q2 | rx90 q8 }
-    { ym90 q8 | cz q2,q9 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | ym90 q6 }
-    { cz q4,q6 | cz q0,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | x q6 | ym90 q4 }
-    { ym90 q9 | ym90 q6 }
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q0,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q0 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | cz q9,q10 }
-    cz q0,q2
-    { ry90 q10 | x q9 }
-    { ry90 q2 | ry90 q0 | ym90 q9 | ym90 q10 }
-    { rx45 q0 | ry90 q2 | ym90 q9 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q0,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q0 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    xm45 q4
-    ym90 q4
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    { ry90 q4 | cz q0,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q0,q2
-    ry90 q6
-    { ry90 q2 | ry90 q0 | x q6 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | ry90 q2 }
-    { ry90 q5 | rx45 q2 }
-    { xm45 q5 | ym90 q2 }
-    { ym90 q5 | ym90 q2 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q2 }
-    ry90 q5
-    { xm45 q5 | ry90 q2 }
-    { ym90 q5 | ry90 q2 }
-    { x q5 | xm45 q2 }
-    { ym90 q5 | ym90 q2 }
-    { ym90 q2 | cz q5,q7 }
-    cz q0,q2
-    ry90 q7
-    { ry90 q2 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q2 | xm45 q7 }
-    { ym90 q0 | rx90 q2 | ym90 q7 }
-    { ym90 q2 | ym90 q7 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | rx45 q2 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q2 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q2 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q2 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q2 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q2 }
-    { ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q0,q2
-    ry90 q9
-    { ry90 q2 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q2 | xm45 q9 }
-    { ym90 q0 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q2 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q0 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q0 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q2 | ym90 q5 | x q6 }
-    { ym90 q2 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q2,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q2 | cz q3,q5 }
-    { rx45 q2 | ry90 q8 }
-    { ym90 q2 | rx90 q8 | ry90 q5 }
-    { ym90 q8 | ry90 q5 | ym90 q2 }
-    { x q8 | xm45 q5 }
-    { ym90 q8 | ym90 q5 }
-    { ym90 q8 | ym90 q5 }
-    cz q0,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | ym90 q6 }
-    { cz q4,q6 | cz q0,q5 }
-    qwait 1
-    { ry90 q6 | ry90 q5 | cz q4,q2 }
-    { x q6 | ry90 q5 }
-    { rx45 q5 | x q6 | ry90 q2 | x q4 }
-    { ym90 q5 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    { cz q3,q5 | cz q2,q4 }
-    qwait 1
-    { ry90 q5 | ry90 q3 | ry90 q4 }
-    { ry90 q5 | rx45 q3 | ry90 q4 }
-    { xm45 q5 | ym90 q3 | xm45 q4 }
-    { ym90 q5 | ym90 q3 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q0,q3
-    ry90 q7
-    { ry90 q3 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q3 | xm45 q7 }
-    { ym90 q0 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q0,q3
-    ry90 q9
-    { ry90 q3 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q3 | xm45 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q3 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q3 | ry90 q7 }
-    { rx45 q3 | ry90 q8 | xm45 q7 }
-    { ym90 q3 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q3,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | cz q6,q7 }
-    cz q0,q9
-    ry90 q7
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { rx45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q9 | cz q5,q7 }
-    cz q3,q9
-    { ry90 q7 | ry90 q5 }
-    { ry90 q9 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q9 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q9 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q7 }
-    { ym90 q9 | cz q6,q7 }
-    cz q0,q9
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q9 | cz q0,q3 | ry90 q7 }
-    { ry90 q9 | xm45 q7 | ry90 q5 }
-    { xm45 q9 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q9 | ry90 q3 | x q7 | xm45 q5 }
-    { x q9 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q5 }
-    { ym90 q3 | cz q9,q10 | cz q6,q5 }
-    cz q0,q3
-    { ry90 q10 | ry90 q5 | ry90 q6 | x q9 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 | ym90 q9 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 | ym90 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | cz q7,q9 }
-    ym90 q3
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    { ry90 q9 | cz q10,q7 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 }
-    { ym90 q9 | ry90 q7 }
-    { x q9 | xm45 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q7 | x q9 }
-    { cz q10,q7 | ym90 q9 }
-    ym90 q9
-    { ry90 q7 | ry90 q10 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 }
-    ym90 q7
-    x q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    xm45 q7
-    ym90 q7
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | x q7 }
-    { cz q6,q5 | x q7 }
-    ym90 q7
-    { ry90 q5 | ry90 q6 | ym90 q7 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | x q5 }
-    { cz q6,q10 | ym90 q5 }
-    ym90 q5
-    { ry90 q10 | ry90 q6 | cz q3,q5 }
-    { rx45 q6 | ry90 q10 }
-    { ym90 q6 | rx90 q10 | ry90 q5 }
-    { ym90 q10 | ry90 q5 | x q6 }
-    { xm45 q5 | ym90 q10 }
-    ym90 q5
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q0,q3
-    ry90 q7
-    { ry90 q3 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q3 | xm45 q7 }
-    { ym90 q0 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q0,q3
-    ry90 q9
-    { ry90 q3 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q3 | xm45 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q3 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q3,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    { ym90 q8 | cz q3,q9 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | x q6 }
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q0,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q0 }
-    { rx45 q0 | ry90 q3 }
-    { ym90 q0 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | cz q9,q10 }
-    cz q0,q3
-    { ry90 q10 | x q9 }
-    { ry90 q3 | ry90 q0 | ym90 q9 | ym90 q10 }
-    { rx45 q0 | ry90 q3 | ym90 q9 }
-    { ym90 q0 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q0,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q0 }
-    { rx45 q0 | ry90 q3 }
-    { ym90 q0 | rx90 q3 }
-    ym90 q3
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q0,q3
-    ry90 q7
-    { ry90 q3 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q3 | xm45 q7 }
-    { ym90 q0 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q0,q3
-    ry90 q9
-    { ry90 q3 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q3 | xm45 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q3 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q8
-    cz q3,q8
-    qwait 1
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    { ym90 q8 | ym90 q3 }
-    { x q8 | cz q5,q3 }
-    ym90 q8
-    { ym90 q8 | ry90 q3 | x q5 }
-    { cz q0,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | cz q3,q5 }
-    ry90 q8
-    { xm45 q8 | ry90 q5 }
-    { ym90 q8 | ry90 q5 }
-    { ym90 q8 | xm45 q5 }
-    { cz q6,q8 | ym90 q5 }
-    ym90 q5
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | x q6 }
-    { cz q0,q4 | ym90 q6 }
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    { ry90 q4 | cz q0,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q2
-    cz q0,q2
-    qwait 1
-    { ry90 q2 | ry90 q0 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    { ym90 q2 | cz q0,q5 }
-    ym90 q2
-    { cz q4,q2 | ry90 q5 }
-    ry90 q5
-    { ry90 q2 | rx45 q5 | x q4 }
-    { ym90 q5 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    { cz q3,q5 | cz q2,q4 }
-    qwait 1
-    { ry90 q5 | ry90 q3 | ry90 q4 }
-    { ry90 q5 | rx45 q3 | ry90 q4 }
-    { xm45 q5 | ym90 q3 | xm45 q4 }
-    { ym90 q5 | ym90 q3 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q3
-    cz q0,q3
-    qwait 1
-    { ry90 q3 | ry90 q0 }
-    { rx45 q0 | ry90 q3 }
-    { ym90 q0 | rx90 q3 }
-    { ym90 q3 | cz q0,q4 }
-    ym90 q3
-    { cz q5,q3 | ry90 q4 }
-    ry90 q4
-    { ry90 q3 | rx45 q4 | cz q5,q7 }
-    ym90 q4
-    { ym90 q4 | ry90 q7 }
-    { cz q2,q4 | ry90 q7 }
-    xm45 q7
-    { ry90 q4 | ry90 q2 | ym90 q7 }
-    { ry90 q4 | rx45 q2 | ym90 q7 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    { ry90 q4 | cz q0,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q0,q2
-    ry90 q6
-    { ry90 q2 | ry90 q0 | cz q6,q7 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 | ry90 q7 }
-    { ym90 q2 | ry90 q7 }
-    { rx45 q7 | cz q2,q8 }
-    ym90 q7
-    { ym90 q7 | ry90 q8 }
-    { cz q5,q7 | ry90 q8 }
-    xm45 q8
-    { ry90 q7 | ry90 q5 | ym90 q8 }
-    { ry90 q7 | rx45 q5 | ym90 q8 }
-    { xm45 q7 | ym90 q5 | cz q0,q8 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q7 | ry90 q8 }
-    { cz q6,q7 | ry90 q8 }
-    rx45 q8
-    { ry90 q7 | cz q6,q5 | ym90 q8 }
-    { ry90 q7 | ym90 q8 }
-    { xm45 q7 | ry90 q5 | cz q2,q8 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 | ry90 q8 | ry90 q2 }
-    { ym90 q7 | ym90 q5 | ry90 q8 | rx45 q2 }
-    { ym90 q5 | xm45 q8 | ym90 q2 }
-    { cz q6,q5 | ym90 q8 | ym90 q2 }
-    ym90 q8
-    { ry90 q5 | ry90 q6 | cz q0,q8 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 | ry90 q8 | cz q0,q2 }
-    { ym90 q5 | ry90 q8 }
-    { xm45 q8 | ry90 q2 }
-    { ym90 q8 | ry90 q2 }
-    { x q8 | xm45 q2 }
-    { ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q0,q2
-    ry90 q9
-    { ry90 q2 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q2 | xm45 q9 }
-    { ym90 q0 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | ym90 q7 }
-    { cz q0,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 }
-    { ry90 q2 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q2 | ym90 q5 }
-    { ym90 q2 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q2 | ry90 q7 }
-    { rx45 q2 | ry90 q8 | xm45 q7 }
-    { ym90 q2 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q2,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | ym90 q6 }
-    { cz q4,q6 | cz q0,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | cz q6,q7 | ym90 q4 }
-    ym90 q9
-    { ym90 q9 | ry90 q7 }
-    { cz q2,q9 | ry90 q7 }
-    rx45 q7
-    { ry90 q9 | ry90 q2 | ym90 q7 }
-    { ry90 q9 | rx45 q2 | ym90 q7 }
-    { xm45 q9 | ym90 q2 | cz q5,q7 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q9 | ry90 q7 | ry90 q5 }
-    { cz q0,q9 | ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ry90 q9 | cz q0,q2 | ym90 q7 | ym90 q5 }
-    { ry90 q9 | ym90 q7 }
-    { xm45 q9 | ry90 q2 | cz q6,q7 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 | ry90 q7 | cz q6,q5 }
-    { ym90 q9 | ym90 q2 | ry90 q7 }
-    { ym90 q2 | cz q9,q10 | xm45 q7 | ry90 q5 }
-    { cz q0,q2 | ym90 q7 | ry90 q5 }
-    { ry90 q10 | x q7 | xm45 q5 | x q9 }
-    { ry90 q2 | ry90 q0 | ym90 q7 | ym90 q5 | ym90 q9 }
-    { rx45 q0 | ry90 q2 | ym90 q5 | ym90 q9 }
-    { ym90 q0 | rx90 q2 | cz q6,q5 | cz q7,q9 }
-    ym90 q2
-    { ry90 q5 | ry90 q6 | ry90 q9 | cz q2,q4 }
-    { rx45 q6 | ry90 q5 | ry90 q9 }
-    { ym90 q6 | rx90 q5 | xm45 q9 | ry90 q4 }
-    { ym90 q5 | ym90 q9 | ry90 q4 }
-    { ym90 q9 | xm45 q4 }
-    { cz q10,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | cz q0,q4 }
-    ry90 q9
-    { rx45 q9 | ry90 q4 }
-    { ym90 q9 | ry90 q4 }
-    { ym90 q9 | rx45 q4 }
-    { cz q7,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | ry90 q7 | cz q2,q4 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 | ry90 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ry90 q4 | rx45 q2 }
-    { ym90 q9 | xm45 q4 | ym90 q2 }
-    { cz q10,q9 | ym90 q4 | ym90 q2 }
-    ym90 q4
-    { ry90 q9 | cz q10,q7 | cz q0,q4 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 | ry90 q4 | cz q0,q2 }
-    { ym90 q9 | ry90 q7 | ry90 q4 }
-    { x q9 | xm45 q7 | xm45 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ym90 q4 | ry90 q2 }
-    { ym90 q7 | x q4 | xm45 q2 | x q9 }
-    { cz q10,q7 | ym90 q4 | ym90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    { ry90 q7 | ry90 q10 | cz q0,q2 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 | ry90 q2 | ry90 q0 }
-    { ym90 q7 | rx45 q0 | ry90 q2 }
-    { x q7 | ym90 q0 | rx90 q2 }
-    { ym90 q7 | ym90 q2 }
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    xm45 q7
-    ym90 q7
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | x q7 }
-    { cz q6,q5 | x q7 }
-    ym90 q7
-    { ry90 q5 | ry90 q6 | ym90 q7 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | x q5 }
-    { cz q6,q10 | ym90 q5 }
-    ym90 q5
-    { ry90 q10 | ry90 q6 | cz q2,q5 }
-    { rx45 q6 | ry90 q10 }
-    { ym90 q6 | rx90 q10 | ry90 q5 }
-    { ym90 q10 | x q6 | ry90 q5 }
-    { ym90 q6 | xm45 q5 | ym90 q10 }
-    { cz q4,q6 | ym90 q5 }
-    ym90 q5
-    { ry90 q6 | cz q0,q5 }
-    x q6
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | ry90 q2 }
-    { ry90 q5 | rx45 q2 }
-    { xm45 q5 | ym90 q2 }
-    { ym90 q5 | ym90 q2 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q2 }
-    ry90 q5
-    { xm45 q5 | ry90 q2 }
-    { ym90 q5 | ry90 q2 }
-    { x q5 | xm45 q2 }
-    { ym90 q5 | ym90 q2 }
-    { ym90 q2 | cz q5,q7 }
-    cz q0,q2
-    ry90 q7
-    { ry90 q2 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q2 | xm45 q7 }
-    { ym90 q0 | rx90 q2 | ym90 q7 }
-    { ym90 q2 | ym90 q7 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | rx45 q2 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q2 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q2 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q2 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q2 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q2 }
-    { ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q0,q2
-    ry90 q9
-    { ry90 q2 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q2 | xm45 q9 }
-    { ym90 q0 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q2 | ym90 q5 | x q6 }
-    { ym90 q2 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q2 | ry90 q7 }
-    { rx45 q2 | ry90 q8 | xm45 q7 }
-    { ym90 q2 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q2,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | ym90 q6 }
-    { cz q4,q6 | cz q0,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | x q6 | ym90 q4 }
-    { ym90 q9 | ym90 q6 }
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q0,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q0 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | cz q9,q10 }
-    cz q0,q2
-    { ry90 q10 | x q9 }
-    { ry90 q2 | ry90 q0 | ym90 q9 | ym90 q10 }
-    { rx45 q0 | ry90 q2 | ym90 q9 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q0,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q0 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 }
-    ym90 q2
-    cz q2,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    xm45 q4
-    ym90 q4
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q0,q4
-    qwait 1
-    { ry90 q4 | cz q0,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q0,q2
-    ry90 q6
-    { ry90 q2 | ry90 q0 | cz q6,q7 }
-    { rx45 q0 | ry90 q2 }
-    { ym90 q0 | rx90 q2 | ry90 q7 }
-    { ym90 q2 | ry90 q7 }
-    { rx45 q7 | cz q2,q8 }
-    ym90 q7
-    { ym90 q7 | ry90 q8 }
-    { cz q5,q7 | ry90 q8 }
-    xm45 q8
-    { ry90 q7 | ry90 q5 | ym90 q8 }
-    { ry90 q7 | rx45 q5 | ym90 q8 }
-    { xm45 q7 | ym90 q5 | cz q0,q8 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q7 | ry90 q8 }
-    { cz q6,q7 | ry90 q8 }
-    rx45 q8
-    { ry90 q7 | cz q6,q5 | ym90 q8 }
-    { ry90 q7 | ym90 q8 }
-    { xm45 q7 | ry90 q5 | cz q2,q8 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 | ry90 q8 | ry90 q2 }
-    { ym90 q7 | ym90 q5 | ry90 q8 | rx45 q2 }
-    { ym90 q5 | xm45 q8 | ym90 q2 }
-    { cz q6,q5 | ym90 q8 | ym90 q2 }
-    ym90 q8
-    { ry90 q5 | ry90 q6 | cz q0,q8 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 | ry90 q8 | cz q0,q2 }
-    { ym90 q5 | ry90 q8 }
-    { xm45 q8 | ry90 q2 }
-    { ym90 q8 | ry90 q2 }
-    { x q8 | xm45 q2 }
-    { ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q0,q2
-    ry90 q9
-    { ry90 q2 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q2 | xm45 q9 }
-    { ym90 q0 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q2 | ym90 q5 }
-    { ym90 q2 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q2,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q2 | cz q3,q5 }
-    { rx45 q2 | ry90 q8 }
-    { ym90 q2 | rx90 q8 | ry90 q5 }
-    { ym90 q8 | ry90 q5 }
-    { x q8 | xm45 q5 }
-    { ym90 q8 | ym90 q5 }
-    { ym90 q8 | ym90 q5 }
-    cz q0,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | ym90 q6 }
-    { cz q4,q6 | cz q0,q5 }
-    qwait 1
-    { ry90 q6 | ry90 q5 | x q4 }
-    { x q6 | ry90 q5 | ym90 q4 }
-    { rx45 q5 | x q6 | ym90 q4 }
-    { ym90 q5 | cz q2,q4 }
-    ym90 q5
-    { cz q3,q5 | ry90 q4 }
-    ry90 q4
-    { ry90 q5 | ry90 q3 | xm45 q4 }
-    { ry90 q5 | rx45 q3 | ym90 q4 }
-    { xm45 q5 | ym90 q3 | ym90 q4 }
-    { ym90 q5 | ym90 q3 | cz q1,q4 }
-    ym90 q5
-    { cz q0,q5 | ry90 q4 }
-    ry90 q4
-    { ry90 q5 | cz q0,q3 | rx45 q4 }
-    { ry90 q5 | ym90 q4 }
-    { xm45 q5 | ry90 q3 | ym90 q4 }
-    { ym90 q5 | ry90 q3 | cz q2,q4 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 | ry90 q4 | ry90 q2 }
-    { ym90 q3 | cz q5,q7 | ry90 q4 | rx45 q2 }
-    { cz q0,q3 | xm45 q4 | ym90 q2 }
-    { ry90 q7 | ym90 q4 | ym90 q2 }
-    { ry90 q3 | ry90 q0 | ry90 q7 | ym90 q4 }
-    { rx45 q0 | ry90 q3 | xm45 q7 | cz q1,q4 }
-    { ym90 q0 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 | ry90 q4 | cz q1,q2 }
-    { cz q6,q7 | cz q3,q8 | ry90 q4 }
-    { xm45 q4 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | ym90 q4 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | x q4 | xm45 q2 }
-    { rx45 q7 | xm45 q8 | ym90 q4 | ym90 q2 }
-    { ym90 q7 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q8 | cz q1,q2 }
-    { cz q5,q7 | cz q0,q8 }
-    { ry90 q2 | ry90 q1 }
-    { ry90 q7 | ry90 q5 | ry90 q8 | rx45 q1 | ry90 q2 }
-    { ry90 q7 | rx45 q5 | ry90 q8 | ym90 q1 | rx90 q2 }
-    { xm45 q7 | ym90 q5 | rx45 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q0,q3
-    ry90 q9
-    { ry90 q3 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q3 | xm45 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q3 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q3 | ry90 q7 }
-    { rx45 q3 | ry90 q8 | xm45 q7 }
-    { ym90 q3 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q3,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | cz q6,q7 }
-    cz q0,q9
-    ry90 q7
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { rx45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q9 | cz q5,q7 }
-    cz q3,q9
-    { ry90 q7 | ry90 q5 }
-    { ry90 q9 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q9 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q9 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q7 }
-    { ym90 q9 | cz q6,q7 }
-    cz q0,q9
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q9 | cz q0,q3 | ry90 q7 }
-    { ry90 q9 | xm45 q7 | ry90 q5 }
-    { xm45 q9 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q9 | ry90 q3 | x q7 | xm45 q5 }
-    { x q9 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q5 }
-    { ym90 q3 | cz q9,q10 | cz q6,q5 }
-    cz q0,q3
-    { ry90 q10 | ry90 q5 | ry90 q6 | x q9 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 | ym90 q9 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 | ym90 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | cz q7,q9 }
-    ym90 q3
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    { ry90 q9 | cz q10,q7 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 }
-    { ym90 q9 | ry90 q7 }
-    { x q9 | xm45 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q7 | x q9 }
-    { cz q10,q7 | ym90 q9 }
-    ym90 q9
-    { ry90 q7 | ry90 q10 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 }
-    ym90 q7
-    x q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    xm45 q7
-    ym90 q7
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | x q7 }
-    { cz q6,q5 | x q7 }
-    ym90 q7
-    { ry90 q5 | ry90 q6 | ym90 q7 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | x q5 }
-    { cz q6,q10 | ym90 q5 }
-    ym90 q5
-    { ry90 q10 | ry90 q6 | cz q3,q5 }
-    { rx45 q6 | ry90 q10 }
-    { ym90 q6 | rx90 q10 | ry90 q5 }
-    { ym90 q10 | ry90 q5 | x q6 }
-    { xm45 q5 | ym90 q10 }
-    ym90 q5
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q0,q3
-    ry90 q7
-    { ry90 q3 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q3 | xm45 q7 }
-    { ym90 q0 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q0,q3
-    ry90 q9
-    { ry90 q3 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q3 | xm45 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q3 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q3,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    { ym90 q8 | cz q3,q9 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q0,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 }
-    { ym90 q0 | x q6 }
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q0,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q0 }
-    { rx45 q0 | ry90 q3 }
-    { ym90 q0 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | cz q9,q10 }
-    cz q0,q3
-    { ry90 q10 | x q9 }
-    { ry90 q3 | ry90 q0 | ym90 q9 | ym90 q10 }
-    { rx45 q0 | ry90 q3 | ym90 q9 }
-    { ym90 q0 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q0,q9
-    qwait 1
-    { ry90 q9 | cz q0,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q0,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q0 }
-    { rx45 q0 | ry90 q3 }
-    { ym90 q0 | rx90 q3 }
-    ym90 q3
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q0,q5
-    qwait 1
-    { ry90 q5 | cz q0,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q0,q3
-    ry90 q7
-    { ry90 q3 | ry90 q0 | ry90 q7 }
-    { rx45 q0 | ry90 q3 | xm45 q7 }
-    { ym90 q0 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q0,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q0,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q0,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q0,q3
-    ry90 q9
-    { ry90 q3 | ry90 q0 | ry90 q9 }
-    { rx45 q0 | ry90 q3 | xm45 q9 }
-    { ym90 q0 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q0,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q0,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q0,q3 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q0 | rx45 q6 | ry90 q5 }
-    { rx45 q0 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q0 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q0,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | cz q8,q5 }
-    cz q6,q0
-    ry90 q5
-    { ry90 q0 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q0 | xm45 q5 }
-    { ym90 q6 | rx90 q0 | ym90 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q3 | ry90 q7 }
-    { rx45 q3 | ry90 q8 | xm45 q7 }
-    { ym90 q3 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    x q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q0,q8
-    qwait 1
-    { ry90 q8 | ry90 q0 }
-    { ry90 q8 | rx45 q0 }
-    { xm45 q8 | ym90 q0 }
-    { ym90 q8 | ym90 q0 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q0 }
-    ry90 q8
-    { xm45 q8 | ry90 q0 }
-    { ym90 q8 | ry90 q0 }
-    { x q8 | xm45 q0 }
-    { ym90 q8 | ym90 q0 }
-    { ym90 q0 | x q8 }
-    { cz q6,q0 | ym90 q8 }
-    ym90 q8
-    { ry90 q0 | ry90 q6 | cz q2,q8 }
-    { rx45 q6 | ry90 q0 }
-    { ym90 q6 | rx90 q0 | ry90 q8 }
-    { ym90 q0 | x q6 | ry90 q8 }
-    { ym90 q6 | xm45 q8 }
-    { cz q4,q6 | ym90 q8 }
-    ym90 q8
-    { ry90 q6 | cz q1,q8 }
-    cz q6,q7
-    ry90 q8
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | rx45 q8 }
-    { rx45 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | cz q2,q8 }
-    cz q5,q7
-    { ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q5 | ry90 q8 | rx45 q2 }
-    { ry90 q7 | rx45 q5 | xm45 q8 | ym90 q2 }
-    { xm45 q7 | ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | cz q1,q8 }
-    cz q6,q7
-    { ry90 q8 | cz q1,q2 }
-    { ry90 q7 | cz q6,q5 | ry90 q8 }
-    { ry90 q7 | xm45 q8 | ry90 q2 }
-    { xm45 q7 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q7 | ry90 q5 | x q8 | xm45 q2 }
-    { x q7 | xm45 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q2 | cz q8,q9 }
-    { ym90 q5 | cz q1,q2 }
-    { cz q6,q5 | ry90 q9 }
-    { ry90 q2 | ry90 q1 | ry90 q9 }
-    { ry90 q5 | ry90 q6 | rx45 q1 | ry90 q2 | xm45 q9 }
-    { rx45 q6 | ry90 q5 | ym90 q1 | rx90 q2 | ym90 q9 }
-    { ym90 q6 | rx90 q5 | ym90 q2 | ym90 q9 }
-    { ym90 q5 | cz q7,q9 }
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | ym90 q7 }
-    { cz q1,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 }
-    { ry90 q2 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q2 | ym90 q5 }
-    { ym90 q2 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q2 | ry90 q7 }
-    { rx45 q2 | ry90 q8 | xm45 q7 }
-    { ym90 q2 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q2,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | ym90 q6 }
-    { cz q4,q6 | cz q1,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | cz q6,q7 | ym90 q4 }
-    ym90 q9
-    { ym90 q9 | ry90 q7 }
-    { cz q2,q9 | ry90 q7 }
-    rx45 q7
-    { ry90 q9 | ry90 q2 | ym90 q7 }
-    { ry90 q9 | rx45 q2 | ym90 q7 }
-    { xm45 q9 | ym90 q2 | cz q5,q7 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q9 | ry90 q7 | ry90 q5 }
-    { cz q1,q9 | ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ry90 q9 | cz q1,q2 | ym90 q7 | ym90 q5 }
-    { ry90 q9 | ym90 q7 }
-    { xm45 q9 | ry90 q2 | cz q6,q7 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 | ry90 q7 | cz q6,q5 }
-    { ym90 q9 | ym90 q2 | ry90 q7 }
-    { ym90 q2 | cz q9,q10 | xm45 q7 | ry90 q5 }
-    { cz q1,q2 | ym90 q7 | ry90 q5 }
-    { ry90 q10 | x q7 | xm45 q5 | x q9 }
-    { ry90 q2 | ry90 q1 | ym90 q7 | ym90 q5 | ym90 q9 }
-    { rx45 q1 | ry90 q2 | ym90 q5 | ym90 q9 }
-    { ym90 q1 | rx90 q2 | cz q6,q5 | cz q7,q9 }
-    ym90 q2
-    { ry90 q5 | ry90 q6 | ry90 q9 | cz q2,q4 }
-    { rx45 q6 | ry90 q5 | ry90 q9 }
-    { ym90 q6 | rx90 q5 | xm45 q9 | ry90 q4 }
-    { ym90 q5 | ym90 q9 | ry90 q4 }
-    { ym90 q9 | xm45 q4 }
-    { cz q10,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | cz q1,q4 }
-    ry90 q9
-    { rx45 q9 | ry90 q4 }
-    { ym90 q9 | ry90 q4 }
-    { ym90 q9 | rx45 q4 }
-    { cz q7,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | ry90 q7 | cz q2,q4 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 | ry90 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ry90 q4 | rx45 q2 }
-    { ym90 q9 | xm45 q4 | ym90 q2 }
-    { cz q10,q9 | ym90 q4 | ym90 q2 }
-    ym90 q4
-    { ry90 q9 | cz q10,q7 | cz q1,q4 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 | ry90 q4 | cz q1,q2 }
-    { ym90 q9 | ry90 q7 | ry90 q4 }
-    { x q9 | xm45 q7 | xm45 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ym90 q4 | ry90 q2 }
-    { ym90 q7 | x q4 | xm45 q2 | x q9 }
-    { cz q10,q7 | ym90 q4 | ym90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    { ry90 q7 | ry90 q10 | cz q1,q2 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 | ry90 q2 | ry90 q1 }
-    { ym90 q7 | rx45 q1 | ry90 q2 }
-    { x q7 | ym90 q1 | rx90 q2 }
-    { ym90 q7 | ym90 q2 }
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    xm45 q7
-    ym90 q7
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | x q7 }
-    { cz q6,q5 | x q7 }
-    ym90 q7
-    { ry90 q5 | ry90 q6 | ym90 q7 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | x q5 }
-    { cz q6,q10 | ym90 q5 }
-    ym90 q5
-    { ry90 q10 | ry90 q6 | cz q2,q5 }
-    { rx45 q6 | ry90 q10 }
-    { ym90 q6 | rx90 q10 | ry90 q5 }
-    { ym90 q10 | x q6 | ry90 q5 }
-    { ym90 q6 | xm45 q5 | ym90 q10 }
-    { cz q4,q6 | ym90 q5 }
-    ym90 q5
-    { ry90 q6 | cz q1,q5 }
-    x q6
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | ry90 q2 }
-    { ry90 q5 | rx45 q2 }
-    { xm45 q5 | ym90 q2 }
-    { ym90 q5 | ym90 q2 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q2 }
-    ry90 q5
-    { xm45 q5 | ry90 q2 }
-    { ym90 q5 | ry90 q2 }
-    { x q5 | xm45 q2 }
-    { ym90 q5 | ym90 q2 }
-    { ym90 q2 | cz q5,q7 }
-    cz q1,q2
-    ry90 q7
-    { ry90 q2 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q2 | xm45 q7 }
-    { ym90 q1 | rx90 q2 | ym90 q7 }
-    { ym90 q2 | ym90 q7 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | rx45 q2 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q2 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q2 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q2 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q2 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q2 }
-    { ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q1,q2
-    ry90 q9
-    { ry90 q2 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q2 | xm45 q9 }
-    { ym90 q1 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q2 | ym90 q5 | x q6 }
-    { ym90 q2 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q2 | ry90 q7 }
-    { rx45 q2 | ry90 q8 | xm45 q7 }
-    { ym90 q2 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q2,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | ym90 q6 }
-    { cz q4,q6 | cz q1,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | x q6 | ym90 q4 }
-    { ym90 q9 | ym90 q6 }
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q1,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q1 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | cz q9,q10 }
-    cz q1,q2
-    { ry90 q10 | x q9 }
-    { ry90 q2 | ry90 q1 | ym90 q9 | ym90 q10 }
-    { rx45 q1 | ry90 q2 | ym90 q9 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q1,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q1 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    xm45 q4
-    ym90 q4
-    ym90 q4
-    cz q1,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q1,q4
-    qwait 1
-    { ry90 q4 | cz q1,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q1,q2
-    ry90 q6
-    { ry90 q2 | ry90 q1 | cz q6,q7 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 | ry90 q7 }
-    { ym90 q2 | ry90 q7 }
-    { rx45 q7 | cz q2,q8 }
-    ym90 q7
-    { ym90 q7 | ry90 q8 }
-    { cz q5,q7 | ry90 q8 }
-    xm45 q8
-    { ry90 q7 | ry90 q5 | ym90 q8 }
-    { ry90 q7 | rx45 q5 | ym90 q8 }
-    { xm45 q7 | ym90 q5 | cz q1,q8 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q7 | ry90 q8 }
-    { cz q6,q7 | ry90 q8 }
-    rx45 q8
-    { ry90 q7 | cz q6,q5 | ym90 q8 }
-    { ry90 q7 | ym90 q8 }
-    { xm45 q7 | ry90 q5 | cz q2,q8 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 | ry90 q8 | ry90 q2 }
-    { ym90 q7 | ym90 q5 | ry90 q8 | rx45 q2 }
-    { ym90 q5 | xm45 q8 | ym90 q2 }
-    { cz q6,q5 | ym90 q8 | ym90 q2 }
-    ym90 q8
-    { ry90 q5 | ry90 q6 | cz q1,q8 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 | ry90 q8 | cz q1,q2 }
-    { ym90 q5 | ry90 q8 }
-    { xm45 q8 | ry90 q2 }
-    { ym90 q8 | ry90 q2 }
-    { x q8 | xm45 q2 }
-    { ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q1,q2
-    ry90 q9
-    { ry90 q2 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q2 | xm45 q9 }
-    { ym90 q1 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q2 | ym90 q5 }
-    { ym90 q2 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q2,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q2 | cz q3,q5 }
-    { rx45 q2 | ry90 q8 }
-    { ym90 q2 | rx90 q8 | ry90 q5 }
-    { ym90 q8 | ry90 q5 | ym90 q2 }
-    { x q8 | xm45 q5 }
-    { ym90 q8 | ym90 q5 }
-    { ym90 q8 | ym90 q5 }
-    cz q1,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | ym90 q6 }
-    { cz q4,q6 | cz q1,q5 }
-    qwait 1
-    { ry90 q6 | ry90 q5 | cz q4,q2 }
-    { x q6 | ry90 q5 }
-    { rx45 q5 | x q6 | ry90 q2 | x q4 }
-    { ym90 q5 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    { cz q3,q5 | cz q2,q4 }
-    qwait 1
-    { ry90 q5 | ry90 q3 | ry90 q4 }
-    { ry90 q5 | rx45 q3 | ry90 q4 }
-    { xm45 q5 | ym90 q3 | xm45 q4 }
-    { ym90 q5 | ym90 q3 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q1,q3
-    ry90 q7
-    { ry90 q3 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q3 | xm45 q7 }
-    { ym90 q1 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q1,q3
-    ry90 q9
-    { ry90 q3 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q3 | xm45 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q3 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q3 | ry90 q7 }
-    { rx45 q3 | ry90 q8 | xm45 q7 }
-    { ym90 q3 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q3,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | cz q6,q7 }
-    cz q1,q9
-    ry90 q7
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { rx45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q9 | cz q5,q7 }
-    cz q3,q9
-    { ry90 q7 | ry90 q5 }
-    { ry90 q9 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q9 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q9 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q7 }
-    { ym90 q9 | cz q6,q7 }
-    cz q1,q9
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q9 | cz q1,q3 | ry90 q7 }
-    { ry90 q9 | xm45 q7 | ry90 q5 }
-    { xm45 q9 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q9 | ry90 q3 | x q7 | xm45 q5 }
-    { x q9 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q5 }
-    { ym90 q3 | cz q9,q10 | cz q6,q5 }
-    cz q1,q3
-    { ry90 q10 | ry90 q5 | ry90 q6 | x q9 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 | ym90 q9 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 | ym90 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | cz q7,q9 }
-    ym90 q3
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    { ry90 q9 | cz q10,q7 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 }
-    { ym90 q9 | ry90 q7 }
-    { x q9 | xm45 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q7 | x q9 }
-    { cz q10,q7 | ym90 q9 }
-    ym90 q9
-    { ry90 q7 | ry90 q10 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 }
-    ym90 q7
-    x q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    xm45 q7
-    ym90 q7
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | x q7 }
-    { cz q6,q5 | x q7 }
-    ym90 q7
-    { ry90 q5 | ry90 q6 | ym90 q7 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | x q5 }
-    { cz q6,q10 | ym90 q5 }
-    ym90 q5
-    { ry90 q10 | ry90 q6 | cz q3,q5 }
-    { rx45 q6 | ry90 q10 }
-    { ym90 q6 | rx90 q10 | ry90 q5 }
-    { ym90 q10 | ry90 q5 | x q6 }
-    { xm45 q5 | ym90 q10 }
-    ym90 q5
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q1,q3
-    ry90 q7
-    { ry90 q3 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q3 | xm45 q7 }
-    { ym90 q1 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q1,q3
-    ry90 q9
-    { ry90 q3 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q3 | xm45 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q3 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q3,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    { ym90 q8 | cz q3,q9 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | x q6 }
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q1,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q1 }
-    { rx45 q1 | ry90 q3 }
-    { ym90 q1 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | cz q9,q10 }
-    cz q1,q3
-    { ry90 q10 | x q9 }
-    { ry90 q3 | ry90 q1 | ym90 q9 | ym90 q10 }
-    { rx45 q1 | ry90 q3 | ym90 q9 }
-    { ym90 q1 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q1,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q1 }
-    { rx45 q1 | ry90 q3 }
-    { ym90 q1 | rx90 q3 }
-    ym90 q3
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q1,q3
-    ry90 q7
-    { ry90 q3 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q3 | xm45 q7 }
-    { ym90 q1 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q1,q3
-    ry90 q9
-    { ry90 q3 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q3 | xm45 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q3 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q8
-    cz q3,q8
-    qwait 1
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    { ym90 q8 | ym90 q3 }
-    { x q8 | cz q5,q3 }
-    ym90 q8
-    { ym90 q8 | ry90 q3 | x q5 }
-    { cz q1,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | cz q3,q5 }
-    ry90 q8
-    { xm45 q8 | ry90 q5 }
-    { ym90 q8 | ry90 q5 }
-    { ym90 q8 | xm45 q5 }
-    { cz q6,q8 | ym90 q5 }
-    ym90 q5
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | x q6 }
-    { cz q1,q4 | ym90 q6 }
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q1,q4
-    qwait 1
-    { ry90 q4 | cz q1,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q2
-    cz q1,q2
-    qwait 1
-    { ry90 q2 | ry90 q1 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    { ym90 q2 | cz q1,q5 }
-    ym90 q2
-    { cz q4,q2 | ry90 q5 }
-    ry90 q5
-    { ry90 q2 | rx45 q5 | x q4 }
-    { ym90 q5 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    { cz q3,q5 | cz q2,q4 }
-    qwait 1
-    { ry90 q5 | ry90 q3 | ry90 q4 }
-    { ry90 q5 | rx45 q3 | ry90 q4 }
-    { xm45 q5 | ym90 q3 | xm45 q4 }
-    { ym90 q5 | ym90 q3 | ym90 q4 }
-    { ym90 q5 | ym90 q4 }
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q3
-    cz q1,q3
-    qwait 1
-    { ry90 q3 | ry90 q1 }
-    { rx45 q1 | ry90 q3 }
-    { ym90 q1 | rx90 q3 }
-    { ym90 q3 | cz q1,q4 }
-    ym90 q3
-    { cz q5,q3 | ry90 q4 }
-    ry90 q4
-    { ry90 q3 | rx45 q4 | x q5 }
-    { ym90 q4 | ym90 q5 }
-    { ym90 q4 | ym90 q5 }
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q1,q4
-    qwait 1
-    { ry90 q4 | cz q1,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q1,q2
-    ry90 q6
-    { ry90 q2 | ry90 q1 | x q6 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | ry90 q2 }
-    { ry90 q5 | rx45 q2 }
-    { xm45 q5 | ym90 q2 }
-    { ym90 q5 | ym90 q2 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q2 }
-    ry90 q5
-    { xm45 q5 | ry90 q2 }
-    { ym90 q5 | ry90 q2 }
-    { x q5 | xm45 q2 }
-    { ym90 q5 | ym90 q2 }
-    { ym90 q2 | cz q5,q7 }
-    cz q1,q2
-    ry90 q7
-    { ry90 q2 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q2 | xm45 q7 }
-    { ym90 q1 | rx90 q2 | ym90 q7 }
-    { ym90 q2 | ym90 q7 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | rx45 q2 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q2 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q2 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q2 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q2 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q2 }
-    { ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q1,q2
-    ry90 q9
-    { ry90 q2 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q2 | xm45 q9 }
-    { ym90 q1 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q2 | ym90 q5 | x q6 }
-    { ym90 q2 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q2 | ry90 q7 }
-    { rx45 q2 | ry90 q8 | xm45 q7 }
-    { ym90 q2 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q2,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | ym90 q6 }
-    { cz q4,q6 | cz q1,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | cz q6,q7 | ym90 q4 }
-    ym90 q9
-    { ym90 q9 | ry90 q7 }
-    { cz q2,q9 | ry90 q7 }
-    rx45 q7
-    { ry90 q9 | ry90 q2 | ym90 q7 }
-    { ry90 q9 | rx45 q2 | ym90 q7 }
-    { xm45 q9 | ym90 q2 | cz q5,q7 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q9 | ry90 q7 | ry90 q5 }
-    { cz q1,q9 | ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ry90 q9 | cz q1,q2 | ym90 q7 | ym90 q5 }
-    { ry90 q9 | ym90 q7 }
-    { xm45 q9 | ry90 q2 | cz q6,q7 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 | ry90 q7 | cz q6,q5 }
-    { ym90 q9 | ym90 q2 | ry90 q7 }
-    { ym90 q2 | cz q9,q10 | xm45 q7 | ry90 q5 }
-    { cz q1,q2 | ym90 q7 | ry90 q5 }
-    { ry90 q10 | x q7 | xm45 q5 | x q9 }
-    { ry90 q2 | ry90 q1 | ym90 q7 | ym90 q5 | ym90 q9 }
-    { rx45 q1 | ry90 q2 | ym90 q5 | ym90 q9 }
-    { ym90 q1 | rx90 q2 | cz q6,q5 | cz q7,q9 }
-    ym90 q2
-    { ry90 q5 | ry90 q6 | ry90 q9 | cz q2,q4 }
-    { rx45 q6 | ry90 q5 | ry90 q9 }
-    { ym90 q6 | rx90 q5 | xm45 q9 | ry90 q4 }
-    { ym90 q5 | ym90 q9 | ry90 q4 }
-    { ym90 q9 | xm45 q4 }
-    { cz q10,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | cz q1,q4 }
-    ry90 q9
-    { rx45 q9 | ry90 q4 }
-    { ym90 q9 | ry90 q4 }
-    { ym90 q9 | rx45 q4 }
-    { cz q7,q9 | ym90 q4 }
-    ym90 q4
-    { ry90 q9 | ry90 q7 | cz q2,q4 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 | ry90 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ry90 q4 | rx45 q2 }
-    { ym90 q9 | xm45 q4 | ym90 q2 }
-    { cz q10,q9 | ym90 q4 | ym90 q2 }
-    ym90 q4
-    { ry90 q9 | cz q10,q7 | cz q1,q4 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 | ry90 q4 | cz q1,q2 }
-    { ym90 q9 | ry90 q7 | ry90 q4 }
-    { x q9 | xm45 q7 | xm45 q4 | ry90 q2 }
-    { ym90 q9 | ym90 q7 | ym90 q4 | ry90 q2 }
-    { ym90 q7 | x q4 | xm45 q2 | x q9 }
-    { cz q10,q7 | ym90 q4 | ym90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    { ry90 q7 | ry90 q10 | cz q1,q2 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 | ry90 q2 | ry90 q1 }
-    { ym90 q7 | rx45 q1 | ry90 q2 }
-    { x q7 | ym90 q1 | rx90 q2 }
-    { ym90 q7 | ym90 q2 }
-    { ym90 q7 | cz q2,q8 }
-    cz q5,q7
-    ry90 q8
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | xm45 q8 }
-    { xm45 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | cz q1,q8 }
-    cz q6,q7
-    ry90 q8
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | rx45 q8 }
-    { rx45 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | cz q2,q8 }
-    cz q5,q7
-    { ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q5 | ry90 q8 | rx45 q2 }
-    { ry90 q7 | rx45 q5 | xm45 q8 | ym90 q2 }
-    { xm45 q7 | ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | cz q1,q8 }
-    cz q6,q7
-    { ry90 q8 | cz q1,q2 }
-    { ry90 q7 | cz q6,q5 | ry90 q8 }
-    { ry90 q7 | xm45 q8 | ry90 q2 }
-    { xm45 q7 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q7 | ry90 q5 | x q8 | xm45 q2 }
-    { x q7 | xm45 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q7 | ym90 q5 | ym90 q2 | cz q8,q9 }
-    { ym90 q5 | x q7 | cz q1,q2 }
-    { cz q6,q5 | ym90 q7 | ry90 q9 }
-    { ym90 q7 | ry90 q2 | ry90 q1 | ry90 q9 }
-    { ry90 q5 | ry90 q6 | rx45 q1 | ry90 q2 | xm45 q9 }
-    { rx45 q6 | ry90 q5 | ym90 q1 | rx90 q2 | ym90 q9 }
-    { ym90 q6 | rx90 q5 | ym90 q2 | ym90 q9 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | cz q5,q7 }
-    cz q6,q10
-    ry90 q7
-    { ry90 q10 | ry90 q6 | ry90 q7 }
-    { rx45 q6 | ry90 q10 | xm45 q7 }
-    { ym90 q6 | rx90 q10 | ym90 q7 }
-    { ym90 q10 | x q6 | ym90 q7 }
-    { ym90 q6 | ym90 q10 }
-    cz q4,q6
-    qwait 1
-    ry90 q6
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | cz q7,q9 }
-    cz q6,q5
-    ry90 q9
-    { ry90 q5 | ry90 q6 | ry90 q9 }
-    { rx45 q6 | ry90 q5 | rx45 q9 }
-    { ym90 q6 | rx90 q5 | ym90 q9 }
-    { ym90 q5 | ym90 q9 }
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q2 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q2 | ym90 q5 }
-    { ym90 q2 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q2,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q2 }
-    { rx45 q2 | ry90 q8 }
-    { ym90 q2 | rx90 q8 }
-    { ym90 q8 | cz q2,q9 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | ym90 q6 }
-    { cz q4,q6 | cz q1,q9 }
-    qwait 1
-    { ry90 q6 | ry90 q9 | x q4 }
-    { x q6 | ry90 q9 | ym90 q4 }
-    { rx45 q9 | x q6 | ym90 q4 }
-    { ym90 q9 | ym90 q6 }
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q1,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q1 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | cz q9,q10 }
-    cz q1,q2
-    { ry90 q10 | x q9 }
-    { ry90 q2 | ry90 q1 | ym90 q9 | ym90 q10 }
-    { rx45 q1 | ry90 q2 | ym90 q9 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q2,q9
-    qwait 1
-    { ry90 q9 | ry90 q2 }
-    { ry90 q9 | rx45 q2 }
-    { xm45 q9 | ym90 q2 }
-    { ym90 q9 | ym90 q2 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q2 }
-    ry90 q9
-    { xm45 q9 | ry90 q2 }
-    { ym90 q9 | ry90 q2 }
-    { x q9 | xm45 q2 }
-    { ym90 q9 | ym90 q2 }
-    { ym90 q2 | x q9 }
-    { cz q1,q2 | ym90 q9 }
-    ym90 q9
-    { ry90 q2 | ry90 q1 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    xm45 q4
-    ym90 q4
-    ym90 q4
-    cz q1,q4
-    qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    ym90 q4
-    cz q2,q4
-    qwait 1
-    { ry90 q4 | ry90 q2 }
-    { ry90 q4 | rx45 q2 }
-    { xm45 q4 | ym90 q2 }
-    { ym90 q4 | ym90 q2 }
-    ym90 q4
-    cz q1,q4
-    qwait 1
-    { ry90 q4 | cz q1,q2 }
-    ry90 q4
-    { xm45 q4 | ry90 q2 }
-    { ym90 q4 | ry90 q2 }
-    { x q4 | xm45 q2 }
-    { ym90 q4 | ym90 q2 }
-    { ym90 q2 | cz q4,q6 }
-    cz q1,q2
-    ry90 q6
-    { ry90 q2 | ry90 q1 | x q6 }
-    { rx45 q1 | ry90 q2 }
-    { ym90 q1 | rx90 q2 }
-    ym90 q2
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | ry90 q2 }
-    { ry90 q5 | rx45 q2 }
-    { xm45 q5 | ym90 q2 }
-    { ym90 q5 | ym90 q2 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q2 }
-    ry90 q5
-    { xm45 q5 | ry90 q2 }
-    { ym90 q5 | ry90 q2 }
-    { x q5 | xm45 q2 }
-    { ym90 q5 | ym90 q2 }
-    { ym90 q2 | cz q5,q7 }
-    cz q1,q2
-    ry90 q7
-    { ry90 q2 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q2 | xm45 q7 }
-    { ym90 q1 | rx90 q2 | ym90 q7 }
-    { ym90 q2 | ym90 q7 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q2,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q2 }
-    { ry90 q7 | ry90 q8 | rx45 q2 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q2 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q2 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q2 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q2 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q2 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q2 }
-    { ym90 q5 | ym90 q8 | ym90 q2 }
-    { ym90 q2 | cz q8,q9 }
-    cz q1,q2
-    ry90 q9
-    { ry90 q2 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q2 | xm45 q9 }
-    { ym90 q1 | rx90 q2 | ym90 q9 }
-    { ym90 q2 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q2,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q2 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q2 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q2 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q2 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q2 | x q7 | xm45 q5 }
-    { x q8 | xm45 q2 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q2 | ym90 q5 | x q7 }
-    { ym90 q2 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q2 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q2 | ry90 q1 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q1 | ry90 q2 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q2 | ym90 q5 | x q6 }
-    { ym90 q2 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q2,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q2,q5
-    qwait 1
-    { ry90 q5 | cz q2,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q2,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q2 | cz q3,q5 }
-    { rx45 q2 | ry90 q8 }
-    { ym90 q2 | rx90 q8 | ry90 q5 }
-    { ym90 q8 | ry90 q5 }
-    { x q8 | xm45 q5 }
-    { ym90 q8 | ym90 q5 }
-    { ym90 q8 | ym90 q5 }
-    cz q1,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | ym90 q6 }
-    { cz q4,q6 | cz q1,q5 }
-    qwait 1
-    { ry90 q6 | ry90 q5 }
-    { x q6 | ry90 q5 }
-    { rx45 q5 | x q6 }
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q1,q3
-    ry90 q7
-    { ry90 q3 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q3 | xm45 q7 }
-    { ym90 q1 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q1,q3
-    ry90 q9
-    { ry90 q3 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q3 | xm45 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q3 | ym90 q8 | ym90 q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q3 | ry90 q7 }
-    { rx45 q3 | ry90 q8 | xm45 q7 }
-    { ym90 q3 | rx90 q8 | ym90 q7 }
-    { ym90 q8 | cz q3,q9 | ym90 q7 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | cz q6,q7 }
-    cz q1,q9
-    ry90 q7
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { rx45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q9 | cz q5,q7 }
-    cz q3,q9
-    { ry90 q7 | ry90 q5 }
-    { ry90 q9 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q9 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q9 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q7 }
-    { ym90 q9 | cz q6,q7 }
-    cz q1,q9
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q9 | cz q1,q3 | ry90 q7 }
-    { ry90 q9 | xm45 q7 | ry90 q5 }
-    { xm45 q9 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q9 | ry90 q3 | x q7 | xm45 q5 }
-    { x q9 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q9 | ym90 q3 | ym90 q5 }
-    { ym90 q3 | cz q9,q10 | cz q6,q5 }
-    cz q1,q3
-    { ry90 q10 | ry90 q5 | ry90 q6 | x q9 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 | ym90 q9 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 | ym90 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | cz q7,q9 }
-    ym90 q3
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | ry90 q7 }
-    { ry90 q9 | rx45 q7 }
-    { xm45 q9 | ym90 q7 }
-    { ym90 q9 | ym90 q7 }
-    ym90 q9
-    cz q10,q9
-    qwait 1
-    { ry90 q9 | cz q10,q7 }
-    ry90 q9
-    { xm45 q9 | ry90 q7 }
-    { ym90 q9 | ry90 q7 }
-    { x q9 | xm45 q7 }
-    { ym90 q9 | ym90 q7 }
-    { ym90 q7 | x q9 }
-    { cz q10,q7 | ym90 q9 }
-    ym90 q9
-    { ry90 q7 | ry90 q10 }
-    { rx45 q10 | ry90 q7 }
-    { ym90 q10 | rx90 q7 }
-    ym90 q7
-    x q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    xm45 q7
-    ym90 q7
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    ry90 q7
-    ry90 q7
-    rx45 q7
-    ym90 q7
-    ym90 q7
-    cz q5,q7
-    qwait 1
-    { ry90 q7 | ry90 q5 }
-    { ry90 q7 | rx45 q5 }
-    { xm45 q7 | ym90 q5 }
-    { ym90 q7 | ym90 q5 }
-    ym90 q7
-    cz q6,q7
-    qwait 1
-    { ry90 q7 | cz q6,q5 }
-    ry90 q7
-    { xm45 q7 | ry90 q5 }
-    { ym90 q7 | ry90 q5 }
-    { x q7 | xm45 q5 }
-    { ym90 q7 | ym90 q5 }
-    { ym90 q5 | x q7 }
-    { cz q6,q5 | x q7 }
-    ym90 q7
-    { ry90 q5 | ry90 q6 | ym90 q7 }
-    { rx45 q6 | ry90 q5 }
-    { ym90 q6 | rx90 q5 }
-    ym90 q5
-    x q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q10,q5
-    qwait 1
-    { ry90 q5 | ry90 q10 }
-    { ry90 q5 | rx45 q10 }
-    { xm45 q5 | ym90 q10 }
-    { ym90 q5 | ym90 q10 }
-    ym90 q5
-    cz q6,q5
-    qwait 1
-    { ry90 q5 | cz q6,q10 }
-    ry90 q5
-    { xm45 q5 | ry90 q10 }
-    { ym90 q5 | ry90 q10 }
-    { x q5 | xm45 q10 }
-    { ym90 q5 | ym90 q10 }
-    { ym90 q10 | x q5 }
-    { cz q6,q10 | ym90 q5 }
-    ym90 q5
-    { ry90 q10 | ry90 q6 | cz q3,q5 }
-    { rx45 q6 | ry90 q10 }
-    { ym90 q6 | rx90 q10 | ry90 q5 }
-    { ym90 q10 | ry90 q5 | x q6 }
-    { xm45 q5 | ym90 q10 }
-    ym90 q5
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q1,q3
-    ry90 q7
-    { ry90 q3 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q3 | xm45 q7 }
-    { ym90 q1 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q1,q3
-    ry90 q9
-    { ry90 q3 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q3 | xm45 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    { ym90 q8 | x q9 }
-    { cz q7,q8 | ym90 q9 }
-    ym90 q9
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 | x q7 }
-    { cz q1,q3 | ym90 q8 | x q7 }
-    { ry90 q5 | ry90 q6 | ym90 q8 | ym90 q7 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 | ym90 q7 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    { ym90 q8 | x q5 }
-    { cz q3,q8 | ym90 q5 }
-    ym90 q5
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    { ym90 q8 | cz q3,q9 }
-    x q8
-    { ym90 q8 | ry90 q9 }
-    { ym90 q8 | ry90 q9 }
-    { cz q1,q8 | xm45 q9 }
-    ym90 q9
-    { ry90 q8 | ym90 q9 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | x q8 }
-    { cz q6,q1 | ym90 q8 }
-    ym90 q8
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    { ym90 q1 | x q6 }
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q1,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q1 }
-    { rx45 q1 | ry90 q3 }
-    { ym90 q1 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | cz q9,q10 }
-    cz q1,q3
-    { ry90 q10 | x q9 }
-    { ry90 q3 | ry90 q1 | ym90 q9 }
-    { rx45 q1 | ry90 q3 | ym90 q9 }
-    { ym90 q1 | rx90 q3 }
-    ym90 q3
-    cz q3,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    xm45 q9
-    ym90 q9
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q3,q9
-    qwait 1
-    { ry90 q9 | ry90 q3 }
-    { ry90 q9 | rx45 q3 }
-    { xm45 q9 | ym90 q3 }
-    { ym90 q9 | ym90 q3 }
-    ym90 q9
-    cz q1,q9
-    qwait 1
-    { ry90 q9 | cz q1,q3 }
-    ry90 q9
-    { xm45 q9 | ry90 q3 }
-    { ym90 q9 | ry90 q3 }
-    { x q9 | xm45 q3 }
-    { ym90 q9 | ym90 q3 }
-    { ym90 q3 | x q9 }
-    { cz q1,q3 | ym90 q9 }
-    ym90 q9
-    { ry90 q3 | ry90 q1 }
-    { rx45 q1 | ry90 q3 }
-    { ym90 q1 | rx90 q3 }
-    ym90 q3
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    xm45 q5
-    ym90 q5
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | ry90 q3 }
-    { ry90 q5 | rx45 q3 }
-    { xm45 q5 | ym90 q3 }
-    { ym90 q5 | ym90 q3 }
-    ym90 q5
-    cz q1,q5
-    qwait 1
-    { ry90 q5 | cz q1,q3 }
-    ry90 q5
-    { xm45 q5 | ry90 q3 }
-    { ym90 q5 | ry90 q3 }
-    { x q5 | xm45 q3 }
-    { ym90 q5 | ym90 q3 }
-    { ym90 q3 | cz q5,q7 }
-    cz q1,q3
-    ry90 q7
-    { ry90 q3 | ry90 q1 | ry90 q7 }
-    { rx45 q1 | ry90 q3 | xm45 q7 }
-    { ym90 q1 | rx90 q3 | ym90 q7 }
-    { ym90 q3 | ym90 q7 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q8 }
-    { ry90 q7 | ry90 q8 }
-    { rx45 q7 | xm45 q8 }
-    { ym90 q7 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q5,q7 | cz q1,q8 }
-    qwait 1
-    { ry90 q7 | ry90 q5 | ry90 q8 }
-    { ry90 q7 | rx45 q5 | ry90 q8 }
-    { xm45 q7 | ym90 q5 | rx45 q8 }
-    { ym90 q7 | ym90 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q8 }
-    { cz q6,q7 | cz q3,q8 }
-    qwait 1
-    { ry90 q7 | cz q6,q5 | ry90 q8 | ry90 q3 }
-    { ry90 q7 | ry90 q8 | rx45 q3 }
-    { xm45 q7 | ry90 q5 | xm45 q8 | ym90 q3 }
-    { ym90 q7 | ry90 q5 | ym90 q8 | ym90 q3 }
-    { x q7 | xm45 q5 | ym90 q8 }
-    { ym90 q7 | ym90 q5 | cz q1,q8 }
-    ym90 q5
-    { cz q6,q5 | ry90 q8 | cz q1,q3 }
-    ry90 q8
-    { ry90 q5 | ry90 q6 | xm45 q8 | ry90 q3 }
-    { rx45 q6 | ry90 q5 | ym90 q8 | ry90 q3 }
-    { ym90 q6 | rx90 q5 | x q8 | xm45 q3 }
-    { ym90 q5 | ym90 q8 | ym90 q3 }
-    { ym90 q3 | cz q8,q9 }
-    cz q1,q3
-    ry90 q9
-    { ry90 q3 | ry90 q1 | ry90 q9 }
-    { rx45 q1 | ry90 q3 | xm45 q9 }
-    { ym90 q1 | rx90 q3 | ym90 q9 }
-    { ym90 q3 | ym90 q9 }
-    cz q7,q9
-    qwait 1
-    ry90 q9
-    ry90 q9
-    rx45 q9
-    ym90 q9
-    ym90 q9
-    cz q8,q9
-    qwait 1
-    { ry90 q9 | ry90 q8 }
-    { ry90 q9 | rx45 q8 }
-    { xm45 q9 | ym90 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q9
-    cz q7,q9
-    qwait 1
-    { ry90 q9 | cz q7,q8 }
-    ry90 q9
-    { xm45 q9 | ry90 q8 }
-    { ym90 q9 | ry90 q8 }
-    { x q9 | xm45 q8 }
-    { ym90 q9 | ym90 q8 }
-    ym90 q8
-    cz q7,q8
-    qwait 1
-    { ry90 q8 | ry90 q7 }
-    { rx45 q7 | ry90 q8 }
-    { ym90 q7 | rx90 q8 }
-    { ym90 q8 | x q7 }
-    { x q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | xm45 q7 }
-    { xm45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    ry90 q7
-    { ry90 q8 | ry90 q7 }
-    { ry90 q8 | rx45 q7 }
-    { rx45 q8 | ym90 q7 }
-    { ym90 q8 | ym90 q7 }
-    { ym90 q8 | cz q5,q7 }
-    cz q3,q8
-    { ry90 q7 | ry90 q5 }
-    { ry90 q8 | ry90 q3 | ry90 q7 | rx45 q5 }
-    { ry90 q8 | rx45 q3 | xm45 q7 | ym90 q5 }
-    { xm45 q8 | ym90 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q7 }
-    { ym90 q8 | cz q6,q7 }
-    cz q1,q8
-    { ry90 q7 | cz q6,q5 }
-    { ry90 q8 | cz q1,q3 | ry90 q7 }
-    { ry90 q8 | xm45 q7 | ry90 q5 }
-    { xm45 q8 | ry90 q3 | ym90 q7 | ry90 q5 }
-    { ym90 q8 | ry90 q3 | x q7 | xm45 q5 }
-    { x q8 | xm45 q3 | ym90 q7 | ym90 q5 }
-    { ym90 q8 | ym90 q3 | ym90 q5 | x q7 }
-    { ym90 q3 | cz q6,q5 | x q8 }
-    { cz q1,q3 | ym90 q8 }
-    { ry90 q5 | ry90 q6 | ym90 q8 }
-    { ry90 q3 | ry90 q1 | rx45 q6 | ry90 q5 }
-    { rx45 q1 | ry90 q3 | ym90 q6 | rx90 q5 }
-    { ym90 q1 | rx90 q3 | ym90 q5 | x q6 }
-    { ym90 q3 | cz q1,q8 | x q5 }
-    ym90 q5
-    { ry90 q8 | ym90 q5 }
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    { ym90 q1 | cz q8,q5 }
-    cz q6,q1
-    ry90 q5
-    { ry90 q1 | ry90 q6 | ry90 q5 }
-    { rx45 q6 | ry90 q1 | xm45 q5 }
-    { ym90 q6 | rx90 q1 | ym90 q5 }
-    { ym90 q1 | ym90 q5 }
-    cz q3,q5
-    qwait 1
-    ry90 q5
-    ry90 q5
-    rx45 q5
-    ym90 q5
-    ym90 q5
-    cz q8,q5
-    qwait 1
-    { ry90 q5 | ry90 q8 }
-    { ry90 q5 | rx45 q8 }
-    { xm45 q5 | ym90 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q5
-    cz q3,q5
-    qwait 1
-    { ry90 q5 | cz q3,q8 }
-    ry90 q5
-    { xm45 q5 | ry90 q8 }
-    { ym90 q5 | ry90 q8 }
-    { x q5 | xm45 q8 }
-    { ym90 q5 | ym90 q8 }
-    ym90 q8
-    cz q3,q8
-    qwait 1
-    { ry90 q8 | ry90 q3 }
-    { rx45 q3 | ry90 q8 }
-    { ym90 q3 | rx90 q8 }
-    ym90 q8
-    x q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    xm45 q8
-    ym90 q8
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    ry90 q8
-    ry90 q8
-    rx45 q8
-    ym90 q8
-    ym90 q8
-    cz q1,q8
-    qwait 1
-    { ry90 q8 | ry90 q1 }
-    { ry90 q8 | rx45 q1 }
-    { xm45 q8 | ym90 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q8
-    cz q6,q8
-    qwait 1
-    { ry90 q8 | cz q6,q1 }
-    ry90 q8
-    { xm45 q8 | ry90 q1 }
-    { ym90 q8 | ry90 q1 }
-    { x q8 | xm45 q1 }
-    { ym90 q8 | ym90 q1 }
-    ym90 q1
-    cz q6,q1
-    qwait 1
-    { ry90 q1 | ry90 q6 }
-    { rx45 q6 | ry90 q1 }
-    { ym90 q6 | rx90 q1 }
-    ym90 q1
+    { x q[6] | x q[7] | x q[4] | x q[5] | x q[8] | x q[9] | ry q[10], -90 }
+    { ry q[4], -90 | ry q[6], -90 | ry q[5], -90 | x q[7] | ry q[8], -90 | ry q[9], -90 }
+    { ry q[4], -90 | ry q[5], -90 | ry q[7], -90 | ry q[8], -90 | ry q[9], -90 }
+    { cz q[2],q[4] | ry q[7], -90 }
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], -45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[0],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[0],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[0], 90 | x q[6] }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[2], 90 }
+    { ry q[5], 90 | rx q[2], 45 }
+    { rx q[5], -45 | ry q[2], -90 }
+    { ry q[5], -90 | ry q[2], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[2] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[2], 90 }
+    { ry q[5], -90 | ry q[2], 90 }
+    { x q[5] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[5],q[7] }
+    cz q[0],q[2]
+    ry q[7], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[7], -90 }
+    { ry q[2], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[2], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[2], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[2] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[0],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[5], -90 | x q[6] }
+    { ry q[2], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 }
+    { rx q[2], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[2],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[0],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | cz q[6],q[7] | ry q[4], -90 }
+    ry q[9], -90
+    { ry q[9], -90 | ry q[7], 90 }
+    { cz q[2],q[9] | ry q[7], 90 }
+    rx q[7], 45
+    { ry q[9], 90 | ry q[2], 90 | ry q[7], -90 }
+    { ry q[9], 90 | rx q[2], 45 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], -90 | cz q[5],q[7] }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[7], 90 | ry q[5], 90 }
+    { cz q[0],q[9] | ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[9], 90 | cz q[0],q[2] | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], 90 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], 90 | cz q[6],q[7] }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 | ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], -90 | ry q[2], -90 | ry q[7], 90 }
+    { ry q[2], -90 | cz q[9],q[10] | rx q[7], -45 | ry q[5], 90 }
+    { cz q[0],q[2] | ry q[7], -90 | ry q[5], 90 }
+    { ry q[10], 90 | x q[7] | rx q[5], -45 | x q[9] }
+    { ry q[2], 90 | ry q[0], 90 | ry q[7], -90 | ry q[5], -90 | ry q[9], -90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[5], -90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[2], 90 | cz q[6],q[5] | cz q[7],q[9] }
+    ry q[2], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[9], 90 | cz q[2],q[4] }
+    { rx q[6], 45 | ry q[5], 90 | ry q[9], 90 }
+    { ry q[6], -90 | rx q[5], 90 | rx q[9], -45 | ry q[4], 90 }
+    { ry q[5], -90 | ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], -45 }
+    { cz q[10],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[0],q[4] }
+    ry q[9], 90
+    { rx q[9], 45 | ry q[4], 90 }
+    { ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], 45 }
+    { cz q[7],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | ry q[7], 90 | cz q[2],q[4] }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 | ry q[4], 90 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], 90 | rx q[2], 45 }
+    { ry q[9], -90 | rx q[4], -45 | ry q[2], -90 }
+    { cz q[10],q[9] | ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[10],q[7] | cz q[0],q[4] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 | ry q[4], 90 | cz q[0],q[2] }
+    { ry q[9], -90 | ry q[7], 90 | ry q[4], 90 }
+    { x q[9] | rx q[7], -45 | rx q[4], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], -90 | ry q[2], 90 }
+    { ry q[7], -90 | x q[4] | rx q[2], -45 | x q[9] }
+    { cz q[10],q[7] | ry q[4], -90 | ry q[2], -90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    { ry q[7], 90 | ry q[10], 90 | cz q[0],q[2] }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 | ry q[2], 90 | ry q[0], 90 }
+    { ry q[7], -90 | rx q[0], 45 | ry q[2], 90 }
+    { x q[7] | ry q[0], -90 | rx q[2], 90 }
+    { ry q[7], -90 | ry q[2], -90 }
+    { ry q[7], -90 | cz q[2],q[8] }
+    cz q[5],q[7]
+    ry q[8], 90
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], -45 }
+    { rx q[7], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[0],q[8] }
+    cz q[6],q[7]
+    ry q[8], 90
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], 45 }
+    { rx q[7], 45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[2],q[8] }
+    cz q[5],q[7]
+    { ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 | rx q[2], 45 }
+    { ry q[7], 90 | rx q[5], 45 | rx q[8], -45 | ry q[2], -90 }
+    { rx q[7], -45 | ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[0],q[8] }
+    cz q[6],q[7]
+    { ry q[8], 90 | cz q[0],q[2] }
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[7], -45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[7], -90 | ry q[5], 90 | x q[8] | rx q[2], -45 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[2], -90 | cz q[8],q[9] }
+    { ry q[5], -90 | x q[7] | cz q[0],q[2] }
+    { cz q[6],q[5] | ry q[7], -90 | ry q[9], 90 }
+    { ry q[7], -90 | ry q[2], 90 | ry q[0], 90 | ry q[9], 90 }
+    { ry q[5], 90 | ry q[6], 90 | rx q[0], 45 | ry q[2], 90 | rx q[9], -45 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[0], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[2], -90 | ry q[9], -90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | cz q[5],q[7] }
+    cz q[6],q[10]
+    ry q[7], 90
+    { ry q[10], 90 | ry q[6], 90 | ry q[7], 90 }
+    { rx q[6], 45 | ry q[10], 90 | rx q[7], -45 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[7], -90 }
+    { ry q[10], -90 | x q[6] | ry q[7], -90 }
+    { ry q[6], -90 | ry q[10], -90 }
+    cz q[4],q[6]
+    qwait 1
+    ry q[6], 90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | cz q[7],q[9] }
+    cz q[6],q[5]
+    ry q[9], 90
+    { ry q[5], 90 | ry q[6], 90 | ry q[9], 90 }
+    { rx q[6], 45 | ry q[5], 90 | rx q[9], 45 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[9], -90 }
+    { ry q[5], -90 | ry q[9], -90 }
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[5], -90 }
+    { ry q[2], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[2],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[2], 90 }
+    { rx q[2], 45 | ry q[8], 90 }
+    { ry q[2], -90 | rx q[8], 90 }
+    { ry q[8], -90 | cz q[2],q[9] }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[0],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | x q[6] | ry q[4], -90 }
+    { ry q[9], -90 | ry q[6], -90 }
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[0],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[9],q[10] }
+    cz q[0],q[2]
+    { ry q[10], 90 | x q[9] }
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[0],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], -45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[0],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[0],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[0], 90 | x q[6] }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[2], 90 }
+    { ry q[5], 90 | rx q[2], 45 }
+    { rx q[5], -45 | ry q[2], -90 }
+    { ry q[5], -90 | ry q[2], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[2] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[2], 90 }
+    { ry q[5], -90 | ry q[2], 90 }
+    { x q[5] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[5],q[7] }
+    cz q[0],q[2]
+    ry q[7], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[7], -90 }
+    { ry q[2], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[2], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[2], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[2] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[0],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[2] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[5], -90 | x q[6] }
+    { ry q[2], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[2],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[2], 90 | cz q[3],q[5] }
+    { rx q[2], 45 | ry q[8], 90 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[5], 90 | ry q[2], -90 }
+    { x q[8] | rx q[5], -45 }
+    { ry q[8], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[5], -90 }
+    cz q[0],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[0],q[5] }
+    qwait 1
+    { ry q[6], 90 | ry q[5], 90 | cz q[4],q[2] }
+    { x q[6] | ry q[5], 90 }
+    { rx q[5], 45 | x q[6] | ry q[2], 90 | x q[4] }
+    { ry q[5], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    { cz q[3],q[5] | cz q[2],q[4] }
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 | ry q[4], 90 }
+    { ry q[5], 90 | rx q[3], 45 | ry q[4], 90 }
+    { rx q[5], -45 | ry q[3], -90 | rx q[4], -45 }
+    { ry q[5], -90 | ry q[3], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[0],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[0],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[3] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 }
+    { rx q[3], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[3], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[3],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | cz q[6],q[7] }
+    cz q[0],q[9]
+    ry q[7], 90
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], 45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[5],q[7] }
+    cz q[3],q[9]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[9], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[9], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[9], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[6],q[7] }
+    cz q[0],q[9]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[9], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[9], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[9] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[5], -90 }
+    { ry q[3], -90 | cz q[9],q[10] | cz q[6],q[5] }
+    cz q[0],q[3]
+    { ry q[10], 90 | ry q[5], 90 | ry q[6], 90 | x q[9] }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 | ry q[9], -90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | cz q[7],q[9] }
+    ry q[3], -90
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[10],q[7] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 }
+    { ry q[9], -90 | ry q[7], 90 }
+    { x q[9] | rx q[7], -45 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[7], -90 | x q[9] }
+    { cz q[10],q[7] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[7], 90 | ry q[10], 90 }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 }
+    ry q[7], -90
+    x q[7]
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], -45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | x q[7] }
+    { cz q[6],q[5] | x q[7] }
+    ry q[7], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[7], -90 }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | x q[5] }
+    { cz q[6],q[10] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[10], 90 | ry q[6], 90 | cz q[3],q[5] }
+    { rx q[6], 45 | ry q[10], 90 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[5], 90 }
+    { ry q[10], -90 | ry q[5], 90 | x q[6] }
+    { rx q[5], -45 | ry q[10], -90 }
+    ry q[5], -90
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[0],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[0],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[3] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[3],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    { ry q[8], -90 | cz q[3],q[9] }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | x q[6] }
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[0],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[3], 90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[9],q[10] }
+    cz q[0],q[3]
+    { ry q[10], 90 | x q[9] }
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[0],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[3], 90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[0],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[0],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[3] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[8], -90
+    cz q[3],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    { ry q[8], -90 | ry q[3], -90 }
+    { x q[8] | cz q[5],q[3] }
+    ry q[8], -90
+    { ry q[8], -90 | ry q[3], 90 | x q[5] }
+    { cz q[0],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | cz q[3],q[5] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[5], 90 }
+    { ry q[8], -90 | rx q[5], -45 }
+    { cz q[6],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | x q[6] }
+    { cz q[0],q[4] | ry q[6], -90 }
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[0],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[2], -90
+    cz q[0],q[2]
+    qwait 1
+    { ry q[2], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    { ry q[2], -90 | cz q[0],q[5] }
+    ry q[2], -90
+    { cz q[4],q[2] | ry q[5], 90 }
+    ry q[5], 90
+    { ry q[2], 90 | rx q[5], 45 | x q[4] }
+    { ry q[5], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    { cz q[3],q[5] | cz q[2],q[4] }
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 | ry q[4], 90 }
+    { ry q[5], 90 | rx q[3], 45 | ry q[4], 90 }
+    { rx q[5], -45 | ry q[3], -90 | rx q[4], -45 }
+    { ry q[5], -90 | ry q[3], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[3], -90
+    cz q[0],q[3]
+    qwait 1
+    { ry q[3], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[3], 90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    { ry q[3], -90 | cz q[0],q[4] }
+    ry q[3], -90
+    { cz q[5],q[3] | ry q[4], 90 }
+    ry q[4], 90
+    { ry q[3], 90 | rx q[4], 45 | cz q[5],q[7] }
+    ry q[4], -90
+    { ry q[4], -90 | ry q[7], 90 }
+    { cz q[2],q[4] | ry q[7], 90 }
+    rx q[7], -45
+    { ry q[4], 90 | ry q[2], 90 | ry q[7], -90 }
+    { ry q[4], 90 | rx q[2], 45 | ry q[7], -90 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[0],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[0],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[0], 90 | cz q[6],q[7] }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[7], 90 }
+    { ry q[2], -90 | ry q[7], 90 }
+    { rx q[7], 45 | cz q[2],q[8] }
+    ry q[7], -90
+    { ry q[7], -90 | ry q[8], 90 }
+    { cz q[5],q[7] | ry q[8], 90 }
+    rx q[8], -45
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], -90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], -90 }
+    { rx q[7], -45 | ry q[5], -90 | cz q[0],q[8] }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[8], 90 }
+    { cz q[6],q[7] | ry q[8], 90 }
+    rx q[8], 45
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], -90 }
+    { ry q[7], 90 | ry q[8], -90 }
+    { rx q[7], -45 | ry q[5], 90 | cz q[2],q[8] }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], 90 | rx q[2], 45 }
+    { ry q[5], -90 | rx q[8], -45 | ry q[2], -90 }
+    { cz q[6],q[5] | ry q[8], -90 | ry q[2], -90 }
+    ry q[8], -90
+    { ry q[5], 90 | ry q[6], 90 | cz q[0],q[8] }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[8], 90 | cz q[0],q[2] }
+    { ry q[5], -90 | ry q[8], 90 }
+    { rx q[8], -45 | ry q[2], 90 }
+    { ry q[8], -90 | ry q[2], 90 }
+    { x q[8] | rx q[2], -45 }
+    { ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[0],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | ry q[7], -90 }
+    { cz q[0],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 }
+    { ry q[2], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[5], -90 }
+    { ry q[2], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 }
+    { rx q[2], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[2],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[0],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | cz q[6],q[7] | ry q[4], -90 }
+    ry q[9], -90
+    { ry q[9], -90 | ry q[7], 90 }
+    { cz q[2],q[9] | ry q[7], 90 }
+    rx q[7], 45
+    { ry q[9], 90 | ry q[2], 90 | ry q[7], -90 }
+    { ry q[9], 90 | rx q[2], 45 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], -90 | cz q[5],q[7] }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[7], 90 | ry q[5], 90 }
+    { cz q[0],q[9] | ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[9], 90 | cz q[0],q[2] | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], 90 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], 90 | cz q[6],q[7] }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 | ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], -90 | ry q[2], -90 | ry q[7], 90 }
+    { ry q[2], -90 | cz q[9],q[10] | rx q[7], -45 | ry q[5], 90 }
+    { cz q[0],q[2] | ry q[7], -90 | ry q[5], 90 }
+    { ry q[10], 90 | x q[7] | rx q[5], -45 | x q[9] }
+    { ry q[2], 90 | ry q[0], 90 | ry q[7], -90 | ry q[5], -90 | ry q[9], -90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[5], -90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[2], 90 | cz q[6],q[5] | cz q[7],q[9] }
+    ry q[2], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[9], 90 | cz q[2],q[4] }
+    { rx q[6], 45 | ry q[5], 90 | ry q[9], 90 }
+    { ry q[6], -90 | rx q[5], 90 | rx q[9], -45 | ry q[4], 90 }
+    { ry q[5], -90 | ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], -45 }
+    { cz q[10],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[0],q[4] }
+    ry q[9], 90
+    { rx q[9], 45 | ry q[4], 90 }
+    { ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], 45 }
+    { cz q[7],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | ry q[7], 90 | cz q[2],q[4] }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 | ry q[4], 90 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], 90 | rx q[2], 45 }
+    { ry q[9], -90 | rx q[4], -45 | ry q[2], -90 }
+    { cz q[10],q[9] | ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[10],q[7] | cz q[0],q[4] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 | ry q[4], 90 | cz q[0],q[2] }
+    { ry q[9], -90 | ry q[7], 90 | ry q[4], 90 }
+    { x q[9] | rx q[7], -45 | rx q[4], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], -90 | ry q[2], 90 }
+    { ry q[7], -90 | x q[4] | rx q[2], -45 | x q[9] }
+    { cz q[10],q[7] | ry q[4], -90 | ry q[2], -90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    { ry q[7], 90 | ry q[10], 90 | cz q[0],q[2] }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 | ry q[2], 90 | ry q[0], 90 }
+    { ry q[7], -90 | rx q[0], 45 | ry q[2], 90 }
+    { x q[7] | ry q[0], -90 | rx q[2], 90 }
+    { ry q[7], -90 | ry q[2], -90 }
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], -45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | x q[7] }
+    { cz q[6],q[5] | x q[7] }
+    ry q[7], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[7], -90 }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | x q[5] }
+    { cz q[6],q[10] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[10], 90 | ry q[6], 90 | cz q[2],q[5] }
+    { rx q[6], 45 | ry q[10], 90 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[5], 90 }
+    { ry q[10], -90 | x q[6] | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], -45 | ry q[10], -90 }
+    { cz q[4],q[6] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[6], 90 | cz q[0],q[5] }
+    x q[6]
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[2], 90 }
+    { ry q[5], 90 | rx q[2], 45 }
+    { rx q[5], -45 | ry q[2], -90 }
+    { ry q[5], -90 | ry q[2], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[2] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[2], 90 }
+    { ry q[5], -90 | ry q[2], 90 }
+    { x q[5] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[5],q[7] }
+    cz q[0],q[2]
+    ry q[7], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[7], -90 }
+    { ry q[2], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[2], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[2], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[2] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[0],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[5], -90 | x q[6] }
+    { ry q[2], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 }
+    { rx q[2], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[2],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[0],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | x q[6] | ry q[4], -90 }
+    { ry q[9], -90 | ry q[6], -90 }
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[0],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[9],q[10] }
+    cz q[0],q[2]
+    { ry q[10], 90 | x q[9] }
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[0],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], -45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[0],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[0],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[0],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[0], 90 | cz q[6],q[7] }
+    { rx q[0], 45 | ry q[2], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[7], 90 }
+    { ry q[2], -90 | ry q[7], 90 }
+    { rx q[7], 45 | cz q[2],q[8] }
+    ry q[7], -90
+    { ry q[7], -90 | ry q[8], 90 }
+    { cz q[5],q[7] | ry q[8], 90 }
+    rx q[8], -45
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], -90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], -90 }
+    { rx q[7], -45 | ry q[5], -90 | cz q[0],q[8] }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[8], 90 }
+    { cz q[6],q[7] | ry q[8], 90 }
+    rx q[8], 45
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], -90 }
+    { ry q[7], 90 | ry q[8], -90 }
+    { rx q[7], -45 | ry q[5], 90 | cz q[2],q[8] }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], 90 | rx q[2], 45 }
+    { ry q[5], -90 | rx q[8], -45 | ry q[2], -90 }
+    { cz q[6],q[5] | ry q[8], -90 | ry q[2], -90 }
+    ry q[8], -90
+    { ry q[5], 90 | ry q[6], 90 | cz q[0],q[8] }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[8], 90 | cz q[0],q[2] }
+    { ry q[5], -90 | ry q[8], 90 }
+    { rx q[8], -45 | ry q[2], 90 }
+    { ry q[8], -90 | ry q[2], 90 }
+    { x q[8] | rx q[2], -45 }
+    { ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[0],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[2], 90 | ry q[5], -90 }
+    { ry q[2], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[2],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[2], 90 | cz q[3],q[5] }
+    { rx q[2], 45 | ry q[8], 90 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[5], 90 }
+    { x q[8] | rx q[5], -45 }
+    { ry q[8], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[5], -90 }
+    cz q[0],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[0],q[5] }
+    qwait 1
+    { ry q[6], 90 | ry q[5], 90 | x q[4] }
+    { x q[6] | ry q[5], 90 | ry q[4], -90 }
+    { rx q[5], 45 | x q[6] | ry q[4], -90 }
+    { ry q[5], -90 | cz q[2],q[4] }
+    ry q[5], -90
+    { cz q[3],q[5] | ry q[4], 90 }
+    ry q[4], 90
+    { ry q[5], 90 | ry q[3], 90 | rx q[4], -45 }
+    { ry q[5], 90 | rx q[3], 45 | ry q[4], -90 }
+    { rx q[5], -45 | ry q[3], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[3], -90 | cz q[1],q[4] }
+    ry q[5], -90
+    { cz q[0],q[5] | ry q[4], 90 }
+    ry q[4], 90
+    { ry q[5], 90 | cz q[0],q[3] | rx q[4], 45 }
+    { ry q[5], 90 | ry q[4], -90 }
+    { rx q[5], -45 | ry q[3], 90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[3], 90 | cz q[2],q[4] }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 | ry q[4], 90 | ry q[2], 90 }
+    { ry q[3], -90 | cz q[5],q[7] | ry q[4], 90 | rx q[2], 45 }
+    { cz q[0],q[3] | rx q[4], -45 | ry q[2], -90 }
+    { ry q[7], 90 | ry q[4], -90 | ry q[2], -90 }
+    { ry q[3], 90 | ry q[0], 90 | ry q[7], 90 | ry q[4], -90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[7], -45 | cz q[1],q[4] }
+    { ry q[0], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 | ry q[4], 90 | cz q[1],q[2] }
+    { cz q[6],q[7] | cz q[3],q[8] | ry q[4], 90 }
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | ry q[4], -90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | x q[4] | rx q[2], -45 }
+    { rx q[7], 45 | rx q[8], -45 | ry q[4], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[8], -90 | cz q[1],q[2] }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    { ry q[2], 90 | ry q[1], 90 }
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 | rx q[1], 45 | ry q[2], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 | ry q[1], -90 | rx q[2], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[0],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[3] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 }
+    { rx q[3], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[3], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[3],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | cz q[6],q[7] }
+    cz q[0],q[9]
+    ry q[7], 90
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], 45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[5],q[7] }
+    cz q[3],q[9]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[9], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[9], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[9], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[6],q[7] }
+    cz q[0],q[9]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[9], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[9], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[9] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[5], -90 }
+    { ry q[3], -90 | cz q[9],q[10] | cz q[6],q[5] }
+    cz q[0],q[3]
+    { ry q[10], 90 | ry q[5], 90 | ry q[6], 90 | x q[9] }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 | ry q[9], -90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | cz q[7],q[9] }
+    ry q[3], -90
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[10],q[7] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 }
+    { ry q[9], -90 | ry q[7], 90 }
+    { x q[9] | rx q[7], -45 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[7], -90 | x q[9] }
+    { cz q[10],q[7] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[7], 90 | ry q[10], 90 }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 }
+    ry q[7], -90
+    x q[7]
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], -45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | x q[7] }
+    { cz q[6],q[5] | x q[7] }
+    ry q[7], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[7], -90 }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | x q[5] }
+    { cz q[6],q[10] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[10], 90 | ry q[6], 90 | cz q[3],q[5] }
+    { rx q[6], 45 | ry q[10], 90 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[5], 90 }
+    { ry q[10], -90 | ry q[5], 90 | x q[6] }
+    { rx q[5], -45 | ry q[10], -90 }
+    ry q[5], -90
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[0],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[0],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[3] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[3],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    { ry q[8], -90 | cz q[3],q[9] }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[0],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 }
+    { ry q[0], -90 | x q[6] }
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[0],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[3], 90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[9],q[10] }
+    cz q[0],q[3]
+    { ry q[10], 90 | x q[9] }
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[9], -90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[0],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[0],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[0],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[0], 90 }
+    { rx q[0], 45 | ry q[3], 90 }
+    { ry q[0], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[0],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[0],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[0],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[7], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[0],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[0],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[0],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[0],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[0], 90 | ry q[9], 90 }
+    { rx q[0], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[0],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[0],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[0],q[3] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[0], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[0], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[0], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[0],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | cz q[8],q[5] }
+    cz q[6],q[0]
+    ry q[5], 90
+    { ry q[0], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[0], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[5], -90 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 }
+    { rx q[3], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[3], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    x q[8]
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[0],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[0], 90 }
+    { ry q[8], 90 | rx q[0], 45 }
+    { rx q[8], -45 | ry q[0], -90 }
+    { ry q[8], -90 | ry q[0], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[0] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[0], 90 }
+    { ry q[8], -90 | ry q[0], 90 }
+    { x q[8] | rx q[0], -45 }
+    { ry q[8], -90 | ry q[0], -90 }
+    { ry q[0], -90 | x q[8] }
+    { cz q[6],q[0] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[0], 90 | ry q[6], 90 | cz q[2],q[8] }
+    { rx q[6], 45 | ry q[0], 90 }
+    { ry q[6], -90 | rx q[0], 90 | ry q[8], 90 }
+    { ry q[0], -90 | x q[6] | ry q[8], 90 }
+    { ry q[6], -90 | rx q[8], -45 }
+    { cz q[4],q[6] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[6], 90 | cz q[1],q[8] }
+    cz q[6],q[7]
+    ry q[8], 90
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], 45 }
+    { rx q[7], 45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[2],q[8] }
+    cz q[5],q[7]
+    { ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 | rx q[2], 45 }
+    { ry q[7], 90 | rx q[5], 45 | rx q[8], -45 | ry q[2], -90 }
+    { rx q[7], -45 | ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[1],q[8] }
+    cz q[6],q[7]
+    { ry q[8], 90 | cz q[1],q[2] }
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[7], -45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[7], -90 | ry q[5], 90 | x q[8] | rx q[2], -45 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[2], -90 | cz q[8],q[9] }
+    { ry q[5], -90 | cz q[1],q[2] }
+    { cz q[6],q[5] | ry q[9], 90 }
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], 90 }
+    { ry q[5], 90 | ry q[6], 90 | rx q[1], 45 | ry q[2], 90 | rx q[9], -45 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[1], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[2], -90 | ry q[9], -90 }
+    { ry q[5], -90 | cz q[7],q[9] }
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | ry q[7], -90 }
+    { cz q[1],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 }
+    { ry q[2], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[5], -90 }
+    { ry q[2], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 }
+    { rx q[2], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[2],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[1],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | cz q[6],q[7] | ry q[4], -90 }
+    ry q[9], -90
+    { ry q[9], -90 | ry q[7], 90 }
+    { cz q[2],q[9] | ry q[7], 90 }
+    rx q[7], 45
+    { ry q[9], 90 | ry q[2], 90 | ry q[7], -90 }
+    { ry q[9], 90 | rx q[2], 45 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], -90 | cz q[5],q[7] }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[7], 90 | ry q[5], 90 }
+    { cz q[1],q[9] | ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[9], 90 | cz q[1],q[2] | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], 90 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], 90 | cz q[6],q[7] }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 | ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], -90 | ry q[2], -90 | ry q[7], 90 }
+    { ry q[2], -90 | cz q[9],q[10] | rx q[7], -45 | ry q[5], 90 }
+    { cz q[1],q[2] | ry q[7], -90 | ry q[5], 90 }
+    { ry q[10], 90 | x q[7] | rx q[5], -45 | x q[9] }
+    { ry q[2], 90 | ry q[1], 90 | ry q[7], -90 | ry q[5], -90 | ry q[9], -90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[5], -90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[2], 90 | cz q[6],q[5] | cz q[7],q[9] }
+    ry q[2], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[9], 90 | cz q[2],q[4] }
+    { rx q[6], 45 | ry q[5], 90 | ry q[9], 90 }
+    { ry q[6], -90 | rx q[5], 90 | rx q[9], -45 | ry q[4], 90 }
+    { ry q[5], -90 | ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], -45 }
+    { cz q[10],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[1],q[4] }
+    ry q[9], 90
+    { rx q[9], 45 | ry q[4], 90 }
+    { ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], 45 }
+    { cz q[7],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | ry q[7], 90 | cz q[2],q[4] }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 | ry q[4], 90 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], 90 | rx q[2], 45 }
+    { ry q[9], -90 | rx q[4], -45 | ry q[2], -90 }
+    { cz q[10],q[9] | ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[10],q[7] | cz q[1],q[4] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 | ry q[4], 90 | cz q[1],q[2] }
+    { ry q[9], -90 | ry q[7], 90 | ry q[4], 90 }
+    { x q[9] | rx q[7], -45 | rx q[4], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], -90 | ry q[2], 90 }
+    { ry q[7], -90 | x q[4] | rx q[2], -45 | x q[9] }
+    { cz q[10],q[7] | ry q[4], -90 | ry q[2], -90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    { ry q[7], 90 | ry q[10], 90 | cz q[1],q[2] }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 | ry q[2], 90 | ry q[1], 90 }
+    { ry q[7], -90 | rx q[1], 45 | ry q[2], 90 }
+    { x q[7] | ry q[1], -90 | rx q[2], 90 }
+    { ry q[7], -90 | ry q[2], -90 }
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], -45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | x q[7] }
+    { cz q[6],q[5] | x q[7] }
+    ry q[7], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[7], -90 }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | x q[5] }
+    { cz q[6],q[10] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[10], 90 | ry q[6], 90 | cz q[2],q[5] }
+    { rx q[6], 45 | ry q[10], 90 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[5], 90 }
+    { ry q[10], -90 | x q[6] | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], -45 | ry q[10], -90 }
+    { cz q[4],q[6] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[6], 90 | cz q[1],q[5] }
+    x q[6]
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[2], 90 }
+    { ry q[5], 90 | rx q[2], 45 }
+    { rx q[5], -45 | ry q[2], -90 }
+    { ry q[5], -90 | ry q[2], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[2] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[2], 90 }
+    { ry q[5], -90 | ry q[2], 90 }
+    { x q[5] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[5],q[7] }
+    cz q[1],q[2]
+    ry q[7], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[7], -90 }
+    { ry q[2], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[2], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[2], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[2] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[1],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[5], -90 | x q[6] }
+    { ry q[2], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 }
+    { rx q[2], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[2],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[1],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | x q[6] | ry q[4], -90 }
+    { ry q[9], -90 | ry q[6], -90 }
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[1],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[9],q[10] }
+    cz q[1],q[2]
+    { ry q[10], 90 | x q[9] }
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[1],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], -45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[1],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[1],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[1],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[1],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[1], 90 | cz q[6],q[7] }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[7], 90 }
+    { ry q[2], -90 | ry q[7], 90 }
+    { rx q[7], 45 | cz q[2],q[8] }
+    ry q[7], -90
+    { ry q[7], -90 | ry q[8], 90 }
+    { cz q[5],q[7] | ry q[8], 90 }
+    rx q[8], -45
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], -90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], -90 }
+    { rx q[7], -45 | ry q[5], -90 | cz q[1],q[8] }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[8], 90 }
+    { cz q[6],q[7] | ry q[8], 90 }
+    rx q[8], 45
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], -90 }
+    { ry q[7], 90 | ry q[8], -90 }
+    { rx q[7], -45 | ry q[5], 90 | cz q[2],q[8] }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], 90 | rx q[2], 45 }
+    { ry q[5], -90 | rx q[8], -45 | ry q[2], -90 }
+    { cz q[6],q[5] | ry q[8], -90 | ry q[2], -90 }
+    ry q[8], -90
+    { ry q[5], 90 | ry q[6], 90 | cz q[1],q[8] }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[8], 90 | cz q[1],q[2] }
+    { ry q[5], -90 | ry q[8], 90 }
+    { rx q[8], -45 | ry q[2], 90 }
+    { ry q[8], -90 | ry q[2], 90 }
+    { x q[8] | rx q[2], -45 }
+    { ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[1],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[5], -90 }
+    { ry q[2], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[2],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[2], 90 | cz q[3],q[5] }
+    { rx q[2], 45 | ry q[8], 90 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[5], 90 | ry q[2], -90 }
+    { x q[8] | rx q[5], -45 }
+    { ry q[8], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[5], -90 }
+    cz q[1],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[1],q[5] }
+    qwait 1
+    { ry q[6], 90 | ry q[5], 90 | cz q[4],q[2] }
+    { x q[6] | ry q[5], 90 }
+    { rx q[5], 45 | x q[6] | ry q[2], 90 | x q[4] }
+    { ry q[5], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    { cz q[3],q[5] | cz q[2],q[4] }
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 | ry q[4], 90 }
+    { ry q[5], 90 | rx q[3], 45 | ry q[4], 90 }
+    { rx q[5], -45 | ry q[3], -90 | rx q[4], -45 }
+    { ry q[5], -90 | ry q[3], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[1],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[1],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[3] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 }
+    { rx q[3], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[3], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[3],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | cz q[6],q[7] }
+    cz q[1],q[9]
+    ry q[7], 90
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], 45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[5],q[7] }
+    cz q[3],q[9]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[9], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[9], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[9], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[6],q[7] }
+    cz q[1],q[9]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[9], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[9], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[9] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[5], -90 }
+    { ry q[3], -90 | cz q[9],q[10] | cz q[6],q[5] }
+    cz q[1],q[3]
+    { ry q[10], 90 | ry q[5], 90 | ry q[6], 90 | x q[9] }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 | ry q[9], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | cz q[7],q[9] }
+    ry q[3], -90
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[10],q[7] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 }
+    { ry q[9], -90 | ry q[7], 90 }
+    { x q[9] | rx q[7], -45 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[7], -90 | x q[9] }
+    { cz q[10],q[7] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[7], 90 | ry q[10], 90 }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 }
+    ry q[7], -90
+    x q[7]
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], -45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | x q[7] }
+    { cz q[6],q[5] | x q[7] }
+    ry q[7], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[7], -90 }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | x q[5] }
+    { cz q[6],q[10] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[10], 90 | ry q[6], 90 | cz q[3],q[5] }
+    { rx q[6], 45 | ry q[10], 90 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[5], 90 }
+    { ry q[10], -90 | ry q[5], 90 | x q[6] }
+    { rx q[5], -45 | ry q[10], -90 }
+    ry q[5], -90
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[1],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[1],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[3] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[3],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    { ry q[8], -90 | cz q[3],q[9] }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | x q[6] }
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[1],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[3], 90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[9],q[10] }
+    cz q[1],q[3]
+    { ry q[10], 90 | x q[9] }
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[1],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[3], 90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[1],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[1],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[3] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[8], -90
+    cz q[3],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    { ry q[8], -90 | ry q[3], -90 }
+    { x q[8] | cz q[5],q[3] }
+    ry q[8], -90
+    { ry q[8], -90 | ry q[3], 90 | x q[5] }
+    { cz q[1],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | cz q[3],q[5] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[5], 90 }
+    { ry q[8], -90 | rx q[5], -45 }
+    { cz q[6],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | x q[6] }
+    { cz q[1],q[4] | ry q[6], -90 }
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[1],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[1],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[2], -90
+    cz q[1],q[2]
+    qwait 1
+    { ry q[2], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    { ry q[2], -90 | cz q[1],q[5] }
+    ry q[2], -90
+    { cz q[4],q[2] | ry q[5], 90 }
+    ry q[5], 90
+    { ry q[2], 90 | rx q[5], 45 | x q[4] }
+    { ry q[5], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    { cz q[3],q[5] | cz q[2],q[4] }
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 | ry q[4], 90 }
+    { ry q[5], 90 | rx q[3], 45 | ry q[4], 90 }
+    { rx q[5], -45 | ry q[3], -90 | rx q[4], -45 }
+    { ry q[5], -90 | ry q[3], -90 | ry q[4], -90 }
+    { ry q[5], -90 | ry q[4], -90 }
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[3], -90
+    cz q[1],q[3]
+    qwait 1
+    { ry q[3], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[3], 90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    { ry q[3], -90 | cz q[1],q[4] }
+    ry q[3], -90
+    { cz q[5],q[3] | ry q[4], 90 }
+    ry q[4], 90
+    { ry q[3], 90 | rx q[4], 45 | x q[5] }
+    { ry q[4], -90 | ry q[5], -90 }
+    { ry q[4], -90 | ry q[5], -90 }
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[1],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[1],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[1],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[1], 90 | x q[6] }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[2], 90 }
+    { ry q[5], 90 | rx q[2], 45 }
+    { rx q[5], -45 | ry q[2], -90 }
+    { ry q[5], -90 | ry q[2], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[2] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[2], 90 }
+    { ry q[5], -90 | ry q[2], 90 }
+    { x q[5] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[5],q[7] }
+    cz q[1],q[2]
+    ry q[7], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[7], -90 }
+    { ry q[2], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[2], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[2], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[2] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[1],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[5], -90 | x q[6] }
+    { ry q[2], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 }
+    { rx q[2], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[2],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[1],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | cz q[6],q[7] | ry q[4], -90 }
+    ry q[9], -90
+    { ry q[9], -90 | ry q[7], 90 }
+    { cz q[2],q[9] | ry q[7], 90 }
+    rx q[7], 45
+    { ry q[9], 90 | ry q[2], 90 | ry q[7], -90 }
+    { ry q[9], 90 | rx q[2], 45 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], -90 | cz q[5],q[7] }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[7], 90 | ry q[5], 90 }
+    { cz q[1],q[9] | ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[9], 90 | cz q[1],q[2] | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], 90 | ry q[7], -90 }
+    { rx q[9], -45 | ry q[2], 90 | cz q[6],q[7] }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 | ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], -90 | ry q[2], -90 | ry q[7], 90 }
+    { ry q[2], -90 | cz q[9],q[10] | rx q[7], -45 | ry q[5], 90 }
+    { cz q[1],q[2] | ry q[7], -90 | ry q[5], 90 }
+    { ry q[10], 90 | x q[7] | rx q[5], -45 | x q[9] }
+    { ry q[2], 90 | ry q[1], 90 | ry q[7], -90 | ry q[5], -90 | ry q[9], -90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[5], -90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[2], 90 | cz q[6],q[5] | cz q[7],q[9] }
+    ry q[2], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[9], 90 | cz q[2],q[4] }
+    { rx q[6], 45 | ry q[5], 90 | ry q[9], 90 }
+    { ry q[6], -90 | rx q[5], 90 | rx q[9], -45 | ry q[4], 90 }
+    { ry q[5], -90 | ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], -45 }
+    { cz q[10],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[1],q[4] }
+    ry q[9], 90
+    { rx q[9], 45 | ry q[4], 90 }
+    { ry q[9], -90 | ry q[4], 90 }
+    { ry q[9], -90 | rx q[4], 45 }
+    { cz q[7],q[9] | ry q[4], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | ry q[7], 90 | cz q[2],q[4] }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 | ry q[4], 90 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], 90 | rx q[2], 45 }
+    { ry q[9], -90 | rx q[4], -45 | ry q[2], -90 }
+    { cz q[10],q[9] | ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    { ry q[9], 90 | cz q[10],q[7] | cz q[1],q[4] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 | ry q[4], 90 | cz q[1],q[2] }
+    { ry q[9], -90 | ry q[7], 90 | ry q[4], 90 }
+    { x q[9] | rx q[7], -45 | rx q[4], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[7], -90 | ry q[4], -90 | ry q[2], 90 }
+    { ry q[7], -90 | x q[4] | rx q[2], -45 | x q[9] }
+    { cz q[10],q[7] | ry q[4], -90 | ry q[2], -90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    { ry q[7], 90 | ry q[10], 90 | cz q[1],q[2] }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 | ry q[2], 90 | ry q[1], 90 }
+    { ry q[7], -90 | rx q[1], 45 | ry q[2], 90 }
+    { x q[7] | ry q[1], -90 | rx q[2], 90 }
+    { ry q[7], -90 | ry q[2], -90 }
+    { ry q[7], -90 | cz q[2],q[8] }
+    cz q[5],q[7]
+    ry q[8], 90
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], -45 }
+    { rx q[7], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[1],q[8] }
+    cz q[6],q[7]
+    ry q[8], 90
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], 45 }
+    { rx q[7], 45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[2],q[8] }
+    cz q[5],q[7]
+    { ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 | rx q[2], 45 }
+    { ry q[7], 90 | rx q[5], 45 | rx q[8], -45 | ry q[2], -90 }
+    { rx q[7], -45 | ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | cz q[1],q[8] }
+    cz q[6],q[7]
+    { ry q[8], 90 | cz q[1],q[2] }
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 }
+    { ry q[7], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[7], -45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[7], -90 | ry q[5], 90 | x q[8] | rx q[2], -45 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[2], -90 | cz q[8],q[9] }
+    { ry q[5], -90 | x q[7] | cz q[1],q[2] }
+    { cz q[6],q[5] | ry q[7], -90 | ry q[9], 90 }
+    { ry q[7], -90 | ry q[2], 90 | ry q[1], 90 | ry q[9], 90 }
+    { ry q[5], 90 | ry q[6], 90 | rx q[1], 45 | ry q[2], 90 | rx q[9], -45 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[1], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[2], -90 | ry q[9], -90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | cz q[5],q[7] }
+    cz q[6],q[10]
+    ry q[7], 90
+    { ry q[10], 90 | ry q[6], 90 | ry q[7], 90 }
+    { rx q[6], 45 | ry q[10], 90 | rx q[7], -45 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[7], -90 }
+    { ry q[10], -90 | x q[6] | ry q[7], -90 }
+    { ry q[6], -90 | ry q[10], -90 }
+    cz q[4],q[6]
+    qwait 1
+    ry q[6], 90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | cz q[7],q[9] }
+    cz q[6],q[5]
+    ry q[9], 90
+    { ry q[5], 90 | ry q[6], 90 | ry q[9], 90 }
+    { rx q[6], 45 | ry q[5], 90 | rx q[9], 45 }
+    { ry q[6], -90 | rx q[5], 90 | ry q[9], -90 }
+    { ry q[5], -90 | ry q[9], -90 }
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[2] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[5], -90 }
+    { ry q[2], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[2],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[2], 90 }
+    { rx q[2], 45 | ry q[8], 90 }
+    { ry q[2], -90 | rx q[8], 90 }
+    { ry q[8], -90 | cz q[2],q[9] }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[1],q[9] }
+    qwait 1
+    { ry q[6], 90 | ry q[9], 90 | x q[4] }
+    { x q[6] | ry q[9], 90 | ry q[4], -90 }
+    { rx q[9], 45 | x q[6] | ry q[4], -90 }
+    { ry q[9], -90 | ry q[6], -90 }
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[1],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[9],q[10] }
+    cz q[1],q[2]
+    { ry q[10], 90 | x q[9] }
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], -90 | ry q[10], -90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[2],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[2], 90 }
+    { ry q[9], 90 | rx q[2], 45 }
+    { rx q[9], -45 | ry q[2], -90 }
+    { ry q[9], -90 | ry q[2], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[2] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[2], 90 }
+    { ry q[9], -90 | ry q[2], 90 }
+    { x q[9] | rx q[2], -45 }
+    { ry q[9], -90 | ry q[2], -90 }
+    { ry q[2], -90 | x q[9] }
+    { cz q[1],q[2] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[2], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], -45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[1],q[4]
+    qwait 1
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    ry q[4], -90
+    cz q[2],q[4]
+    qwait 1
+    { ry q[4], 90 | ry q[2], 90 }
+    { ry q[4], 90 | rx q[2], 45 }
+    { rx q[4], -45 | ry q[2], -90 }
+    { ry q[4], -90 | ry q[2], -90 }
+    ry q[4], -90
+    cz q[1],q[4]
+    qwait 1
+    { ry q[4], 90 | cz q[1],q[2] }
+    ry q[4], 90
+    { rx q[4], -45 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[2], 90 }
+    { x q[4] | rx q[2], -45 }
+    { ry q[4], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[4],q[6] }
+    cz q[1],q[2]
+    ry q[6], 90
+    { ry q[2], 90 | ry q[1], 90 | x q[6] }
+    { rx q[1], 45 | ry q[2], 90 }
+    { ry q[1], -90 | rx q[2], 90 }
+    ry q[2], -90
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[2], 90 }
+    { ry q[5], 90 | rx q[2], 45 }
+    { rx q[5], -45 | ry q[2], -90 }
+    { ry q[5], -90 | ry q[2], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[2] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[2], 90 }
+    { ry q[5], -90 | ry q[2], 90 }
+    { x q[5] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[5],q[7] }
+    cz q[1],q[2]
+    ry q[7], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[7], -90 }
+    { ry q[2], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[2],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[2], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[2], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[2], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[2], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[2] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[2], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[2], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[2], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[2], -90 }
+    { ry q[2], -90 | cz q[8],q[9] }
+    cz q[1],q[2]
+    ry q[9], 90
+    { ry q[2], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[2], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[9], -90 }
+    { ry q[2], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[2],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[2], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[2], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[2], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[2] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[2], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[2], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[2], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[2], -90 | ry q[5], -90 | x q[7] }
+    { ry q[2], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[2] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[2], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[1], 45 | ry q[2], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[2], 90 | ry q[5], -90 | x q[6] }
+    { ry q[2], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[2],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[2],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[2],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[2],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[2], 90 | cz q[3],q[5] }
+    { rx q[2], 45 | ry q[8], 90 }
+    { ry q[2], -90 | rx q[8], 90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[5], 90 }
+    { x q[8] | rx q[5], -45 }
+    { ry q[8], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[5], -90 }
+    cz q[1],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | ry q[6], -90 }
+    { cz q[4],q[6] | cz q[1],q[5] }
+    qwait 1
+    { ry q[6], 90 | ry q[5], 90 }
+    { x q[6] | ry q[5], 90 }
+    { rx q[5], 45 | x q[6] }
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[1],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[1],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[3] | ry q[8], -90 | ry q[7], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 }
+    { rx q[3], 45 | ry q[8], 90 | rx q[7], -45 }
+    { ry q[3], -90 | rx q[8], 90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[3],q[9] | ry q[7], -90 }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | cz q[6],q[7] }
+    cz q[1],q[9]
+    ry q[7], 90
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], 45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[5],q[7] }
+    cz q[3],q[9]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[9], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[9], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[9], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[9], -90 | cz q[6],q[7] }
+    cz q[1],q[9]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[9], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[9], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[9], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[9] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[9], -90 | ry q[3], -90 | ry q[5], -90 }
+    { ry q[3], -90 | cz q[9],q[10] | cz q[6],q[5] }
+    cz q[1],q[3]
+    { ry q[10], 90 | ry q[5], 90 | ry q[6], 90 | x q[9] }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 | ry q[9], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | cz q[7],q[9] }
+    ry q[3], -90
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[7], 90 }
+    { ry q[9], 90 | rx q[7], 45 }
+    { rx q[9], -45 | ry q[7], -90 }
+    { ry q[9], -90 | ry q[7], -90 }
+    ry q[9], -90
+    cz q[10],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[10],q[7] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[7], 90 }
+    { ry q[9], -90 | ry q[7], 90 }
+    { x q[9] | rx q[7], -45 }
+    { ry q[9], -90 | ry q[7], -90 }
+    { ry q[7], -90 | x q[9] }
+    { cz q[10],q[7] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[7], 90 | ry q[10], 90 }
+    { rx q[10], 45 | ry q[7], 90 }
+    { ry q[10], -90 | rx q[7], 90 }
+    ry q[7], -90
+    x q[7]
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], -45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    ry q[7], 90
+    ry q[7], 90
+    rx q[7], 45
+    ry q[7], -90
+    ry q[7], -90
+    cz q[5],q[7]
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[7], 90 | rx q[5], 45 }
+    { rx q[7], -45 | ry q[5], -90 }
+    { ry q[7], -90 | ry q[5], -90 }
+    ry q[7], -90
+    cz q[6],q[7]
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] }
+    ry q[7], 90
+    { rx q[7], -45 | ry q[5], 90 }
+    { ry q[7], -90 | ry q[5], 90 }
+    { x q[7] | rx q[5], -45 }
+    { ry q[7], -90 | ry q[5], -90 }
+    { ry q[5], -90 | x q[7] }
+    { cz q[6],q[5] | x q[7] }
+    ry q[7], -90
+    { ry q[5], 90 | ry q[6], 90 | ry q[7], -90 }
+    { rx q[6], 45 | ry q[5], 90 }
+    { ry q[6], -90 | rx q[5], 90 }
+    ry q[5], -90
+    x q[5]
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[10],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[10], 90 }
+    { ry q[5], 90 | rx q[10], 45 }
+    { rx q[5], -45 | ry q[10], -90 }
+    { ry q[5], -90 | ry q[10], -90 }
+    ry q[5], -90
+    cz q[6],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[6],q[10] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[10], 90 }
+    { ry q[5], -90 | ry q[10], 90 }
+    { x q[5] | rx q[10], -45 }
+    { ry q[5], -90 | ry q[10], -90 }
+    { ry q[10], -90 | x q[5] }
+    { cz q[6],q[10] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[10], 90 | ry q[6], 90 | cz q[3],q[5] }
+    { rx q[6], 45 | ry q[10], 90 }
+    { ry q[6], -90 | rx q[10], 90 | ry q[5], 90 }
+    { ry q[10], -90 | ry q[5], 90 | x q[6] }
+    { rx q[5], -45 | ry q[10], -90 }
+    ry q[5], -90
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[1],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[1],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[9] }
+    { cz q[7],q[8] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] | x q[7] }
+    { cz q[1],q[3] | ry q[8], -90 | x q[7] }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 | ry q[7], -90 }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 | ry q[7], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    { ry q[8], -90 | x q[5] }
+    { cz q[3],q[8] | ry q[5], -90 }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    { ry q[8], -90 | cz q[3],q[9] }
+    x q[8]
+    { ry q[8], -90 | ry q[9], 90 }
+    { ry q[8], -90 | ry q[9], 90 }
+    { cz q[1],q[8] | rx q[9], -45 }
+    ry q[9], -90
+    { ry q[8], 90 | ry q[9], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | x q[8] }
+    { cz q[6],q[1] | ry q[8], -90 }
+    ry q[8], -90
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    { ry q[1], -90 | x q[6] }
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[1],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[3], 90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[9],q[10] }
+    cz q[1],q[3]
+    { ry q[10], 90 | x q[9] }
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], -90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[9], -90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], -45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[3],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[3], 90 }
+    { ry q[9], 90 | rx q[3], 45 }
+    { rx q[9], -45 | ry q[3], -90 }
+    { ry q[9], -90 | ry q[3], -90 }
+    ry q[9], -90
+    cz q[1],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[1],q[3] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[3], 90 }
+    { ry q[9], -90 | ry q[3], 90 }
+    { x q[9] | rx q[3], -45 }
+    { ry q[9], -90 | ry q[3], -90 }
+    { ry q[3], -90 | x q[9] }
+    { cz q[1],q[3] | ry q[9], -90 }
+    ry q[9], -90
+    { ry q[3], 90 | ry q[1], 90 }
+    { rx q[1], 45 | ry q[3], 90 }
+    { ry q[1], -90 | rx q[3], 90 }
+    ry q[3], -90
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], -45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[3], 90 }
+    { ry q[5], 90 | rx q[3], 45 }
+    { rx q[5], -45 | ry q[3], -90 }
+    { ry q[5], -90 | ry q[3], -90 }
+    ry q[5], -90
+    cz q[1],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[1],q[3] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[3], 90 }
+    { ry q[5], -90 | ry q[3], 90 }
+    { x q[5] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[5],q[7] }
+    cz q[1],q[3]
+    ry q[7], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[7], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[7], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[7], -90 }
+    { ry q[3], -90 | ry q[7], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[8], 90 }
+    { ry q[7], 90 | ry q[8], 90 }
+    { rx q[7], 45 | rx q[8], -45 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[5],q[7] | cz q[1],q[8] }
+    qwait 1
+    { ry q[7], 90 | ry q[5], 90 | ry q[8], 90 }
+    { ry q[7], 90 | rx q[5], 45 | ry q[8], 90 }
+    { rx q[7], -45 | ry q[5], -90 | rx q[8], 45 }
+    { ry q[7], -90 | ry q[5], -90 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[8], -90 }
+    { cz q[6],q[7] | cz q[3],q[8] }
+    qwait 1
+    { ry q[7], 90 | cz q[6],q[5] | ry q[8], 90 | ry q[3], 90 }
+    { ry q[7], 90 | ry q[8], 90 | rx q[3], 45 }
+    { rx q[7], -45 | ry q[5], 90 | rx q[8], -45 | ry q[3], -90 }
+    { ry q[7], -90 | ry q[5], 90 | ry q[8], -90 | ry q[3], -90 }
+    { x q[7] | rx q[5], -45 | ry q[8], -90 }
+    { ry q[7], -90 | ry q[5], -90 | cz q[1],q[8] }
+    ry q[5], -90
+    { cz q[6],q[5] | ry q[8], 90 | cz q[1],q[3] }
+    ry q[8], 90
+    { ry q[5], 90 | ry q[6], 90 | rx q[8], -45 | ry q[3], 90 }
+    { rx q[6], 45 | ry q[5], 90 | ry q[8], -90 | ry q[3], 90 }
+    { ry q[6], -90 | rx q[5], 90 | x q[8] | rx q[3], -45 }
+    { ry q[5], -90 | ry q[8], -90 | ry q[3], -90 }
+    { ry q[3], -90 | cz q[8],q[9] }
+    cz q[1],q[3]
+    ry q[9], 90
+    { ry q[3], 90 | ry q[1], 90 | ry q[9], 90 }
+    { rx q[1], 45 | ry q[3], 90 | rx q[9], -45 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[9], -90 }
+    { ry q[3], -90 | ry q[9], -90 }
+    cz q[7],q[9]
+    qwait 1
+    ry q[9], 90
+    ry q[9], 90
+    rx q[9], 45
+    ry q[9], -90
+    ry q[9], -90
+    cz q[8],q[9]
+    qwait 1
+    { ry q[9], 90 | ry q[8], 90 }
+    { ry q[9], 90 | rx q[8], 45 }
+    { rx q[9], -45 | ry q[8], -90 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[9], -90
+    cz q[7],q[9]
+    qwait 1
+    { ry q[9], 90 | cz q[7],q[8] }
+    ry q[9], 90
+    { rx q[9], -45 | ry q[8], 90 }
+    { ry q[9], -90 | ry q[8], 90 }
+    { x q[9] | rx q[8], -45 }
+    { ry q[9], -90 | ry q[8], -90 }
+    ry q[8], -90
+    cz q[7],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[7], 90 }
+    { rx q[7], 45 | ry q[8], 90 }
+    { ry q[7], -90 | rx q[8], 90 }
+    { ry q[8], -90 | x q[7] }
+    { x q[8] | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 }
+    { rx q[8], -45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    ry q[7], 90
+    { ry q[8], 90 | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], 45 }
+    { rx q[8], 45 | ry q[7], -90 }
+    { ry q[8], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[5],q[7] }
+    cz q[3],q[8]
+    { ry q[7], 90 | ry q[5], 90 }
+    { ry q[8], 90 | ry q[3], 90 | ry q[7], 90 | rx q[5], 45 }
+    { ry q[8], 90 | rx q[3], 45 | rx q[7], -45 | ry q[5], -90 }
+    { rx q[8], -45 | ry q[3], -90 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[7], -90 }
+    { ry q[8], -90 | cz q[6],q[7] }
+    cz q[1],q[8]
+    { ry q[7], 90 | cz q[6],q[5] }
+    { ry q[8], 90 | cz q[1],q[3] | ry q[7], 90 }
+    { ry q[8], 90 | rx q[7], -45 | ry q[5], 90 }
+    { rx q[8], -45 | ry q[3], 90 | ry q[7], -90 | ry q[5], 90 }
+    { ry q[8], -90 | ry q[3], 90 | x q[7] | rx q[5], -45 }
+    { x q[8] | rx q[3], -45 | ry q[7], -90 | ry q[5], -90 }
+    { ry q[8], -90 | ry q[3], -90 | ry q[5], -90 | x q[7] }
+    { ry q[3], -90 | cz q[6],q[5] | x q[8] }
+    { cz q[1],q[3] | ry q[8], -90 }
+    { ry q[5], 90 | ry q[6], 90 | ry q[8], -90 }
+    { ry q[3], 90 | ry q[1], 90 | rx q[6], 45 | ry q[5], 90 }
+    { rx q[1], 45 | ry q[3], 90 | ry q[6], -90 | rx q[5], 90 }
+    { ry q[1], -90 | rx q[3], 90 | ry q[5], -90 | x q[6] }
+    { ry q[3], -90 | cz q[1],q[8] | x q[5] }
+    ry q[5], -90
+    { ry q[8], 90 | ry q[5], -90 }
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    { ry q[1], -90 | cz q[8],q[5] }
+    cz q[6],q[1]
+    ry q[5], 90
+    { ry q[1], 90 | ry q[6], 90 | ry q[5], 90 }
+    { rx q[6], 45 | ry q[1], 90 | rx q[5], -45 }
+    { ry q[6], -90 | rx q[1], 90 | ry q[5], -90 }
+    { ry q[1], -90 | ry q[5], -90 }
+    cz q[3],q[5]
+    qwait 1
+    ry q[5], 90
+    ry q[5], 90
+    rx q[5], 45
+    ry q[5], -90
+    ry q[5], -90
+    cz q[8],q[5]
+    qwait 1
+    { ry q[5], 90 | ry q[8], 90 }
+    { ry q[5], 90 | rx q[8], 45 }
+    { rx q[5], -45 | ry q[8], -90 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[5], -90
+    cz q[3],q[5]
+    qwait 1
+    { ry q[5], 90 | cz q[3],q[8] }
+    ry q[5], 90
+    { rx q[5], -45 | ry q[8], 90 }
+    { ry q[5], -90 | ry q[8], 90 }
+    { x q[5] | rx q[8], -45 }
+    { ry q[5], -90 | ry q[8], -90 }
+    ry q[8], -90
+    cz q[3],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[3], 90 }
+    { rx q[3], 45 | ry q[8], 90 }
+    { ry q[3], -90 | rx q[8], 90 }
+    ry q[8], -90
+    x q[8]
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], -45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    ry q[8], 90
+    ry q[8], 90
+    rx q[8], 45
+    ry q[8], -90
+    ry q[8], -90
+    cz q[1],q[8]
+    qwait 1
+    { ry q[8], 90 | ry q[1], 90 }
+    { ry q[8], 90 | rx q[1], 45 }
+    { rx q[8], -45 | ry q[1], -90 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[8], -90
+    cz q[6],q[8]
+    qwait 1
+    { ry q[8], 90 | cz q[6],q[1] }
+    ry q[8], 90
+    { rx q[8], -45 | ry q[1], 90 }
+    { ry q[8], -90 | ry q[1], 90 }
+    { x q[8] | rx q[1], -45 }
+    { ry q[8], -90 | ry q[1], -90 }
+    ry q[1], -90
+    cz q[6],q[1]
+    qwait 1
+    { ry q[1], 90 | ry q[6], 90 }
+    { rx q[6], 45 | ry q[1], 90 }
+    { ry q[6], -90 | rx q[1], 90 }
+    ry q[1], -90

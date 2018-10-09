@@ -1,60 +1,62 @@
-qubits 5
+version 2.0
+
+qubits 4
 
 .cuccaroAdder_1b
-    { ym90 q2 | ym90 q0 | ym90 q3 }
-    cz q1,q2
+    { ry q[2], -90 | ry q[0], -90 | ry q[3], -90 }
+    cz q[1],q[2]
     qwait 1
-    { ry90 q2 | cz q1,q0 }
-    ry90 q2
-    { ry90 q0 | xm45 q2 | x q1 }
-    { ry90 q0 | ym90 q2 | ym90 q1 }
-    xm45 q0
-    y q0
-    cz q1,q0
+    { ry q[2], 90 | cz q[1],q[0] }
+    ry q[2], 90
+    { ry q[0], 90 | rx q[2], -45 | x q[1] }
+    { ry q[0], 90 | ry q[2], -90 | ry q[1], -90 }
+    rx q[0], -45
+    y q[0]
+    cz q[1],q[0]
     qwait 1
-    { y q0 | ym90 q1 }
-    { rx45 q0 | cz q2,q1 }
-    y q0
-    { y q1 | cz q2,q0 }
-    rx45 q1
-    { y q0 | y q1 }
-    { xm45 q0 | cz q2,q1 }
-    y q0
-    ry90 q1
-    cz q1,q0
+    { y q[0] | ry q[1], -90 }
+    { rx q[0], 45 | cz q[2],q[1] }
+    y q[0]
+    { y q[1] | cz q[2],q[0] }
+    rx q[1], 45
+    { y q[0] | y q[1] }
+    { rx q[0], -45 | cz q[2],q[1] }
+    y q[0]
+    ry q[1], 90
+    cz q[1],q[0]
     qwait 1
-    { y q0 | ry90 q1 }
-    { rx45 q0 | xm45 q1 }
-    { y q0 | ym90 q1 }
-    { cz q2,q0 | x q1 }
-    ym90 q1
-    { ry90 q0 | cz q1,q3 | ry90 q2 }
-    { ry90 q0 | xm45 q2 }
-    { ry90 q3 | xm45 q0 | ym90 q2 | x q1 }
-    { y q0 | ym90 q1 }
-    cz q1,q0
+    { y q[0] | ry q[1], 90 }
+    { rx q[0], 45 | rx q[1], -45 }
+    { y q[0] | ry q[1], -90 }
+    { cz q[2],q[0] | x q[1] }
+    ry q[1], -90
+    { ry q[0], 90 | cz q[1],q[3] | ry q[2], 90 }
+    { ry q[0], 90 | rx q[2], -45 }
+    { ry q[3], 90 | rx q[0], -45 | ry q[2], -90 | x q[1] }
+    { y q[0] | ry q[1], -90 }
+    cz q[1],q[0]
     qwait 1
-    { y q0 | ym90 q1 }
-    { rx45 q0 | cz q2,q1 }
-    y q0
-    { y q1 | cz q2,q0 }
-    rx45 q1
-    { y q0 | y q1 }
-    { xm45 q0 | cz q2,q1 }
-    y q0
-    ry90 q1
-    cz q1,q0
+    { y q[0] | ry q[1], -90 }
+    { rx q[0], 45 | cz q[2],q[1] }
+    y q[0]
+    { y q[1] | cz q[2],q[0] }
+    rx q[1], 45
+    { y q[0] | y q[1] }
+    { rx q[0], -45 | cz q[2],q[1] }
+    y q[0]
+    ry q[1], 90
+    cz q[1],q[0]
     qwait 1
-    { y q0 | ry90 q1 }
-    { rx45 q0 | xm45 q1 }
-    { y q0 | ym90 q1 }
-    { cz q2,q0 | x q1 }
-    ym90 q1
-    { ry90 q0 | ym90 q2 }
-    ym90 q0
-    cz q1,q0
+    { y q[0] | ry q[1], 90 }
+    { rx q[0], 45 | rx q[1], -45 }
+    { y q[0] | ry q[1], -90 }
+    { cz q[2],q[0] | x q[1] }
+    ry q[1], -90
+    { ry q[0], 90 | ry q[2], -90 }
+    ry q[0], -90
+    cz q[1],q[0]
     qwait 1
-    ry90 q0
-    cz q0,q2
+    ry q[0], 90
+    cz q[0],q[2]
     qwait 1
-    ry90 q2
+    ry q[2], 90
