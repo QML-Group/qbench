@@ -118,7 +118,7 @@ def check_cQasm(filename):
         return
 
     backup = ""
-    corrected = ["version 2.0"]
+    corrected = []
     biggest_number = 0
 
     with open(filename, 'r') as f:
