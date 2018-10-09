@@ -1,19 +1,20 @@
+version 2.0
 qubits 6
 
 .graycode6_47
-    ym90 q0
-    cz q1,q0
+    ry q[0], -90
+    cz q[1],q[0]
     qwait 1
-    { ry90 q0 | ym90 q1 }
-    cz q2,q1
+    { ry q[0], 90 | ry q[1], -90 }
+    cz q[2],q[1]
     qwait 1
-    { ry90 q1 | ym90 q2 }
-    cz q3,q2
+    { ry q[1], 90 | ry q[2], -90 }
+    cz q[3],q[2]
     qwait 1
-    { ry90 q2 | ym90 q3 }
-    cz q4,q3
+    { ry q[2], 90 | ry q[3], -90 }
+    cz q[4],q[3]
     qwait 1
-    { ry90 q3 | ym90 q4 }
-    cz q5,q4
+    { ry q[3], 90 | ry q[4], -90 }
+    cz q[5],q[4]
     qwait 1
-    ry90 q4
+    ry q[4], 90
