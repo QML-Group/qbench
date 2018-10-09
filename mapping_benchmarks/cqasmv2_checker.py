@@ -169,7 +169,7 @@ def check_dir(path):
 
     else:
 
-        check_cQasm(filename)
+        check_cQasm(path)
 
     return
 
