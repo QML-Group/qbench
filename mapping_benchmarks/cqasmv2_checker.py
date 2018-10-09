@@ -130,7 +130,7 @@ def check_cQasm(filename):
 
             line = algNameChecker(line)
 
-            # line = parenthesisChecker(line)
+            line = parenthesisChecker(line)
 
             line = rotationGatesChecker(line)
 
