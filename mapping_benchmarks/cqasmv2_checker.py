@@ -109,6 +109,8 @@ def rotationGatesChecker(line):
 
 def check_cQasm(filename):
 
+    print("\n\ncheck_cQasm {filename}\n".format(filename=filename))
+
     if not isQasm(filename):
 
         print("\nERROR. The file is not a QASM file. Please, use a cQASM file as input\n")
@@ -118,8 +120,6 @@ def check_cQasm(filename):
     backup = ""
     corrected = ["version 2.0"]
     biggest_number = 0
-
-    print("\n\ncheck_cQasm {filename}\n".format(filename=filename))
 
     with open(filename, 'r') as f:
 
