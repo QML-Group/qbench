@@ -46,8 +46,8 @@ def main():
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
         name = 'rb_same' if args.same else 'rb'
-        program = ql.Program('%s_%i' % (name, args.qubits), args.qubits, platform)
-        kernel = ql.Kernel('%s_kernel' % name, platform)
+        program = ql.Program('%s_%i' % (name, args.qubits), platform, args.qubits)
+        kernel = ql.Kernel('%s_kernel' % name, platform, args.qubits)
 
         # Define array of qubit indices which can be reused
         qubits = list(range(args.qubits))

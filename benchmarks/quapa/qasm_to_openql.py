@@ -54,7 +54,7 @@ class QasmKernels(list):
                         raise qasm.QasmException('TypeError at line %i: %s' % (line.line_number, e))
 
     def _append_new_kernel(self):
-        self.append(ql.Kernel('%s_%i' % (self._name, len(self)), self._platform))
+        self.append(ql.Kernel('%s_%i' % (self._name, len(self)), self._platform, args.qubits))
         self._last_kernel_gate_count = 0
 
     def get_file_name(self):
@@ -93,7 +93,7 @@ def main():
 
         # Set up OpenQL program
         printer.write('Initializing OpenQL program with %i kernel(s)...' % len(kernels))
-        program = ql.Program(name, kernels.get_num_qubits(), platform)
+        program = ql.Program(name, platform, kernels.get_num_qubits())
         for k in kernels:
             program.add_kernel(k)
 

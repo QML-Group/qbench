@@ -114,8 +114,8 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        program = ql.Program('ising_model_n%i' % args.N, len(qubits), platform)
-        kernel = ql.Kernel('scaffcc_ising_model_kernel', platform)
+        program = ql.Program('ising_model_n%i' % args.N, platform, len(qubits))
+        kernel = ql.Kernel('scaffcc_ising_model_kernel', platform, args.qubits)
 
         if args.seed:
             # Set the seed

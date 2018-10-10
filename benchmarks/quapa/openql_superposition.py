@@ -27,8 +27,8 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        program = ql.Program('superpos_%i' % args.qubits, args.qubits, platform)
-        kernel = ql.Kernel('superpos_kernel', platform)
+        program = ql.Program('superpos_%i' % args.qubits, platform, args.qubits)
+        kernel = ql.Kernel('superpos_kernel', platform, args.qubits)
 
         # Define array of qubit indices
         qubits = list(range(args.qubits))

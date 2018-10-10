@@ -139,8 +139,8 @@ def main():
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
         ql.set_option('decompose_toffoli', 'yes')
-        program = ql.Program('sqrt_n%i' % args.n, len(qubits), platform)
-        kernel = ql.Kernel('scaffcc_sqrt_kernel', platform)
+        program = ql.Program('sqrt_n%i' % args.n, platform, len(qubits))
+        kernel = ql.Kernel('scaffcc_sqrt_kernel', platform, args.qubits)
 
         # Sqrt circuit
         a = qubits[:args.n]

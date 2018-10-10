@@ -52,8 +52,8 @@ def main():
 
         # Set up OpenQL program and kernel
         printer.write('Initializing OpenQL program...')
-        program = ql.Program('cat_%i' % args.qubits, args.qubits, platform)
-        kernel = ql.Kernel('cat_kernel', platform)
+        program = ql.Program('cat_%i' % args.qubits, platform, args.qubits)
+        kernel = ql.Kernel('cat_kernel', platform, args.qubits)
 
         # Define array of qubit indices
         qubits = list(range(args.qubits))
