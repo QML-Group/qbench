@@ -140,6 +140,8 @@ with h5py.File(h5_path, "w") as h5f:
                             scheduler, mapper, initial_placement, out_dir, 1, error, experiment_id, simulator)
         compile_and_analize("sqrt8_260.py", cursor, h5f, config_file,
                             scheduler, mapper, initial_placement, out_dir, 1, error, experiment_id, simulator)
+        compile_and_analize("grover_orcl_toff.py", cursor, h5f, config_file,
+                            scheduler, mapper, initial_placement, out_dir, 1, error, experiment_id, simulator)
         # compile_and_analize("alu-bdd_288.py", cursor, h5f, config_file,
         #                     scheduler, mapper, initial_placement, out_dir, 0, error, experiment_id, simulator)
         # compile_and_analize("alu-v0_27.py", cursor, h5f, config_file,
