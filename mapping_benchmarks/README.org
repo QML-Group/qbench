@@ -30,6 +30,7 @@
 |          6 |       338 | decod24-enable_126               |
 |          6 |         5 | graycode6_47                     |
 |         13 |    360618 | +ground_state_estimation_10+       |
+|          3 |        16 | grover_orcl_toff                 |
 |          3 |        20 | ham3_102                         |
 |          5 |       233 | hwb4_49                          |
 |         10 |       200 | +ising_model_10+                   |
