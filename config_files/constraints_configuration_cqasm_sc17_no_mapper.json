@@ -25,7 +25,7 @@
 	"qwgs" :
 	{
 	    "description": "Single-qubit rotation gates (instructions of 'mw' type) are controlled by qwgs.  Each qwg controls a private set of qubits.  A qwg can control multiple qubits at the same time, but only when they perform the same gate and started at the same time. There are 'count' qwgs. For each qwg it is described which set of qubits it controls.",
-	    "count": 4,
+	    "count": 3,
 	    "connection_map":
 	    {
 		"0" : [1, 2, 3, 13, 14, 15],
