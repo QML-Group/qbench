@@ -60,6 +60,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, mapp
             config_file_path, scheduler, mapper, initial_placement, output_dir_name)
 
         filename = filename.replace("-", "_")
+        filename = filename.replace(".py", "_scheduled.qasm")
 
         # cleaning_qwaits(filename.replace(".py", ".qasm"))
 
@@ -67,7 +68,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, mapp
         #     filename.replace(".py", ".qasm"), 1000)
 
         benchmark = quantum_benchmark.Benchmark(
-            filename.replace(".py", "_scheduled.qasm"), 1000)
+            filename, 1000)
 
         benchmark.error_analysis(init_type, error)
 
