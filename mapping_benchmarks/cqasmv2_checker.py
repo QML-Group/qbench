@@ -73,8 +73,8 @@ def versionChecker(corrected):
 
     # print(corrected[0])
 
-    # corrected.insert(0, "version 2.0\n\n")
-    corrected.insert(0, "version 1.0\n\n")
+    corrected.insert(0, "version 2.0\n\n")
+    # corrected.insert(0, "version 1.0\n\n")
 
     return corrected
 
