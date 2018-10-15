@@ -3,6 +3,7 @@ print("\n\n---------------------EXECUTE BENCHMARKS---------------------\n")
 import os
 import importlib.util
 import quantum_benchmark
+import cqasmv2_checker
 import re
 import numpy as np
 import h5py
@@ -60,6 +61,8 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, mapp
             config_file_path, scheduler, mapper, initial_placement, output_dir_name)
 
         filename = filename.replace("-", "_")
+
+        cqasmv2_checker.check_cQasm(filename)
 
         # cleaning_qwaits(filename.replace(".py", ".qasm"))
 
