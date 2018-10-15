@@ -31,6 +31,7 @@ python sqrt8_260.py --mapper no --out_dir cQASM_files/sc-17/ ../config_files/con
 python sym6_145.py --mapper no --out_dir cQASM_files/sc-17/ ../config_files/constraints_configuration_cqasm_sc17_no_mapper.json
 python vbeAdder_2b.py --mapper no --out_dir cQASM_files/sc-17/ ../config_files/constraints_configuration_cqasm_sc17_no_mapper.json
 python xor5_254.py --mapper no --out_dir cQASM_files/sc-17/ ../config_files/constraints_configuration_cqasm_sc17_no_mapper.json
+python grover_orcl_toff.py --mapper no --out_dir cQASM_files/sc-17/ ../config_files/constraints_configuration_cqasm_sc17_no_mapper.json
 
 # SC-7
 python 4gt11_82.py --mapper no --out_dir cQASM_files/sc-7/ ../config_files/constraints_configuration_cqasm_sc7_no_mapper.json
@@ -59,3 +60,4 @@ python sf_274.py --mapper no --out_dir cQASM_files/sc-7/ ../config_files/constra
 python sf_276.py --mapper no --out_dir cQASM_files/sc-7/ ../config_files/constraints_configuration_cqasm_sc7_no_mapper.json
 python sym6_145.py --mapper no --out_dir cQASM_files/sc-7/ ../config_files/constraints_configuration_cqasm_sc7_no_mapper.json
 python xor5_254.py --mapper no --out_dir cQASM_files/sc-7/ ../config_files/constraints_configuration_cqasm_sc7_no_mapper.json
+python grover_orcl_toff.py --mapper no --out_dir cQASM_files/sc-7/ ../config_files/constraints_configuration_cqasm_sc7_no_mapper.json
