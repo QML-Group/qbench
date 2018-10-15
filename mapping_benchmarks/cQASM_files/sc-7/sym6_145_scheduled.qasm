@@ -1,4 +1,5 @@
 version 2.0
+
 qubits 7
 
 .sym6_145

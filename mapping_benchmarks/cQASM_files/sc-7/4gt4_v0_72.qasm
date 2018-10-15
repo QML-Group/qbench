@@ -1,4 +1,5 @@
 version 2.0
+
 qubits 6
 
 .4gt4_v0_72

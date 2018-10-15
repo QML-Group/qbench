@@ -1,4 +1,5 @@
 version 2.0
+
 qubits 6
 
 .xor5_254
