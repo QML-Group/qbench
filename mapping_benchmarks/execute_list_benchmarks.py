@@ -99,15 +99,18 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, mapp
         raise
 
 
-config_file = "../config_files/constraints_configuration_cqasm_sc17.json"
+simulator = False               # QX (no Quantumsim)
+# simulator = True               # Quantumsim (no QX)
+
+config_file = "../config_files/constraints_configuration_quantumsim_sc17.json" if simulator == True else "../config_files/constraints_configuration_cqasm_sc17.json"
+
+
 scheduler = "ASAP"
 mapper = "base"
 initial_placement = "no"
 out_dir = "."
 error = 0.01
 
-simulator = False               # QX (no Quantumsim)
-# simulator = True               # Quantumsim (no QX)
 
 h5_path = "/home/dmorenomanzano/qbench/mapping_benchmarks/" + \
     str(datetime.now()).replace(" ", "_")+"_benchmark_tomographies.h5"
