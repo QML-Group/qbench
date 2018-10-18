@@ -1,5 +1,5 @@
 {
-    "eqasm_compiler" : "quantumsim",
+    "eqasm_compiler" : "quantumsim_compiler",
 
     "hardware_settings": {
 	"qubit_number": 17,
