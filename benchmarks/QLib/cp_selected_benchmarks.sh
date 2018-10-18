@@ -41,3 +41,4 @@ cp sym6_145.py ../../mapping_benchmarks/
 cp vbeAdder_2b.py ../../mapping_benchmarks/                     
 cp xor5_254.py ../../mapping_benchmarks/                        
 cp shor_15.py ../../mapping_benchmarks/
+cp grover_orcl_toff.py ../../mapping_benchmarks/
