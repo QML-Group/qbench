@@ -1,134 +1,136 @@
+version 2.0
+
 qubits 7
 
 .4mod5_bdd_287
-    { x q4 | x q6 | x q5 | ry90 q0 | ry90 q2 }
-    { ym90 q4 | ym90 q5 | rx45 q0 | x q6 | rx45 q2 }
-    { cz q3,q4 | ym90 q0 | ry90 q5 | ym90 q6 | ym90 q2 }
-    { rx45 q5 | ym90 q0 | ry90 q6 | ym90 q2 }
-    { ry90 q4 | ym90 q5 | rx45 q6 }
-    { ym90 q4 | ym90 q6 }
-    cz q1,q4
+    { x q[4] | x q[6] | x q[5] | ry q[0], 90 | ry q[2], 90 }
+    { ry q[4], -90 | ry q[5], -90 | rx q[0], 45 | x q[6] | rx q[2], 45 }
+    { cz q[3],q[4] | ry q[0], -90 | ry q[5], 90 | ry q[6], -90 | ry q[2], -90 }
+    { rx q[5], 45 | ry q[0], -90 | ry q[6], 90 | ry q[2], -90 }
+    { ry q[4], 90 | ry q[5], -90 | rx q[6], 45 }
+    { ry q[4], -90 | ry q[6], -90 }
+    cz q[1],q[4]
     qwait 1
-    ry90 q4
-    ry90 q4
-    rx45 q4
-    ym90 q4
-    cz q4,q0
+    ry q[4], 90
+    ry q[4], 90
+    rx q[4], 45
+    ry q[4], -90
+    cz q[4],q[0]
     qwait 1
-    { ry90 q0 | ym90 q4 }
-    cz q5,q4
+    { ry q[0], 90 | ry q[4], -90 }
+    cz q[5],q[4]
     qwait 1
-    { ry90 q4 | ym90 q5 }
-    { cz q0,q5 | ry90 q4 }
-    xm45 q4
-    { ry90 q5 | ym90 q4 }
-    { ym90 q4 | ry90 q5 }
-    { cz q0,q4 | rx45 q5 }
-    ym90 q5
-    { ry90 q4 | ry90 q0 }
-    { xm45 q0 | ry90 q4 }
-    { ym90 q0 | xm45 q4 }
-    ym90 q4
-    ym90 q4
-    cz q5,q4
+    { ry q[4], 90 | ry q[5], -90 }
+    { cz q[0],q[5] | ry q[4], 90 }
+    rx q[4], -45
+    { ry q[5], 90 | ry q[4], -90 }
+    { ry q[4], -90 | ry q[5], 90 }
+    { cz q[0],q[4] | rx q[5], 45 }
+    ry q[5], -90
+    { ry q[4], 90 | ry q[0], 90 }
+    { rx q[0], -45 | ry q[4], 90 }
+    { ry q[0], -90 | rx q[4], -45 }
+    ry q[4], -90
+    ry q[4], -90
+    cz q[5],q[4]
     qwait 1
-    { ry90 q4 | ym90 q5 }
-    cz q0,q5
+    { ry q[4], 90 | ry q[5], -90 }
+    cz q[0],q[5]
     qwait 1
-    { ry90 q5 | ym90 q0 }
-    { cz q4,q0 | x q5 }
-    ym90 q5
-    { ry90 q0 | ry90 q4 | x q5 }
-    { ry90 q0 | rx45 q4 | ym90 q5 }
-    { rx45 q0 | ym90 q4 | ry90 q5 }
-    { ym90 q0 | rx45 q5 }
-    { ym90 q0 | ym90 q5 }
-    cz q4,q0
+    { ry q[5], 90 | ry q[0], -90 }
+    { cz q[4],q[0] | x q[5] }
+    ry q[5], -90
+    { ry q[0], 90 | ry q[4], 90 | x q[5] }
+    { ry q[0], 90 | rx q[4], 45 | ry q[5], -90 }
+    { rx q[0], 45 | ry q[4], -90 | ry q[5], 90 }
+    { ry q[0], -90 | rx q[5], 45 }
+    { ry q[0], -90 | ry q[5], -90 }
+    cz q[4],q[0]
     qwait 1
-    { ry90 q0 | ym90 q4 }
-    cz q6,q4
+    { ry q[0], 90 | ry q[4], -90 }
+    cz q[6],q[4]
     qwait 1
-    { ry90 q4 | ym90 q6 }
-    { cz q0,q6 | ry90 q4 }
-    xm45 q4
-    { ry90 q6 | ym90 q4 }
-    { ym90 q4 | ry90 q6 }
-    { cz q0,q4 | rx45 q6 }
-    ym90 q6
-    { ry90 q4 | ry90 q0 }
-    { xm45 q0 | ry90 q4 }
-    { ym90 q0 | xm45 q4 }
-    ym90 q4
-    ym90 q4
-    cz q6,q4
+    { ry q[4], 90 | ry q[6], -90 }
+    { cz q[0],q[6] | ry q[4], 90 }
+    rx q[4], -45
+    { ry q[6], 90 | ry q[4], -90 }
+    { ry q[4], -90 | ry q[6], 90 }
+    { cz q[0],q[4] | rx q[6], 45 }
+    ry q[6], -90
+    { ry q[4], 90 | ry q[0], 90 }
+    { rx q[0], -45 | ry q[4], 90 }
+    { ry q[0], -90 | rx q[4], -45 }
+    ry q[4], -90
+    ry q[4], -90
+    cz q[6],q[4]
     qwait 1
-    { ry90 q4 | ym90 q6 }
-    cz q0,q6
+    { ry q[4], 90 | ry q[6], -90 }
+    cz q[0],q[6]
     qwait 1
-    { ry90 q6 | ym90 q0 }
-    { cz q4,q0 | x q6 }
-    ym90 q6
-    { ry90 q0 | ym90 q6 }
-    cz q4,q6
+    { ry q[6], 90 | ry q[0], -90 }
+    { cz q[4],q[0] | x q[6] }
+    ry q[6], -90
+    { ry q[0], 90 | ry q[6], -90 }
+    cz q[4],q[6]
     qwait 1
-    ry90 q6
-    x q6
-    ry90 q6
-    rx45 q6
-    ym90 q6
-    cz q6,q2
+    ry q[6], 90
+    x q[6]
+    ry q[6], 90
+    rx q[6], 45
+    ry q[6], -90
+    cz q[6],q[2]
     qwait 1
-    { ry90 q2 | ym90 q6 }
-    cz q5,q6
+    { ry q[2], 90 | ry q[6], -90 }
+    cz q[5],q[6]
     qwait 1
-    { ry90 q6 | ym90 q5 }
-    { cz q2,q5 | ry90 q6 }
-    xm45 q6
-    { ry90 q5 | ym90 q6 }
-    { ym90 q6 | ry90 q5 }
-    { cz q2,q6 | rx45 q5 }
-    ym90 q5
-    { ry90 q6 | ry90 q2 }
-    { xm45 q2 | ry90 q6 }
-    { ym90 q2 | xm45 q6 }
-    ym90 q6
-    ym90 q6
-    cz q5,q6
+    { ry q[6], 90 | ry q[5], -90 }
+    { cz q[2],q[5] | ry q[6], 90 }
+    rx q[6], -45
+    { ry q[5], 90 | ry q[6], -90 }
+    { ry q[6], -90 | ry q[5], 90 }
+    { cz q[2],q[6] | rx q[5], 45 }
+    ry q[5], -90
+    { ry q[6], 90 | ry q[2], 90 }
+    { rx q[2], -45 | ry q[6], 90 }
+    { ry q[2], -90 | rx q[6], -45 }
+    ry q[6], -90
+    ry q[6], -90
+    cz q[5],q[6]
     qwait 1
-    { ry90 q6 | ym90 q5 }
-    cz q2,q5
+    { ry q[6], 90 | ry q[5], -90 }
+    cz q[2],q[5]
     qwait 1
-    { ry90 q5 | ym90 q2 }
-    { cz q6,q2 | x q5 }
-    ym90 q5
-    { ry90 q2 | x q6 | ry90 q5 }
-    { ym90 q6 | ry90 q2 | rx45 q5 }
-    { rx45 q2 | ym90 q5 | ry90 q6 }
-    { ym90 q2 | rx45 q6 }
-    { ym90 q6 | ym90 q2 }
-    cz q5,q2
+    { ry q[5], 90 | ry q[2], -90 }
+    { cz q[6],q[2] | x q[5] }
+    ry q[5], -90
+    { ry q[2], 90 | x q[6] | ry q[5], 90 }
+    { ry q[6], -90 | ry q[2], 90 | rx q[5], 45 }
+    { rx q[2], 45 | ry q[5], -90 | ry q[6], 90 }
+    { ry q[2], -90 | rx q[6], 45 }
+    { ry q[6], -90 | ry q[2], -90 }
+    cz q[5],q[2]
     qwait 1
-    { ry90 q2 | ym90 q5 }
-    cz q6,q5
+    { ry q[2], 90 | ry q[5], -90 }
+    cz q[6],q[5]
     qwait 1
-    { ry90 q5 | ym90 q6 }
-    { cz q2,q6 | ry90 q5 }
-    xm45 q5
-    { ry90 q6 | ym90 q5 }
-    { ym90 q5 | ry90 q6 }
-    { cz q2,q5 | rx45 q6 }
-    ym90 q6
-    { ry90 q5 | ry90 q2 }
-    { xm45 q2 | ry90 q5 }
-    { ym90 q2 | xm45 q5 }
-    ym90 q5
-    ym90 q5
-    cz q6,q5
+    { ry q[5], 90 | ry q[6], -90 }
+    { cz q[2],q[6] | ry q[5], 90 }
+    rx q[5], -45
+    { ry q[6], 90 | ry q[5], -90 }
+    { ry q[5], -90 | ry q[6], 90 }
+    { cz q[2],q[5] | rx q[6], 45 }
+    ry q[6], -90
+    { ry q[5], 90 | ry q[2], 90 }
+    { rx q[2], -45 | ry q[5], 90 }
+    { ry q[2], -90 | rx q[5], -45 }
+    ry q[5], -90
+    ry q[5], -90
+    cz q[6],q[5]
     qwait 1
-    { ry90 q5 | ym90 q6 }
-    cz q2,q6
+    { ry q[5], 90 | ry q[6], -90 }
+    cz q[2],q[6]
     qwait 1
-    { ry90 q6 | ym90 q2 }
-    { cz q5,q2 | x q6 }
-    ym90 q6
-    ry90 q2
+    { ry q[6], 90 | ry q[2], -90 }
+    { cz q[5],q[2] | x q[6] }
+    ry q[6], -90
+    ry q[2], 90
