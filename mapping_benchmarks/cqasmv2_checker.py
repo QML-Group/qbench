@@ -45,9 +45,30 @@ def bigQubitNum(line, biggest_number):
 
 def algNameChecker(line):
 
+    correction = doubleNameChecker(line)
+
+    return numberNameChecker(correction)
+
+
+def doubleNameChecker(line):
+
     correction = line
     before = r"(\..+)\..+$"
     after = r"\1"
+
+    c = re.sub(before, after, correction)
+
+    if c:
+        correction = c
+
+    return correction
+
+
+def numberNameChecker(line):
+
+    correction = line
+    before = r"(\.\d.+)"
+    after = r"kernel_\1"
 
     c = re.sub(before, after, correction)
 
