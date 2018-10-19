@@ -67,8 +67,8 @@ def doubleNameChecker(line):
 def numberNameChecker(line):
 
     correction = line
-    before = r"(\.\d.+)"
-    after = r"kernel_\1"
+    before = r"^\.(\d.+)"
+    after = r".kernel_\1"
 
     c = re.sub(before, after, correction)
 
