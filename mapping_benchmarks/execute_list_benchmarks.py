@@ -73,7 +73,7 @@ def compile_and_analize(filename, cursor, h5f, config_file_path, scheduler, mapp
         benchmark = quantum_benchmark.Benchmark(
             filename, 1000)
 
-        benchmark.error_analysis(init_type, error)
+        benchmark.error_analysis(init_type, error, simulator)
 
         algorithm = benchmark.qasm_file_path.replace(
             ".qasm", "").replace("_scheduled", "")
