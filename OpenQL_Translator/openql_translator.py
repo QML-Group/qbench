@@ -150,7 +150,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
             init_buffer = ["from openql import openql as ql\n",
                            "import os\n",
                            "import argparse\n\n",
-                           "def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):\n",
+                           "def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no', output_dir_name='test_output', optimize='no', measurement=True, log_level='LOG_WARNING'):\n",
                            "    curdir = os.path.dirname(__file__)\n",
                            "    output_dir = os.path.join(curdir, output_dir_name)\n",
                            "    ql.set_option('output_dir', output_dir)\n",
@@ -167,7 +167,10 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             gates_buffer = []
 
-            compile_buff = ["\n    p.add_kernel(k)\n",
+            compile_buff = ["\n    if measurement:",
+                            "        for q in range(num_qubits):",
+                            "            k.gate('measurement', [q])",
+                            "\n    p.add_kernel(k)\n",
                             "    p.compile()\n",
                             "    ql.set_option('mapper', 'no')\n\n",
                             "if __name__ == '__main__':\n",
@@ -177,6 +180,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "    parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')\n",
                             "    parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')\n",
                             "    parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')\n",
+                            "    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')",
                             "    args = parser.parse_args()\n",
                             "    try:\n",
                             "        circuit(args.config_file, args.scheduler, args.mapper, args.initial_placement, args.out_dir)\n",
