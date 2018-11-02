@@ -13683,7 +13683,7 @@ def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no'
 
     if measurement:
         for q in range(num_qubits):
-            k.gate('measurement', [q])
+            k.gate('measure', [q])
 
     p.add_kernel(k)
     p.compile()
