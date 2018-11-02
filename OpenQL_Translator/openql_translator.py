@@ -169,7 +169,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             compile_buff = ["\n    if measurement:\n",
                             "        for q in range(num_qubits):\n",
-                            "            k.gate('measurement', [q])\n",
+                            "            k.gate('measure', [q])\n",
                             "\n    p.add_kernel(k)\n",
                             "    p.compile()\n",
                             "    ql.set_option('mapper', 'no')\n\n",
