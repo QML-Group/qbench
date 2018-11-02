@@ -112,7 +112,10 @@ def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no'
     k.gate('h',[41])
     k.gate('h',[42])
 
-    if measurement:        for q in range(num_qubits):            k.gate('measurement', [q])
+    if measurement:
+        for q in range(num_qubits):
+            k.gate('measurement', [q])
+
     p.add_kernel(k)
     p.compile()
     ql.set_option('mapper', 'no')
@@ -124,7 +127,8 @@ if __name__ == '__main__':
     parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')
     parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')
     parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')
-    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')    args = parser.parse_args()
+    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')
+    args = parser.parse_args()
     try:
         circuit(args.config_file, args.scheduler, args.mapper, args.initial_placement, args.out_dir)
     except TypeError:
