@@ -167,9 +167,9 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             gates_buffer = []
 
-            compile_buff = ["\n    if measurement:",
-                            "        for q in range(num_qubits):",
-                            "            k.gate('measurement', [q])",
+            compile_buff = ["\n    if measurement:\n",
+                            "        for q in range(num_qubits):\n",
+                            "            k.gate('measurement', [q])\n",
                             "\n    p.add_kernel(k)\n",
                             "    p.compile()\n",
                             "    ql.set_option('mapper', 'no')\n\n",
@@ -180,7 +180,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "    parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')\n",
                             "    parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')\n",
                             "    parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')\n",
-                            "    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')",
+                            "    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')\n",
                             "    args = parser.parse_args()\n",
                             "    try:\n",
                             "        circuit(args.config_file, args.scheduler, args.mapper, args.initial_placement, args.out_dir)\n",
