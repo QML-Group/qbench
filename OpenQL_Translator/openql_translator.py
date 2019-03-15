@@ -188,11 +188,8 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "    parser.add_argument('--uniform_sched', nargs='?', default='no', help='Uniform shceduler actication (yes or no)')\n",
                             "    parser.add_argument('--sched_commute', nargs='?', default='yes', help='Permits two-qubit gates to be commutable')\n",
                             "    parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')\n",
-<<<<<<< HEAD
-=======
                             "    parser.add_argument('--moves', nargs='?', default='no', help='Let the use of moves')\n",
-                            "    parser.add_argument('--maptiebreak', nargs='?', default='random', help=''\n",
->>>>>>> openqlv05
+                            "    parser.add_argument('--maptiebreak', nargs='?', default='random', help='')\n",
                             "    parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')\n",
                             "    parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')\n",
                             "    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')\n",
