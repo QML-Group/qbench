@@ -2,11 +2,7 @@ from openql import openql as ql
 import os
 import argparse
 
-<<<<<<< HEAD
-def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):
-=======
 def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= 'no', sched_commute = 'yes', mapper='base', moves='no', maptibreak='random', initial_placement='no', output_dir_name='test_output', optimize='no', measurement=True, log_level='LOG_WARNING'):
->>>>>>> openqlv05
     curdir = os.path.dirname(__file__)
     output_dir = os.path.join(curdir, output_dir_name)
     ql.set_option('output_dir', output_dir)
@@ -28,9 +24,9 @@ def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= '
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 6
-    p = ql.Program('4gt12_v1_89', platform, num_qubits)
+    p = ql.Program('4gt12_v1_89', num_qubits, platform)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('4gt12_v1_89', platform, num_qubits)
+    k = ql.Kernel('4gt12_v1_89', platform)
     k.gate('x',[0])
     k.gate('cnot',[4,0])
     k.gate('h',[0])
@@ -276,11 +272,8 @@ if __name__ == '__main__':
     parser.add_argument('--uniform_sched', nargs='?', default='no', help='Uniform shceduler actication (yes or no)')
     parser.add_argument('--sched_commute', nargs='?', default='yes', help='Permits two-qubit gates to be commutable')
     parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')
-<<<<<<< HEAD
-=======
     parser.add_argument('--moves', nargs='?', default='no', help='Let the use of moves')
-    parser.add_argument('--maptiebreak', nargs='?', default='random', help=''
->>>>>>> openqlv05
+    parser.add_argument('--maptiebreak', nargs='?', default='random', help='')
     parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')
     parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')
     parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')

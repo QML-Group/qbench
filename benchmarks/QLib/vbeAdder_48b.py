@@ -424,11 +424,8 @@ if __name__ == '__main__':
     parser.add_argument('--uniform_sched', nargs='?', default='no', help='Uniform shceduler actication (yes or no)')
     parser.add_argument('--sched_commute', nargs='?', default='yes', help='Permits two-qubit gates to be commutable')
     parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')
-<<<<<<< HEAD
-=======
     parser.add_argument('--moves', nargs='?', default='no', help='Let the use of moves')
-    parser.add_argument('--maptiebreak', nargs='?', default='random', help=''
->>>>>>> openqlv05
+    parser.add_argument('--maptiebreak', nargs='?', default='random', help='')
     parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')
     parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')
     parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')
