@@ -150,15 +150,22 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
             init_buffer = ["from openql import openql as ql\n",
                            "import os\n",
                            "import argparse\n\n",
-                           "def circuit(config_file, scheduler='ASAP', mapper='base', initial_placement='no', output_dir_name='test_output', optimize='no', log_level='LOG_WARNING'):\n",
+                           "def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= 'no', sched_commute = 'yes', mapper='base', moves='no', maptibreak='random', initial_placement='no', output_dir_name='test_output', optimize='no', measurement=True, log_level='LOG_WARNING'):\n",
                            "    curdir = os.path.dirname(__file__)\n",
                            "    output_dir = os.path.join(curdir, output_dir_name)\n",
                            "    ql.set_option('output_dir', output_dir)\n",
                            "    ql.set_option('optimize', optimize)\n",
                            "    ql.set_option('scheduler', scheduler)\n",
+                           "    ql.set_option('scheduler_uniform', uniform_sched)\n",
                            "    ql.set_option('mapper', mapper)\n",
                            "    ql.set_option('initialplace', initial_placement)\n",
                            "    ql.set_option('log_level', log_level)\n",
+
+                           "    ql.set_option('scheduler_post179', new_scheduler)\n",
+                           "    ql.set_option('scheduler_commute', sched_commute)\n",
+                           "    ql.set_option('mapusemoves', moves)\n",
+                           "    ql.set_option('maptiebreak', maptiebreak)\n",
+
                            "\n    config_fn = os.path.join(curdir, config_file)\n\n",
                            "    # platform  = ql.Platform('platform_none', config_fn)\n",
                            "    platform  = ql.Platform('starmon', config_fn)\n",
@@ -167,16 +174,28 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
 
             gates_buffer = []
 
-            compile_buff = ["\n    p.add_kernel(k)\n",
+            compile_buff = ["\n    if measurement:\n",
+                            "        for q in range(num_qubits):\n",
+                            "            k.gate('measure', [q])\n",
+                            "\n    p.add_kernel(k)\n",
                             "    p.compile()\n",
                             "    ql.set_option('mapper', 'no')\n\n",
                             "if __name__ == '__main__':\n",
                             "    parser = argparse.ArgumentParser(description='OpenQL compilation of a Quantum Algorithm')\n",
                             "    parser.add_argument('config_file', help='Path to the OpenQL configuration file to compile this algorithm')\n",
+                            "    parser.add_argument('--new_scheduler', nargs='?', default='yes', help='Scheduler defined by Hans')\n",
                             "    parser.add_argument('--scheduler', nargs='?', default='ASAP', help='Scheduler specification (ASAP (default), ALAP, ...)')\n",
+                            "    parser.add_argument('--uniform_sched', nargs='?', default='no', help='Uniform shceduler actication (yes or no)')\n",
+                            "    parser.add_argument('--sched_commute', nargs='?', default='yes', help='Permits two-qubit gates to be commutable')\n",
                             "    parser.add_argument('--mapper', nargs='?', default='base', help='Mapper specification (base, minextend, minextendrc)')\n",
+<<<<<<< HEAD
+=======
+                            "    parser.add_argument('--moves', nargs='?', default='no', help='Let the use of moves')\n",
+                            "    parser.add_argument('--maptiebreak', nargs='?', default='random', help=''\n",
+>>>>>>> openqlv05
                             "    parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')\n",
                             "    parser.add_argument('--out_dir', nargs='?', default='test_output', help='Folder name to store the compilation')\n",
+                            "    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')\n",
                             "    args = parser.parse_args()\n",
                             "    try:\n",
                             "        circuit(args.config_file, args.scheduler, args.mapper, args.initial_placement, args.out_dir)\n",
