@@ -175,7 +175,7 @@ if __name__ == '__main__':
     parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')
     args = parser.parse_args()
     try:
-        circuit(args.config_file, args.scheduler, args.mapper, args.initial_placement, args.out_dir)
+        circuit(args.config_file, args.new_scheduler, args.scheduler, args.uniform_sched, args.sched_commute, args.mapper, args.moves, args.maptiebreak, args.initial_placement, args.out_dir)
     except TypeError:
         print('\nCompiled, but some gate is not defined in the configuration file. \nThe gate will be invoked like it is.')
         raise

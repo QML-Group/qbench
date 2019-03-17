@@ -195,7 +195,8 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
                             "    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')\n",
                             "    args = parser.parse_args()\n",
                             "    try:\n",
-                            "        circuit(args.config_file, args.scheduler, args.mapper, args.initial_placement, args.out_dir)\n",
+                            "        circuit(args.config_file, args.new_scheduler, args.scheduler, args.uniform_sched, args.sched_commute, args.mapper, args.moves, args.maptiebreak, args.initial_placement, args.out_dir)\n",
+
                             "    except TypeError:\n",
                             "        print('\\nCompiled, but some gate is not defined in the configuration file. \\nThe gate will be invoked like it is.')\n",
                             "        raise"]
