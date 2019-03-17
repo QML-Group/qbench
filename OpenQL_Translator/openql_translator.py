@@ -150,7 +150,7 @@ def translate(stranger_file, openql_file, dictionary_file=curdir +
             init_buffer = ["from openql import openql as ql\n",
                            "import os\n",
                            "import argparse\n\n",
-                           "def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= 'no', sched_commute = 'yes', mapper='base', moves='no', maptibreak='random', initial_placement='no', output_dir_name='test_output', optimize='no', measurement=True, log_level='LOG_WARNING'):\n",
+                           "def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= 'no', sched_commute = 'yes', mapper='base', moves='no', maptiebreak='random', initial_placement='no', output_dir_name='test_output', optimize='no', measurement=True, log_level='LOG_WARNING'):\n",
                            "    curdir = os.path.dirname(__file__)\n",
                            "    output_dir = os.path.join(curdir, output_dir_name)\n",
                            "    ql.set_option('output_dir', output_dir)\n",
