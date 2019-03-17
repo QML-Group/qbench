@@ -24,9 +24,9 @@ def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= '
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 8
-    p = ql.Program('urf2_277', num_qubits, platform)
+    p = ql.Program('urf2_277', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('urf2_277', platform)
+    k = ql.Kernel('urf2_277', platform, num_qubits)
     k.gate('x',[0])
     k.gate('cnot',[3,2])
     k.gate('cnot',[2,3])
