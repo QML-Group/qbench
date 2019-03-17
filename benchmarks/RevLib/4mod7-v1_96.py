@@ -24,9 +24,9 @@ def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= '
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 5
-    p = ql.Program('4mod7_v1_96', num_qubits, platform)
+    p = ql.Program('4mod7_v1_96', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('4mod7_v1_96', platform)
+    k = ql.Kernel('4mod7_v1_96', platform, num_qubits)
     k.gate('x',[0])
     k.gate('x',[0])
     k.gate('h',[0])

@@ -24,9 +24,9 @@ def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= '
     sweep_points = [1,2]
     num_circuits = 1
     num_qubits = 10
-    p = ql.Program('benstein_vazirani_8b_secret_2', num_qubits, platform)
+    p = ql.Program('benstein_vazirani_8b_secret_2', platform, num_qubits)
     p.set_sweep_points(sweep_points, num_circuits)
-    k = ql.Kernel('benstein_vazirani_8b_secret_2', platform)
+    k = ql.Kernel('benstein_vazirani_8b_secret_2', platform, num_qubits)
     k.gate('prepz',[8])
     k.gate('x',[8])
     k.gate('h',[0])
