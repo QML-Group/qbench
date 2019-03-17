@@ -506,8 +506,6 @@
 	    "cc_light_instr_type": "two_qubit_gate",
 	    "cc_light_instr": "swap",
 	    "cc_light_opcode": 128
-<<<<<<< HEAD
-=======
 	},
 	"move_prim": {
 	    "duration": 140,
@@ -518,7 +516,6 @@
 	    "cc_light_instr_type": "two_qubit_gate",
 	    "cc_light_instr": "move",
 	    "cc_light_opcode": 128
->>>>>>> openqlv05
 	}
     },
 
