@@ -107,7 +107,7 @@ def openqasm2openql(stranger_file, dictionary, gates_buffer, lines):
                     # print(stranger_file)
                     # print("angle:")
                     # print(angle)
-                    angle = match[0][1].replace("(", ",").replace(")", "")
+                    angle = match[0][1].replace("(", ",0,").replace(")", "")
 
                 gates_buffer.append(
                     "    k.gate('"+dictionary[match[0][0]]+"',[" +
