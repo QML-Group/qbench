@@ -6,8 +6,8 @@ x,x
 t,t
 h,h
 s,s
-z,z
-rz,z
+z,rz
+rz,rz
 CZ,cz
 CNOT,cnot
 Toffoli,toffoli
