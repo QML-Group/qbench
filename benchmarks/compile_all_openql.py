@@ -14,8 +14,7 @@ def compile_all_openql(directory_path, config_file_path, scheduler, mapper, outp
             openql_comp = importlib.util.module_from_spec(openql)
             openql.loader.exec_module(openql_comp)
             try:
-                openql_comp.circuit(
-                    config_file_path, scheduler, output_dir_name)
+                openql_comp.circuit(config_file_path, scheduler, output_dir_name)
             except TypeError:
                 print("\nERROR. Configuration file has not all the required definitions." +
                       "\nIn the case of a non-defined gate, the output will be compiled and the result will have that gate")

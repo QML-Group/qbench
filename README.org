@@ -1,4 +1,3 @@
-
 * qbench
 
 ** Algorithms analysis
@@ -716,7 +715,7 @@
 
     Based on the RevLib algorithm classification
 
-            #+BEGIN_EXPORT latex
+    #+BEGIN_EXPORT latex
 \begin{center}    
 \begin{tikzpicture}[sibling distance=3pt]
   \tikzset{grow'=right,level distance=130pt}
@@ -823,7 +822,6 @@
      - sym6
      - sym9
 
-
 *** Statistics    
 
     - Highest amount of gates: ~urf~ has a maximum of 512064 gates followed by the ~hwb9_119~ with 207775 gates
@@ -836,5 +834,5 @@
 
 ** OpenQL compilation
 
-   The configuration file used to compile the OpenQL algorithms is [[file:hardware_config_cc_light.json]]
+   The configuration file used to compile the OpenQL algorithms is [[file:config_files/hardware_config_cc_light.json]]
    
