@@ -621,7 +621,7 @@ shor_35,16,16529,QLib,Integer factorization
 sqn_258,10,10223,RevLib,?
 sqrt8_260,12,3009,RevLib,Square Root of 8
 squar5_261,13,1993,RevLib,Square Root of 5
-square_root_7,15,7630,,Square Root of 7
+square_root_7,15,7630,RevLib,Square Root of 7
 sym10_262,12,64283,RevLib,Symmetric function. This is a 10 inputs and 1 output function
 sym6_145,7,3888,RevLib,"Symmetric function. This is a 6 inputs and 1 output function. The output is assigned to one iff the number of ones in the input is 2, 3, or 4"
 sym6_316,14,270,RevLib,"Symmetric function. This is a 6 inputs and 1 output function. The output is assigned to one iff the number of ones in the input is 2, 3, or 4"
