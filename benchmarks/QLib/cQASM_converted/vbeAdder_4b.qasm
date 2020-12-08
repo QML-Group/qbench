@@ -1,0 +1,33 @@
+version 1.0
+
+qubits 13
+
+._vbeAdder_4b
+  toffoli q[1], q[2], q[3]
+  cnot q[1], q[2]
+  toffoli q[0], q[2], q[3]
+  toffoli q[4], q[5], q[6]
+  cnot q[4], q[5]
+  toffoli q[3], q[5], q[6]
+  toffoli q[7], q[8], q[9]
+  cnot q[7], q[8]
+  toffoli q[6], q[8], q[9]
+  toffoli q[10], q[11], q[12]
+  cnot q[10], q[11]
+  toffoli q[9], q[11], q[12]
+  cnot q[10], q[11]
+  toffoli q[6], q[8], q[9]
+  cnot q[7], q[8]
+  toffoli q[7], q[8], q[9]
+  cnot q[7], q[8]
+  cnot q[6], q[8]
+  toffoli q[3], q[5], q[6]
+  cnot q[4], q[5]
+  toffoli q[4], q[5], q[6]
+  cnot q[4], q[5]
+  cnot q[3], q[5]
+  toffoli q[0], q[2], q[3]
+  cnot q[1], q[2]
+  toffoli q[1], q[2], q[3]
+  cnot q[1], q[2]
+  cnot q[0], q[2]
