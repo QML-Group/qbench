@@ -1,0 +1,11 @@
+# Function: decod24
+# This file have been taken from RevLib (www.revlib.org). 
+.i 2
+.o 4
+.ilb c d
+.ob a b c d
+00	0001
+01	0010
+10	0100
+11	1000
+.e

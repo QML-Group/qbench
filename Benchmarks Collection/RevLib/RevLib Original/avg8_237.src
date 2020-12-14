@@ -1,0 +1,13 @@
+// This is a SyReC-file describing a circuit computing the average of 8 values.
+// This file has been taken from RevLib (www.revlib.org).  
+
+module avg8( out x0, inout x1, inout x2, inout x3, inout x4, inout x5, inout x6, inout x7, inout x8 )
+
+  x1 += x2 ;
+  x1 += x3 ;
+  x1 += x4 ;
+  x1 += x5 ;
+  x1 += x6 ;
+  x1 += x7 ;
+  x1 += x8 ;
+  x0 += ( x1 >> 3 )
