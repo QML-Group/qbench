@@ -1,0 +1,15 @@
+# Function: Toffoli gate
+# This file have been taken from RevLib (www.revlib.org). 
+.i 3
+.o 3
+.ilb a b c
+.ob a b c
+000	000
+001	001
+010	010
+011	111
+100	100
+101	101
+110	110
+111	011
+.e

@@ -1,4 +1,1 @@
-References for benchmarks taken from other websites:
-
-https://github.com/quantumlib/Cirq/tree/master/examples
-https://github.com/UCLA-VAST/QUEKO-benchmark
+All the references for code samples as well as description and classification of benchmarks can be found in Benchmarks_Overview.pdf.
