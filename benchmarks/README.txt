@@ -1,1 +1,0 @@
-All the references for code samples as well as description and classification of benchmarks can be found in Benchmarks_Overview.pdf.

@@ -1,1 +1,0 @@
-# Ising code init
