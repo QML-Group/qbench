@@ -1,0 +1,32 @@
+version 1.0
+
+qubits 8
+
+._bb84_n8
+  x q[0]
+  h q[1]
+  x q[2]
+  x q[3]
+  x q[4]
+  x q[5]
+  h q[7]
+  h q[5]
+  h q[1]
+  h q[2]
+  h q[4]
+  h q[7]
+  x q[0]
+  h q[1]
+  x q[2]
+  x q[3]
+  x q[4]
+  h q[7]
+  h q[5]
+  h q[6]
+  h q[2]
+  h q[4]
+  h q[1]
+  h q[3]
+  h q[7]
+  h q[2]
+  h q[4]
