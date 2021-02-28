@@ -189,7 +189,7 @@ def openqasm2cqasm(input_path, gates_buffer, lines):
             line = line[:i-1] + ";"
 
         #Find unitary gates
-        u_match = re.findall(r'u3+\((\w*\**-?\d*\.*\d*\,*\w*\**-?\d*\.*\d*\,*\w*\**-?\d*\.*\d*)\)', line)
+        u_match = re.findall(r'(u3)+(\((\-?\w*\*?\/?-?\d*\.?\d*\,*)*\))+', line)
         if u_match:
             i = line.rfind(")")
             j = line.rfind("(")
@@ -198,8 +198,14 @@ def openqasm2cqasm(input_path, gates_buffer, lines):
             for angle_str in angles:
                 if ("pi" in angle_str):
                     angle_str = angle_str.replace("pi","3.14")
-                    angle_split = angle_str.split("*")
-                    angle_calc = float(angle_split[0]) * float(angle_split[1])
+                    if "*" in angle_str: 
+                        angle_split = angle_str.split("*")
+                        angle_calc = float(angle_split[0]) * float(angle_split[1])
+                    elif "/" in angle_str:
+                        angle_split = angle_str.split("/")
+                        angle_calc = float(angle_split[0]) / float(angle_split[1])
+                    else:
+                        angle_calc = float(angle_str)
                     angle_str = str(angle_calc)
                 angle_strs.append(angle_str)
             line = "rz" + line[i+1:-1] + ", " + angle_strs[2] + ";" + "ry" + line[i+1:-1] + ", " + angle_strs[0] + ";" + "rz" + line[i+1:-1] + ", " + angle_strs[1]+ ";"
