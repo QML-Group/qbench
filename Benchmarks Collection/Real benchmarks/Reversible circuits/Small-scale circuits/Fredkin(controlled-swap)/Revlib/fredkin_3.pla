@@ -1,0 +1,15 @@
+# Function: Fredkin gate
+# This file have been taken from RevLib (www.revlib.org). 
+.i 3
+.o 3
+.ilb a b c
+.ob a b c
+000	000
+001	001
+010	010
+011	011
+100	100
+101	110
+110	101
+111	111
+.e
