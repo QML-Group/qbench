@@ -10,27 +10,27 @@ qubits 5
 
 .cu_3_4
   rz q[4], -1.1775
-  cx q[3],q[4]
+  cnot q[3],q[4]
   rz q[4], 1.1775
-  cx q[3],q[4]
+  cnot q[3],q[4]
 
 .cu_2_4(2)
   rz q[4], -1.1775
-  cx q[2],q[4]
+  cnot q[2],q[4]
   rz q[4], 1.1775
-  cx q[2],q[4]
+  cnot q[2],q[4]
 
 .cu_1_4(4)
   rz q[4], -1.1775
-  cx q[1],q[4]
+  cnot q[1],q[4]
   rz q[4], 1.1775
-  cx q[1],q[4]
+  cnot q[1],q[4]
 
 .cu_0_4(8)
   rz q[0], -1.1775
-  cx q[2],q[4]
+  cnot q[2],q[4]
   rz q[0], 1.1775
-  cx q[2],q[4]
+  cnot q[2],q[4]
 
 .end
   h q[0]

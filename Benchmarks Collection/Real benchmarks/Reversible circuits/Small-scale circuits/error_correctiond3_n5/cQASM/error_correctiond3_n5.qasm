@@ -92,7 +92,7 @@ qubits 5
   h q[2]
   h q[4]
   cnot q[4], q[2]
-  cnot q[1], q[2],  q[1],q[2]
+  cnot q[1], q[2]
   h q[2]
   cnot q[1], q[2]
   h q[1]
