@@ -1,0 +1,32 @@
+version 1.0
+
+qubits 12
+
+._benstein_vazirani_11b_secret_4
+  prep_z q[11]
+  x q[11]
+  h q[0]
+  h q[1]
+  h q[2]
+  h q[3]
+  h q[4]
+  h q[5]
+  h q[6]
+  h q[7]
+  h q[8]
+  h q[9]
+  h q[10]
+  h q[11]
+  cnot q[2], q[11]
+  h q[0]
+  h q[1]
+  h q[2]
+  h q[3]
+  h q[4]
+  h q[5]
+  h q[6]
+  h q[7]
+  h q[8]
+  h q[9]
+  h q[10]
+  h q[11]
