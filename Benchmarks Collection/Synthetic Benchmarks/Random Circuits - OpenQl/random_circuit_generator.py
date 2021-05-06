@@ -410,10 +410,10 @@ inputs = []
 
 import numpy as np
 from tqdm import tqdm
-qubits = [5,11,17]
-fractions = [0.1,0.45,0.80]
-#sizes = [60, 100 ,1000 ,3000 ,6000]
-sizes = [10000,20000,30000,40000,50000,60000]
+qubits = [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+fractions = [0.1,0.2,0.3, 0.5,0.80, 0.9]
+#sizes = []
+sizes = [60, 100 ,1000 ,3000 ,6000,10000,20000,30000,40000,50000,60000]
 initialization = "random"
 mirrored = False
 input = "test_files/random_circuits/random_with_idle_initialization_non_mirrored_small_4"
