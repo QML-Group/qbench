@@ -1,0 +1,4 @@
+graph qubit_interaction_graph {
+    node [shape=circle];
+    1 -- 20 [label=1];
+}

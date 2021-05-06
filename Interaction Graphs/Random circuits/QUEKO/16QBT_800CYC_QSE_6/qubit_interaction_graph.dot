@@ -1,0 +1,21 @@
+graph qubit_interaction_graph {
+    node [shape=circle];
+    0 -- 11 [label=154];
+    0 -- 4 [label=140];
+    1 -- 14 [label=148];
+    1 -- 6 [label=152];
+    2 -- 15 [label=121];
+    2 -- 6 [label=113];
+    2 -- 5 [label=130];
+    3 -- 6 [label=122];
+    3 -- 15 [label=125];
+    3 -- 9 [label=152];
+    4 -- 5 [label=152];
+    7 -- 10 [label=154];
+    7 -- 15 [label=137];
+    8 -- 9 [label=148];
+    8 -- 12 [label=147];
+    10 -- 13 [label=162];
+    11 -- 14 [label=141];
+    12 -- 13 [label=162];
+}
