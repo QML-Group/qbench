@@ -1,9 +1,13 @@
 #Scalable version of Quantum Volume circuits
 #author : mbandic
 
+
 from openql import openql as ql
 import numpy as np
 import os
+from numpy.random import default_rng
+from scipy import stats
+import itertools
 
 curdir = os.path.dirname(__file__)
 output_dir = os.path.join(curdir, "output_files")
@@ -19,12 +23,27 @@ num_qubits = 7
 p= ql.Program("QuantumVolume", platform, num_qubits)
 k= ql.Kernel("QuantumVolume", platform, num_qubits)
 
+#seed, num_qubits/depth can be modified
+seed = None
 
 #should be random unitary, still not supported by OpenQl
-U = [ 0.077+0.669j, -0.234+0.315j, 0.138+0.428j, -0.39 -0.196j,
--0.202+0.208j, 0.757+0.308j, -0.451+0.143j, 0.032+0.153j,
--0.533+0.091j, -0.094+0.05j , 0.451+0.192j, 0.192+0.648j,
-0.412+0.029j, -0.393+0.111j, -0.494+0.299j, 0.407+0.404j]
+DEFAULT_RNG = default_rng()
+
+if seed is None:
+    random_state = DEFAULT_RNG
+elif isinstance(seed, np.random.Generator):
+    random_state = seed
+else:
+    random_state = default_rng(seed)
+
+dim = np.product(4)
+U = stats.unitary_group.rvs(dim, random_state=random_state)
+U = list(itertools.chain.from_iterable(U))
+
+# U = [ 0.077+0.669j, -0.234+0.315j, 0.138+0.428j, -0.39 -0.196j,
+# -0.202+0.208j, 0.757+0.308j, -0.451+0.143j, 0.032+0.153j,
+# -0.533+0.091j, -0.094+0.05j , 0.451+0.192j, 0.192+0.648j,
+# 0.412+0.029j, -0.393+0.111j, -0.494+0.299j, 0.407+0.404j]
 unitary = ql.Unitary("Unitary", U)
 
 
@@ -33,11 +52,9 @@ for i in range(num_qubits):
 
 # qubit_lists = [[0,3],[0,3,5],[0,3,5,6],[0,2,3,5,6]]
 # ntrials = 1000
-#seed, num_qubits/depth can be modified
-seed = None
 
 if seed is None:
-    rng_set = np.random.default_rng()
+    rng_set = DEFAULT_RNG
     seed = rng_set.integers(low=1, high=1000)
 if isinstance(seed, np.random.Generator):
     rng = seed
