@@ -41,9 +41,11 @@ dictionary = {
     "s": "s",
     "rz": "rz",
     "u1": "rz",
+    "u2":"X90",
     "rx": "rx",
     "ry": "ry",
     "cz": "cz",
+    "p":"rz",
     "toffoli": "toffoli",
     "ccx": "toffoli",
     "prep0": "prep_z",
@@ -189,27 +191,34 @@ def openqasm2cqasm(input_path, gates_buffer, lines):
             line = line[:i-1] + ";"
 
         #Find unitary gates
-        u_match = re.findall(r'(u3)+(\((\-?\w*\*?\/?-?\d*\.?\d*\,*)*\))+', line)
-        if u_match:
+        u_match = re.findall(r'(u\d?)+(\((\-?\w*\*?\/?-?\d*\.?\d*\,*)*\))+', line)
+        if u_match and 'u1' not in line:
             i = line.rfind(")")
             j = line.rfind("(")
             angles = line[j+1:i].split(",")
             angle_strs = []
             for angle_str in angles:
                 if ("pi" in angle_str):
-                    angle_str = angle_str.replace("pi","3.14")
+                    angle_strg = angle_str.replace("pi","3.14")
                     if "*" in angle_str: 
-                        angle_split = angle_str.split("*")
-                        angle_calc = float(angle_split[0]) * float(angle_split[1])
+                        angle_split = angle_strg.split("*")
+                        if ('/' in angle_split[1]):
+                            angle_split2 = angle_split[1].split("/")
+                            angle_calc = (float(angle_split[0]) * float(angle_split2[0])) / float(angle_split2[1])
+                        else: 
+                            angle_calc = float(angle_split[0]) * float(angle_split[1])
                     elif "/" in angle_str:
-                        angle_split = angle_str.split("/")
+                        angle_split = angle_strg.split("/")
                         angle_calc = float(angle_split[0]) / float(angle_split[1])
                     else:
-                        angle_calc = float(angle_str)
+                        angle_calc = float(angle_strg)
                     angle_str = str(angle_calc)
                 angle_strs.append(angle_str)
-            line = "rz" + line[i+1:-1] + ", " + angle_strs[2] + ";" + "ry" + line[i+1:-1] + ", " + angle_strs[0] + ";" + "rz" + line[i+1:-1] + ", " + angle_strs[1]+ ";"
-            
+            if ('u2' not in line):
+                line = "rz" + line[i+1:-1] + ", " + angle_strs[2] + ";" + "ry" + line[i+1:-1] + ", " + angle_strs[0] + ";" + "rz" + line[i+1:-1] + ", " + angle_strs[1]+ ";"
+            else:
+                line = "rz" + line[i+1:-1] + ", " + angle_strs[1] + ";" + "ry" + line[i+1:-1] + ", " + "1.57" + ";" + "rz" + line[i+1:-1] + ", " + angle_strs[0]+ ";"
+
             split_lines = line.split(";")
             for split_line in split_lines:
                 gates_buffer.append(indentation + split_line + "\n")
@@ -233,20 +242,23 @@ def openqasm2cqasm(input_path, gates_buffer, lines):
 
             if gate in dictionary:
                 converted_gate = dictionary[gate]
-
                 angle_str = ""
                 if match[0][2]:
                     angle_str = match[0][2].replace("(", "").replace(")", "")
                     if ("pi" in angle_str):
-                        angle_str = angle_str.replace("pi","3.14")
+                        angle_strg = angle_str.replace("pi","3.14")
                         if "*" in angle_str:
-                            angle_split = angle_str.split("*")
-                            angle_calc = float(angle_split[0]) * float(angle_split[1])
-                        elif "/" in angle_str:
-                           angle_split = angle_str.split("/")
+                            angle_split = angle_strg.split("*")
+                            if ('/' in angle_split[1]):
+                                angle_split2 = angle_split[1].split("/")
+                                angle_calc = (float(angle_split[0]) * float(angle_split2[0])) / float(angle_split2[1])
+                            else: 
+                                angle_calc = float(angle_split[0]) * float(angle_split[1])
+                        elif "/" in angle_strg:
+                           angle_split = angle_strg.split("/")
                            angle_calc = float(angle_split[0]) / float(angle_split[1])
                         else:
-                            angle_calc = float(angle_str) 
+                            angle_calc = float(angle_strg) 
                         angle_str = ", " + str(angle_calc)
                     else:
                         angle_str = ", " + angle_str
