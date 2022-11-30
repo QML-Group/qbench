@@ -1,3 +1,0 @@
-graph qubit_interaction_graph {
-    node [shape=circle];
-}
