@@ -1,0 +1,530 @@
+version 1.2 
+
+qubits 50
+
+.queko_50_0.34
+    {
+        cnot q[14], q[5] 
+        cnot q[21], q[2] 
+        cnot q[41], q[12] 
+        cnot q[30], q[17] 
+        cnot q[32], q[20] 
+        cnot q[4], q[26] 
+        cnot q[24], q[48] 
+    }
+    {
+        cnot q[14], q[21] 
+        cnot q[3], q[36] 
+        cnot q[12], q[39] 
+        cnot q[2], q[7] 
+        cnot q[17], q[6] 
+        cnot q[26], q[47] 
+        cnot q[0], q[13] 
+    }
+    {
+        cnot q[21], q[48] 
+        cnot q[13], q[7] 
+        cnot q[42], q[4] 
+        cnot q[18], q[19] 
+        cnot q[30], q[41] 
+        cnot q[14], q[17] 
+        cnot q[36], q[28] 
+        cnot q[20], q[9] 
+        cnot q[15], q[37] 
+    }
+    {
+        cnot q[23], q[21] 
+        cnot q[38], q[18] 
+        cnot q[11], q[13] 
+        cnot q[43], q[32] 
+        cnot q[24], q[39] 
+        cnot q[33], q[2] 
+    }
+    {
+        cnot q[23], q[36] 
+        cnot q[40], q[19] 
+        cnot q[2], q[49] 
+        cnot q[21], q[24] 
+        cnot q[43], q[33] 
+        cnot q[11], q[0] 
+        cnot q[5], q[37] 
+        cnot q[34], q[17] 
+        cnot q[15], q[41] 
+    }
+    {
+        cnot q[23], q[41] 
+        cnot q[33], q[39] 
+        cnot q[3], q[25] 
+        cnot q[13], q[48] 
+        cnot q[1], q[19] 
+        cnot q[15], q[36] 
+        cnot q[45], q[35] 
+        cnot q[32], q[49] 
+    }
+    {
+        cnot q[41], q[2] 
+        cnot q[24], q[6] 
+        cnot q[43], q[19] 
+        cnot q[9], q[48] 
+        cnot q[12], q[35] 
+        cnot q[22], q[42] 
+        cnot q[5], q[39] 
+        cnot q[30], q[32] 
+    }
+    {
+        cnot q[8], q[2] 
+        cnot q[40], q[36] 
+        cnot q[12], q[24] 
+        cnot q[29], q[37] 
+        cnot q[3], q[17] 
+        cnot q[30], q[44] 
+        cnot q[23], q[28] 
+        cnot q[25], q[49] 
+        cnot q[11], q[5] 
+    }
+    {
+        cnot q[5], q[8] 
+        cnot q[11], q[48] 
+        cnot q[43], q[28] 
+        cnot q[41], q[33] 
+        cnot q[34], q[26] 
+        cnot q[38], q[20] 
+        cnot q[29], q[6] 
+        cnot q[44], q[19] 
+        cnot q[22], q[46] 
+        cnot q[21], q[17] 
+        cnot q[32], q[7] 
+    }
+    {
+        cnot q[5], q[8] 
+        cnot q[24], q[25] 
+        cnot q[12], q[16] 
+        cnot q[1], q[20] 
+        cnot q[47], q[19] 
+        cnot q[30], q[23] 
+        cnot q[40], q[9] 
+    }
+    {
+        cnot q[5], q[33] 
+        cnot q[17], q[28] 
+        cnot q[46], q[37] 
+        cnot q[4], q[41] 
+        cnot q[18], q[45] 
+        cnot q[44], q[19] 
+        cnot q[42], q[21] 
+    }
+    {
+        cnot q[33], q[16] 
+        cnot q[18], q[10] 
+        cnot q[20], q[9] 
+        cnot q[5], q[1] 
+        cnot q[14], q[29] 
+        cnot q[0], q[19] 
+        cnot q[23], q[13] 
+    }
+    {
+        cnot q[16], q[32] 
+        cnot q[31], q[24] 
+        cnot q[33], q[28] 
+        cnot q[23], q[48] 
+        cnot q[45], q[10] 
+        cnot q[3], q[20] 
+        cnot q[36], q[39] 
+        cnot q[34], q[19] 
+        cnot q[0], q[21] 
+        cnot q[43], q[18] 
+    }
+    {
+        cnot q[18], q[16] 
+        cnot q[36], q[26] 
+        cnot q[45], q[19] 
+        cnot q[31], q[47] 
+        cnot q[1], q[49] 
+        cnot q[11], q[29] 
+        cnot q[5], q[39] 
+        cnot q[42], q[7] 
+        cnot q[14], q[21] 
+        cnot q[24], q[28] 
+    }
+    {
+        cnot q[18], q[12] 
+        cnot q[13], q[44] 
+        cnot q[16], q[47] 
+        cnot q[4], q[28] 
+        cnot q[38], q[7] 
+        cnot q[36], q[8] 
+        cnot q[42], q[32] 
+        cnot q[3], q[15] 
+        cnot q[41], q[2] 
+        cnot q[10], q[19] 
+        cnot q[26], q[9] 
+        cnot q[43], q[0] 
+        cnot q[34], q[20] 
+        cnot q[27], q[31] 
+    }
+    {
+        cnot q[18], q[47] 
+        cnot q[33], q[39] 
+        cnot q[42], q[49] 
+        cnot q[43], q[40] 
+        cnot q[8], q[19] 
+        cnot q[41], q[20] 
+        cnot q[48], q[7] 
+        cnot q[22], q[29] 
+        cnot q[0], q[46] 
+        cnot q[15], q[25] 
+    }
+    {
+        cnot q[18], q[9] 
+        cnot q[16], q[6] 
+        cnot q[46], q[29] 
+        cnot q[3], q[25] 
+        cnot q[4], q[19] 
+        cnot q[22], q[39] 
+        cnot q[38], q[26] 
+        cnot q[45], q[17] 
+        cnot q[44], q[48] 
+        cnot q[28], q[7] 
+    }
+    {
+        cnot q[23], q[18] 
+        cnot q[32], q[44] 
+        cnot q[29], q[10] 
+        cnot q[3], q[26] 
+        cnot q[15], q[45] 
+        cnot q[2], q[6] 
+        cnot q[38], q[9] 
+        cnot q[13], q[31] 
+    }
+    {
+        cnot q[18], q[1] 
+        cnot q[14], q[17] 
+        cnot q[8], q[48] 
+        cnot q[21], q[12] 
+        cnot q[30], q[6] 
+        cnot q[42], q[40] 
+        cnot q[47], q[7] 
+        cnot q[11], q[41] 
+        cnot q[3], q[31] 
+        cnot q[26], q[9] 
+        cnot q[23], q[16] 
+        cnot q[5], q[20] 
+    }
+    {
+        cnot q[11], q[18] 
+        cnot q[4], q[10] 
+        cnot q[43], q[36] 
+        cnot q[27], q[49] 
+        cnot q[8], q[28] 
+        cnot q[41], q[48] 
+        cnot q[13], q[39] 
+        cnot q[32], q[44] 
+    }
+    {
+        cnot q[11], q[17] 
+        cnot q[4], q[33] 
+        cnot q[38], q[44] 
+        cnot q[8], q[47] 
+        cnot q[43], q[25] 
+        cnot q[21], q[6] 
+        cnot q[16], q[28] 
+        cnot q[18], q[9] 
+        cnot q[22], q[12] 
+    }
+    {
+        cnot q[11], q[17] 
+        cnot q[18], q[6] 
+        cnot q[43], q[8] 
+        cnot q[26], q[37] 
+        cnot q[34], q[12] 
+        cnot q[15], q[35] 
+        cnot q[14], q[30] 
+    }
+    {
+        cnot q[11], q[17] 
+        cnot q[27], q[45] 
+        cnot q[8], q[7] 
+        cnot q[4], q[35] 
+        cnot q[0], q[41] 
+    }
+    {
+        cnot q[38], q[11] 
+        cnot q[23], q[2] 
+        cnot q[5], q[12] 
+        cnot q[20], q[48] 
+        cnot q[27], q[8] 
+        cnot q[22], q[0] 
+        cnot q[21], q[9] 
+        cnot q[39], q[47] 
+        cnot q[36], q[26] 
+    }
+    {
+        cnot q[11], q[44] 
+        cnot q[22], q[41] 
+        cnot q[46], q[9] 
+        cnot q[4], q[33] 
+        cnot q[2], q[28] 
+        cnot q[18], q[19] 
+        cnot q[5], q[35] 
+        cnot q[3], q[7] 
+        cnot q[14], q[6] 
+        cnot q[36], q[48] 
+    }
+    {
+        cnot q[33], q[44] 
+        cnot q[15], q[6] 
+        cnot q[0], q[12] 
+        cnot q[30], q[35] 
+        cnot q[41], q[9] 
+        cnot q[13], q[16] 
+        cnot q[22], q[26] 
+        cnot q[3], q[47] 
+        cnot q[42], q[8] 
+    }
+    {
+        cnot q[33], q[13] 
+        cnot q[20], q[26] 
+        cnot q[3], q[36] 
+        cnot q[5], q[7] 
+        cnot q[43], q[23] 
+        cnot q[38], q[24] 
+        cnot q[17], q[49] 
+        cnot q[42], q[10] 
+        cnot q[27], q[47] 
+        cnot q[11], q[1] 
+        cnot q[35], q[44] 
+    }
+    {
+        cnot q[22], q[13] 
+        cnot q[49], q[7] 
+        cnot q[5], q[18] 
+        cnot q[33], q[24] 
+        cnot q[12], q[20] 
+        cnot q[3], q[2] 
+        cnot q[17], q[37] 
+        cnot q[39], q[9] 
+    }
+    {
+        cnot q[13], q[35] 
+        cnot q[43], q[9] 
+        cnot q[44], q[48] 
+        cnot q[32], q[20] 
+        cnot q[4], q[47] 
+        cnot q[11], q[49] 
+        cnot q[27], q[26] 
+        cnot q[8], q[16] 
+    }
+    {
+        cnot q[45], q[35] 
+        cnot q[8], q[47] 
+        cnot q[9], q[48] 
+        cnot q[22], q[31] 
+        cnot q[7], q[37] 
+        cnot q[42], q[10] 
+        cnot q[14], q[24] 
+        cnot q[46], q[28] 
+        cnot q[3], q[25] 
+        cnot q[36], q[26] 
+    }
+    {
+        cnot q[21], q[45] 
+        cnot q[10], q[25] 
+        cnot q[33], q[7] 
+        cnot q[31], q[44] 
+        cnot q[6], q[19] 
+        cnot q[2], q[32] 
+        cnot q[14], q[13] 
+        cnot q[12], q[35] 
+        cnot q[42], q[36] 
+        cnot q[46], q[28] 
+    }
+    {
+        cnot q[23], q[45] 
+        cnot q[1], q[44] 
+        cnot q[32], q[28] 
+        cnot q[38], q[27] 
+        cnot q[14], q[15] 
+        cnot q[30], q[18] 
+        cnot q[34], q[37] 
+    }
+    {
+        cnot q[23], q[26] 
+        cnot q[32], q[39] 
+        cnot q[18], q[44] 
+        cnot q[29], q[31] 
+        cnot q[43], q[45] 
+        cnot q[46], q[16] 
+        cnot q[49], q[19] 
+        cnot q[36], q[25] 
+        cnot q[24], q[6] 
+    }
+    {
+        cnot q[8], q[26] 
+        cnot q[1], q[28] 
+        cnot q[11], q[37] 
+        cnot q[22], q[40] 
+        cnot q[10], q[16] 
+        cnot q[5], q[6] 
+        cnot q[0], q[46] 
+        cnot q[30], q[17] 
+        cnot q[3], q[39] 
+        cnot q[27], q[44] 
+    }
+    {
+        cnot q[12], q[8] 
+        cnot q[10], q[26] 
+        cnot q[9], q[7] 
+        cnot q[30], q[13] 
+        cnot q[49], q[47] 
+        cnot q[21], q[16] 
+        cnot q[3], q[36] 
+        cnot q[41], q[32] 
+        cnot q[40], q[28] 
+        cnot q[0], q[23] 
+        cnot q[27], q[35] 
+    }
+    {
+        cnot q[41], q[12] 
+        cnot q[14], q[11] 
+        cnot q[40], q[35] 
+        cnot q[33], q[31] 
+        cnot q[24], q[19] 
+        cnot q[21], q[20] 
+        cnot q[46], q[37] 
+        cnot q[23], q[28] 
+    }
+    {
+        cnot q[46], q[12] 
+        cnot q[8], q[26] 
+        cnot q[17], q[37] 
+        cnot q[4], q[2] 
+        cnot q[14], q[36] 
+        cnot q[38], q[31] 
+        cnot q[32], q[48] 
+        cnot q[43], q[34] 
+        cnot q[16], q[47] 
+    }
+    {
+        cnot q[46], q[35] 
+        cnot q[13], q[2] 
+        cnot q[30], q[31] 
+        cnot q[15], q[45] 
+        cnot q[33], q[49] 
+        cnot q[22], q[5] 
+        cnot q[10], q[17] 
+    }
+    {
+        cnot q[15], q[35] 
+        cnot q[30], q[28] 
+        cnot q[38], q[24] 
+        cnot q[40], q[25] 
+        cnot q[3], q[9] 
+        cnot q[22], q[48] 
+        cnot q[1], q[26] 
+    }
+    {
+        cnot q[22], q[15] 
+        cnot q[42], q[2] 
+        cnot q[24], q[44] 
+        cnot q[33], q[7] 
+        cnot q[14], q[18] 
+        cnot q[27], q[8] 
+        cnot q[34], q[41] 
+        cnot q[43], q[25] 
+    }
+    {
+        cnot q[15], q[29] 
+        cnot q[47], q[19] 
+        cnot q[45], q[28] 
+        cnot q[36], q[31] 
+        cnot q[30], q[9] 
+        cnot q[0], q[40] 
+        cnot q[21], q[1] 
+    }
+    {
+        cnot q[46], q[29] 
+        cnot q[36], q[48] 
+        cnot q[14], q[44] 
+        cnot q[16], q[47] 
+        cnot q[21], q[49] 
+        cnot q[24], q[25] 
+        cnot q[0], q[10] 
+        cnot q[31], q[32] 
+        cnot q[5], q[15] 
+        cnot q[11], q[20] 
+        cnot q[38], q[26] 
+    }
+    {
+        cnot q[46], q[27] 
+        cnot q[41], q[48] 
+        cnot q[30], q[37] 
+        cnot q[22], q[9] 
+        cnot q[12], q[1] 
+        cnot q[8], q[20] 
+    }
+    {
+        cnot q[27], q[37] 
+        cnot q[20], q[26] 
+        cnot q[42], q[18] 
+        cnot q[45], q[10] 
+        cnot q[39], q[7] 
+        cnot q[34], q[31] 
+        cnot q[41], q[36] 
+        cnot q[15], q[44] 
+    }
+    {
+        cnot q[27], q[49] 
+        cnot q[46], q[26] 
+        cnot q[38], q[37] 
+        cnot q[39], q[6] 
+        cnot q[14], q[36] 
+    }
+    {
+        cnot q[38], q[27] 
+        cnot q[13], q[31] 
+        cnot q[2], q[26] 
+        cnot q[34], q[25] 
+        cnot q[1], q[47] 
+        cnot q[43], q[39] 
+        cnot q[29], q[32] 
+        cnot q[0], q[48] 
+    }
+    {
+        cnot q[21], q[27] 
+        cnot q[6], q[19] 
+        cnot q[36], q[31] 
+        cnot q[35], q[24] 
+        cnot q[2], q[47] 
+        cnot q[42], q[16] 
+        cnot q[30], q[20] 
+        cnot q[49], q[7] 
+        cnot q[11], q[4] 
+    }
+    {
+        cnot q[0], q[21] 
+        cnot q[1], q[9] 
+        cnot q[20], q[37] 
+        cnot q[45], q[16] 
+        cnot q[44], q[39] 
+        cnot q[38], q[42] 
+    }
+    {
+        cnot q[0], q[18] 
+        cnot q[15], q[26] 
+        cnot q[41], q[17] 
+        cnot q[38], q[12] 
+        cnot q[3], q[27] 
+        cnot q[34], q[29] 
+    }
+    {
+        cnot q[18], q[29] 
+        cnot q[38], q[32] 
+        cnot q[16], q[44] 
+        cnot q[27], q[20] 
+        cnot q[39], q[7] 
+        cnot q[8], q[25] 
+        cnot q[45], q[17] 
+        cnot q[42], q[40] 
+        cnot q[43], q[48] 
+        cnot q[33], q[2] 
+    }
