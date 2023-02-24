@@ -41,7 +41,7 @@ dictionary = {
     "s": "s",
     "rz": "rz",
     "u1": "rz",
-    "u2":"X90",
+    #"u2":"X90",
     "rx": "rx",
     "ry": "ry",
     "cz": "cz",
