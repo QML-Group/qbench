@@ -44,6 +44,7 @@ dictionary = {
     "toffoli": "toffoli",
     "prep_z": "prepz",
     "prep_x": "prepx",
+    "prepz": "prepz",
     "prep_y": "prepy",
     "swap": "swap",
     "measure": "measure",
@@ -88,7 +89,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
         operands = []
 
         # Ignore match
-        ignore_match = re.findall(r'^(pragma|version|Generated|.|{|})(.*)$', line)
+        ignore_match = re.findall(r'^(pragma|version|Generated|.\d|{|}|._)(.*)$', line)
         if (ignore_match):
             continue
         
@@ -102,7 +103,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
 
 
         # gate q[XX], q[XX]
-        match = re.findall(r'(^(\w+)(\(.*\))*\s+(?:\,?\s*(q|c)\[(\d+)\])*)+;$', line)
+        match = re.findall(r'(^(\w+)(\(.*\))*\s+(?:\,?\s*(q|c)\[(\d+)\])*)+$', line)
         if (not match):    
             continue
     
@@ -145,7 +146,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
             return -1                 
 
     # Return the number of qubits
-    return max_qubit_index + 1
+    return max_qubit_index + 1, gates_buffer
 
 '''
 Translate file(s) to cQASM
@@ -182,7 +183,7 @@ def translate(input_path, output_path, recursive = False, save_path = None):
             lines = input_file.readlines()
             if (is_cqasm(lines)):
                 type = "cQASM"
-                num_qubits = cqasm2openqasm(input_path, gates_buffer, lines)
+                num_qubits,gates_buffer = cqasm2openqasm(input_path, gates_buffer, lines)
             else:
                 print("ERROR: file " + input_path + " not recognized\n")
                 return
@@ -195,8 +196,8 @@ def translate(input_path, output_path, recursive = False, save_path = None):
             init_buffer = []
 
             # Add version
-            init_buffer.append("OPENQASM 2.0;")
-            init_buffer.append("include \"qelib1.inc\";")
+            init_buffer.append("OPENQASM 2.0;\n")
+            init_buffer.append("include \"qelib1.inc\";\n")
             init_buffer.append("qreg[" + str(num_qubits) + "];\n")
             init_buffer.append("creg[" + str(num_qubits) + "];\n")
 
