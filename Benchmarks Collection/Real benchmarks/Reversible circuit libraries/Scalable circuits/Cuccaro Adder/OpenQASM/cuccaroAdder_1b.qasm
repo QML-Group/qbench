@@ -1,11 +1,10 @@
 OPENQASM 2.0;
 include "qelib1.inc";
-qreg[4];
-creg[4];
+qreg q[4];
   cx q[1], q[2];
   cx q[1], q[0];
-  toffoli q[0], q[2], q[1];
+  ccx q[0], q[2], q[1];
   cx q[1], q[3];
-  toffoli q[0], q[2], q[1];
+  ccx q[0], q[2], q[1];
   cx q[1], q[0];
   cx q[0], q[2];

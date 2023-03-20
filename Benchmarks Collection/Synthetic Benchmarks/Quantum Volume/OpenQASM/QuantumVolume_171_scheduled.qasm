@@ -1,7 +1,6 @@
 OPENQASM 2.0;
 include "qelib1.inc";
-qreg[171];
-creg[171];
+qreg q[171];
   prepz q[52];
   prepz q[60];
   prepz q[50];

@@ -41,13 +41,12 @@ dictionary = {
     "ry": "ry",
     "cz": "cz",
     "rz":"p",
-    "toffoli": "toffoli",
+    "toffoli": "ccx",
     "prep_z": "prepz",
     "prep_x": "prepx",
     "prepz": "prepz",
     "prep_y": "prepy",
     "swap": "swap",
-    "measure": "measure",
     "measure_z" :"measure_z",
     "measure_y" :"measure_y",
     "measure_x" :"measure_x",
@@ -89,7 +88,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
         operands = []
 
         # Ignore match
-        ignore_match = re.findall(r'^(pragma|version|Generated|.\d|{|}|._)(.*)$', line)
+        ignore_match = re.findall(r'^(measure|pragma|version|Generated|.\d|{|}|._)(.*)$', line)
         if (ignore_match):
             continue
         
@@ -198,8 +197,8 @@ def translate(input_path, output_path, recursive = False, save_path = None):
             # Add version
             init_buffer.append("OPENQASM 2.0;\n")
             init_buffer.append("include \"qelib1.inc\";\n")
-            init_buffer.append("qreg[" + str(num_qubits) + "];\n")
-            init_buffer.append("creg[" + str(num_qubits) + "];\n")
+            init_buffer.append("qreg q[" + str(num_qubits) + "];\n")
+            #init_buffer.append("creg q[" + str(num_qubits) + "];\n")
 
 
             output_file.writelines(init_buffer)
