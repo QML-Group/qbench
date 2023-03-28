@@ -42,9 +42,9 @@ dictionary = {
     "cz": "cz",
     "rz":"p",
     "toffoli": "ccx",
-    "prep_z": "prepz",
+    #"prep_z": "prepz",
     "prep_x": "prepx",
-    "prepz": "prepz",
+    #"prepz": "prepz",
     "prep_y": "prepy",
     "swap": "swap",
     "measure_z" :"measure_z",
@@ -88,7 +88,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
         operands = []
 
         # Ignore match
-        ignore_match = re.findall(r'^(measure|pragma|version|Generated|.\d|{|}|._)(.*)$', line)
+        ignore_match = re.findall(r'^(prepz|prep_z|measure|pragma|version|Generated|.\d|{|}|._)(.*)$', line)
         if (ignore_match):
             continue
         
