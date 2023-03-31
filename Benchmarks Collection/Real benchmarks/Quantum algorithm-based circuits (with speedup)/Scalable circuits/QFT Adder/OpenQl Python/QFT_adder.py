@@ -15,7 +15,7 @@ import os
 import argparse
 
 # def circuit(config_file, new_scheduler='yes', scheduler='ASAP', uniform_sched= 'no', sched_commute = 'yes', mapper='base', moves='no', maptiebreak='random', initial_placement='no', output_dir_name='random_output', optimize='no', measurement=True, log_level='LOG_WARNING'):
-def circuit(config_file, measurement=True, output_dir_name='qasm'):
+def circuit(config_file, measurement=False, output_dir_name='qasm'):
     curdir = os.path.dirname(__file__)
     print(__file__)
     ql.initialize()
@@ -96,7 +96,7 @@ if __name__ == '__main__':
     # parser.add_argument('--maptiebreak', nargs='?', default='random', help='')
     # parser.add_argument('--initial_placement', nargs='?', default='no', help='Initial placement specification (yes or no)')
     parser.add_argument('--out_dir', nargs='?', default='qasm', help='Folder name to store the compilation')
-    parser.add_argument('--measurement', nargs='?', default=True, help='Add measurement to all the qubits in the end of the algorithm')
+    parser.add_argument('--measurement', nargs='?', default=False, help='Add measurement to all the qubits in the end of the algorithm')
     args = parser.parse_args()
     try:
         # circuit(args.config_file, args.new_scheduler, args.scheduler, args.uniform_sched, args.sched_commute, args.mapper, args.moves, args.maptiebreak, args.initial_placement, args.out_dir)
@@ -228,7 +228,7 @@ def save_random_circ(save_dir, circ, qubits):
 
 
 def main():
-    for n_qbits in range(50, 101):
+    for n_qbits in range(50, 160):
         print('File for', str(n_qbits), 'qubits.')
         a = np.random.randint(2, size=(n_qbits//2+n_qbits % 2-1,))
         b = np.random.randint(2, size=(n_qbits//2+1),)

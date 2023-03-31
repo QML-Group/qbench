@@ -36,7 +36,7 @@ dictionary = {
     "h": "h",
     "s": "s",
     "rz": "u1",
-    "X90":"u2",
+    #"x90":"u2",
     "rx": "rx",
     "ry": "ry",
     "cz": "cz",
@@ -50,11 +50,17 @@ dictionary = {
     "measure_z" :"measure_z",
     "measure_y" :"measure_y",
     "measure_x" :"measure_x",
-    "X90" : "rx(pi*0.5)",
-    "rx(pi*-0.5)": "mX90",
-    "Y90":"ry(pi*0.5)",
-    "mY90":"ry(pi*-0.5)",
-    "s": "rz(pi*0.5)",
+    "x90" : "rx(pi/2)",
+    "mX90": "rx(-pi/2)",
+    "y90":"ry(pi/2)",
+    "mY90":"ry(-pi/2)",
+    "ym90":"ry(-pi/2)",
+    "xm90": "rx(-pi/2)",
+    "ym45":"ry(-pi/4)",
+    "xm45": "rx(-pi/4)",
+    "x45" : "rx(pi/4)",
+    "y45":"ry(pi/4)",
+    "s": "rz(pi/2)",
     "CR": "cu1",
     "CRk": "CRk",
     "c-X": "c-X",
@@ -121,7 +127,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
             if match[0][2]:
                 if ("3.14" in angle_str):
                     angle_strg = angle_str.replace("3.14","pi")
-                if "1,57" in angle_str:
+                if "1.57" in angle_str:
                     angle_strg = angle_strg.replace("1.57","pi/2")
                 angle_str = '(' + match[0][2] + ')'                
 
