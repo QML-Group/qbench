@@ -40,7 +40,7 @@ dictionary = {
     "rx": "rx",
     "ry": "ry",
     "cz": "cz",
-    "rz":"p",
+    #"rz":"p",
     "toffoli": "ccx",
     #"prep_z": "prepz",
     "prep_x": "prepx",
@@ -94,7 +94,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
         operands = []
 
         # Ignore match
-        ignore_match = re.findall(r'^(prepz|prep_z|measure|pragma|version|Generated|.\d|{|}|._)(.*)$', line)
+        ignore_match = re.findall(r'^(prepz|prep_z|measure|pragma|version|skip|qubits|Generated|.\d|{|}|._)(.*)$', line)
         if (ignore_match):
             continue
         
@@ -108,7 +108,7 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
 
 
         # gate q[XX], q[XX]
-        match = re.findall(r'(^(\w+)(\(.*\))*\s+(?:\,?\s*(q|c)\[(\d+)\])*)+$', line)
+        match = re.findall(r'(^(\w+)(\(.*\))*\s+(?:\,?\s*(q|c)\[(\d+)\])*(\,?\s*-?\d\.?\d*)?)+$', line)
         if (not match):    
             continue
     
@@ -124,22 +124,24 @@ def cqasm2openqasm(input_path, gates_buffer, lines):
         if gate in dictionary:
             converted_gate = dictionary[gate]
             angle_str = ""
-            if match[0][2]:
+            if match[0][5]:
+                angle_str = match[0][5]
+                angle_str = angle_str.replace(", ","")
                 if ("3.14" in angle_str):
-                    angle_strg = angle_str.replace("3.14","pi")
+                    angle_str = angle_str.replace("3.14","pi")
                 if "1.57" in angle_str:
-                    angle_strg = angle_strg.replace("1.57","pi/2")
-                angle_str = '(' + match[0][2] + ')'                
+                    angle_str = angle_str.replace("1.57","pi/2")
+                angle_str = '(' + angle_str + ')'                
 
 
             gates_buffer.append(
                 indentation
                 + converted_gate
+                + angle_str
                 + " "
                 + "q["
                 + "], q[".join(operands)
                 + "]"
-                + angle_str
                 + ";\n"
             )
 
