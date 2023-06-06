@@ -24,7 +24,6 @@ curdir = os.path.dirname(__file__)
 
 # Hardcoded dictionary for translating gates
 dictionary = {
-    "i": "i",
     "id": "i",
     "cnot": "cx",
     "sdag": "sdg",
