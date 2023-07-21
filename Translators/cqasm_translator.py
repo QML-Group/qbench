@@ -44,6 +44,7 @@ dictionary = {
     #"u2":"X90",
     "rx": "rx",
     "ry": "ry",
+    "cp":"cz",
     "cz": "cz",
     "p":"rz",
     "toffoli": "toffoli",
