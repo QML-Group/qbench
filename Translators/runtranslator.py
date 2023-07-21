@@ -1,6 +1,6 @@
 import cqasm_translator
 from cqasm_translator import translate_dir
 
-input_path = "C:/Users/mbandic/Downloads/MQTBench_2023-07-21-16-44-23/" 
-output_path = "C:/Users/mbandic/Downloads/MQTBench_2023-07-21-16-44-23_cqasm/"
+input_path = "C:/Users/mbandic/Desktop/PhD/Code/qbench/Benchmarks Collection/Real benchmarks/Quantum algorithm-based circuits (with speedup)/MQTBench/OpenQASM/" 
+output_path = "C:/Users/mbandic/Desktop/PhD/Code/qbench/Benchmarks Collection/Real benchmarks/Quantum algorithm-based circuits (with speedup)/MQTBench/cQASM/"
 translate_dir(input_path,output_path,None)
